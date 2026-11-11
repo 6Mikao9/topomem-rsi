@@ -1,0 +1,127 @@
+{
+  "events": [
+    {
+      "at_ns": 0,
+      "op": "open",
+      "session": "chat"
+    },
+    {
+      "at_ns": 50000000,
+      "op": "append",
+      "segment": "system",
+      "session": "chat"
+    },
+    {
+      "at_ns": 100000000,
+      "op": "append",
+      "segment": "turn-one",
+      "session": "chat"
+    },
+    {
+      "at_ns": 150000000,
+      "max_new_tokens": 32,
+      "op": "infer",
+      "select_rows": [
+        70,
+        0,
+        23
+      ],
+      "session": "chat"
+    },
+    {
+      "at_ns": 200000000,
+      "op": "append",
+      "segment": "reply-one",
+      "session": "chat"
+    },
+    {
+      "at_ns": 250000000,
+      "op": "append",
+      "segment": "turn-two",
+      "session": "chat"
+    },
+    {
+      "at_ns": 300000000,
+      "max_new_tokens": 32,
+      "op": "infer",
+      "select_rows": [
+        225,
+        23,
+        0
+      ],
+      "session": "chat"
+    },
+    {
+      "at_ns": 350000000,
+      "op": "append",
+      "segment": "reply-two",
+      "session": "chat"
+    },
+    {
+      "at_ns": 400000000,
+      "op": "append",
+      "segment": "turn-three",
+      "session": "chat"
+    },
+    {
+      "at_ns": 450000000,
+      "max_new_tokens": 32,
+      "op": "infer",
+      "select_rows": [
+        332,
+        225,
+        23
+      ],
+      "session": "chat"
+    },
+    {
+      "at_ns": 500000000,
+      "op": "close",
+      "session": "chat"
+    }
+  ],
+  "kind": "chatbot_growth",
+  "name": "chatbot-trip-planning",
+  "page_rows": 24,
+  "schema": 1,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Give concise options and carry forward confirmed constraints.\n"
+    },
+    {
+      "id": "turn-one",
+      "role": "user",
+      "text": "Plan a walking route from a ferry terminal for a family with a stroller.\n"
+    },
+    {
+      "id": "reply-one",
+      "role": "assistant",
+      "text": "We can take the paved waterfront path. Allow twenty minutes to the market.\n"
+    },
+    {
+      "id": "turn-two",
+      "role": "user",
+      "text": "Keep the waterfront plan. Find a sheltered stop midway if it rains.\n"
+    },
+    {
+      "id": "reply-two",
+      "role": "assistant",
+      "text": "The west arcade is midway and has a ramp from the path.\n"
+    },
+    {
+      "id": "turn-three",
+      "role": "user",
+      "text": "Keep the arcade stop and adjust the plan to finish before noon.\n"
+    }
+  ],
+  "source": {
+    "content_sha256": "5d6e4c154ef67e11327c1f6c693525351fee3aea64d46b9269ce1ded94f33462",
+    "kind": "authored_fixture",
+    "license": "CC0-1.0",
+    "locator": "examples/workloads/chatbot-trip-planning.json",
+    "revision": "fixture-v1"
+  },
+  "task": {}
+}

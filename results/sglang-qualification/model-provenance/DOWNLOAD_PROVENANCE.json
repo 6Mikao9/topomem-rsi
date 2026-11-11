@@ -1,0 +1,42 @@
+{
+  "source": "inference-optimization/GLM-5.3-0.6B-A0.4B",
+  "revision": "20aae340d157bd2215b9d81165be87e94686dfdf",
+  "weight_semantics": "publisher describes random initialization followed by toy-text fine-tuning; architectural smoke only, not representative task-quality/locality evidence",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "bytes": 1570,
+      "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930"
+    },
+    {
+      "name": "README.md",
+      "bytes": 3873,
+      "sha256": "848b570ab57bc137fb9be535fc5ca51c7ac55beffc7fafb097a126ebc42f242f"
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 10734,
+      "sha256": "3740abcea51c45830cb3ca562084ad5fb2ef53589376f73332e9886f93ade41c"
+    },
+    {
+      "name": "config.json",
+      "bytes": 2365,
+      "sha256": "09d6d0b4b1131cfc79e280bd71a38f2700b433d868d34d02e92c5e56900d2cdd"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 215,
+      "sha256": "e759a0afe17b5acb44e1ca5a19b2cb04de81b462f4c32a4e686c226bff4f9495"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 1243574976,
+      "sha256": "51bba6b768ddcdb97b7595d0b9a3c18cb82c4f8efa77e2f7924c4d1d46cb3aed"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 20217719,
+      "sha256": "44556920e4507367e1615610a11aabf215ed123be7ec45ff217891b1b5a6a21a"
+    }
+  ]
+}

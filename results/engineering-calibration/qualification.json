@@ -1,0 +1,3670 @@
+{
+  "aggregate": {
+    "v5_ir_lru_to_native_latency_ratio": 3.1925964460974128,
+    "v5_minus_v6_ms": {
+      "lru-equivalent": 1049.047125,
+      "manual-direct": 160.03907199999998,
+      "manual-ir": 995.772009,
+      "native": 138.68407349999995
+    },
+    "v5_ms": {
+      "lru-equivalent": 1409.638599,
+      "manual-direct": 479.553587,
+      "manual-ir": 1426.243068,
+      "native": 441.533599
+    },
+    "v6_fastest_observed_non_generated_baseline": {
+      "arm": "native",
+      "ms": 302.8495255
+    },
+    "v6_ir_lru_to_native_latency_ratio": 1.1906621725910544,
+    "v6_ms": {
+      "lru-equivalent": 360.591474,
+      "manual-direct": 319.514515,
+      "manual-ir": 430.471059,
+      "native": 302.8495255
+    },
+    "v6_native_a_a": {
+      "max_absolute_difference_ms": 1.9314850000000092,
+      "median_absolute_difference_ms": 1.7309920000000147,
+      "median_native_ms": 302.8495255,
+      "median_signed_difference_ms": -1.2673189999999863,
+      "pairs": [
+        {
+          "a_ms": 301.694191,
+          "b_minus_a_ms": 1.9314850000000092,
+          "b_ms": 303.625676,
+          "pair": 1
+        },
+        {
+          "a_ms": 303.883955,
+          "b_minus_a_ms": -1.7309920000000147,
+          "b_ms": 302.152963,
+          "pair": 2
+        },
+        {
+          "a_ms": 303.483185,
+          "b_minus_a_ms": -1.2673189999999863,
+          "b_ms": 302.215866,
+          "pair": 3
+        }
+      ]
+    }
+  },
+  "case_and_output_bindings_exact": true,
+  "comparison_kind": "descriptive_cross_snapshot_engineering_qualification_not_rsi_or_heldout",
+  "each_arm_execution_signature_and_program_exact_across_snapshots": true,
+  "each_arm_wire_and_miss_counts_exact_across_snapshots": true,
+  "environment_scope": "selected GPU identity and clean worker pre/post checks; no in-window contamination or fixed clock proof",
+  "kind": "public_engineering_calibration",
+  "native_and_lru_equivalent_wire_and_miss_counts_exact_in_each_snapshot": true,
+  "paired_native_execution_order": [
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "a3",
+    "b3"
+  ],
+  "paired_native_repeat_count": 3,
+  "per_case": {
+    "agent-water-inspection": {
+      "v5_ir_lru_to_native_latency_ratio": 2.1724110469418814,
+      "v5_minus_v6_ms": {
+        "lru-equivalent": 54.083587,
+        "manual-direct": 4.735619999999997,
+        "manual-ir": 48.064657000000004,
+        "native": 2.4512465000000034
+      },
+      "v5_ms": {
+        "lru-equivalent": 110.449994,
+        "manual-direct": 54.789387,
+        "manual-ir": 111.026841,
+        "native": 50.842125
+      },
+      "v6_fastest_observed_non_generated_baseline": {
+        "arm": "native",
+        "ms": 48.3908785
+      },
+      "v6_ir_lru_to_native_latency_ratio": 1.1648147077966358,
+      "v6_ms": {
+        "lru-equivalent": 56.366407,
+        "manual-direct": 50.053767,
+        "manual-ir": 62.962184,
+        "native": 48.3908785
+      },
+      "v6_native_a_a": {
+        "max_absolute_difference_ms": 0.23910400000000465,
+        "median_absolute_difference_ms": 0.18965400000000443,
+        "median_native_ms": 48.3908785,
+        "median_signed_difference_ms": 0.1764750000000035,
+        "pairs": [
+          {
+            "a_ms": 48.439899,
+            "b_minus_a_ms": 0.18965400000000443,
+            "b_ms": 48.629553,
+            "pair": 1
+          },
+          {
+            "a_ms": 48.341858,
+            "b_minus_a_ms": -0.23910400000000465,
+            "b_ms": 48.102754,
+            "pair": 2
+          },
+          {
+            "a_ms": 48.287892,
+            "b_minus_a_ms": 0.1764750000000035,
+            "b_ms": 48.464367,
+            "pair": 3
+          }
+        ]
+      }
+    },
+    "chatbot-trip-planning": {
+      "v5_ir_lru_to_native_latency_ratio": 2.1896127930244647,
+      "v5_minus_v6_ms": {
+        "lru-equivalent": 67.056965,
+        "manual-direct": 9.98178,
+        "manual-ir": 59.808719999999994,
+        "native": 3.6299899999999994
+      },
+      "v5_ms": {
+        "lru-equivalent": 135.210565,
+        "manual-direct": 78.127654,
+        "manual-ir": 135.098122,
+        "native": 61.750902
+      },
+      "v6_fastest_observed_non_generated_baseline": {
+        "arm": "native",
+        "ms": 58.120912000000004
+      },
+      "v6_ir_lru_to_native_latency_ratio": 1.172617525340965,
+      "v6_ms": {
+        "lru-equivalent": 68.1536,
+        "manual-direct": 68.145874,
+        "manual-ir": 75.289402,
+        "native": 58.120912000000004
+      },
+      "v6_native_a_a": {
+        "max_absolute_difference_ms": 0.6680860000000024,
+        "median_absolute_difference_ms": 0.5641310000000033,
+        "median_native_ms": 58.120912000000004,
+        "median_signed_difference_ms": 0.5641310000000033,
+        "pairs": [
+          {
+            "a_ms": 57.728055,
+            "b_minus_a_ms": 0.6680860000000024,
+            "b_ms": 58.396141,
+            "pair": 1
+          },
+          {
+            "a_ms": 58.165721,
+            "b_minus_a_ms": 0.5641310000000033,
+            "b_ms": 58.729852,
+            "pair": 2
+          },
+          {
+            "a_ms": 58.076103,
+            "b_minus_a_ms": -0.21162200000000553,
+            "b_ms": 57.864481,
+            "pair": 3
+          }
+        ]
+      }
+    },
+    "long-document-estuary-qa": {
+      "v5_ir_lru_to_native_latency_ratio": 3.634857590702702,
+      "v5_minus_v6_ms": {
+        "lru-equivalent": 906.020777,
+        "manual-direct": 145.715867,
+        "manual-ir": 869.9736240000001,
+        "native": 132.49560349999996
+      },
+      "v5_ms": {
+        "lru-equivalent": 1116.921494,
+        "manual-direct": 326.751261,
+        "manual-ir": 1133.666967,
+        "native": 307.280675
+      },
+      "v6_fastest_observed_non_generated_baseline": {
+        "arm": "native",
+        "ms": 174.78507150000002
+      },
+      "v6_ir_lru_to_native_latency_ratio": 1.2066288910720844,
+      "v6_ms": {
+        "lru-equivalent": 210.900717,
+        "manual-direct": 181.035394,
+        "manual-ir": 263.693343,
+        "native": 174.78507150000002
+      },
+      "v6_native_a_a": {
+        "max_absolute_difference_ms": 1.6166760000000124,
+        "median_absolute_difference_ms": 1.1420489999999859,
+        "median_native_ms": 174.78507150000002,
+        "median_signed_difference_ms": -1.1420489999999859,
+        "pairs": [
+          {
+            "a_ms": 174.110765,
+            "b_minus_a_ms": 0.8439930000000118,
+            "b_ms": 174.954758,
+            "pair": 1
+          },
+          {
+            "a_ms": 175.413318,
+            "b_minus_a_ms": -1.6166760000000124,
+            "b_ms": 173.796642,
+            "pair": 2
+          },
+          {
+            "a_ms": 175.757434,
+            "b_minus_a_ms": -1.1420489999999859,
+            "b_ms": 174.615385,
+            "pair": 3
+          }
+        ]
+      }
+    },
+    "rollout-bridge-options": {
+      "v5_ir_lru_to_native_latency_ratio": 2.172519379939803,
+      "v5_minus_v6_ms": {
+        "lru-equivalent": 21.885795999999996,
+        "manual-direct": -0.39419499999999985,
+        "manual-ir": 17.925008000000002,
+        "native": 0.19030349999999885
+      },
+      "v5_ms": {
+        "lru-equivalent": 47.056546,
+        "manual-direct": 19.885285,
+        "manual-ir": 46.451138,
+        "native": 21.659897
+      },
+      "v6_fastest_observed_non_generated_baseline": {
+        "arm": "manual-direct",
+        "ms": 20.27948
+      },
+      "v6_ir_lru_to_native_latency_ratio": 1.1723906183878143,
+      "v6_ms": {
+        "lru-equivalent": 25.17075,
+        "manual-direct": 20.27948,
+        "manual-ir": 28.52613,
+        "native": 21.469593500000002
+      },
+      "v6_native_a_a": {
+        "max_absolute_difference_ms": 0.4393430000000009,
+        "median_absolute_difference_ms": 0.22975199999999774,
+        "median_native_ms": 21.469593500000002,
+        "median_signed_difference_ms": -0.0901229999999984,
+        "pairs": [
+          {
+            "a_ms": 21.415472,
+            "b_minus_a_ms": 0.22975199999999774,
+            "b_ms": 21.645224,
+            "pair": 1
+          },
+          {
+            "a_ms": 21.963058,
+            "b_minus_a_ms": -0.4393430000000009,
+            "b_ms": 21.523715,
+            "pair": 2
+          },
+          {
+            "a_ms": 21.361756,
+            "b_minus_a_ms": -0.0901229999999984,
+            "b_ms": 21.271633,
+            "pair": 3
+          }
+        ]
+      }
+    }
+  },
+  "raw_receipts": {
+    "v5": {
+      "lru-equivalent": {
+        "aggregate_ms": 1409.638599,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "generated",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "10c193ca712ed450f844385871c633d29848b5365727dd7d4cb547979ff0f70f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 110.449994,
+            "ordered_attention_calls": 160,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              110.326998,
+              110.449994,
+              111.300276
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              5.004364,
+              5.01983,
+              5.152673
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "generated",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "4cd1cd20a4e99bf6d3a955f99e72b6d75082b84858bdffa55e81a195a9db232b",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 135.210565,
+            "ordered_attention_calls": 192,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              134.90916,
+              135.210565,
+              136.334519
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              6.196918,
+              6.206708,
+              6.231101
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "generated",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "b09182464fe47093f29ff7a6fa0ea4914dd71cedd364dde3145cd633c643e84a",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 1116.921494,
+            "ordered_attention_calls": 128,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              1129.53239,
+              1116.921494,
+              1102.727273
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              22.99144,
+              23.155334,
+              23.475075
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "generated",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "6e4a25172180e1b34f82094a1a77793a2f17ad55319d06261c68e355309d52c8",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 47.056546,
+            "ordered_attention_calls": 80,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              47.379043,
+              47.056546,
+              46.885718
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.782578,
+              1.83579,
+              1.796911
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.20",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.68",
+              "temperature_c": "31",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v5-lru-equivalent.json",
+        "receipt_sha256": "4af05804c03c165506f76c0226ec9886f5022adb10c5e0b26d1fe6ce3f0e39c6",
+        "recorded_raw_result_sha256": "b250d395cf81960473a2da7a75e8b0ac872d96c9cc513dba5af0a49edb138e73",
+        "request_sha256": "ffb45474da8323439ef46a196b61c03cb35781e97eaaa149f107f9bdb57a386b",
+        "source_manifest_sha256": "949801c4c6bfe67997aeed4dfb9fd799381f5d35524a42a3fcb2162d64fcd72d",
+        "utc_end": "2026-11-10T14:12:44.078036+00:00",
+        "utc_start": "2026-11-10T14:12:31.880179+00:00",
+        "verified_canonical_result_sha256": "d0c7c830af52a0188f2c1e25d3daeff58964618fba9a00b0f007a8bc36735018"
+      },
+      "manual-direct": {
+        "aggregate_ms": 479.553587,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "manual_topology",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "fc4c62557bdb697a377070bfdc61a0ea45beb9f4067c1a5ff5efc1c8c70c3aac",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 409600,
+              "host0-gpu0": 1572864
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 180224
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 54.789387,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              54.789387,
+              53.946366,
+              55.783579
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 192,
+            "transfer_samples_ms": [
+              3.706796,
+              3.676077,
+              3.808225
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "manual_topology",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "9b3b38aa7f57c71c212c8d52de9840a3c9de3374bebe159b3c113dcb30826e28",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 933888,
+              "host0-gpu0": 3145728
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 229376
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 78.127654,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              84.533426,
+              78.127654,
+              77.804261
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 384,
+            "transfer_samples_ms": [
+              7.395772,
+              7.453261,
+              7.401614
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "manual_topology",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "eef958b2f73172e0fc6e34e68f9df84fc5949f3d87af833707ea1075992add7d",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 9191424,
+              "host0-gpu0": 1089536
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9191424
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 326.751261,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              336.523205,
+              326.751261,
+              325.837841
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 133,
+            "transfer_samples_ms": [
+              18.782841,
+              18.612544,
+              18.656151
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "manual_topology",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "a15ec5720acf9a87277deecd69821e4c909c66976b427fbfc286a90772411cbe",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 81920,
+              "host0-gpu0": 147456
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 81920
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 19.885285,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              20.717661,
+              19.885285,
+              19.765507
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 18,
+            "transfer_samples_ms": [
+              0.512086,
+              0.515041,
+              0.482543
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.59",
+              "temperature_c": "34",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.17",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v5-manual-direct.json",
+        "receipt_sha256": "47411b34350cc03cd14001c62f14c821b9edcc519d17b845e0a25dd33a6b8607",
+        "recorded_raw_result_sha256": "680a857a494d8ccbf061772b18dcc64671f66120c8f811abfd8f23e398a11371",
+        "request_sha256": "7ec9aa09ae3f68a81a90514360bd9f5a1b123ac0b948c0793c4b056e111ac29c",
+        "source_manifest_sha256": "949801c4c6bfe67997aeed4dfb9fd799381f5d35524a42a3fcb2162d64fcd72d",
+        "utc_end": "2026-11-10T14:13:06.155017+00:00",
+        "utc_start": "2026-11-10T14:12:58.570131+00:00",
+        "verified_canonical_result_sha256": "6818e68a1230966e5f5cc03f3a6aa3598397788f5cc750de046449b3bdeb0882"
+      },
+      "manual-ir": {
+        "aggregate_ms": 1426.243068,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "generated",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "1c6a60c033b544baada9650a9889bbab11338b3af7399a34731c3d9275079b3d",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1376256,
+              "host0-gpu0": 548864
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 245760
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 111.026841,
+            "ordered_attention_calls": 160,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              111.026841,
+              110.481438,
+              111.398892
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 67,
+            "transfer_samples_ms": [
+              4.853732,
+              4.773719,
+              4.799007
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "generated",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "857ea74140f27617c5e8cbe16995b0057d2572708f1130a31d4637909e58303e",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1638400,
+              "host0-gpu0": 671744
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 294912
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 135.098122,
+            "ordered_attention_calls": 192,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              135.578416,
+              135.073735,
+              135.098122
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 82,
+            "transfer_samples_ms": [
+              5.732418,
+              5.801703,
+              5.845922
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "generated",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "0a77dfcafce68e43911c52c4f132a70d3f9f2104030ce14cee059040dcd5d517",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 1133.666967,
+            "ordered_attention_calls": 128,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              1138.431137,
+              1121.651574,
+              1133.666967
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              24.087281,
+              24.454979,
+              24.274725
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "generated",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "6cf5ae30e6ceab7284e8168d3b6003c9e6e73db192cb48d34f2af53162534683",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 622592,
+              "host0-gpu0": 65536
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 131072
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 46.451138,
+            "ordered_attention_calls": 80,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              47.315999,
+              46.364125,
+              46.451138
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 8,
+            "transfer_samples_ms": [
+              1.632361,
+              1.620897,
+              1.602653
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.50",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.32",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v5-manual-ir.json",
+        "receipt_sha256": "dffb1777ee40c3499beab8d6626529020a8625c4ac311dc0ce44ccd7bd47cabe",
+        "recorded_raw_result_sha256": "847209ac7645ef693a05f1c8ddff9562e455fe01bbbc9c5e8671b9284e332c59",
+        "request_sha256": "6a5e359480e6931f6ff3d15cf4051627f86fa3caba2176e5dad4f45780bc4171",
+        "source_manifest_sha256": "949801c4c6bfe67997aeed4dfb9fd799381f5d35524a42a3fcb2162d64fcd72d",
+        "utc_end": "2026-11-10T14:12:57.468332+00:00",
+        "utc_start": "2026-11-10T14:12:45.219152+00:00",
+        "verified_canonical_result_sha256": "7ea0fde43cc468b85634e2d781a267fb02f802f00a4f6b6225ad63fe4a2687b0"
+      },
+      "native": {
+        "aggregate_ms": 441.533599,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 50.842125,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              50.842125,
+              50.608102,
+              51.398874
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.350144,
+              4.374025,
+              4.347902
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 61.750902,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              61.268845,
+              68.44874,
+              61.750902
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.285562,
+              5.430005,
+              5.43215
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 307.280675,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              318.302924,
+              307.280675,
+              305.150884
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              21.092634,
+              21.363262,
+              21.5156
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": false,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.659897,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              22.375626,
+              21.659897,
+              21.639096
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.627649,
+              1.534943,
+              1.519026
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "25.55",
+              "temperature_c": "31",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "18.89",
+              "temperature_c": "30",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v5-native.json",
+        "receipt_sha256": "4fe99f599695e9c305fb3c31cf7c0a4902af109cedc6be6e57bd455809e8d33f",
+        "recorded_raw_result_sha256": "b59d8d5363c4ea0d30d269bc638a23263d5bceacf7fd5afd4a0a06510a072c8a",
+        "request_sha256": "2a32ed6ff30a8e1b46b692a7304d85cf2101869c7cda99ef79756bc0ce45174c",
+        "source_manifest_sha256": "949801c4c6bfe67997aeed4dfb9fd799381f5d35524a42a3fcb2162d64fcd72d",
+        "utc_end": "2026-11-10T14:12:30.867337+00:00",
+        "utc_start": "2026-11-10T14:12:23.532183+00:00",
+        "verified_canonical_result_sha256": "ef96782fac39e4921b57c074051a562665dd8eb7f4e85ac7172815b2f5d4bf29"
+      }
+    },
+    "v6_native": {
+      "a1": {
+        "aggregate_ms": 301.694191,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.439899,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              48.801977,
+              48.060125,
+              48.439899
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.21818,
+              4.209004,
+              4.221806
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 57.728055,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              64.702201,
+              57.574888,
+              57.728055
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.247252,
+              5.127579,
+              5.174364
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 174.110765,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              172.528393,
+              174.110765,
+              177.580943
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              19.933939,
+              19.925044,
+              20.119567
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.415472,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              21.843788,
+              21.307461,
+              21.415472
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.517049,
+              1.4797,
+              1.486215
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "25.18",
+              "temperature_c": "31",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "19.12",
+              "temperature_c": "30",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-a1.json",
+        "receipt_sha256": "03aa27b291a3bc4a18659e85a35ade9605ffc139065879bdb72f31bde84754f5",
+        "recorded_raw_result_sha256": "a6e012c898a104aaeb5307d83cb874a07b982f56695d322073c482a2c45c7f71",
+        "request_sha256": "eb97b732938e7b0a331cee7457431276c92bd2b58329f50eb2c6ea7a6fc326dd",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:40:51.585501+00:00",
+        "utc_start": "2026-11-10T14:40:45.051877+00:00",
+        "verified_canonical_result_sha256": "c2a04e684ba4db1aa2f2f47f4bb13a55477804adbd90f1f76c004799a852c23d"
+      },
+      "a2": {
+        "aggregate_ms": 303.883955,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.341858,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              48.759339,
+              48.202181,
+              48.341858
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.298038,
+              4.272678,
+              4.243919
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 58.165721,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              58.128245,
+              64.964397,
+              58.165721
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.267593,
+              5.285083,
+              5.229013
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 175.413318,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              175.413318,
+              174.918762,
+              178.512675
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              20.310108,
+              20.248324,
+              20.257992
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.963058,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              22.298576,
+              21.963058,
+              21.652727
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.55963,
+              1.590612,
+              1.533477
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "68.11",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.55",
+              "temperature_c": "31",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-a2.json",
+        "receipt_sha256": "a8905216a290f7762edd38083de21871a863601d0db44e663f5a2bab7cf6f14b",
+        "recorded_raw_result_sha256": "a2500b2f5d297301b728742456bb828fbfccdcf5eb4b6e844b8a73f5daa58905",
+        "request_sha256": "efd53d2759eb3bd50998047aebd63deda7376f3b682b9115cd5c6078441ddb6d",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:05.727961+00:00",
+        "utc_start": "2026-11-10T14:40:59.195038+00:00",
+        "verified_canonical_result_sha256": "8ec964e06ff60afd9e9652e4c847798e0e1c6757dc7c55db2943c48a27acab64"
+      },
+      "a3": {
+        "aggregate_ms": 303.483185,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.287892,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              48.808867,
+              48.201894,
+              48.287892
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.296983,
+              4.229806,
+              4.198324
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 58.076103,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              58.076103,
+              64.611579,
+              58.046199
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.182123,
+              5.173005,
+              5.208045
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 175.757434,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              174.91377,
+              175.757434,
+              179.755878
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              20.477332,
+              20.270263,
+              23.486894
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.361756,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              22.09801,
+              21.361756,
+              21.221447
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.548762,
+              1.509916,
+              1.495874
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "68.01",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.96",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-a3.json",
+        "receipt_sha256": "eeed279c49b8857967e3b4c46d6b5bb1e10f10cb2a0250c4cac91eebefca9188",
+        "recorded_raw_result_sha256": "1077d65033059cfc18c829b5b5d31f0e2d3f146a9f38938b565ec5add1ddd79b",
+        "request_sha256": "a12dc5f2362ad61762ffc31894ff57d67d897a07f801c55e6a6eed2e38edc2d9",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:19.858957+00:00",
+        "utc_start": "2026-11-10T14:41:13.275500+00:00",
+        "verified_canonical_result_sha256": "449fa9f940d0892e12ea3820776fa9f1b82d3fe38e115f77e71137b892eacb7b"
+      },
+      "b1": {
+        "aggregate_ms": 303.625676,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.629553,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              49.170728,
+              48.629553,
+              48.503486
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.309392,
+              4.203876,
+              4.162663
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 58.396141,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              65.468884,
+              58.100651,
+              58.396141
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.131693,
+              5.069712,
+              5.199228
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 174.954758,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              174.213996,
+              174.954758,
+              179.324012
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              19.993524,
+              19.969675,
+              20.11686
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.645224,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              22.374629,
+              21.52823,
+              21.645224
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.51805,
+              1.46626,
+              1.461003
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.46",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.60",
+              "temperature_c": "31",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-b1.json",
+        "receipt_sha256": "edf1e9dd1db37147e59ad9ff5b7d47acc58ebb449fa5778cd8688a31c10b0f75",
+        "recorded_raw_result_sha256": "4919b7119ffa52016216425476c695866ce94aa1c966c2216e65d7704257ce78",
+        "request_sha256": "d63b1f15b1fdebac7c9a3482d36f3ebec98a47692d0ae244b928eba635ba6524",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:40:58.686643+00:00",
+        "utc_start": "2026-11-10T14:40:52.102568+00:00",
+        "verified_canonical_result_sha256": "438772463b4dc3da819ceed19b7d3dc9d6c58e8888cdbde6674b4c3f1994bf1e"
+      },
+      "b2": {
+        "aggregate_ms": 302.152963,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.102754,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              48.721735,
+              47.916948,
+              48.102754
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.175977,
+              4.125859,
+              4.191321
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 58.729852,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              58.161457,
+              64.531967,
+              58.729852
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.074795,
+              5.099192,
+              5.184589
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 173.796642,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              172.527485,
+              173.796642,
+              178.764176
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              19.814034,
+              19.770491,
+              20.016016
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.523715,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              22.088114,
+              21.523715,
+              21.320243
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.499704,
+              1.505117,
+              1.510913
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.65",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.86",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-b2.json",
+        "receipt_sha256": "902de7d5e0e055b878752d960c8f31550d4c38e80dd3320f5f90989897d6c6be",
+        "recorded_raw_result_sha256": "c7156db06ca89496344edbde82eb2af7407c710dbe60b9117407f5cb44671af8",
+        "request_sha256": "65950938cb31b14643f5955ab3997bde29b7b7d194a9a8cff5a84bd7d0853070",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:12.771199+00:00",
+        "utc_start": "2026-11-10T14:41:06.237994+00:00",
+        "verified_canonical_result_sha256": "6653e4c72f8e29b7f9ce29079f30c36b23a5c0fd6d739606a673622daa263d7e"
+      },
+      "b3": {
+        "aggregate_ms": 302.215866,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "native_lru",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "81e765493945c2b62e6f298d4f59801f851370ac409da2bff3288b187489c38f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 48.464367,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              48.580469,
+              47.920789,
+              48.464367
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.168431,
+              4.159643,
+              4.153042
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "native_lru",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "056396b7ecd7ca0da4c17b7b90e2d0a0a5a1db8f811f8c7dccafcd2b664a0998",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 57.864481,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              57.864481,
+              64.046121,
+              57.838152
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.092386,
+              5.114406,
+              5.205521
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "native_lru",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b3444720f1521685320189c7f67a015dc2dadc6829cc31ade206cde04eb8d4d8",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 174.615385,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              173.82538,
+              174.615385,
+              179.474548
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              19.808813,
+              19.807074,
+              19.957661
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "native_lru",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eebe79181d1f7205ac107186ad78a4f3577a804b03dd605f98d0d6616eb23e4e",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 21.271633,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              21.920347,
+              21.271633,
+              21.226045
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.501673,
+              1.462868,
+              1.459581
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "68.32",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "62.06",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-native-b3.json",
+        "receipt_sha256": "c770159e979f055dc2fe02e5ffff08d545ea944002bc39d0f229f45efb0274f2",
+        "recorded_raw_result_sha256": "588e6c386232a86c4c659029478b315834a4f024e734386eda512b2abbd1b81e",
+        "request_sha256": "2fa80a0bbb0e238a0e9001a793ac880c2ce7d8fc821bc4a52448de1ea32ca91d",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:26.944366+00:00",
+        "utc_start": "2026-11-10T14:41:20.360413+00:00",
+        "verified_canonical_result_sha256": "56b483310e03e1496f19cbcc681971e25bd6d6a81d486f2f82ff6336fb4c95a9"
+      }
+    },
+    "v6_non_native": {
+      "lru-equivalent": {
+        "aggregate_ms": 360.591474,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "generated",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "10c193ca712ed450f844385871c633d29848b5365727dd7d4cb547979ff0f70f",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1589248,
+              "host0-gpu0": 540672
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 262144
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 56.366407,
+            "ordered_attention_calls": 160,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              56.777458,
+              56.172639,
+              56.366407
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 66,
+            "transfer_samples_ms": [
+              4.525731,
+              4.486141,
+              4.517055
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "generated",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "4cd1cd20a4e99bf6d3a955f99e72b6d75082b84858bdffa55e81a195a9db232b",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1867776,
+              "host0-gpu0": 720896
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 311296
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 68.1536,
+            "ordered_attention_calls": 192,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              68.895292,
+              68.14743,
+              68.1536
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 88,
+            "transfer_samples_ms": [
+              5.577055,
+              5.554535,
+              5.567358
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "generated",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "b09182464fe47093f29ff7a6fa0ea4914dd71cedd364dde3145cd633c643e84a",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 210.900717,
+            "ordered_attention_calls": 128,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              208.688007,
+              211.35352,
+              210.900717
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              20.782613,
+              20.890692,
+              20.660359
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "generated",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "6e4a25172180e1b34f82094a1a77793a2f17ad55319d06261c68e355309d52c8",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 770048,
+              "host0-gpu0": 32768
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 163840
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 25.17075,
+            "ordered_attention_calls": 80,
+            "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              25.696933,
+              25.146063,
+              25.17075
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 4,
+            "transfer_samples_ms": [
+              1.624372,
+              1.622351,
+              1.631771
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "68.73",
+              "temperature_c": "34",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "62.22",
+              "temperature_c": "32",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-lru-equivalent.json",
+        "receipt_sha256": "b8110feac2cf999fb9990a679f0125d2126e7bbdb47d1d60fc126fc54354877c",
+        "recorded_raw_result_sha256": "7df4f084e33b293674d7f631320f9d0513c68f0d474b11641c7e77d54d97ecd2",
+        "request_sha256": "68eb814453ee0e1bebb9680f8906f169b618287407709b33fcf62b95a3566bc1",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:34.485317+00:00",
+        "utc_start": "2026-11-10T14:41:27.450684+00:00",
+        "verified_canonical_result_sha256": "f9b8a7d8a15120888f0176a65acb25cf08a65df1bec29fd0dfc3938fd96a7685"
+      },
+      "manual-direct": {
+        "aggregate_ms": 319.514515,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "manual_topology",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "fc4c62557bdb697a377070bfdc61a0ea45beb9f4067c1a5ff5efc1c8c70c3aac",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 409600,
+              "host0-gpu0": 1572864
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 180224
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 50.053767,
+            "ordered_attention_calls": 160,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              50.545087,
+              49.831105,
+              50.053767
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 192,
+            "transfer_samples_ms": [
+              3.672674,
+              3.693633,
+              3.633999
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "manual_topology",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "9b3b38aa7f57c71c212c8d52de9840a3c9de3374bebe159b3c113dcb30826e28",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 933888,
+              "host0-gpu0": 3145728
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 229376
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 68.145874,
+            "ordered_attention_calls": 192,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              68.145874,
+              75.647587,
+              68.074919
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 384,
+            "transfer_samples_ms": [
+              7.274072,
+              7.321231,
+              7.249767
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "manual_topology",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "eef958b2f73172e0fc6e34e68f9df84fc5949f3d87af833707ea1075992add7d",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 9191424,
+              "host0-gpu0": 1089536
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9191424
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 181.035394,
+            "ordered_attention_calls": 128,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              180.253221,
+              181.035394,
+              182.352502
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 133,
+            "transfer_samples_ms": [
+              17.678826,
+              17.764536,
+              17.804935
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "manual_topology",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "a15ec5720acf9a87277deecd69821e4c909c66976b427fbfc286a90772411cbe",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 81920,
+              "host0-gpu0": 147456
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 81920
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 20.27948,
+            "ordered_attention_calls": 80,
+            "program_sha256": null,
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              20.27948,
+              19.74776,
+              20.522442
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 18,
+            "transfer_samples_ms": [
+              0.494016,
+              0.477379,
+              0.504026
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "67.71",
+              "temperature_c": "34",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "61.97",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-manual-direct.json",
+        "receipt_sha256": "9aa340fed016139381ce8cccf41c17d53180a13ea7ba25167c8624a52efb193f",
+        "recorded_raw_result_sha256": "d7a92d4830b1ae903f25afd45749baeff90dfa88803b3034aa97f320b7781796",
+        "request_sha256": "4e45821ad5fe8ec214bf4a20483e28ff9828890b6a98a0e1aaade4adb72faf9a",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:49.566520+00:00",
+        "utc_start": "2026-11-10T14:41:42.882394+00:00",
+        "verified_canonical_result_sha256": "e15a4eb03f344370c8f3bcaa608fbd788c1e60a41899f2dda6faf4a4b6ad0001"
+      },
+      "manual-ir": {
+        "aggregate_ms": 430.471059,
+        "cases": {
+          "agent-water-inspection": {
+            "arm": "generated",
+            "case_sha256": "ab918a193b03b10bfc626f63bc078a7235e29b8bfb20258894fb11f8b296c523",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 33721856,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "1c6a60c033b544baada9650a9889bbab11338b3af7399a34731c3d9275079b3d",
+            "fixture_kind": "agent_tools",
+            "link_bytes": {
+              "gpu0-host0": 1376256,
+              "host0-gpu0": 548864
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 245760
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 62.962184,
+            "ordered_attention_calls": 160,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "df1340d3e4d2728927b7ba8d3a9b807f3cccf84290e1587283f95a53935bfa00",
+            "schedule_sha256": "2ced2e3832977cc396bd60509b199537cfefe564de0beb6af8a4947d910ec19e",
+            "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+            "timing_samples_ms": [
+              63.465242,
+              62.879571,
+              62.962184
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 67,
+            "transfer_samples_ms": [
+              4.426263,
+              4.347341,
+              4.307536
+            ],
+            "workload_sha256": "9281f0ee34f6a8a94a27a54ff5faeae87258eaa687703e103fb8c177fd3af907"
+          },
+          "chatbot-trip-planning": {
+            "arm": "generated",
+            "case_sha256": "a4ae16fad6deabb952bad16b94527241aa62b2d18534629b04e531990052c0bb",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "857ea74140f27617c5e8cbe16995b0057d2572708f1130a31d4637909e58303e",
+            "fixture_kind": "chatbot_growth",
+            "link_bytes": {
+              "gpu0-host0": 1638400,
+              "host0-gpu0": 671744
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 294912
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 75.289402,
+            "ordered_attention_calls": 192,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "1dae5bdfd1f39cc4f529b4a9ce00e2017ceb4ab3035c9eaf069243bd0f0ac076",
+            "schedule_sha256": "7f7ed508d2f958d19c71c45cee19726890a475c9e2af8ad3838dce8660017dd4",
+            "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6",
+            "timing_samples_ms": [
+              75.141161,
+              75.585642,
+              75.289402
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 82,
+            "transfer_samples_ms": [
+              5.157679,
+              5.201872,
+              5.164169
+            ],
+            "workload_sha256": "ba833627d22353985cdc8ccf235554792e706d278740ebdf7f4395d4986ddd06"
+          },
+          "long-document-estuary-qa": {
+            "arm": "generated",
+            "case_sha256": "1db1bfceb7bbf505dda260b9c8d22b3b39796ae465fb1951814fbe2d0201f4d9",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "0a77dfcafce68e43911c52c4f132a70d3f9f2104030ce14cee059040dcd5d517",
+            "fixture_kind": "long_document_qa",
+            "link_bytes": {
+              "gpu0-host0": 10469376,
+              "host0-gpu0": 1286144
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 9273344
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 263.693343,
+            "ordered_attention_calls": 128,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "f020a7822a1120c30b1c43c0f847b31cde867b02927808c0c7de6cd66491209a",
+            "schedule_sha256": "eb6704a3e994e702e44a78ed771190f3065765fcbb5cff4a7b08a50d4db985ef",
+            "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+            "timing_samples_ms": [
+              263.693343,
+              261.92298,
+              264.456759
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 157,
+            "transfer_samples_ms": [
+              22.139708,
+              22.228724,
+              22.327147
+            ],
+            "workload_sha256": "86cb81575a10eef4fb96b4adb5c9b104cd1b2067f348c2c8cb359cb539398a0d"
+          },
+          "rollout-bridge-options": {
+            "arm": "generated",
+            "case_sha256": "d43b787a3a9ea99301acf93177b11ccd5da6a41b6d9b7804526e515fc82d7f1f",
+            "cuda_peak_tensor_bytes_delta_by_node": {
+              "gpu0": 167424,
+              "gpu1": 33554432
+            },
+            "every_timing_records_execution_signature": true,
+            "execution_signature": "6cf5ae30e6ceab7284e8168d3b6003c9e6e73db192cb48d34f2af53162534683",
+            "fixture_kind": "rollout_cow",
+            "link_bytes": {
+              "gpu0-host0": 622592,
+              "host0-gpu0": 65536
+            },
+            "managed_peak_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 0,
+              "host0": 131072
+            },
+            "managed_reserved_bytes_by_node": {
+              "gpu0": 131072,
+              "gpu1": 33554432,
+              "host0": 33554432
+            },
+            "median_ms": 28.52613,
+            "ordered_attention_calls": 80,
+            "program_sha256": "b519304adb40a5a59456956ad76237b615544bbb0346a3924e37c654da299b81",
+            "residual_before_teardown_bytes_by_node": {
+              "gpu0": 0,
+              "gpu1": 0,
+              "host0": 0
+            },
+            "scenario_sha256": "a48d61584d1557067a884304964c236727cacdb605a9911746eca4635340f914",
+            "schedule_sha256": "dcb55ecde45f882a2722fc44da79d773f732709d17d9cc6ea3400d12c25fd395",
+            "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+            "timing_samples_ms": [
+              28.52613,
+              28.822661,
+              27.719931
+            ],
+            "topology_sha256": "9d43ddc678ddfcb62e3eab10755996b9cc339fea3e4ba8e972ce0a94efbc89bc",
+            "total_fetch_misses": 8,
+            "transfer_samples_ms": [
+              1.508794,
+              1.514033,
+              1.489033
+            ],
+            "workload_sha256": "9871a2b124e5dd68dcac5d7f590a55f318786f35a5145f74207194220423efe9"
+          }
+        },
+        "environment": {
+          "after": [
+            {
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "used_mib": "2",
+              "util_pct": "1"
+            }
+          ],
+          "before": [
+            {
+              "power_w": "68.30",
+              "temperature_c": "34",
+              "used_mib": "2",
+              "util_pct": "0"
+            },
+            {
+              "power_w": "62.00",
+              "temperature_c": "33",
+              "used_mib": "2",
+              "util_pct": "0"
+            }
+          ],
+          "completed_without_timeout_or_cleanup_residue": true,
+          "gpu_indices": [
+            0,
+            1
+          ],
+          "hardware": [
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 0
+            },
+            {
+              "capability": [
+                12,
+                0
+              ],
+              "name": "NVIDIA GeForce RTX 5090",
+              "ordinal": 1
+            }
+          ],
+          "ordered_uuid_fingerprint": "41c7312d1fbbe794d00dbead0f794ecf9007fb0d8079085c9d379e57d3f1148c",
+          "remaining_compute_process_count": 0
+        },
+        "receipt_file": "qualification-v6-manual-ir.json",
+        "receipt_sha256": "4360eee5fcba372b5fb568e6577528dd111458507b6929ee0b771a6646ab2c1f",
+        "recorded_raw_result_sha256": "a3118b634140a9e836449d1bc8f126d855113c17f6733827dd729acaad677682",
+        "request_sha256": "59698cb06adf27a74f98f678cb9520ada505628cb15cc2a6797b7294b59e7545",
+        "source_manifest_sha256": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e",
+        "utc_end": "2026-11-10T14:41:42.335994+00:00",
+        "utc_start": "2026-11-10T14:41:34.998755+00:00",
+        "verified_canonical_result_sha256": "e6e04d5b7c1b7bb9fa7ecc744b7806e49cc997908fe86b3ce9127533c96d8583"
+      }
+    }
+  },
+  "schema": 1,
+  "scope": "cuda_text_derived_fixed_block_sparse"
+}

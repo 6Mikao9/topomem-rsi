@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "kind": "topomem_final_result_docs_draft",
+  "files": {
+    "README.md": {
+      "base_sha256": "8e1ef63982fb3d9d04738a8d2a59a088ac3ca689893c813efd1066fc4cff3069",
+      "draft_sha256": "dc750a2d34bf25cc705c5d441a92fcd9aa80269697dd865aff5f47a39a7fa7c5"
+    },
+    "README.zh-CN.md": {
+      "base_sha256": "5db80fbb8fe2086c9ab5aca50678e5af247ecfdfb14677d001271d50527cc93f",
+      "draft_sha256": "75b1ac94d1b0ca83b1f9ad159cd662a0ad82e13c48b60bac320c94837915775d"
+    },
+    "docs/REPRODUCE_SGLANG_ZH.md": {
+      "base_sha256": "fb50096641efec71949e4be193d0b2898d3bde4f2d84d0095835133c1ab8de44",
+      "draft_sha256": "855e02220d6f795b344d847ec9591e27e20eeb0caee43b39d0cb68e1643ac478"
+    }
+  },
+  "demo_sha256": "b4b9edb1153fe6c475e8390f01b24a714c7bc38ce14fdb9a289cd338f2f63f31",
+  "formal_report_sha256": "4f563d86217d6bc6eb5be84a09bbce00387d86702609397aeb87b5de55fb3adf",
+  "ablation_result_sha256": "147d6f74c93650bb46fb9b953be98b3d27fbed91a3f850253cbe50cf9d327af5"
+}

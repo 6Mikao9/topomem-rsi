@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "kind": "long_document_qa",
+  "name": "long-document-estuary-qa",
+  "page_rows": 128,
+  "segments": [
+    {
+      "id": "overview",
+      "role": "document",
+      "text": "2029 Estuary Works handover memorandum. This is a fictional document QA fixture.\nThe Works Board uses spring inspections to transfer responsibility across three crews. Each station has a working log, a field action, and a signed release order. The field log describes conditions observed by the first crew. The release order overrides earlier notes only when it explicitly says 'controlling copy'. Tool codes are listed for audit and may refer to a physical location that remained closed. Do not infer that a location reopened solely because the crew finished sampling. The question concerns the controlling Harbor Nine order, and the rest of this document is included so a reader must distinguish it from earlier drafts and the procedures of adjacent stations.\n\n"
+    },
+    {
+      "id": "station-01",
+      "role": "document",
+      "text": "Station 01, Alder Gate. Inspection date April 8.\nOn arrival the crew requested temporary access through the west pedestrian portal. The gate operations logged 7 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Alder Gate lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the west pedestrian portal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-02",
+      "role": "document",
+      "text": "Station 02, Brindle Wharf. Inspection date April 9.\nOn arrival the crew requested temporary access through the weighbridge ramp. The freight desk logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Brindle Wharf lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the weighbridge ramp was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-03",
+      "role": "document",
+      "text": "Station 03, Copper Steps. Inspection date April 10.\nOn arrival the crew requested temporary access through the gallery drain. The masonry crew logged 6 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Copper Steps lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the gallery drain was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-04",
+      "role": "document",
+      "text": "Station 04, Drift Basin. Inspection date April 11.\nOn arrival the crew requested temporary access through the upper intake. The pump crew logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Drift Basin lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the upper intake was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-05",
+      "role": "document",
+      "text": "Station 05, Elm Lock. Inspection date April 12.\nOn arrival the crew requested temporary access through the canal control cabinet. The night supervisor logged 4 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Elm Lock lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the canal control cabinet was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-06",
+      "role": "document",
+      "text": "Station 06, Fern Depot. Inspection date April 15.\nOn arrival the crew requested temporary access through the covered sorting bay. The stores office logged 8 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Fern Depot lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the covered sorting bay was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-07",
+      "role": "document",
+      "text": "Station 07, Gannet Bend. Inspection date April 16.\nOn arrival the crew requested temporary access through the rail warning signal. The signalling team logged 11 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Gannet Bend lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the rail warning signal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-08",
+      "role": "document",
+      "text": "Station 08, Harbor Nine. Inspection date April 17.\nOn arrival the crew requested temporary access through the north conduit. The safety office logged 12 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Harbor Nine lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the north conduit was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\nHarbor Nine addendum, order H9-47, controlling copy. Earlier field notes proposed reopening the north conduit when the photographs were uploaded, but that proposal was withdrawn. The authorized release condition is receipt of two signed chloride readings below 18 mg/L, taken thirty minutes apart. The safety office archives both readings and writes the clearance in the shift ledger. The order applies to the north conduit only. The evening crew must leave the service ladder isolated until a separate inspection.\n\n"
+    },
+    {
+      "id": "station-09",
+      "role": "document",
+      "text": "Station 09, Ivory Shed. Inspection date April 18.\nOn arrival the crew requested temporary access through the fuel line gate. The mechanical crew logged 3 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Ivory Shed lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the fuel line gate was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-10",
+      "role": "document",
+      "text": "Station 10, Juniper Run. Inspection date April 19.\nOn arrival the crew requested temporary access through the boat lifting track. The dock master logged 14 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Juniper Run lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the boat lifting track was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-11",
+      "role": "document",
+      "text": "Station 11, Kite Point. Inspection date April 22.\nOn arrival the crew requested temporary access through the signal bridge. The telemetry team logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Kite Point lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the signal bridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "station-12",
+      "role": "document",
+      "text": "Station 12, Larch Crossing. Inspection date April 23.\nOn arrival the crew requested temporary access through the south footbridge. The pedestrian office logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Larch Crossing lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the south footbridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+    },
+    {
+      "id": "question",
+      "role": "question",
+      "text": "According to the controlling Harbor Nine order H9-47, which measurement condition must be met before the north conduit can reopen?\n"
+    }
+  ],
+  "task": {
+    "minimum_document_bytes": 12288,
+    "expected_answers": [
+      "Two signed chloride readings below 18 mg/L, taken thirty minutes apart."
+    ]
+  },
+  "events": [
+    {
+      "op": "open",
+      "session": "reader",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "overview",
+      "at_ns": 50000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-01",
+      "at_ns": 100000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-02",
+      "at_ns": 150000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-03",
+      "at_ns": 200000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-04",
+      "at_ns": 250000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-05",
+      "at_ns": 300000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-06",
+      "at_ns": 350000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-07",
+      "at_ns": 400000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-08",
+      "at_ns": 450000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-09",
+      "at_ns": 500000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-10",
+      "at_ns": 550000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-11",
+      "at_ns": 600000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "station-12",
+      "at_ns": 650000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "question",
+      "at_ns": 700000000
+    },
+    {
+      "op": "infer",
+      "session": "reader",
+      "max_new_tokens": 64,
+      "select_rows": [
+        0,
+        4096,
+        8192,
+        12000
+      ],
+      "at_ns": 750000000
+    },
+    {
+      "op": "close",
+      "session": "reader",
+      "at_ns": 800000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/long-document-estuary-qa.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "94cfd892f8d306f6b8b4e5b06e17e13772d79ca75a568d26b3d4b63c639516bf"
+  }
+}

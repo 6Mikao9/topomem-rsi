@@ -1,0 +1,1667 @@
+{
+  "group": "contract-v2-abort",
+  "group_from_original_index": {
+    "archives": [
+      {
+        "bytes": 7220343,
+        "file_count": 148,
+        "name": "contract-v2-abort-server-00.zip",
+        "sha256": "472d25b1f0df95b2705a13f0cb2898077de2c9c9fcfa02422d5dd4813054fd69",
+        "uncompressed_bytes": 32495947
+      },
+      {
+        "bytes": 8933157,
+        "file_count": 122,
+        "name": "contract-v2-abort-server-01.zip",
+        "sha256": "6f89a223e2a2bae7856af469492291c13663eaf805b89feda771c37575fca787",
+        "uncompressed_bytes": 39897010
+      },
+      {
+        "bytes": 5299246,
+        "file_count": 36,
+        "name": "contract-v2-abort-server-02.zip",
+        "sha256": "efe007dc49a676d9b5bce3c2f3e8eaf60ec4e2ec308e33bbe4baebbc9dbf3a21",
+        "uncompressed_bytes": 23433111
+      }
+    ],
+    "job_ids": [
+      "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76",
+      "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745",
+      "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa",
+      "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd",
+      "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba",
+      "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7",
+      "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880",
+      "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf",
+      "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0",
+      "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df"
+    ]
+  },
+  "job_checks": {
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [
+        "c7ad52dced55d030ca0bf804d11f935e840355d638f3add8f3932acdb3f7d7f2",
+        "7d365e2b7efea9c0c4296b7870f9030f320f06bb7e270adb1f165189d95e67f4"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "8aefc6627bee050c3488a1ab99025645221f5707edd122534bd4f583a8404337",
+      "summary_sha256": "f5ed4ea3bad4d7338d1b73fb146b8927e5dcc500746ab0319a974388835a22a4"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [],
+      "phase": "performance",
+      "serving_result_sha256": "dc6dbd84f6e4e22b7a2de4e62d884789d03a1769b43bb98eccc48c1798f4e39b",
+      "summary_sha256": "fa8f7976a859921d13f4190e40dcd74829d0639fedfbb2237b5e2d93ad335676"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [],
+      "phase": "performance",
+      "serving_result_sha256": "7d0ae8e0de804bbfe97ef7cae266c67ab2f147d7785e7e812a4b4407a71df2a1",
+      "summary_sha256": "7a4645919ae1de7b2b3e82b62afc5ba93e686c9573dc62283f631b29c6b9ba90"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [
+        "c7ad52dced55d030ca0bf804d11f935e840355d638f3add8f3932acdb3f7d7f2",
+        "7d365e2b7efea9c0c4296b7870f9030f320f06bb7e270adb1f165189d95e67f4"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "151490398b149fdde86feb9ecccdd501b6d9f56b1fee09b07d8ee80d98db1a12",
+      "summary_sha256": "c6dc27f55cded4fe4f25e01e25bc420e745a08ac0d60ed94015b55c2a1c6b815"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [
+        "c7ad52dced55d030ca0bf804d11f935e840355d638f3add8f3932acdb3f7d7f2",
+        "7d365e2b7efea9c0c4296b7870f9030f320f06bb7e270adb1f165189d95e67f4"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "67480c1724944c25cf4f1a5f3be7adbd6ff12e4f3aca4f7f1b7eb38c56cb75eb",
+      "summary_sha256": "515f5de67840eb6bba23a5abdc6c94edbd9810392bb9478c5eb7cef767196e1f"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7": {
+      "global_ticks_sha256": "2fbdcb8fb35780e411e2b94d09aac904be90cc57fa4cd4761f936d5ab36ae94c",
+      "kv_packed_sha256_by_rank": [],
+      "phase": "performance",
+      "serving_result_sha256": "593c658cf9e895d1690011f180590fa7db959604c26864bb1af8204c3d6e404a",
+      "summary_sha256": "907bd99ad14027255afe5cb403ddd8dfb0bc69b6fd991bd7569dd1023325e4a3"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880": {
+      "global_ticks_sha256": "2fbdcb8fb35780e411e2b94d09aac904be90cc57fa4cd4761f936d5ab36ae94c",
+      "kv_packed_sha256_by_rank": [
+        "1a44fa10410cef7d0bc76fed6f581737badd9d4ec5dd7a71dcecb225e6039f39",
+        "a3915aea5c6921ba506dfdf515acfe085a979ed726d8d2069a6666c19d980b4d"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "4d5a353d868ca1b72fb1731e74014f41300fb1d75d5bf874266e31ed5a7a6cb5",
+      "summary_sha256": "75354ed6ef9b55c6601c151536450e523e9d16532b7f55b51753e6c5f33b0f69"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [],
+      "phase": "performance",
+      "serving_result_sha256": "a628dfe90f4015be316101c8a09f22c40d0e2799a5cd58466f37509066737f6a",
+      "summary_sha256": "e18baba089907cd3d4b3a25c22523e4638af39f03ce36d6c3655a502cbd81076"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "kv_packed_sha256_by_rank": [
+        "c7ad52dced55d030ca0bf804d11f935e840355d638f3add8f3932acdb3f7d7f2",
+        "7d365e2b7efea9c0c4296b7870f9030f320f06bb7e270adb1f165189d95e67f4"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "05dbafd0ba9f929b4252be3f927c2cd84650ce79e69a1e903be7a71fa311ee83",
+      "summary_sha256": "26093f9e6626414c5a98a1feaeb2a0d03ec0e55934eda8845bb88cf35f47a1a4"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df": {
+      "global_ticks_sha256": "2fbdcb8fb35780e411e2b94d09aac904be90cc57fa4cd4761f936d5ab36ae94c",
+      "kv_packed_sha256_by_rank": [
+        "1a44fa10410cef7d0bc76fed6f581737badd9d4ec5dd7a71dcecb225e6039f39",
+        "a3915aea5c6921ba506dfdf515acfe085a979ed726d8d2069a6666c19d980b4d"
+      ],
+      "phase": "parity",
+      "serving_result_sha256": "97cf002c8c79f181352933da377d7e56a57750090ba833fd5ff98791e563f584",
+      "summary_sha256": "21419c48fee4861c727a48bb1bb3a87ace17c3638e16adf75b7046f7394e9442"
+    }
+  },
+  "members": {
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1824,
+      "sha256": "ffb87934d1a00f587f026acbaf5c7f6a4447c7dd98ec910fe646c883055df497"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 5681,
+      "sha256": "a87b12c90fb36226dfbde1d8cd9885568acf728eaacc154ee5ee074d650a82d0"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/process.log": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 30925,
+      "sha256": "404bc8e2c640132c2e748e540faa786f70be93ba47856098a6a6c71db3a611d4"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/receipt.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 10320,
+      "sha256": "fea18ad2069c5f927e2001995e398fd5463f151c954fdfedc1782cb3ee231391"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/request.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6782,
+      "sha256": "51c07eb0ef9550fc50808c36eee7cc7d9cabc52ed49c9b70630a7de6fa777b5a"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7951,
+      "sha256": "f5ed4ea3bad4d7338d1b73fb146b8927e5dcc500746ab0319a974388835a22a4"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "3e0b0096985abb9c8b15b4c188e34dfbb0e1b680fc5569251e3de23edebee7fb"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "c02a244bd4b1dd5bb73573cbe9c3b26be775b0a6d7ff0bcbcce04bb672353063"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15807,
+      "sha256": "a7b0f1f0265a9950950eea34d9cb90c93a69d97bd308b4da1cefe34b735f5926"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15807,
+      "sha256": "95db9cfc366b79af9153d9dccecb354305d786c404ce11139caf18ecf0af2321"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "cfb1d89dadcfccef53f09f016f6caa9107727e3c94c7dec9b88e4ac1b53fdf66"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "cbf99aa3babbabc28484939f8e103191496ad1db96fc83fea0efea0b3f9bfe77"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "79b482d887b970f859ad03778bbb671798490781269bb51d4d70f7b17e2e828e"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 863,
+      "sha256": "8988a7be7417a78e3bd8ff7883346c1d43b8affc7b25c2e6d6144df07833e12c"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7670633,
+      "sha256": "3c93026fb6dbb2bbc36ec40bae675d92910c58c7177706a9f82a7e43c2d9db44"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7669834,
+      "sha256": "8e2655a42db5aff11f2a80cc533c3b51e9c82b6132d01bf97e9e258d961dbba8"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59651,
+      "sha256": "8aefc6627bee050c3488a1ab99025645221f5707edd122534bd4f583a8404337"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "f3e088a82c53cc2054c790c3e07fcd057b4935984e54862169267f8ca6610710"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "c5c331be93816e2a2140a01e715b80dfdaf20a48792557c1835fe063840e759e"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6479,
+      "sha256": "03b4a4b92a652a747372a07d3e931c8ff89778775e507815d77f0a11ca9bc5e9"
+    },
+    "sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76/started.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1293,
+      "sha256": "755b1a1cce7ac347008fb418c26858e66abac21996fba350131ad246ab8ed0f7"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3620,
+      "sha256": "26cbce3b6c056a5cc6bc7b5b5ee0ae40cbbcb8bbbf7ce82a7e4e0c3ac3d77060"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/cold_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1866,
+      "sha256": "ad1950642945707055c4f62a17ce2cead19f4ecf67b71059a56cba232de8691a"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/full_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1866,
+      "sha256": "ad1950642945707055c4f62a17ce2cead19f4ecf67b71059a56cba232de8691a"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1909,
+      "sha256": "d160dfd15f90f7462b9f8642b4300a89a750446a694b83c9341332148284be38"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7882,
+      "sha256": "8611b644d311ff5d616eeb5371336cf53152eb751c54d025eb1dc8dde168c93a"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/process.log": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 30929,
+      "sha256": "e1a0d75ef4558ed471737a4052c7d3088ca0f45838e951565ea66b4edb8587bb"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/qualification.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59855,
+      "sha256": "151490398b149fdde86feb9ecccdd501b6d9f56b1fee09b07d8ee80d98db1a12"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/receipt.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 10195,
+      "sha256": "64fb64a2a3633b2779012663b8cc3352c3eafcdb99a22ff243de54363e668099"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/request.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 9335,
+      "sha256": "135868c99f6ae26d160e84a1c7b45331b17bef7b0626320da7bd8ef34cedfcf1"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7851,
+      "sha256": "fa8f7976a859921d13f4190e40dcd74829d0639fedfbb2237b5e2d93ad335676"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 646,
+      "sha256": "edad036fab69fc3bbfe41ecff85b28a7ec0e4c0da9ade0a014d2b73c7cbfecfd"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 646,
+      "sha256": "212a878674ae3bff3e09c1033caa9f478d7747d9e06b3caf4b12c363fc3fc580"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "f98b96b225f198b30cad910fb96199479e37ace90cc4403407554221067d6998"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "0daebc0e3c5a1437b016dfc9ac24233bc326d43b60f7492dfade4650d79bceda"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3620,
+      "sha256": "26cbce3b6c056a5cc6bc7b5b5ee0ae40cbbcb8bbbf7ce82a7e4e0c3ac3d77060"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15811,
+      "sha256": "f52d3301cf31f57b254c3747165e14157a1b4712a6d8ed2778393982f5b405be"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15811,
+      "sha256": "0bf390ded70ad1e69a4fd90a13a2c8a46bb8a667f2390c26a720fdbd96094557"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "ab89a6dd8a4f5b021cc2f167556e66ce49d3bfdb0cac94cf9a51dca0a7c9b067"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "4ff7454e9be7fcb3ff79b8069e123f80d2931ee204b7f9d1f71c666763be936a"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "f70508fbc7b08adb8f007c5eea80d7dd0e356d4f231663adf46cc0ae73cb1b22"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 863,
+      "sha256": "7bd708ee0575c5fdca481b6eb66f28c98790f4d9aecf6843c5cf317e34a4ec95"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59874,
+      "sha256": "dc6dbd84f6e4e22b7a2de4e62d884789d03a1769b43bb98eccc48c1798f4e39b"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "b00bbe1c28b4d264f9bb838594f7192ffe6c0050e235b36b0ea2f6d4dc8697e9"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "8af9729edb1f8a5741767fd0ac2951f682121d5d510e089247ceea569e7947b2"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6494,
+      "sha256": "8d236af09bb687d2a76f965f686c04ef68e701815cdaacaa63cea04217645de7"
+    },
+    "sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745/started.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1293,
+      "sha256": "7f5c4d733bed817e065516c76e40431d41e338efefa63b4205eda88dcff3b8f4"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "cb93e659d1c77f2f040dd57cab03621161f159934a890f47c3f7cad869ffd5f7"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/cold_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 283,
+      "sha256": "86c61c242186bf3c7f0d04e555486197f8c0aa0d1557e33da2a89829ceeacc9d"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/full_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 283,
+      "sha256": "86c61c242186bf3c7f0d04e555486197f8c0aa0d1557e33da2a89829ceeacc9d"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1895,
+      "sha256": "382bdf0e0e029b249663603e02190ae055acad246cd00592dd786101e7348530"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6163,
+      "sha256": "3013088afb61289a81aa83bcc73412822a0207b70544d290e3638d331576adcb"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/process.log": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 30929,
+      "sha256": "5820d633f889e71091e3ce50af953e114fd0d0d1f3891b9c654cf18c95bddda8"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/qualification.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59716,
+      "sha256": "05dbafd0ba9f929b4252be3f927c2cd84650ce79e69a1e903be7a71fa311ee83"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/receipt.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 10100,
+      "sha256": "5592e534e9b367a02445ef5cec5d9f249f4854702e02ffda5b7b4a181452734f"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/request.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7344,
+      "sha256": "dd3ba3cccac3ab4a976ee4a3c7675fcacc3b65b1ca446eae6326f96486504a77"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7757,
+      "sha256": "7a4645919ae1de7b2b3e82b62afc5ba93e686c9573dc62283f631b29c6b9ba90"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "eca20ec5df6c2e794a299f9c44b5e32abdd7a7b69269c557165c2076484970a0"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "7c3849d13ff1eb13253dd1de9a732e0dfdd2e5ab2a3c260fd106a6dca66e2c1d"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "cb93e659d1c77f2f040dd57cab03621161f159934a890f47c3f7cad869ffd5f7"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15785,
+      "sha256": "aa25a55cd36d0c8838e464a4e10a54105d660c7b94f2781022686f34ec185fbe"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15785,
+      "sha256": "61cb4a72bb83e3e96bd644f87a5873111948f58de297d98394d6259f90c7e6a0"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "026c9b2605567b11cbfb5a9bf5d4ff497cf4ffdace088b74ef6353a1b6075e9a"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "45663181ee9aac621e612e839b9aa1122515c853680d7cbdeafa658ed00bfa77"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "b99cdefb843366533b4933b14911ea94d35790f9e5c08d1c5d93bbb5e50178fd"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 863,
+      "sha256": "91f5487ee447bdf585965236f095b2a2ab6fbfc946ec6c6f3c4271a2be7a53a5"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59789,
+      "sha256": "7d0ae8e0de804bbfe97ef7cae266c67ab2f147d7785e7e812a4b4407a71df2a1"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "45912ba069e066dc5e4e9aaf1e48bd04accdc583f36ef505ada8172b7ea8a1ce"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "b4fe41dd1fddb5a0050846bd245d8f97fe70b5cea276b1818f6887b2a4a41a1a"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6484,
+      "sha256": "46ec364204209ca1a364099af25d7cd40780343785665a33a49246366d3edf49"
+    },
+    "sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa/started.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1296,
+      "sha256": "098975fde29512a2acafe01c457199ee5d8f48173e7234440a570d73366151c8"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3620,
+      "sha256": "26cbce3b6c056a5cc6bc7b5b5ee0ae40cbbcb8bbbf7ce82a7e4e0c3ac3d77060"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/cold_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1866,
+      "sha256": "ad1950642945707055c4f62a17ce2cead19f4ecf67b71059a56cba232de8691a"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/full_program.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1866,
+      "sha256": "ad1950642945707055c4f62a17ce2cead19f4ecf67b71059a56cba232de8691a"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1909,
+      "sha256": "d160dfd15f90f7462b9f8642b4300a89a750446a694b83c9341332148284be38"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7877,
+      "sha256": "efaa9c09c97bd35d757e6a101a7c02c954f339a65b1e76a43730dc4d20f2c2f9"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/process.log": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 30925,
+      "sha256": "f2d3bdc52d062b59c025153a3d037f67811c912c5cbbe3008620ff8f4c3d5f68"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/qualification.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59651,
+      "sha256": "67480c1724944c25cf4f1a5f3be7adbd6ff12e4f3aca4f7f1b7eb38c56cb75eb"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/receipt.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 10626,
+      "sha256": "74a9de130e89abb7e58dce41beb67dd501c0a69e1d3ed4771f265f0a58c5442d"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/request.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 9330,
+      "sha256": "6599d7412883e620e0af015485f2d40b5c17950fbc99dbb5b67065336e0c90c4"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 8245,
+      "sha256": "c6dc27f55cded4fe4f25e01e25bc420e745a08ac0d60ed94015b55c2a1c6b815"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 646,
+      "sha256": "edad036fab69fc3bbfe41ecff85b28a7ec0e4c0da9ade0a014d2b73c7cbfecfd"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 646,
+      "sha256": "212a878674ae3bff3e09c1033caa9f478d7747d9e06b3caf4b12c363fc3fc580"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "19da76058d7954120d84d5f8293222dae34862fc31fb80e39c95e8125f866d27"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "c30de6d392b0697b32d5d54014375182e8a375efd68953375454deba0cb950ae"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3620,
+      "sha256": "26cbce3b6c056a5cc6bc7b5b5ee0ae40cbbcb8bbbf7ce82a7e4e0c3ac3d77060"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15853,
+      "sha256": "8685c0166f6117ed11bad3d54d7433088d73ef6f442c5a112e083bb73bd75b0b"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15853,
+      "sha256": "0f599b2d0bc0c007bd51e159998e7d5f84aabda90c3ae5476e04f1cfb7076542"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "12b9ae84369c6169bd320dd5068ed1ccba9c5cd219b1bd9c4ebaad253c8b9f86"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "6f5a7fbed5e249ee332874c080eb2a90c67b8e883beefb34c7cbcde82ee450df"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 863,
+      "sha256": "2a38844dbc8a65f60657d5be1c724c66beb34e301987adaf14ddee91ba522fd9"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "94c98f99eea03e2136ef643afcfd4c2bfbe0ace616754fdb82b02b5b131d1c51"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7670633,
+      "sha256": "3c93026fb6dbb2bbc36ec40bae675d92910c58c7177706a9f82a7e43c2d9db44"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7669834,
+      "sha256": "8e2655a42db5aff11f2a80cc533c3b51e9c82b6132d01bf97e9e258d961dbba8"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 59855,
+      "sha256": "151490398b149fdde86feb9ecccdd501b6d9f56b1fee09b07d8ee80d98db1a12"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "8570606a1515ffa20cbe56914c68d37e8a155cc7c4cbd804c2e36fdf05a3380e"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 895,
+      "sha256": "46403629886543f37daeccf38171e8fd9e987047937f518a551eda9c0edbc764"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6489,
+      "sha256": "2742829a34601b10d7d4cc12e2f8b1c69b23b900a117c84739820e351b5ba66d"
+    },
+    "sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd/started.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1293,
+      "sha256": "ee7003967bb3c6c8459b6f08832634f09bf916c95c20bc69178979fbcd30d9e4"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1824,
+      "sha256": "ffb87934d1a00f587f026acbaf5c7f6a4447c7dd98ec910fe646c883055df497"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/input.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 5681,
+      "sha256": "a87b12c90fb36226dfbde1d8cd9885568acf728eaacc154ee5ee074d650a82d0"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/process.log": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 30925,
+      "sha256": "ce40344c6cd4f12a99dfb8f1ec479fea820625bac199af3847b853b023b0c605"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/receipt.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 10321,
+      "sha256": "5755835399d35e829dd62780e52fb95281db033bc8e1c453e4418f4e7c638489"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/request.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 6782,
+      "sha256": "38cca15392244b5848bddc67a0a9dac276911edd3cbd9bc162251193a570fac2"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/result.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 7952,
+      "sha256": "515f5de67840eb6bba23a5abdc6c94edbd9810392bb9478c5eb7cef767196e1f"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "df6fac108a33158e04fb838b5e54f600e8d6ddeb3797ada95022e68fc01db69c"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 261,
+      "sha256": "b4462148bf2e70ea7756ace666a2fba9556ef7bb7ec6305026d4294ceea55fda"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15807,
+      "sha256": "a7b0f1f0265a9950950eea34d9cb90c93a69d97bd308b4da1cefe34b735f5926"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 15807,
+      "sha256": "95db9cfc366b79af9153d9dccecb354305d786c404ce11139caf18ecf0af2321"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "c8857986487db228c97b9b8368b2366b64a02edd267288c1e4ff04fe6787263e"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 76445,
+      "sha256": "8c1b72d76b97f488b0216bde07efcbe4c4d0f57faf08c8a92b5c53a1d705ad8b"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "b1934acf701dfa2b47355e6b75c0e77c600dcdb0c76ab1c795a7b0ba84a657ce"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-00.zip",
+      "bytes": 864,
+      "sha256": "f9bbb91412b90720f412de4a6b869e4a6ff0ab7fbaa82fac32e05c78f4918c95"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7670633,
+      "sha256": "3c93026fb6dbb2bbc36ec40bae675d92910c58c7177706a9f82a7e43c2d9db44"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7669834,
+      "sha256": "8e2655a42db5aff11f2a80cc533c3b51e9c82b6132d01bf97e9e258d961dbba8"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59651,
+      "sha256": "67480c1724944c25cf4f1a5f3be7adbd6ff12e4f3aca4f7f1b7eb38c56cb75eb"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "e0b126981e0f80920ea96341db88bb87a2d806596c40abbba0516eb4ac5c4687"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "87aad0bc65f94d5d7860689fe20b4291ff8cb37e40b9a443e66ad323d4341d3d"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6479,
+      "sha256": "03b4a4b92a652a747372a07d3e931c8ff89778775e507815d77f0a11ca9bc5e9"
+    },
+    "sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba/started.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1293,
+      "sha256": "15d70fa54472d56164a8ab8c167786c6f2fa7bb8f4fe2ee79abd0210c960a326"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1824,
+      "sha256": "2aae6d56fa4cddef5ac75288a62b391bc5a363ca86a22d2e689b94971ee9983d"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 563,
+      "sha256": "e1a677c784e15ddd7bdf5e6010b960f90c1fa6ebcb5d28daa7e27d2953d739d6"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 5848,
+      "sha256": "07753dc1bb6cca27b9e9fe034d012eb11f346ca84442280e2270603b84ecd4ae"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/process.log": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 30929,
+      "sha256": "8e502ad0567890cc0ad0847c823ee0d061bd305e9a8540e05b3f18c80ddcd63a"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/qualification.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59651,
+      "sha256": "97cf002c8c79f181352933da377d7e56a57750090ba833fd5ff98791e563f584"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/receipt.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 9953,
+      "sha256": "267d6ada560b70ee871598e654ada5bda4666060a425aa6e932463e2b67a04f4"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/request.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6961,
+      "sha256": "d2fc60560e902be9a602e64cf6b29516221f1e817d65d7d8b0c15da343d96838"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7616,
+      "sha256": "907bd99ad14027255afe5cb403ddd8dfb0bc69b6fd991bd7569dd1023325e4a3"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "063e30ffa65c854f01c1bd7b17fc9edc9e7f3b67cb36f33985cd8532db3e7bea"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "1537717b2fc39fa2ca9fef5633e71d8662955a3f63599806e5d5ba8abd5832d3"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15785,
+      "sha256": "ad64092bab35ce2c92914b208a9ee34b8f6e843245185d52a17faef31626c5fe"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15785,
+      "sha256": "43f1cf3377ebadbb4b7c3818cf85163cf47d0089092fe43687efa7fbea18fac7"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "7b000e4a6e4663413a38db41e350b09404bf566a981997e03a7b7613665805d8"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "b9bc8c4192f05fc90906c1ba0ffb82861ef769aeaef5a8f60a97229ae76eb0bd"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 863,
+      "sha256": "c56affe349daf2eaf3afe193c6f1da2f3207f714e6f7681eb0e601dcf1cf197e"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 863,
+      "sha256": "13b4bc2326fe61d6de6dfabc68c9ed08b5b60e05c19a318db42a94392f65c21a"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59786,
+      "sha256": "593c658cf9e895d1690011f180590fa7db959604c26864bb1af8204c3d6e404a"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "cb309c30fa941f838dc59dcd0cba6126e0bd93a01dbb122b04b4f85f7a80a062"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "d8423a81605b864fbe952c53171add27f5f213b5b3230b3098ad61347d5890a9"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6484,
+      "sha256": "ba3ab47166c7f8babc35edc4db6735318e88f1859234ad22274797176f9a677d"
+    },
+    "sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7/started.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1296,
+      "sha256": "b52752f9218fbffd0ba9e48e29735f781e18cccf19b29feb88bb82b2882fb6a1"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1824,
+      "sha256": "2aae6d56fa4cddef5ac75288a62b391bc5a363ca86a22d2e689b94971ee9983d"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 563,
+      "sha256": "e1a677c784e15ddd7bdf5e6010b960f90c1fa6ebcb5d28daa7e27d2953d739d6"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 5681,
+      "sha256": "a18ad3eaee93400770b1ceca80877f4e7670cca27b8f74a3774eb17fdf43dff6"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/process.log": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 30925,
+      "sha256": "078e2dde4a003e5a58809b18bd3fee91aa4fbebc5f401a984bb9d7daee042250"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/receipt.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 10322,
+      "sha256": "a5236ae8f8fde4bbc0e0abf687c017c31c7fe4e30d614df543b53ef68d933b09"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/request.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6782,
+      "sha256": "cdd548ea5d3be060004f9a8b0cf64aaa0525cb4f7eeeba8bf9bb576f54e81c63"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7951,
+      "sha256": "75354ed6ef9b55c6601c151536450e523e9d16532b7f55b51753e6c5f33b0f69"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "e433f7ee68fe3b020832c0affd450046629f82c2d19c33bb3f066d635cb7f332"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "877f2f68c69bbfed8bed0b1a7eb34c00693d70505f4b3f20b1cfafcbcdb7cb97"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15807,
+      "sha256": "1a2c88eafec1b2f1c36d7c05bf1e2cc43a11f08c9d5edbb3d07a60146f2359ba"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15807,
+      "sha256": "a8924a863cb5fd9244d37c231c1f84e36eb75df4d2fcaf691e4e890a70d5fd88"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "e61ecd50009049fed43dd1834e3887c5e89fecd9921a66b352e66dddfe07d902"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "87ae3483059f8e0fb579293c2cfa33c717c90856038ea394fddeff9987aab5a5"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 863,
+      "sha256": "6b0c424f15e9e7ec77c35c3120921151e6283c952ccf9c05be4d1e90bb50a032"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 864,
+      "sha256": "7d6b3e5be3e33312b34ef20be00cd0b60b12d7af88c1356bebae7b9606a9844a"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7678204,
+      "sha256": "01b85dc0f0ff3dd4793db070d55864c164db1eb0a94584aa8cae664706b528e5"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7678617,
+      "sha256": "904fb5e90a22ed27ac2ed05b755df8b0ffb8771664dc184c461991aeacd3573e"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59651,
+      "sha256": "4d5a353d868ca1b72fb1731e74014f41300fb1d75d5bf874266e31ed5a7a6cb5"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "ec3ea4d9471df819b538f6effc635c27464f4484f11ccddf2be1efb5e95aee88"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "1b2cb15a205c0cbea43b4ec3ee95be2c29ca4c1f6ff60744c7a06e933d672fba"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6479,
+      "sha256": "76b7e5a380ad5c0ad0d1d44d035275a4b354d45e5fdc45cc6fdb6fc98b542215"
+    },
+    "sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880/started.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1293,
+      "sha256": "54c86eea8435d191a0e5663580fb6a79f256be7d6b86212cc355b8ceed704ea8"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1824,
+      "sha256": "ffb87934d1a00f587f026acbaf5c7f6a4447c7dd98ec910fe646c883055df497"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 5848,
+      "sha256": "b1d231717750cd4545e0f594f58dca4a5da0102755ea6c0bb39aa747115461b6"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/process.log": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 30929,
+      "sha256": "4b53dde6aa1d4d5f435c51566e07f90cc4e657af147cb303c81d06c27482977f"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/qualification.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59651,
+      "sha256": "67480c1724944c25cf4f1a5f3be7adbd6ff12e4f3aca4f7f1b7eb38c56cb75eb"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/receipt.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 9943,
+      "sha256": "30829ea3ca0dc83986699dab2472592da4f69b2ecbfd362f080833c1a40c569b"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/request.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6961,
+      "sha256": "b202ddf4b231ece972c9b5d9b98411cb73689f8a154826c497c1072e25687918"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7608,
+      "sha256": "e18baba089907cd3d4b3a25c22523e4638af39f03ce36d6c3655a502cbd81076"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "58a645614f5d87b06b5204a7df2a1d5cefca66cb506130c2876d4f31956833d5"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "b0d454fe41b837ea67a19245c7777270d7289d9949e9a359c92cbcfca4ae3d15"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "8ecbdab74571fcd9738c2ecda3cfbc334a02bcc694087d2b5edacd2f873e2a30"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15785,
+      "sha256": "aa25a55cd36d0c8838e464a4e10a54105d660c7b94f2781022686f34ec185fbe"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15785,
+      "sha256": "61cb4a72bb83e3e96bd644f87a5873111948f58de297d98394d6259f90c7e6a0"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "d61051ee4da46f72d08ca55f7d0bb26d913da10e4497f91ffcd3584f89484b19"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "f99a0937b1051a748bcc073c87ceec1a24439143259310c3f7dd48fb923aa858"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 863,
+      "sha256": "06ccd4eb0f6b78a0e17eabc85349abe029ecc10325ca29b1b105847a6b58fc38"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 864,
+      "sha256": "aef32863b0c13785d559fd31a44549c910a200cf97811c693fb88935987bbe7b"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59783,
+      "sha256": "a628dfe90f4015be316101c8a09f22c40d0e2799a5cd58466f37509066737f6a"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "0a6d56bf0e5a36c9f92ad96c59f244022d23d37f9913a5eabd70911c4756eb09"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 895,
+      "sha256": "5a2116604779d9aad4dfeca872b499dbed01d56f31fb0e57f51a9ce6c4ab6c78"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6484,
+      "sha256": "46ec364204209ca1a364099af25d7cd40780343785665a33a49246366d3edf49"
+    },
+    "sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf/started.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1293,
+      "sha256": "147ad32337bbd9b61fa002c0ecc13169f05abacfd2a841e4ab31d3b51b62b4f7"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "cb93e659d1c77f2f040dd57cab03621161f159934a890f47c3f7cad869ffd5f7"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/cold_program.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 283,
+      "sha256": "86c61c242186bf3c7f0d04e555486197f8c0aa0d1557e33da2a89829ceeacc9d"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/full_program.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 283,
+      "sha256": "86c61c242186bf3c7f0d04e555486197f8c0aa0d1557e33da2a89829ceeacc9d"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1895,
+      "sha256": "382bdf0e0e029b249663603e02190ae055acad246cd00592dd786101e7348530"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 563,
+      "sha256": "6d5edc1984aec66e87ee7d66c1378d1d1abd9e6d9687b6038dabae31d67f1c09"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/input.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 6158,
+      "sha256": "b0c29a5115b4aa7d37295741a3400a8eaf61678e7df9e97d5f6a8f1c60414e81"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/process.log": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 30925,
+      "sha256": "386b8c47d94fe031692374523f4bab22d2e677e9bc98f724ae74f2d5356fb000"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/qualification.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 59651,
+      "sha256": "67480c1724944c25cf4f1a5f3be7adbd6ff12e4f3aca4f7f1b7eb38c56cb75eb"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/receipt.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 10466,
+      "sha256": "7296ba74f409fd2b384a877cea1eebfbb8bf3b5690948931e76c2366165df365"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/request.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7339,
+      "sha256": "c0d8db8ae9a28d3cbb7f50b735d9445f24707d5a394f173a3e4f446098e0b62c"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/result.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 8091,
+      "sha256": "26093f9e6626414c5a98a1feaeb2a0d03ec0e55934eda8845bb88cf35f47a1a4"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "18f30fcd20c316fa7817d3d8e037d3785b959ec6edede337af053fe9fc95d14b"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 261,
+      "sha256": "6a8bc1f5f3fca4758e5f925009d009ca5d8f7017d3d7b57530ae99cad5a7c10a"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 3712,
+      "sha256": "cb93e659d1c77f2f040dd57cab03621161f159934a890f47c3f7cad869ffd5f7"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15807,
+      "sha256": "a7b0f1f0265a9950950eea34d9cb90c93a69d97bd308b4da1cefe34b735f5926"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 15807,
+      "sha256": "95db9cfc366b79af9153d9dccecb354305d786c404ce11139caf18ecf0af2321"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 2877,
+      "sha256": "4e07c98dd9e1ffa9e3870091a20893bf60be3239e72368ff1fc9cb0096adcc91"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "425380e87180a0e1028709a41a55a41417e0fc1172d3a37be08fba0111e351b4"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 76445,
+      "sha256": "1408a74dbb64588c29ec72f0c38b43af93b613bfafcac65ede7c99af2fe47475"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 863,
+      "sha256": "3f6ccb3d0feda3efec91d7d82a0159cdd658f3b960e0d8a7789244ee01ef97fe"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 864,
+      "sha256": "f003a419ed2ed361ded735da287ee65ff1320873b1ddd8fe20833f9589e3e8dc"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-01.zip",
+      "bytes": 7670633,
+      "sha256": "3c93026fb6dbb2bbc36ec40bae675d92910c58c7177706a9f82a7e43c2d9db44"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 7669834,
+      "sha256": "8e2655a42db5aff11f2a80cc533c3b51e9c82b6132d01bf97e9e258d961dbba8"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/result.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 59716,
+      "sha256": "05dbafd0ba9f929b4252be3f927c2cd84650ce79e69a1e903be7a71fa311ee83"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 895,
+      "sha256": "283cdfb2e02717da147085a1f31a2b381372df5524a3f98d028c977add12adfc"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 895,
+      "sha256": "72054185c87418174646ffc92eeff64317cbf7bb545af3c78f6382fb43a67ed7"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 6479,
+      "sha256": "03b4a4b92a652a747372a07d3e931c8ff89778775e507815d77f0a11ca9bc5e9"
+    },
+    "sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0/started.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 1293,
+      "sha256": "64875e27a131af93f6afe1d5e9098fa64b9b53e70d1172074c589342f921e809"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/cold_plan.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/external_schedule.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/memory_compilation.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 1824,
+      "sha256": "2aae6d56fa4cddef5ac75288a62b391bc5a363ca86a22d2e689b94971ee9983d"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/scenario.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 563,
+      "sha256": "e1a677c784e15ddd7bdf5e6010b960f90c1fa6ebcb5d28daa7e27d2953d739d6"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/target.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 917,
+      "sha256": "968133570602bd2b16e8491bf49d5c47570aa3a9966a8e7ece456ecb2f6cfa5d"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/compiled_case/topology.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 1802,
+      "sha256": "46cc529537c1c3314c8b7273828b3b0d1935522b9adb0f469ae966752144ba5b"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/input.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 5681,
+      "sha256": "a18ad3eaee93400770b1ceca80877f4e7670cca27b8f74a3774eb17fdf43dff6"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/process.log": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 30925,
+      "sha256": "ab7722d423b2080c52e8fd54383a55fac59868416cdb96ef4e721bf55a3c35e4"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/receipt.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 10321,
+      "sha256": "681c224b6a2b4344a5e901848656048d2f41216688f9e275eaf6ccdb9f0fc044"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/request.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 6782,
+      "sha256": "4401a0d802f1844c618893e4f1a0decacf0f58745034ab2a9e52e04ad3338897"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/result.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 7951,
+      "sha256": "21419c48fee4861c727a48bb1bb3a87ace17c3638e16adf75b7046f7394e9442"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/backing-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 634,
+      "sha256": "f8193d7b19a78a761e453affa03f314fb0fa34e30cf5c2298cdfb791ebfc2776"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/backing-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 634,
+      "sha256": "a95c1fec4d06dab131c1f7fdcda428e4332e170bb5dfe28c63cdea775ea993bc"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/backup-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 261,
+      "sha256": "91943a15e49fd70af84b17d5936a5d6eb23511a1f83ebcf80aaae28b117e9347"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/backup-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 261,
+      "sha256": "bb937fba4ac1425bba66d5d255d98df26315198a586f8692250a7a12374906c0"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/compiled_plan.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 3712,
+      "sha256": "4ed18675385fcf687f8f979ea7737d859340cc9ded244eed80e899b5b587e35d"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/dispatch-rank-0.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 15807,
+      "sha256": "1a2c88eafec1b2f1c36d7c05bf1e2cc43a11f08c9d5edbb3d07a60146f2359ba"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/dispatch-rank-1.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 15807,
+      "sha256": "a8924a863cb5fd9244d37c231c1f84e36eb75df4d2fcaf691e4e890a70d5fd88"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/external_schedule.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 2877,
+      "sha256": "2c1d536ba7472f5f90414ab64050fab76d638daa2c8029bc02ba84e38b253c78"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/global-ticks-rank-0.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 76445,
+      "sha256": "26af9be89b1a903a66608765e93c148b2f58ad54def5c6a18e06fb44e25291bc"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/global-ticks-rank-1.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 76445,
+      "sha256": "34b9b6ee4fd8e78f31044e738642c3a52ef531b77486641b9dd878537c1eedc5"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/ingress-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 864,
+      "sha256": "cfa86575d76d170e69a6a26e2850b11e2d3a0fdc1c8f543d881e716d63d663f7"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/ingress-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 863,
+      "sha256": "6a4efde1fff2d13b5423e6a2fecea1585acf5beb090110e16a9d8e7616e7a65b"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/kv-rank-0.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 7678204,
+      "sha256": "01b85dc0f0ff3dd4793db070d55864c164db1eb0a94584aa8cae664706b528e5"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/kv-rank-1.jsonl": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 7678617,
+      "sha256": "904fb5e90a22ed27ac2ed05b755df8b0ffb8771664dc184c461991aeacd3573e"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/result.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 59651,
+      "sha256": "97cf002c8c79f181352933da377d7e56a57750090ba833fd5ff98791e563f584"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/schedule-rank-0.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 895,
+      "sha256": "2c086d6945f2a245f5f99b8b7a3e2516260f2cb4df099f67f2e75ad1acd94ca0"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/schedule-rank-1.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 895,
+      "sha256": "546fad33baed99dab2ddf477decca9324db3714e360ebe6d41990a0248f71e8b"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/serving/worker_input.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 6479,
+      "sha256": "76b7e5a380ad5c0ad0d1d44d035275a4b354d45e5fdc45cc6fdb6fc98b542215"
+    },
+    "sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df/started.json": {
+      "archive": "contract-v2-abort-server-02.zip",
+      "bytes": 1293,
+      "sha256": "b01006d880d4f9fe186cdd11aecd53f3d5155d186a0d3bc461f8c064e5fa60c0"
+    }
+  },
+  "original_combined_index_sha256": "5b0ced0e856a122acf1b16672693250794f30f0a789139cf93ca8be4b558ade2",
+  "recomputed_global_tick_results": 10,
+  "recomputed_packed_kv_parity_jobs": 6,
+  "schema": 1,
+  "scope": "Explicit owned job IDs, complete text evidence, no outside paths"
+}

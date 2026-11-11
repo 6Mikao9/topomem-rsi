@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "kind": "agent_tools",
+  "name": "agent-grid-recovery",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Track authorization boundaries and recovery measurements for a campus grid.\n"
+    },
+    {
+      "id": "question",
+      "role": "user",
+      "text": "Determine whether feeder C can be restored and which observation to record during restoration.\n"
+    },
+    {
+      "id": "call-1",
+      "role": "tool_call",
+      "text": "{\"tool\": \"fault_log\", \"input\": \"feeder C\"}\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "result-1",
+      "role": "tool_result",
+      "text": "Feeder C isolated at 07:42 after a transient on the north transformer. The scheduled reset in the old plan was never executed.\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "call-2",
+      "role": "tool_call",
+      "text": "{\"tool\": \"load_forecast\", \"input\": \"north campus\"}\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "result-2",
+      "role": "tool_result",
+      "text": "The chilled-water load stays below the advisory limit through 09:20. The new laboratory starts a high-current test at 09:35. Do not combine that test with an unlogged restoration.\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "call-3",
+      "role": "tool_call",
+      "text": "{\"tool\": \"clearance_ledger\", \"input\": \"feeder C\"}\n",
+      "call_id": "call-3"
+    },
+    {
+      "id": "result-3",
+      "role": "tool_result",
+      "text": "Operations grant conditional clearance only after the return current is below 8 A for three minutes. The south feeder has a different clearance and must stay isolated.\n",
+      "call_id": "call-3"
+    },
+    {
+      "id": "call-4",
+      "role": "tool_call",
+      "text": "{\"tool\": \"recording_protocol\", \"input\": \"north transformer\"}\n",
+      "call_id": "call-4"
+    },
+    {
+      "id": "result-4",
+      "role": "tool_result",
+      "text": "Record the current trace, time, and feeder label for the entire three-minute check. Use ticket GRID-C7. Supervisor confirmation is required before the breaker closes.\n",
+      "call_id": "call-4"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "operator",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "system",
+      "at_ns": 63000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "question",
+      "at_ns": 126000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 24,
+      "select_rows": [
+        166,
+        0,
+        85
+      ],
+      "at_ns": 186000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-1",
+      "at_ns": 249000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-1",
+      "at_ns": 312000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 20,
+      "select_rows": [
+        338,
+        13,
+        113
+      ],
+      "at_ns": 372000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-2",
+      "at_ns": 435000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-2",
+      "at_ns": 498000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 20,
+      "select_rows": [
+        569,
+        13,
+        190
+      ],
+      "at_ns": 558000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-3",
+      "at_ns": 621000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-3",
+      "at_ns": 684000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 24,
+      "select_rows": [
+        787,
+        13,
+        263
+      ],
+      "at_ns": 744000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-4",
+      "at_ns": 807000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-4",
+      "at_ns": 870000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 40,
+      "select_rows": [
+        1015,
+        13,
+        339
+      ],
+      "at_ns": 930000000
+    },
+    {
+      "op": "close",
+      "session": "operator",
+      "at_ns": 993000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/agent-grid-recovery.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "05b2d0a7dee690115198980c49c84b77853e74128b2a5432bbd3928daf5d3a70"
+  }
+}

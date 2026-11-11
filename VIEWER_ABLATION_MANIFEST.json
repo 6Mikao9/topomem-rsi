@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Postprocessing-only supplemental comparison reader; frozen experimental sources unchanged",
+  "files": {
+    "rsi_memory/topology_report.py": "6ad1e5e7de19fd4fa56a5d7cf8fb9cc613c3651062fb1242abe6ad811e66c45a",
+    "rsi_memory/topology_report_assets.py": "6a6c5bbe8b535b823fd30449c5b803e83ec845e3cd43943a9e7ef91ea733a3df",
+    "rsi_memory/topology_report_ablation.py": "d575e924ed85ba2c45b6da90f06ebf88e8752f236c735770ee2c4568cb0d4ca0",
+    "tests/test_topology_report_ablation.py": "81bc6e88b4c6761a6ba5fff67dd88966a7ff7205999410074b999fa2fefc8f93"
+  },
+  "previous_files": {
+    "rsi_memory/topology_report.py": "b22e77c2d14f54dfcbcaef66af4087cd6ccd54c0383923d8a66b65e24c3abddc",
+    "rsi_memory/topology_report_assets.py": "6deee5ef4c2c0aac56f80a1afddab8f3652bcf94c306dfc60a9eac36cf40eb12",
+    "rsi_memory/topology_report_ablation.py": null,
+    "tests/test_topology_report_ablation.py": null
+  },
+  "base_effects_overlay_sha256": "b5fe8e0e659b420a4518e89777c387a071f6ff90249cc4a4476981e2c1cc11cb",
+  "original_formal_statistics_unchanged": true
+}

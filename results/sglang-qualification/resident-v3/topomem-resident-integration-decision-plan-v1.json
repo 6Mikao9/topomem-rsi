@@ -1,0 +1,23 @@
+{
+  "basis": "public calibration fixture only; no SGLang model search or heldout evaluation has started",
+  "created_utc": "2026-11-10T19:02:30.052501+00:00",
+  "decision": "Consider adding a trusted full-resident backing primitive only if four parity and four performance jobs qualify and each of the two post-warmup window paired gains exceeds 5 ms. Otherwise keep the existing eight-policy SG search unchanged. This is engineering selection, not RSI evidence or a statistical stability claim.",
+  "integration_requires": "new source and protocol before model calls; add eligible resident policies to the strong manual control sweep; fresh qualifications for formal cases; preserve current frozen source and protocol",
+  "kind": "human_engineering_integration_decision",
+  "metric": "metrics.window_seconds * 1000",
+  "minimum_each_paired_gain_ms": 5,
+  "paired_orders": [
+    [
+      "stock",
+      "resident"
+    ],
+    [
+      "resident",
+      "stock"
+    ]
+  ],
+  "performance_data_read_before_plan": false,
+  "required_correctness": "independent producer address and packed-byte oracle, matching global forwards/dispatch/output, no cold payload, owned worker cleanup",
+  "resident_source_manifest_sha256": "0f64a120aafa242f65efcef4cdf2cfaa9caa268bf8a10c5362d639ad28a66fff",
+  "schema": 1
+}

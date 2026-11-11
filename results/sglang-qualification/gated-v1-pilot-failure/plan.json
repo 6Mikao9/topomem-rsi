@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "kind": "engineering_exact_training_fixture_native_qualification",
+  "scope": "First fixed training case only; native A/A and one timed job. No model or heldout calls. Not part of the new resident source nine-policy sweep.",
+  "original_config_sha256": "69cdecd16feb1f92964e184f3f11b92f679e9efb1372db00c8eca659c87f9226",
+  "source_manifest_sha256": "8a9a5e105a0c41f418963bf2a649cff3db49e1be3b6c90eb8853879b9715f339",
+  "case_ids": [
+    "archive-train-reproduction"
+  ],
+  "max_gpu_jobs": 3
+}

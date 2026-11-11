@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "remote_experiment_root": "/home/liuyuntao/experiments/rsi-topology-20261110",
+  "final_du_bytes_including_exit_audit": 4552446974,
+  "raw_exit_audit": "final-exit-state-20261111.json",
+  "owned_gpu_jobs_remaining": 0,
+  "healthy_gpu_indices": [
+    0,
+    1,
+    3
+  ],
+  "healthy_gpu_memory_mib_each": 2,
+  "healthy_gpu_utilization_percent_each": 0,
+  "owned_persistent_ssh_sessions_closed": [
+    7718,
+    2487,
+    85246
+  ],
+  "ssh_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "broken_gpu2_reset": false,
+  "a100_gpu_jobs_started": 0,
+  "models_or_shared_environments_deleted": false
+}

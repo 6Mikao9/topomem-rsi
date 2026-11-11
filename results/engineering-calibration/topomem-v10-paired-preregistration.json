@@ -1,0 +1,22 @@
+{
+  "arms": [
+    "native",
+    "lru-equivalent",
+    "manual-direct",
+    "writeback"
+  ],
+  "base_order": [
+    0,
+    1,
+    3,
+    2
+  ],
+  "blocks": 8,
+  "hypothesis": "test whether unpaired differences persist after stronger warmup and balanced fresh processes; no RSI or heldout claim",
+  "order": "(base_index+block_index)%4",
+  "samples": 5,
+  "scope": "public training engineering calibration; one GPU3+host CPU64; all previous unpaired results retained",
+  "script_sha256": "ca4aeafddb5bd52cc66df605bc0db1f4c647d3f505b272c57748dcc74311e3dc",
+  "source_manifest_sha256": "68fe058da35c3b0517b6a2a769077693cea0774277ebdb8cd420958f4c774367",
+  "warmup": 3
+}

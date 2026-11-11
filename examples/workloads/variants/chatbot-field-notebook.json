@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "kind": "chatbot_growth",
+  "name": "chatbot-field-notebook",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Carry forward the environmental team priorities and confirmed facts.\n"
+    },
+    {
+      "id": "user-0",
+      "role": "user",
+      "text": "Help reorganize our survey notebook so the afternoon observers can find instrument IDs.\n"
+    },
+    {
+      "id": "reply-1",
+      "role": "assistant",
+      "text": "Put the instrument key in the first divider and use full station labels in the ledger.\n"
+    },
+    {
+      "id": "user-1",
+      "role": "user",
+      "text": "Keep the full labels but reserve a page for missing readings and rain delays.\n"
+    },
+    {
+      "id": "reply-2",
+      "role": "assistant",
+      "text": "The missing-readings page can separate weather delays from equipment checks.\n"
+    },
+    {
+      "id": "user-2",
+      "role": "user",
+      "text": "Add a handoff summary for the night observers and keep the first divider fixed.\n"
+    },
+    {
+      "id": "reply-3",
+      "role": "assistant",
+      "text": "Attach a one-page handoff to the missing-readings section and copy the current station list.\n"
+    },
+    {
+      "id": "user-3",
+      "role": "user",
+      "text": "Do not duplicate station IDs. Refer to their canonical key and add a time check.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "dialogue",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "system",
+      "at_ns": 36000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-0",
+      "at_ns": 72000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 20,
+      "select_rows": [
+        154,
+        52,
+        0
+      ],
+      "at_ns": 105000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-1",
+      "at_ns": 141000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-1",
+      "at_ns": 177000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 28,
+      "select_rows": [
+        319,
+        107,
+        0
+      ],
+      "at_ns": 210000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-2",
+      "at_ns": 246000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-2",
+      "at_ns": 282000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 30,
+      "select_rows": [
+        476,
+        159,
+        0
+      ],
+      "at_ns": 315000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-3",
+      "at_ns": 351000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-3",
+      "at_ns": 387000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 42,
+      "select_rows": [
+        650,
+        217,
+        0
+      ],
+      "at_ns": 420000000
+    },
+    {
+      "op": "close",
+      "session": "dialogue",
+      "at_ns": 456000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/chatbot-field-notebook.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "3fa556c4290590125df30a0633e38036f689a71adecf88ceaf8ce226ba2f9825"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "sg_first": true,
+    "sg_primary_verdicts": true,
+    "physical_ledger_complete": true,
+    "supplement": true,
+    "supplement_label": true,
+    "raw_pair_copy": true,
+    "sg_r1": true,
+    "resident_selected": true,
+    "cuda_history": true,
+    "cuda_source": true,
+    "transfer": true,
+    "topology": true,
+    "return_to_sg": true
+  },
+  "mobile": {
+    "inner": 390,
+    "scroll": 390,
+    "outcome": 3,
+    "tableScrollable": true
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "schema": 1,
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "event": "allocate",
+      "action": "place",
+      "when": {
+        "op": "mul",
+        "args": [
+          {
+            "op": "feature",
+            "name": "target_is_local"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "max",
+                "args": [
+                  {
+                    "op": "if_lt",
+                    "args": [
+                      {
+                        "op": "feature",
+                        "name": "valid_rows"
+                      },
+                      {
+                        "op": "feature",
+                        "name": "block_rows"
+                      },
+                      {
+                        "op": "const",
+                        "value": 1.0
+                      },
+                      {
+                        "op": "const",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "op": "if_lt",
+                    "args": [
+                      {
+                        "op": "const",
+                        "value": 1.0
+                      },
+                      {
+                        "op": "feature",
+                        "name": "page_accesses"
+                      },
+                      {
+                        "op": "const",
+                        "value": 1.0
+                      },
+                      {
+                        "op": "const",
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "if_lt",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "feature",
+                            "name": "top_k"
+                          },
+                          {
+                            "op": "const",
+                            "value": 1.0
+                          }
+                        ]
+                      },
+                      {
+                        "op": "feature",
+                        "name": "bytes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "feature",
+                    "name": "target_free_bytes"
+                  },
+                  {
+                    "op": "const",
+                    "value": 1.0
+                  },
+                  {
+                    "op": "const",
+                    "value": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "score": {
+        "op": "const",
+        "value": 0.0
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "place",
+      "when": {
+        "op": "sub",
+        "args": [
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "feature",
+            "name": "target_is_local"
+          }
+        ]
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "route_transfer_ns"
+          },
+          {
+            "op": "feature",
+            "name": "target_utilization"
+          }
+        ]
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "replicate",
+      "when": {
+        "op": "mul",
+        "args": [
+          {
+            "op": "feature",
+            "name": "target_is_local"
+          },
+          {
+            "op": "feature",
+            "name": "target_has_copy"
+          }
+        ]
+      },
+      "score": {
+        "op": "const",
+        "value": 0.0
+      }
+    },
+    {
+      "event": "access",
+      "action": "replicate",
+      "when": {
+        "op": "feature",
+        "name": "target_is_local"
+      },
+      "score": {
+        "op": "feature",
+        "name": "route_transfer_ns"
+      }
+    },
+    {
+      "event": "hint",
+      "action": "prefetch",
+      "when": {
+        "op": "mul",
+        "args": [
+          {
+            "op": "feature",
+            "name": "target_is_local"
+          },
+          {
+            "op": "if_lt",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "feature",
+                        "name": "top_k"
+                      },
+                      {
+                        "op": "const",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "op": "feature",
+                    "name": "bytes"
+                  }
+                ]
+              },
+              {
+                "op": "feature",
+                "name": "target_free_bytes"
+              },
+              {
+                "op": "const",
+                "value": 1.0
+              },
+              {
+                "op": "const",
+                "value": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "score": {
+        "op": "feature",
+        "name": "route_transfer_ns"
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "reclaim",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event": "access",
+      "action": "reclaim",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event": "release",
+      "action": "reclaim",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event": "idle",
+      "action": "reclaim",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "evict",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "event": "access",
+      "action": "evict",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "add",
+        "args": [
+          {
+            "op": "feature",
+            "name": "last_use_step"
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "op": "const",
+                "value": 0.001
+              },
+              {
+                "op": "log1p",
+                "args": [
+                  {
+                    "op": "feature",
+                    "name": "page_accesses"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "archived_prior_merge": {
+    "path": "results/source-snapshots/merge-gated-v1.json",
+    "sha256": "919da70b4e097253cbe29068ed0c8e8be92b9c1bd2acf67fc9197dd03edfc699"
+  },
+  "documentation": {
+    "README.md": {
+      "before_sha256": "b3ad00b8166ec48b242382ba05ad0bb41d2964be6a96bbc12902d75c4e819892",
+      "merged_sha256": "92bc56982a99605550d137db4e781e30a37dc48c7f6669b0795e0e2486a05626"
+    },
+    "README.zh-CN.md": {
+      "before_sha256": "63744ce1d8200e8532da2c1af4b08c03ced085a916f177d86bcd437ec3dee03b",
+      "merged_sha256": "a4b80afb4161a9ebe1722534c0fa549d9b4af3aa219e59691394aed26bb88a5f"
+    }
+  },
+  "evidence": {
+    "native_v2_hot_profile_sha256": "440c8372bceb0f0d33d7d1c981b3ec7e7d07244fb7cce723acadae23464cf398",
+    "native_v2_qualification_sha256": "9954b56e82a1bca42af8f9fcfeb374b0b85c368396d85095e2c5fc1f35b7cb1c",
+    "resident_v3_independent_engineering_audit_sha256": "1114f22d724dd1a77402f8de6eded7ca608701527e512f44383ac4acaa73929b",
+    "scope": "Six v2 native architecture jobs passed on the public calibration replay. The nine-policy training sweep is in progress. Formal RSI and held-out serving are pending at this merge snapshot."
+  },
+  "kind": "gated_sglang_resident_v2_merge",
+  "postprocessing": {
+    "changes": {
+      "rsi_memory/topology_report.py": {
+        "before_sha256": "e321530fc32e6ad92bfee196fdcb39a842fa107b0eefc0be359e1be7ab87101a",
+        "viewer_sha256": "cd0c0ed2c3de88aae5d80a017f667728108556769aa6f8493b6e8c382f7ec6c3"
+      },
+      "rsi_memory/topology_report_assets.py": {
+        "before_sha256": "0c25881a36529d459c4f038842fb9cb20d16e2c197eeef727dec95c6baef9b1f",
+        "viewer_sha256": "6621b3e85184b6d4813e5709c23cad251f26e5271154e01deeb4dc44b3fdd46c"
+      },
+      "tests/test_topology_report_resident.py": {
+        "before_sha256": null,
+        "viewer_sha256": "e51f0211af651f2a96c67397cee1d2320fe97ad66f38c1e84f0cc2c697a905cf"
+      }
+    },
+    "scope": "Offline viewer and its fixture test. These files are outside the deployed worker manifest and controller runtime.",
+    "source": "sealed resident viewer draft"
+  },
+  "protected_main_sha256": {
+    ".gitattributes": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+    ".gitignore": "b5591c89f42a65054a19c4b4fb1cbbebe6e999884ff6fe11971740631df512f3",
+    "AGENTS.md": "06d646c6b1cfaa469901017a65fd5ada5474e5ecbaa82372b7cbc5271e28b747",
+    "NOTICE.md": "d6e4cda69e6accde30e15e195f534ddeec1c9d4efba6aee10d0d73732dae1a2a"
+  },
+  "retained_prior_main_files": {
+    ".gitignore": "b5591c89f42a65054a19c4b4fb1cbbebe6e999884ff6fe11971740631df512f3",
+    "docs/SG_CONFIGURABLE_RELEASE.md": "c65e8e4c215469699fa3770e987f123611933a55e1cf9e6f3f7df3450d010401",
+    "docs/SG_GATED_QUALIFICATION_ZH.md": "7d4085674aad6f0bf3ce68d8eb6cf159a4880ffc70aba45e622c56e39c7f869e"
+  },
+  "runtime": {
+    "changes": {
+      "docs/SG_RESIDENT_V2_ZH.md": {
+        "before_sha256": null,
+        "v2_sha256": "9c453e9ca9d38f01ad164dc86df838fc64f13c06e05864146a07565bec9bb570"
+      },
+      "integrations/topology_memory/sglang_observe.py": {
+        "before_sha256": "d03ed75cb2049f8abf283523124fe5521fa7264f264ce1e1924225083c66bff5",
+        "v2_sha256": "6d7e0aeecbeafa998b240243371383f56ce5481a12d3600f33eddae33087992c"
+      },
+      "integrations/topology_memory/sglang_resident.py": {
+        "before_sha256": null,
+        "v2_sha256": "2b731f48d35cb9e918ad8c8524320f2b7dda795cf04561656787d26ae916e0f6"
+      },
+      "integrations/topology_memory/sglang_resident_oracle.py": {
+        "before_sha256": null,
+        "v2_sha256": "754559181820f3c991973e6a1b6118d48bccd7bbed3ec93d4c0a5dfc592f8c89"
+      },
+      "integrations/topology_memory/sglang_serving.py": {
+        "before_sha256": "642ff531d63b25d5d145da96cbbc147c237828e902a5eabdf6aad502c11567ac",
+        "v2_sha256": "4b1729045045204a579ad899fad59e31c371f6eb06ee7d05a2184d806a0953b4"
+      },
+      "pack_resident_inputs.py": {
+        "before_sha256": null,
+        "v2_sha256": "0c703455c18a709c85c98c516b9c1397f59744a0f20e30b28e35dc9cfef706f5"
+      },
+      "pack_source.py": {
+        "before_sha256": "630797537f5c9e33986a4d159da8f9c6f94eecfd7bee2daf578f5eb119d69e70",
+        "v2_sha256": "c5b63b17296b2b09be2cfad927535c2a5b67d717a48f4aa137e3a3de5d3ec8ac"
+      },
+      "rsi_memory/memory_program.py": {
+        "before_sha256": "af31e0a9b5dc019198e83ca9e71dd20e5cf2d7ef1afbab35d007ade04a344545",
+        "v2_sha256": "1dd95ee76287e0e20c9fa2211526b699add5ae108712591b42e03a9193746325"
+      },
+      "tests/test_configurable_sglang.py": {
+        "before_sha256": "63856167feb8dd9b92a550f59ab6fb257a82d280de67af1401a15caa096877c7",
+        "v2_sha256": "397c02ee6967baf069957d898d3d8e09773e0269fc4e2488f8888259d190709b"
+      },
+      "tests/test_resident_compile.py": {
+        "before_sha256": null,
+        "v2_sha256": "a1e4054434a6533146c42328aff5a691a873eb8b62d26c63cdd3677ba6690670"
+      },
+      "tests/test_resident_serving.py": {
+        "before_sha256": null,
+        "v2_sha256": "84f054497f4ece8737e367d378d6231ffab8ca097e26e606604dd268705a0435"
+      },
+      "tests/test_sglang_manual_selection.py": {
+        "before_sha256": "6dc9fed83a4e93a106d74eec4382a17d34f8b05f5fcf5ead4779b983da568a16",
+        "v2_sha256": "824dfc43bec254794f044b63472e2dbed7bab80cf6ad51ee1c1108b03b0761be"
+      },
+      "tests/test_sglang_manual_sweep.py": {
+        "before_sha256": "88c18e72466eb6946bcc51bc52fd3ba1270b3820dea58be522e8e71c902e179a",
+        "v2_sha256": "cb6946c83e5a8c49e57ed24ad9b4da305b6bc347449f1d89a35f8f984be9f0c2"
+      },
+      "topomem_sglang_rsi/domain.py": {
+        "before_sha256": "2c5bcc91006b2f504dea19e753d6e8f360cce93caa2d751ac14c64e48bf35f29",
+        "v2_sha256": "f7ee16921edf0b08b854a51ee0d825a7fb0527d7d8e14ed1dc13a6b95cc97dac"
+      },
+      "topomem_sglang_rsi/hot_config.py": {
+        "before_sha256": "728412d4a1a4960f7951debbff04fddcb9fa64914e817832baf2c8ab1027f917",
+        "v2_sha256": "df1564253a070958ad9ac639689e491feebfeeb7a71aa74335c5e701f678e755"
+      },
+      "topomem_sglang_rsi/make_config.py": {
+        "before_sha256": "3ec64cea153dd77c395052648d63038bd5a6779af048aa8e0ccade4589e2303a",
+        "v2_sha256": "c4a637348d05be58948a64da0aea260c2706d2e012c11e3680eb3d00d90b3ba4"
+      },
+      "topomem_sglang_rsi/manual_selection.py": {
+        "before_sha256": "435ff602497d96037e92b1e51fb873e192591335cf043d418c42f35e73f14ced",
+        "v2_sha256": "9a7d1cc01bf82fdd1257d720c1e796daf0a5c7bbdcff1fe66ddbdc6f0bf1f10c"
+      },
+      "topomem_sglang_rsi/manual_sweep.py": {
+        "before_sha256": "08224c992b9d5c3015b583aa277f43cbf07c99003dfbae55e0141c5be070399c",
+        "v2_sha256": "43b66c0fae8676c8ff04826481b48dd4c6dbb70816cd1d237c4cfd18fd6e79af"
+      },
+      "topomem_sglang_rsi/sglang_eval.py": {
+        "before_sha256": "a135d7ea129b634f357cf87847bfa87c89959906326e14c037ae6a37b783a362",
+        "v2_sha256": "a6b480dbb22aeb23c8ac92072334b94482856c80b0fa7f57940c99b75be385c0"
+      }
+    },
+    "formal_cases_archive_sha256": "921f665566bd6b3e1223954b1a0b5c2ef43711b47ef46dbab836c8f5ca6a4e65",
+    "frozen_local_files_verified": 127,
+    "local_source_manifest_sha256": "3457812f3de98131438ee50f89e4991fcc0154f788569223611a6f870beb2b3b",
+    "main_runtime_worker_sources_match": true,
+    "native_calibration_archive_sha256": "065ff01df373d5ded7a3d1a2a185afae81b6c16af9d912486f613c97ab68e066",
+    "source_archive": "resident-v2-rc.source.zip",
+    "source_archive_sha256": "2bc3fb7584720c2761be4a38fb34232f130f83ba624bb293d7749ce417a82290",
+    "strict_controller_sha256": "b12a011fc360648ddfad1738a5f27ef26925201e99c5c909765e960d9350244a",
+    "worker_archive_sha256": "2672c4ac4cf74e5570fd0525dec0cf1079cd444186363fa75017d5759cdf41c0",
+    "worker_source_manifest_sha256": "b73995aea418432831366a7c2de0af038fbe8eae2f2f85ac164d2e88e4c81909"
+  },
+  "schema": 2,
+  "validation": {
+    "headless_actual_resident_training_parity": {
+      "global_ticks_sha256": "54032fc74920338c8a6a617e5eee539160b1e8783626af1a4c6a48ae439e83a0",
+      "page_sha256": "5ceba04ed4e103069288e6dc79c9ee0385c716a69d3a3fb74672be14b9deb24e",
+      "ranks": [
+        {
+          "pinned_host_bytes": 0,
+          "rank": 0,
+          "resident_sentinel_allocated_delta_bytes": 6144,
+          "resident_sentinel_allocator_charge_bytes": 12582912,
+          "resident_sentinel_logical_bytes": 3936,
+          "resident_sentinel_reserved_delta_bytes": 0,
+          "verified_producer_swaps": 756
+        },
+        {
+          "pinned_host_bytes": 0,
+          "rank": 1,
+          "resident_sentinel_allocated_delta_bytes": 6144,
+          "resident_sentinel_allocator_charge_bytes": 12582912,
+          "resident_sentinel_logical_bytes": 3936,
+          "resident_sentinel_reserved_delta_bytes": 0,
+          "verified_producer_swaps": 756
+        }
+      ],
+      "receipt_sha256": "44aacb89a7ee6206e7101501fd20c16a02063c15fd35a862ecf308ac6159bf0d",
+      "reserved_rows_by_rank": [
+        10496,
+        10496
+      ],
+      "scope": "actual completed resident parity receipt for the training case; timings and selection remain pending"
+    },
+    "offline_isolated_wheel_module_imports": 10,
+    "tests_passed": 120,
+    "unittest_command": "python -B -m unittest discover -s tests",
+    "viewer": {
+      "cuda_receipt_sha256": "de736103baf8271e7d308d7322354c06674eea44835a0f30a6e6bb848ad90be6",
+      "headless": "msedge --headless=new --disable-gpu",
+      "page_sha256": "e6d04a2c1f1141f77690acc98420453e0e502294a51e47af8db9c2a48e2bc651",
+      "resident_v3_engineering_pairs": 2,
+      "sglang_receipt_backing_mode": "tiered",
+      "sglang_receipt_sha256": "1bbe1c932663c49efd64117957c3a105ffdbb7b4fbf6cbb017a50ae574f3a892",
+      "training_preflight_policies": 9,
+      "training_sweep_status": "preflight_only",
+      "transfer_blocks_per_scenario": 12,
+      "transfer_scenarios": 4,
+      "v7_rounds": 6
+    },
+    "wheel_name": "topomem_rsi-0.2.0-py3-none-any.whl",
+    "wheel_sha256": "d58b15c1faacfbc00717e409d8a002996f921e6f3134e8982d46507a02db1288"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "artifacts": [
+    {
+      "file": "sglang-gated-v1-native-pilot-failure-evidence.zip",
+      "bytes": 27207,
+      "sha256": "589115c0a56ce44036eadd06338e02b71d883181c9a624a4db8672a88114075d"
+    },
+    {
+      "file": "plan.json",
+      "bytes": 521,
+      "sha256": "6cba46d3e71224cc5535fa58f75e68d11a40022624f91acd05a295f2d7370848"
+    },
+    {
+      "file": "sg-8e59ee4bc407c5ea291908d4b61e749cf332fd51b611e3ed.json",
+      "bytes": 9970,
+      "sha256": "698447ff1e88524075c6dd505b14638a7aba0b0a9e32af0dad6ec5ae46020a52"
+    },
+    {
+      "file": "topomem-sglang-gated-worker-v1.zip",
+      "bytes": 71852,
+      "sha256": "ebcf65edf5fd1e3dd8aa905f6f9ad94f318f11f8e75afc221953c1fa63ae81e3"
+    }
+  ]
+}

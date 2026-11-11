@@ -1,0 +1,101 @@
+{
+  "backup_dependency": true,
+  "engine": {
+    "base_gpu_id": 0,
+    "chunked_prefill_size": 4096,
+    "context_length": 8192,
+    "disable_cuda_graph": true,
+    "disable_custom_all_reduce": true,
+    "disable_overlap_schedule": true,
+    "disable_radix_cache": true,
+    "dp_size": 2,
+    "dsa_decode_backend": "flashinfer_sparse_mla",
+    "dsa_prefill_backend": "flashinfer_sparse_mla",
+    "dsa_topk_backend": "torch",
+    "enable_dp_attention": true,
+    "enable_hisparse": true,
+    "hisparse_config": "{\"top_k\": 2048, \"device_buffer_size\": 4096, \"host_to_device_ratio\": 2}",
+    "kv_cache_dtype": "fp8_e4m3",
+    "log_level": "info",
+    "max_prefill_tokens": 16384,
+    "max_running_requests": 2,
+    "max_total_tokens": 16384,
+    "mem_fraction_static": 0.4,
+    "pp_size": 1,
+    "random_seed": 17,
+    "schedule_policy": "fcfs",
+    "stream_interval": 1,
+    "tp_size": 2
+  },
+  "ingress_rendezvous": {
+    "collective_timeout_ms": 5000,
+    "gate_timeout_ms": 10000,
+    "global_tick_policy": "all_global_forwards_including_local_idle_v1",
+    "groups": [
+      {
+        "members": [
+          {
+            "input_ids_sha256": "2f60b7349458f5dadf036a873a35e9588fc20041ccab596baaa2ac2d5b9fe0f8",
+            "input_tokens": 5114,
+            "rank": 0,
+            "rid": "archive-validation-support-warmup-r0"
+          },
+          {
+            "input_ids_sha256": "bde156f5fe48758269614eeadaa52e1f3ba0f291df085677293441f351a1d7a7",
+            "input_tokens": 5118,
+            "rank": 1,
+            "rid": "archive-validation-support-warmup-r1"
+          }
+        ],
+        "phase": "warmup"
+      },
+      {
+        "members": [
+          {
+            "input_ids_sha256": "52f398606fdb79a1d81460f4a973f98e653fc39c2a1061727ee28b63e06a38d0",
+            "input_tokens": 5132,
+            "rank": 0,
+            "rid": "archive-validation-support-requests-r0"
+          },
+          {
+            "input_ids_sha256": "64cf2945d4151b3365456e263f89004bc5f339a6065c7f6d84b1cbf1b63a4994",
+            "input_tokens": 5137,
+            "rank": 1,
+            "rid": "archive-validation-support-requests-r1"
+          }
+        ],
+        "phase": "requests"
+      }
+    ],
+    "kind": "sglang_dp2_ingress_rendezvous",
+    "schema": 1
+  },
+  "requests": [
+    {
+      "arrival_ms": 0,
+      "max_new_tokens": 64,
+      "rid": "archive-validation-support-requests-r0",
+      "routed_dp_rank": 0
+    },
+    {
+      "arrival_ms": 0,
+      "max_new_tokens": 64,
+      "rid": "archive-validation-support-requests-r1",
+      "routed_dp_rank": 1
+    }
+  ],
+  "warmup": [
+    {
+      "arrival_ms": 0,
+      "max_new_tokens": 64,
+      "rid": "archive-validation-support-warmup-r0",
+      "routed_dp_rank": 0
+    },
+    {
+      "arrival_ms": 0,
+      "max_new_tokens": 64,
+      "rid": "archive-validation-support-warmup-r1",
+      "routed_dp_rank": 1
+    }
+  ]
+}

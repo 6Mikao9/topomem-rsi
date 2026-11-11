@@ -1,0 +1,18 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "name": "route_transfer_ns",
+        "op": "feature"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    }
+  ],
+  "schema": 1
+}

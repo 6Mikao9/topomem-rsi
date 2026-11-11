@@ -1,0 +1,64 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "hot_capacity",
+      "event": "configure",
+      "score": {
+        "op": "const",
+        "value": 0.0
+      },
+      "when": {
+        "args": [
+          {
+            "name": "candidate_hot_slots",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 6144.0
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          },
+          {
+            "args": [
+              {
+                "op": "const",
+                "value": 6144.0
+              },
+              {
+                "name": "candidate_hot_slots",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": 0.0
+              },
+              {
+                "op": "const",
+                "value": 1.0
+              }
+            ],
+            "op": "if_lt"
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "backing_mode",
+      "event": "configure",
+      "score": {
+        "op": "const",
+        "value": 0.0
+      },
+      "when": {
+        "name": "candidate_backing_is_resident",
+        "op": "feature"
+      }
+    }
+  ],
+  "schema": 1
+}

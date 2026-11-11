@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "kind": "chatbot_growth",
+  "name": "chatbot-trip-planning",
+  "page_rows": 24,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Give concise options and carry forward confirmed constraints.\n"
+    },
+    {
+      "id": "turn-one",
+      "role": "user",
+      "text": "Plan a walking route from a ferry terminal for a family with a stroller.\n"
+    },
+    {
+      "id": "reply-one",
+      "role": "assistant",
+      "text": "We can take the paved waterfront path. Allow twenty minutes to the market.\n"
+    },
+    {
+      "id": "turn-two",
+      "role": "user",
+      "text": "Keep the waterfront plan. Find a sheltered stop midway if it rains.\n"
+    },
+    {
+      "id": "reply-two",
+      "role": "assistant",
+      "text": "The west arcade is midway and has a ramp from the path.\n"
+    },
+    {
+      "id": "turn-three",
+      "role": "user",
+      "text": "Keep the arcade stop and adjust the plan to finish before noon.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "chat",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 50000000,
+      "segment": "system"
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 100000000,
+      "segment": "turn-one"
+    },
+    {
+      "op": "infer",
+      "session": "chat",
+      "at_ns": 150000000,
+      "max_new_tokens": 32,
+      "select_rows": [
+        70,
+        0,
+        23
+      ]
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 200000000,
+      "segment": "reply-one"
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 250000000,
+      "segment": "turn-two"
+    },
+    {
+      "op": "infer",
+      "session": "chat",
+      "at_ns": 300000000,
+      "max_new_tokens": 32,
+      "select_rows": [
+        225,
+        23,
+        0
+      ]
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 350000000,
+      "segment": "reply-two"
+    },
+    {
+      "op": "append",
+      "session": "chat",
+      "at_ns": 400000000,
+      "segment": "turn-three"
+    },
+    {
+      "op": "infer",
+      "session": "chat",
+      "at_ns": 450000000,
+      "max_new_tokens": 32,
+      "select_rows": [
+        332,
+        225,
+        23
+      ]
+    },
+    {
+      "op": "close",
+      "session": "chat",
+      "at_ns": 500000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/chatbot-trip-planning.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "5d6e4c154ef67e11327c1f6c693525351fee3aea64d46b9269ce1ded94f33462"
+  }
+}

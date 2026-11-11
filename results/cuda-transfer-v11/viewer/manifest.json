@@ -1,0 +1,91 @@
+{
+  "kind": "derived_viewer_inputs",
+  "scenarios": {
+    "agent_tools": {
+      "outputs": {
+        "topology": {
+          "bytes": 1899,
+          "canonical_sha256": "d60115a8f8880d1fb32f58dbafdfa7c4f025af030f73c172def23898e128cd1f",
+          "file": "viewer/agent_tools-topology.json",
+          "sha256": "63a48f16bbda189f6a4ada19aac8be351fdf572dbe0886cbf5bcb4d0c116ebcb"
+        },
+        "workload": {
+          "bytes": 2777,
+          "canonical_sha256": "2bea3da3ebf501d515d25f17f42e6d26f5fcf5812c819b773b54630312e2c787",
+          "file": "viewer/agent_tools-workload.json",
+          "sha256": "87c9c66922aed7ec55dfddcda1779b98269c24705c55b113646d80413faa825f"
+        }
+      },
+      "source_case_index": 0,
+      "source_case_name": "agent-water-inspection-00",
+      "source_case_sha256": "afde1e6455211fbbe8d739d0db1640806b93cb7497730f97a0df2fe34343b1f2",
+      "source_training_file": "agent_tools-train.json",
+      "source_training_file_sha256": "bd6a62b5aa2ed415a4b7886a68dfc0d8ed9996486d42417da352adb62016fa43"
+    },
+    "chatbot_growth": {
+      "outputs": {
+        "topology": {
+          "bytes": 1898,
+          "canonical_sha256": "ab07b0b8c950430d1ebaef5c6a9701cdb0c156ed04d63e6253167a3186ce40eb",
+          "file": "viewer/chatbot_growth-topology.json",
+          "sha256": "53101677cde1a7784b8ed34a044bc71275704456f48f07db36af0af2e5b610cc"
+        },
+        "workload": {
+          "bytes": 2668,
+          "canonical_sha256": "d8ea20cfe815e62678084578c098243a417a73071d448912929e4d418d6b46b3",
+          "file": "viewer/chatbot_growth-workload.json",
+          "sha256": "2f6cc2c98443762719d3ca732425faa324cd4e62df98852993d077a1db7b63f0"
+        }
+      },
+      "source_case_index": 0,
+      "source_case_name": "chatbot-trip-planning-00",
+      "source_case_sha256": "64a9c90e6d0fa8e65ee70b7d7601ee8b85700eb245c193f26d116ca144e98aed",
+      "source_training_file": "chatbot_growth-train.json",
+      "source_training_file_sha256": "241bd875b52710834e5b6aa614a07f214eb6fe23c0e6d028522972d49344dc16"
+    },
+    "long_document_qa": {
+      "outputs": {
+        "topology": {
+          "bytes": 1899,
+          "canonical_sha256": "d60115a8f8880d1fb32f58dbafdfa7c4f025af030f73c172def23898e128cd1f",
+          "file": "viewer/long_document_qa-topology.json",
+          "sha256": "63a48f16bbda189f6a4ada19aac8be351fdf572dbe0886cbf5bcb4d0c116ebcb"
+        },
+        "workload": {
+          "bytes": 21727,
+          "canonical_sha256": "58a72ea426c0fc9b358d5e8f3c6431c3b6426b83587ca5626ebfa912fb41a015",
+          "file": "viewer/long_document_qa-workload.json",
+          "sha256": "b2bc13c7df30d85ab19e7befc3a568ef35b9557bd184d231c44cbc8a18ab2d43"
+        }
+      },
+      "source_case_index": 0,
+      "source_case_name": "long-document-estuary-qa-00",
+      "source_case_sha256": "f7f08e6555c9c269348f69b757dfb557a9e6d830ae591fe5835268fe9821d64b",
+      "source_training_file": "long_document_qa-train.json",
+      "source_training_file_sha256": "02809c8bc9017ff19db5d898b989d8ddaf436f9f13d6cd663aa83bd2646e7f4b"
+    },
+    "rollout_cow": {
+      "outputs": {
+        "topology": {
+          "bytes": 1898,
+          "canonical_sha256": "ab07b0b8c950430d1ebaef5c6a9701cdb0c156ed04d63e6253167a3186ce40eb",
+          "file": "viewer/rollout_cow-topology.json",
+          "sha256": "53101677cde1a7784b8ed34a044bc71275704456f48f07db36af0af2e5b610cc"
+        },
+        "workload": {
+          "bytes": 2255,
+          "canonical_sha256": "c30943a39eecd940b73927edc79f889827151a4c639210e8196e3644dd65008e",
+          "file": "viewer/rollout_cow-workload.json",
+          "sha256": "81e6f7871e8b2d466d0d2b2933eee5b45ee005c673230939d988d20df924bec2"
+        }
+      },
+      "source_case_index": 0,
+      "source_case_name": "rollout-bridge-options-00",
+      "source_case_sha256": "7f18a416921adeaf24159dc5bedf176d2271f741d5b0f3e1b07f6fdb3e270a20",
+      "source_training_file": "rollout_cow-train.json",
+      "source_training_file_sha256": "f01944e82d1fac597f9ca1788a14e75ccb11b92914d0f2e1256c5ba67e4d6364"
+    }
+  },
+  "schema": 1,
+  "scope": "presentation copy of actual first training case topology and workload"
+}

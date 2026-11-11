@@ -1,0 +1,23 @@
+{
+  "active_generator_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+  "finalists": {
+    "adaptive": {
+      "bootstrap": false,
+      "generator_filename": "adaptive.generator.py",
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "program_sha256": "be70b6cc987e6a8ad0ee9664a41609731ff360dacf35e532080dcee74977ecd1",
+      "provider_call_id": "api/r0000/parent/01",
+      "trial_id": "r0000/parent/01",
+      "validation_score": 1086.595848
+    },
+    "fixed": {
+      "bootstrap": false,
+      "generator_filename": "fixed.generator.py",
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "program_sha256": "dc3ca18c68bfb509c90bc634cd260e84c05f519ff181c5b0949a7ed955efa3f4",
+      "provider_call_id": "api/r0000/fixed-a/00",
+      "trial_id": "r0000/fixed-a/00",
+      "validation_score": 1070.759641
+    }
+  }
+}

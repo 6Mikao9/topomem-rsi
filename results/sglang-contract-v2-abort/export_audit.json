@@ -1,0 +1,103 @@
+{
+  "contract_canonical_sha256": "16a23ecea63ed246feff945d3ec2832614a54385662de7b509c8cb0eaa2aa9fc",
+  "journal_integrity": "ok",
+  "journal_row_order": [
+    "manifest",
+    "eval/native/train",
+    "eval/native/validation",
+    "eval/bootstrap/initial-incumbent",
+    "api/r0000/adaptive-meta",
+    "plan/r0000/adaptive",
+    "api/r0000/fixed-meta",
+    "plan/r0000/fixed",
+    "api/r0000/parent/00",
+    "eval/r0000/parent/00",
+    "api/r0000/parent/01",
+    "eval/r0000/parent/01",
+    "api/r0000/child/00"
+  ],
+  "private_schema3_bytes_sha256": "a4c62726543fa19ac815ddc8e5f21388789231940306df29c994f4e592813740",
+  "provider_calls": {
+    "api/r0000/adaptive-meta": {
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "seconds": 72.53100000001723,
+      "status": "completed",
+      "usage": {
+        "completion_tokens": 7135,
+        "completion_tokens_details": {
+          "reasoning_tokens": 6081
+        },
+        "prompt_tokens": 5861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 12996
+      }
+    },
+    "api/r0000/child/00": {
+      "harness_sha256": "78375a0d838ff4f46291c555878172854863af9a74bc840c17cc7af4b9e66c4b",
+      "seconds": null,
+      "status": "pending",
+      "usage": {}
+    },
+    "api/r0000/fixed-meta": {
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "seconds": 88.56300000002375,
+      "status": "completed",
+      "usage": {
+        "completion_tokens": 8243,
+        "completion_tokens_details": {
+          "reasoning_tokens": 7281
+        },
+        "prompt_tokens": 5861,
+        "prompt_tokens_details": {
+          "cached_tokens": 5760
+        },
+        "total_tokens": 14104
+      }
+    },
+    "api/r0000/parent/00": {
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "seconds": 164.1720000000205,
+      "status": "completed",
+      "usage": {
+        "completion_tokens": 14209,
+        "completion_tokens_details": {
+          "reasoning_tokens": 13864
+        },
+        "prompt_tokens": 5085,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 19294
+      }
+    },
+    "api/r0000/parent/01": {
+      "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "seconds": 124.48399999999674,
+      "status": "completed",
+      "usage": {
+        "completion_tokens": 10924,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10723
+        },
+        "prompt_tokens": 5247,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "total_tokens": 16171
+      }
+    }
+  },
+  "receipt_count": 10,
+  "receipt_counts_by_split": {
+    "train": 7,
+    "validation": 3
+  },
+  "schema": 1,
+  "selected": {},
+  "status": "contract_abort",
+  "terminal_marker_sha256": "a10760608c88f94d9c02637808fe29557d599dd2b241c90e67172daf460ade88",
+  "verified_controller_source_bindings": 13,
+  "verified_frozen_source_files": 127
+}

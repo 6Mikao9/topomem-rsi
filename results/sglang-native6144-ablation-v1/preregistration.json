@@ -1,0 +1,124 @@
+{
+  "adaptive": {
+    "arm": "generated",
+    "program_source": "frozen.adaptive.trial.program"
+  },
+  "blocks": [
+    {
+      "block_id": "n6144-b01",
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ]
+    },
+    {
+      "block_id": "n6144-b02",
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ]
+    },
+    {
+      "block_id": "n6144-b03",
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ]
+    },
+    {
+      "block_id": "n6144-b04",
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ]
+    },
+    {
+      "block_id": "n6144-b05",
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ]
+    },
+    {
+      "block_id": "n6144-b06",
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ]
+    },
+    {
+      "block_id": "n6144-b07",
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ]
+    },
+    {
+      "block_id": "n6144-b08",
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ]
+    }
+  ],
+  "case_order": "Formal frozen test case order within each block, with that block's arm order applied within every case.",
+  "cases": [
+    {
+      "id": "archive-test-delayed-review",
+      "manifest_sha256": "e638214f8882c960f2682115ebce162d61e2d4cf02a50fa0f26ab4e6a357bc98",
+      "scenario_sha256": "8c9e2a9467d9d1fc874433f1f299664c2f6dbb46ed2aa74c6d040aedd4f3fcd5",
+      "schedule_sha256": "b5ee27dce994cc9551826cb1e7262d9d64be0663a11614a8ef6e693dbd586e03",
+      "target_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+      "topology_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+      "workload_sha256": "664059c39afe478e2f70b18207a059fc57d660dc34f07615c62b4cf255930402"
+    },
+    {
+      "id": "archive-test-new-observation",
+      "manifest_sha256": "bfdbb6f2e8928ed43d20c6b9a850106362f5d3cff025f40ccc12fa2018a4f926",
+      "scenario_sha256": "0e8d9a5f0974bebc428f5439f0c333af19a942270638ffca63c52187919b7d3d",
+      "schedule_sha256": "b35f375305d0f93e00ca428e0dca5093934c453e0d7173e19228f5e657100337",
+      "target_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+      "topology_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+      "workload_sha256": "089f8f443417e95d4ae48d4d3992b9be072a9175efe3486ac2c409051d69b735"
+    }
+  ],
+  "controller_source_archive_sha256": "ab8479bbb8b017a50673c07485ddb0fd88252dc24ec9a7467e4b214f9dfdb7b9",
+  "controller_source_manifest_sha256": "f452f06968cb2b1df687eba72e6dabcd3e5e419fe15bd205b555dce1f0485c9b",
+  "cutoffs": {
+    "latest_start_utc": "2026-11-11T00:00:00Z",
+    "no_new_submissions_at_or_after_utc": "2026-11-11T00:20:00Z"
+  },
+  "decision": {
+    "median_strictly_greater_than_ms": 11.49229000000014,
+    "positive_in_every_block": true
+  },
+  "driver_sha256": "9a4eef769bc864ff45f123c4cbf7cfcb0a81881ca222abbf26ff412802247994",
+  "formal_test_case_commitments_source_bytes_sha256": "75222b291ef1cbb7c5fb63c20c57ef911c4849c13784d149ae44acff79878272",
+  "incomplete_condition": "No performance decision when any pair is missing or a qualification/execution gate fails; archive all completed receipts.",
+  "interpretation": "Native 6144 is a tuned-capacity reference. A case is called a same-hot-capacity comparison only when the actual frozen adaptive case also runs with 6144 slots.",
+  "kind": "sglang_post_freeze_native6144_v1",
+  "launch_condition": "All formal run/freeze/test phases exited zero, test effect settled, and formal completion and supplement start are by the latest start time. The criterion ignores all formal performance outcomes.",
+  "launch_sha256": "ad719ed44db6b8722688cc17bc74ea0b0555f4c8590e9bb0854afe142b9c63ab",
+  "lease_timeouts": {
+    "lease_timeout_seconds": 780,
+    "serving_deadline_seconds": 300
+  },
+  "margin_hand_sweep_audit_bytes_sha256": "68fa8449a4e204fbb4376ac12fe6eadd8ada7775c6c6e301810cabba20926ed1",
+  "margin_hand_sweep_canonical_sha256": "261e75114485091e943680b0c7d5e48eb65fbb31366bbd18d00de604273bec89",
+  "metadata_profile_sha256": "ca0a5caf5d21161969ace0aea9e97275052c222d255ca42e787a09342dca8a51",
+  "native": {
+    "arm": "native",
+    "backing": "all_host",
+    "native_hot": 6144,
+    "program": null
+  },
+  "pair_score": "For each block sum the two measured post-warmup replay windows per arm; improvement is native minus adaptive in ms.",
+  "qualification": "Preserve stock same-capacity native A/A and native cross-capacity reference. Compare native6144 and adaptive effective schedule, actual dispatch, actual global DP tick, input/output, runtime, ingress binding and both rank packed KV.",
+  "recorded_utc": "2026-11-10T21:00:35.872057+00:00",
+  "reuse": "Completed same-source qualifications may be reused after frozen adapter request checks. Every timed job is fresh and has study/driver/freeze/block/case/arm identity.",
+  "schema": 1,
+  "scope": "Supplemental post-freeze paired replay of the same formal heldout cases; no independent second heldout or selection.",
+  "timed_job_count": 32,
+  "tokenization_sha256": "bdcfde95667ea8669417a34f0a61a8f6f0f8c8a790f23122116dc492484c64ff",
+  "worker_source_manifest_sha256": "b73995aea418432831366a7c2de0af038fbe8eae2f2f85ac164d2e88e4c81909"
+}

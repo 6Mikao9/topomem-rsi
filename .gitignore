@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env*
+private*.json
+*.pending
+# Published as byte-verified archives; loose originals remain in the local workspace.
+/results/cuda-rsi-v6/agent_tools/receipts/
+/results/cuda-rsi-v7/agent_tools/receipts/
+/results/cuda-transfer-v11/receipts/
+/results/engineering-calibration/cuda-v8-single-gpu-geometry-evidence.zip

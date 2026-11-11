@@ -1,0 +1,627 @@
+{
+  "claim": "one process per width/arm with diagnostic, warmup1 and timed samples3; no stable win or RSI attribution",
+  "evidence_archive": {
+    "file": "cuda-v8-single-gpu-geometry-evidence.zip",
+    "sha256": "a67055baa7c2a1f692920ab94045333a3acda918ec4e67b2697fd8c25997d7fa"
+  },
+  "paired_inference": false,
+  "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+  "runs": [
+    {
+      "cases": [
+        {
+          "case_sha256": "31283256441c3f51fbebf746a3e25d059ffd1e46b664ca802aefde50c1c44cea",
+          "fetch_misses": 192,
+          "link_bytes": {
+            "gpu0-host0": 6553600,
+            "host0-gpu0": 25165824
+          },
+          "median_elapsed_ms": 52.648663,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "f9a5ed96fcd8409ebde9ad1febe9d8f568c7e13b916502a80dafb90f7ba508dd"
+        },
+        {
+          "case_sha256": "737c566796c1616144e31d892893d527674bd3361300ac29ad5f7bdc63aad512",
+          "fetch_misses": 384,
+          "link_bytes": {
+            "gpu0-host0": 14942208,
+            "host0-gpu0": 50331648
+          },
+          "median_elapsed_ms": 70.261458,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "377d9d10146bf6e425b265d3e93be009d5177afb1843dfc58f7d169dde851d31"
+        },
+        {
+          "case_sha256": "9096a26cac895a92783161080397677f00517949ada9dcd71facc46dcbaf8754",
+          "fetch_misses": 133,
+          "link_bytes": {
+            "gpu0-host0": 147062784,
+            "host0-gpu0": 17432576
+          },
+          "median_elapsed_ms": 187.537025,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "d14159851d19887142d7fe205cd28409c19bddd2206505b9f05a52e97ac239ce"
+        },
+        {
+          "case_sha256": "1b195ca7a1116344455b6ed5c517b39af26b6a3a30c2591d42f617ad60feec53",
+          "fetch_misses": 18,
+          "link_bytes": {
+            "gpu0-host0": 1310720,
+            "host0-gpu0": 2359296
+          },
+          "median_elapsed_ms": 21.146918,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "55528d0c254de81013fa4074156a814b3659a9ea18b660ce8ebfeb6263e1b8c9"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h1024-manual-direct.json",
+      "receipt_sha256": "3a797d99a8fee779ae7f8f6849a25f081c0f5635d8469c35e53041577e0a683f",
+      "score_ms": 331.594064
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "31283256441c3f51fbebf746a3e25d059ffd1e46b664ca802aefde50c1c44cea",
+          "fetch_misses": 66,
+          "link_bytes": {
+            "gpu0-host0": 25427968,
+            "host0-gpu0": 8650752
+          },
+          "median_elapsed_ms": 51.503456,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "f9a5ed96fcd8409ebde9ad1febe9d8f568c7e13b916502a80dafb90f7ba508dd"
+        },
+        {
+          "case_sha256": "737c566796c1616144e31d892893d527674bd3361300ac29ad5f7bdc63aad512",
+          "fetch_misses": 88,
+          "link_bytes": {
+            "gpu0-host0": 29884416,
+            "host0-gpu0": 11534336
+          },
+          "median_elapsed_ms": 61.932705,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "377d9d10146bf6e425b265d3e93be009d5177afb1843dfc58f7d169dde851d31"
+        },
+        {
+          "case_sha256": "9096a26cac895a92783161080397677f00517949ada9dcd71facc46dcbaf8754",
+          "fetch_misses": 157,
+          "link_bytes": {
+            "gpu0-host0": 167510016,
+            "host0-gpu0": 20578304
+          },
+          "median_elapsed_ms": 191.474077,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "d14159851d19887142d7fe205cd28409c19bddd2206505b9f05a52e97ac239ce"
+        },
+        {
+          "case_sha256": "1b195ca7a1116344455b6ed5c517b39af26b6a3a30c2591d42f617ad60feec53",
+          "fetch_misses": 4,
+          "link_bytes": {
+            "gpu0-host0": 12320768,
+            "host0-gpu0": 524288
+          },
+          "median_elapsed_ms": 22.670069,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "55528d0c254de81013fa4074156a814b3659a9ea18b660ce8ebfeb6263e1b8c9"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h1024-native.json",
+      "receipt_sha256": "c6fd7ac3286ed0f81759e3a1bab685aaea7d67b943bf4afa9a547d085f963544",
+      "score_ms": 327.580307
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "31283256441c3f51fbebf746a3e25d059ffd1e46b664ca802aefde50c1c44cea",
+          "fetch_misses": 220,
+          "link_bytes": {
+            "gpu0-host0": 4718592,
+            "host0-gpu0": 28835840
+          },
+          "median_elapsed_ms": 63.95725,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "f9a5ed96fcd8409ebde9ad1febe9d8f568c7e13b916502a80dafb90f7ba508dd"
+        },
+        {
+          "case_sha256": "737c566796c1616144e31d892893d527674bd3361300ac29ad5f7bdc63aad512",
+          "fetch_misses": 333,
+          "link_bytes": {
+            "gpu0-host0": 8257536,
+            "host0-gpu0": 43646976
+          },
+          "median_elapsed_ms": 80.671,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "377d9d10146bf6e425b265d3e93be009d5177afb1843dfc58f7d169dde851d31"
+        },
+        {
+          "case_sha256": "9096a26cac895a92783161080397677f00517949ada9dcd71facc46dcbaf8754",
+          "fetch_misses": 380,
+          "link_bytes": {
+            "gpu0-host0": 146407424,
+            "host0-gpu0": 49807360
+          },
+          "median_elapsed_ms": 285.581152,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "d14159851d19887142d7fe205cd28409c19bddd2206505b9f05a52e97ac239ce"
+        },
+        {
+          "case_sha256": "1b195ca7a1116344455b6ed5c517b39af26b6a3a30c2591d42f617ad60feec53",
+          "fetch_misses": 31,
+          "link_bytes": {
+            "gpu0-host0": 786432,
+            "host0-gpu0": 4063232
+          },
+          "median_elapsed_ms": 25.653509,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "55528d0c254de81013fa4074156a814b3659a9ea18b660ce8ebfeb6263e1b8c9"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h1024-tail-cold.json",
+      "receipt_sha256": "406cbb8ae9b9e3b123ce3531ca9aa9f377c83b30d908f2930299a81e4f239f58",
+      "score_ms": 455.862911
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "31283256441c3f51fbebf746a3e25d059ffd1e46b664ca802aefde50c1c44cea",
+          "fetch_misses": 60,
+          "link_bytes": {
+            "gpu0-host0": 2228224,
+            "host0-gpu0": 7864320
+          },
+          "median_elapsed_ms": 50.916891,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "f9a5ed96fcd8409ebde9ad1febe9d8f568c7e13b916502a80dafb90f7ba508dd"
+        },
+        {
+          "case_sha256": "737c566796c1616144e31d892893d527674bd3361300ac29ad5f7bdc63aad512",
+          "fetch_misses": 106,
+          "link_bytes": {
+            "gpu0-host0": 3014656,
+            "host0-gpu0": 13893632
+          },
+          "median_elapsed_ms": 62.337243,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "377d9d10146bf6e425b265d3e93be009d5177afb1843dfc58f7d169dde851d31"
+        },
+        {
+          "case_sha256": "9096a26cac895a92783161080397677f00517949ada9dcd71facc46dcbaf8754",
+          "fetch_misses": 402,
+          "link_bytes": {
+            "gpu0-host0": 149684224,
+            "host0-gpu0": 52690944
+          },
+          "median_elapsed_ms": 310.993363,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "d14159851d19887142d7fe205cd28409c19bddd2206505b9f05a52e97ac239ce"
+        },
+        {
+          "case_sha256": "1b195ca7a1116344455b6ed5c517b39af26b6a3a30c2591d42f617ad60feec53",
+          "fetch_misses": 32,
+          "link_bytes": {
+            "gpu0-host0": 655360,
+            "host0-gpu0": 4194304
+          },
+          "median_elapsed_ms": 24.640231,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "55528d0c254de81013fa4074156a814b3659a9ea18b660ce8ebfeb6263e1b8c9"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h1024-writeback.json",
+      "receipt_sha256": "3c90449d27000f353fdf82cfbf882ea3a03966aa0a467fefec9aa7ca91d87f62",
+      "score_ms": 448.887728
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "78be8f1bf61d60fc4f8c8623970a0a77ba52be4a8eb6c90f5171bf284669b331",
+          "fetch_misses": 192,
+          "link_bytes": {
+            "gpu0-host0": 1638400,
+            "host0-gpu0": 6291456
+          },
+          "median_elapsed_ms": 50.876406,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "bbebdbd96da2aad4bd949c4b6ed0315d982dea5d0d978736b990c5313329723f"
+        },
+        {
+          "case_sha256": "02cff80748e6a3c21312dfcd60d4c19d65b40777315ca520c3be6b87e7636d3c",
+          "fetch_misses": 384,
+          "link_bytes": {
+            "gpu0-host0": 3735552,
+            "host0-gpu0": 12582912
+          },
+          "median_elapsed_ms": 67.708041,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "96a5bc718aecd8a3bf641ce05ec1b61cc525f88dbfdf0ef0448aa98f80516bec"
+        },
+        {
+          "case_sha256": "302e0924fd10b18608ca6a4308bc3e7a6f06f3dac1c55000aaa3fea2ba7f0ede",
+          "fetch_misses": 133,
+          "link_bytes": {
+            "gpu0-host0": 36765696,
+            "host0-gpu0": 4358144
+          },
+          "median_elapsed_ms": 173.467695,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "3d013501972a8515b1a8ff5636d7ca12f271dfebcf494637e2e1a72c07501c80"
+        },
+        {
+          "case_sha256": "0e9e402301ab3feb0ab41cca8b10e41d9d15ec5c40015252e986202c12727487",
+          "fetch_misses": 18,
+          "link_bytes": {
+            "gpu0-host0": 327680,
+            "host0-gpu0": 589824
+          },
+          "median_elapsed_ms": 20.615031,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "0c62bf24b3ea7d06fa14368c9803c1f2489f74d50737403a8cd90e2b2ef60917"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h256-manual-direct.json",
+      "receipt_sha256": "8ade7024083a17e39c65375ea8d43d194cdb193a9c7ab5bae1b73b60757b0ec7",
+      "score_ms": 312.667173
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "78be8f1bf61d60fc4f8c8623970a0a77ba52be4a8eb6c90f5171bf284669b331",
+          "fetch_misses": 66,
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 2162688
+          },
+          "median_elapsed_ms": 49.652963,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "bbebdbd96da2aad4bd949c4b6ed0315d982dea5d0d978736b990c5313329723f"
+        },
+        {
+          "case_sha256": "02cff80748e6a3c21312dfcd60d4c19d65b40777315ca520c3be6b87e7636d3c",
+          "fetch_misses": 88,
+          "link_bytes": {
+            "gpu0-host0": 7471104,
+            "host0-gpu0": 2883584
+          },
+          "median_elapsed_ms": 59.541421,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "96a5bc718aecd8a3bf641ce05ec1b61cc525f88dbfdf0ef0448aa98f80516bec"
+        },
+        {
+          "case_sha256": "302e0924fd10b18608ca6a4308bc3e7a6f06f3dac1c55000aaa3fea2ba7f0ede",
+          "fetch_misses": 157,
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "median_elapsed_ms": 176.009369,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "3d013501972a8515b1a8ff5636d7ca12f271dfebcf494637e2e1a72c07501c80"
+        },
+        {
+          "case_sha256": "0e9e402301ab3feb0ab41cca8b10e41d9d15ec5c40015252e986202c12727487",
+          "fetch_misses": 4,
+          "link_bytes": {
+            "gpu0-host0": 3080192,
+            "host0-gpu0": 131072
+          },
+          "median_elapsed_ms": 21.933194,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "0c62bf24b3ea7d06fa14368c9803c1f2489f74d50737403a8cd90e2b2ef60917"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h256-native.json",
+      "receipt_sha256": "558283fd433c532f8dc80e5b4ec3507791d3b76f49531007f12a66d479fd3325",
+      "score_ms": 307.136947
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "78be8f1bf61d60fc4f8c8623970a0a77ba52be4a8eb6c90f5171bf284669b331",
+          "fetch_misses": 220,
+          "link_bytes": {
+            "gpu0-host0": 1179648,
+            "host0-gpu0": 7208960
+          },
+          "median_elapsed_ms": 61.48893,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "bbebdbd96da2aad4bd949c4b6ed0315d982dea5d0d978736b990c5313329723f"
+        },
+        {
+          "case_sha256": "02cff80748e6a3c21312dfcd60d4c19d65b40777315ca520c3be6b87e7636d3c",
+          "fetch_misses": 333,
+          "link_bytes": {
+            "gpu0-host0": 2064384,
+            "host0-gpu0": 10911744
+          },
+          "median_elapsed_ms": 77.76339,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "96a5bc718aecd8a3bf641ce05ec1b61cc525f88dbfdf0ef0448aa98f80516bec"
+        },
+        {
+          "case_sha256": "302e0924fd10b18608ca6a4308bc3e7a6f06f3dac1c55000aaa3fea2ba7f0ede",
+          "fetch_misses": 380,
+          "link_bytes": {
+            "gpu0-host0": 36601856,
+            "host0-gpu0": 12451840
+          },
+          "median_elapsed_ms": 271.148766,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "3d013501972a8515b1a8ff5636d7ca12f271dfebcf494637e2e1a72c07501c80"
+        },
+        {
+          "case_sha256": "0e9e402301ab3feb0ab41cca8b10e41d9d15ec5c40015252e986202c12727487",
+          "fetch_misses": 31,
+          "link_bytes": {
+            "gpu0-host0": 196608,
+            "host0-gpu0": 1015808
+          },
+          "median_elapsed_ms": 24.698976,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "0c62bf24b3ea7d06fa14368c9803c1f2489f74d50737403a8cd90e2b2ef60917"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h256-tail-cold.json",
+      "receipt_sha256": "b1fe3676e7ad43c25e48453912c1729d9e436846190ffcf34b8389e44618b4cf",
+      "score_ms": 435.100062
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "78be8f1bf61d60fc4f8c8623970a0a77ba52be4a8eb6c90f5171bf284669b331",
+          "fetch_misses": 60,
+          "link_bytes": {
+            "gpu0-host0": 557056,
+            "host0-gpu0": 1966080
+          },
+          "median_elapsed_ms": 49.935648,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "bbebdbd96da2aad4bd949c4b6ed0315d982dea5d0d978736b990c5313329723f"
+        },
+        {
+          "case_sha256": "02cff80748e6a3c21312dfcd60d4c19d65b40777315ca520c3be6b87e7636d3c",
+          "fetch_misses": 106,
+          "link_bytes": {
+            "gpu0-host0": 753664,
+            "host0-gpu0": 3473408
+          },
+          "median_elapsed_ms": 61.521488,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "96a5bc718aecd8a3bf641ce05ec1b61cc525f88dbfdf0ef0448aa98f80516bec"
+        },
+        {
+          "case_sha256": "302e0924fd10b18608ca6a4308bc3e7a6f06f3dac1c55000aaa3fea2ba7f0ede",
+          "fetch_misses": 402,
+          "link_bytes": {
+            "gpu0-host0": 37421056,
+            "host0-gpu0": 13172736
+          },
+          "median_elapsed_ms": 302.940441,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "3d013501972a8515b1a8ff5636d7ca12f271dfebcf494637e2e1a72c07501c80"
+        },
+        {
+          "case_sha256": "0e9e402301ab3feb0ab41cca8b10e41d9d15ec5c40015252e986202c12727487",
+          "fetch_misses": 32,
+          "link_bytes": {
+            "gpu0-host0": 163840,
+            "host0-gpu0": 1048576
+          },
+          "median_elapsed_ms": 24.146249,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "0c62bf24b3ea7d06fa14368c9803c1f2489f74d50737403a8cd90e2b2ef60917"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h256-writeback.json",
+      "receipt_sha256": "3f2269f28606b7b4455ea7a0eac6c9b021141e665ad66fdd003d3d134aba700d",
+      "score_ms": 438.543826
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+          "fetch_misses": 192,
+          "link_bytes": {
+            "gpu0-host0": 409600,
+            "host0-gpu0": 1572864
+          },
+          "median_elapsed_ms": 48.848978,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f"
+        },
+        {
+          "case_sha256": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+          "fetch_misses": 384,
+          "link_bytes": {
+            "gpu0-host0": 933888,
+            "host0-gpu0": 3145728
+          },
+          "median_elapsed_ms": 65.783317,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+        },
+        {
+          "case_sha256": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+          "fetch_misses": 133,
+          "link_bytes": {
+            "gpu0-host0": 9191424,
+            "host0-gpu0": 1089536
+          },
+          "median_elapsed_ms": 168.550454,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4"
+        },
+        {
+          "case_sha256": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f",
+          "fetch_misses": 18,
+          "link_bytes": {
+            "gpu0-host0": 81920,
+            "host0-gpu0": 147456
+          },
+          "median_elapsed_ms": 19.46645,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h64-manual-direct.json",
+      "receipt_sha256": "4bc7162bf1bee932a4315f43c668124a9711ebd712b795730204a6559c94c2ab",
+      "score_ms": 302.649199
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+          "fetch_misses": 66,
+          "link_bytes": {
+            "gpu0-host0": 1589248,
+            "host0-gpu0": 540672
+          },
+          "median_elapsed_ms": 48.334027,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f"
+        },
+        {
+          "case_sha256": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+          "fetch_misses": 88,
+          "link_bytes": {
+            "gpu0-host0": 1867776,
+            "host0-gpu0": 720896
+          },
+          "median_elapsed_ms": 57.661484,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+        },
+        {
+          "case_sha256": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+          "fetch_misses": 157,
+          "link_bytes": {
+            "gpu0-host0": 10469376,
+            "host0-gpu0": 1286144
+          },
+          "median_elapsed_ms": 173.138303,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4"
+        },
+        {
+          "case_sha256": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f",
+          "fetch_misses": 4,
+          "link_bytes": {
+            "gpu0-host0": 770048,
+            "host0-gpu0": 32768
+          },
+          "median_elapsed_ms": 21.170913,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h64-native.json",
+      "receipt_sha256": "f8a5168d7f08a196448c2de7893a2b63fe6bb0ed73d9b7e382af51d4415a0142",
+      "score_ms": 300.304727
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+          "fetch_misses": 220,
+          "link_bytes": {
+            "gpu0-host0": 294912,
+            "host0-gpu0": 1802240
+          },
+          "median_elapsed_ms": 58.729315,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f"
+        },
+        {
+          "case_sha256": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+          "fetch_misses": 333,
+          "link_bytes": {
+            "gpu0-host0": 516096,
+            "host0-gpu0": 2727936
+          },
+          "median_elapsed_ms": 74.574031,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+        },
+        {
+          "case_sha256": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+          "fetch_misses": 380,
+          "link_bytes": {
+            "gpu0-host0": 9150464,
+            "host0-gpu0": 3112960
+          },
+          "median_elapsed_ms": 264.375922,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4"
+        },
+        {
+          "case_sha256": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f",
+          "fetch_misses": 31,
+          "link_bytes": {
+            "gpu0-host0": 49152,
+            "host0-gpu0": 253952
+          },
+          "median_elapsed_ms": 23.814501,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h64-tail-cold.json",
+      "receipt_sha256": "8c11f18c914a3ee14b01c24d2df50b0d720efccf273fa6a3ff7a272e171b55cb",
+      "score_ms": 421.493769
+    },
+    {
+      "cases": [
+        {
+          "case_sha256": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+          "fetch_misses": 60,
+          "link_bytes": {
+            "gpu0-host0": 139264,
+            "host0-gpu0": 491520
+          },
+          "median_elapsed_ms": 47.195934,
+          "name": "agent-water-inspection",
+          "selected_and_output_sha256": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f"
+        },
+        {
+          "case_sha256": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+          "fetch_misses": 106,
+          "link_bytes": {
+            "gpu0-host0": 188416,
+            "host0-gpu0": 868352
+          },
+          "median_elapsed_ms": 58.337578,
+          "name": "chatbot-trip-planning",
+          "selected_and_output_sha256": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+        },
+        {
+          "case_sha256": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+          "fetch_misses": 402,
+          "link_bytes": {
+            "gpu0-host0": 9355264,
+            "host0-gpu0": 3293184
+          },
+          "median_elapsed_ms": 291.020048,
+          "name": "long-document-estuary-qa",
+          "selected_and_output_sha256": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4"
+        },
+        {
+          "case_sha256": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f",
+          "fetch_misses": 32,
+          "link_bytes": {
+            "gpu0-host0": 40960,
+            "host0-gpu0": 262144
+          },
+          "median_elapsed_ms": 22.923577,
+          "name": "rollout-bridge-options",
+          "selected_and_output_sha256": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a"
+        }
+      ],
+      "receipt": "geometry-v8-gpu3-h64-writeback.json",
+      "receipt_sha256": "1cfa7908065032fa9b2cef30b65b48c2674b08e14b6216db134742bbe4663446",
+      "score_ms": 419.477137
+    }
+  ],
+  "schema": 1,
+  "scope": "single GPU3 plus pinned host; public authored training fixtures; fixed CPU64; engineering qualification only",
+  "source_manifest_sha256": "36f6af3b96581744199e55b4ba8121985985843ddabfa27dae04bdc99af81bce",
+  "source_zip_sha256": "3cb2fb6fa8d89a6b9cb4a69d467ba5738a46155e47add6c63fd6f800f4753231"
+}

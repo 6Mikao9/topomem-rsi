@@ -1,0 +1,38 @@
+{
+  "case": {
+    "id": "archive-train-reproduction",
+    "manifest_sha256": "a62906c592c0836ffac1496e2dd553cfb2f52c93360d7700191501e31f1c66e4",
+    "scenario_sha256": "e3b2033206e5bb2b55b86fdb2e235d7fa8d2052133e60da78f1b65959312d343",
+    "schedule_sha256": "52473a070915abe68bfc0c7705d4db2aa3c0b7bc0c4cecf895193b0cc5eef5ae",
+    "target_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+    "topology_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+    "workload_sha256": "b497bc971bed3aa9065bf300ac2219043d2205c95ec96ec06c96349c0454860e"
+  },
+  "files": {
+    "external_schedule.json": {
+      "bytes": 2978,
+      "canonical_sha256": "52473a070915abe68bfc0c7705d4db2aa3c0b7bc0c4cecf895193b0cc5eef5ae",
+      "sha256": "765e2cfbfbfe4e3945d39263f4c405e50f1bac783bbd9ab7ece34831d4be9d2d"
+    },
+    "scenario.json": {
+      "bytes": 586,
+      "canonical_sha256": "e3b2033206e5bb2b55b86fdb2e235d7fa8d2052133e60da78f1b65959312d343",
+      "sha256": "e51381202c0862e58d55556a25017c420d67645f20a70141b5d2b73ac691189d"
+    },
+    "target.json": {
+      "bytes": 962,
+      "canonical_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+      "sha256": "337721a472259b12d87165c864874308e8844a2bdda5a9156be22193d70a25fd"
+    },
+    "topology.json": {
+      "bytes": 1869,
+      "canonical_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+      "sha256": "a15e1d9de5d1d4743447acbb645a3d8e8226887ff7492d502453b111fde3f27d"
+    }
+  },
+  "kind": "sglang_public_training_case_projection",
+  "schema": 1,
+  "scope": "byte-identical subset of the measured training case; topology and fixed replay commitments only",
+  "source": "../sweep/manifest.json",
+  "source_sweep_sha256": "261e75114485091e943680b0c7d5e48eb65fbb31366bbd18d00de604273bec89"
+}

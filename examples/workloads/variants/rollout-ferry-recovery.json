@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "kind": "rollout_cow",
+  "name": "rollout-ferry-recovery",
+  "page_rows": 16,
+  "segments": [
+    {
+      "id": "shared",
+      "role": "user",
+      "text": "Ferry recovery: keep the narrow access lane open and preserve loading access for the morning food delivery.\n"
+    },
+    {
+      "id": "amber",
+      "role": "assistant",
+      "text": "Amber sends unloading through gate eight and leaves the lift open.\n"
+    },
+    {
+      "id": "parent-progress",
+      "role": "assistant",
+      "text": "The control room records the three proposals and keeps its original lane restriction.\n"
+    },
+    {
+      "id": "cobalt",
+      "role": "assistant",
+      "text": "Cobalt uses the old baggage room with one checked pedestrian entrance.\n"
+    },
+    {
+      "id": "silver",
+      "role": "assistant",
+      "text": "Silver diverts forklifts to the central bay during the morning handoff.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "root",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "root",
+      "segment": "shared",
+      "at_ns": 67000000
+    },
+    {
+      "op": "infer",
+      "session": "root",
+      "max_new_tokens": 9,
+      "select_rows": [
+        104,
+        0,
+        36
+      ],
+      "at_ns": 134000000
+    },
+    {
+      "op": "fork",
+      "session": "amber",
+      "parent": "root",
+      "at_ns": 198000000
+    },
+    {
+      "op": "fork",
+      "session": "cobalt",
+      "parent": "root",
+      "at_ns": 265000000
+    },
+    {
+      "op": "fork",
+      "session": "silver",
+      "parent": "root",
+      "at_ns": 332000000
+    },
+    {
+      "op": "append",
+      "session": "amber",
+      "segment": "amber",
+      "at_ns": 396000000
+    },
+    {
+      "op": "append",
+      "session": "root",
+      "segment": "parent-progress",
+      "at_ns": 463000000
+    },
+    {
+      "op": "infer",
+      "session": "amber",
+      "max_new_tokens": 18,
+      "select_rows": [
+        108,
+        0,
+        36,
+        172
+      ],
+      "at_ns": 530000000
+    },
+    {
+      "op": "append",
+      "session": "cobalt",
+      "segment": "cobalt",
+      "at_ns": 594000000
+    },
+    {
+      "op": "infer",
+      "session": "cobalt",
+      "max_new_tokens": 28,
+      "select_rows": [
+        108,
+        0,
+        36,
+        176
+      ],
+      "at_ns": 661000000
+    },
+    {
+      "op": "append",
+      "session": "silver",
+      "segment": "silver",
+      "at_ns": 728000000
+    },
+    {
+      "op": "infer",
+      "session": "silver",
+      "max_new_tokens": 14,
+      "select_rows": [
+        108,
+        0,
+        36,
+        177
+      ],
+      "at_ns": 792000000
+    },
+    {
+      "op": "close",
+      "session": "silver",
+      "at_ns": 859000000
+    },
+    {
+      "op": "close",
+      "session": "cobalt",
+      "at_ns": 926000000
+    },
+    {
+      "op": "close",
+      "session": "amber",
+      "at_ns": 990000000
+    },
+    {
+      "op": "close",
+      "session": "root",
+      "at_ns": 1057000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/rollout-ferry-recovery.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "70965c6f0d8c2809f13bb97339f6ffdd6042f9a045cecba6a316b9d68813f43c"
+  }
+}

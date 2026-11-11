@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "kind": "agent_tools",
+  "name": "agent-museum-access",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "You coordinate museum access while conserving sealed exhibits.\n"
+    },
+    {
+      "id": "question",
+      "role": "user",
+      "text": "Locate the west loading door that a courier can use before the conservation class.\n"
+    },
+    {
+      "id": "call-1",
+      "role": "tool_call",
+      "text": "{\"tool\": \"entry_register\", \"input\": \"west loading\"}\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "result-1",
+      "role": "tool_result",
+      "text": "Door C accepts escorted deliveries. The original note also lists door D for staff, but it does not apply to external couriers.\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "call-2",
+      "role": "tool_call",
+      "text": "{\"tool\": \"calendar\", \"input\": \"conservation class\"}\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "result-2",
+      "role": "tool_result",
+      "text": "The class occupies the loading court at 11:15. Delivery is permitted from 10:20 through 10:50. Ask for the glass-crate escort before opening door C.\n",
+      "call_id": "call-2"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "operator",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "system",
+      "at_ns": 38000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "question",
+      "at_ns": 76000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 16,
+      "select_rows": [
+        141,
+        0,
+        73
+      ],
+      "at_ns": 111000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-1",
+      "at_ns": 149000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-1",
+      "at_ns": 187000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 24,
+      "select_rows": [
+        322,
+        13,
+        108
+      ],
+      "at_ns": 222000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-2",
+      "at_ns": 260000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-2",
+      "at_ns": 298000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 40,
+      "select_rows": [
+        523,
+        13,
+        175
+      ],
+      "at_ns": 333000000
+    },
+    {
+      "op": "close",
+      "session": "operator",
+      "at_ns": 371000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/agent-museum-access.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "62ab31edb7b14aa8507ffc5eb55bb490388ed48d7898749d55ce6e81d93aef64"
+  }
+}

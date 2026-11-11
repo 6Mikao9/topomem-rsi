@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-10T21:05:43.288960+00:00",
+  "condition": "Only formal phase completion/exit status and preregistered UTC budget determine launch; no score condition.",
+  "driver_sha256": "9a4eef769bc864ff45f123c4cbf7cfcb0a81881ca222abbf26ff412802247994",
+  "preregistration_sha256": "47fb544e2c326d388d221101d652fb59073af1899ff69c949ffdf8bc07e7442d",
+  "read_formal_report_only_after_all_phases_exit_zero": true,
+  "latest_start_utc": "2026-11-11T00:00:00Z",
+  "no_new_submissions_at_or_after_utc": "2026-11-11T00:20:00Z"
+}

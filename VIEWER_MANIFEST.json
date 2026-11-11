@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "scope": "Postprocessing viewer only. Frozen experiment controllers and GPU sources are unchanged.",
+  "base_merge_manifest_sha256": "3e2be221b076e1365dbf5ab18739d287a75cd260a61d62c47d639429aad15b0a",
+  "files": {
+    "rsi_memory/topology_report.py": "11925335f9fd305586a77899ad4a002ff9ee8b60d433a767d01c1db1192c1193",
+    "rsi_memory/topology_report_assets.py": "f6f7b00beaa7a222fe6b1d6fe9bacde5e8808e60b965aa3fb4d986a536c413a4",
+    "tests/test_topology_report_outcome.py": "35ed3ef3fc3feef6ec5cc3306fd2f6ac023bc4db7e68d15d09c5ceedf84baed3"
+  },
+  "previous_files": {
+    "rsi_memory/topology_report.py": "cd0c0ed2c3de88aae5d80a017f667728108556769aa6f8493b6e8c382f7ec6c3",
+    "rsi_memory/topology_report_assets.py": "6621b3e85184b6d4813e5709c23cad251f26e5271154e01deeb4dc44b3fdd46c",
+    "tests/test_topology_report_outcome.py": null
+  },
+  "verification": "15 isolated viewer tests and actual settled CUDA evidence headless DOM; no pending SGLang results represented as settled."
+}

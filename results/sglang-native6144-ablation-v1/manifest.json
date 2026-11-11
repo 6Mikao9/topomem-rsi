@@ -1,0 +1,25 @@
+{
+  "bound": {
+    "adapter_config_field_diff": {
+      "receipt_directory": {
+        "original_value_sha256": "b1c22367b405afdc03e253aa227162d2cbf2306119f07ee16d710dcbbbafd8b6",
+        "public_supplement_path": "receipts",
+        "replacement_value_sha256": "90229ec782ae4f861ff299596498833d6c11b7d4248d085aac0480f52ccfbd47"
+      }
+    },
+    "adaptive_harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+    "adaptive_program_sha256": "be70b6cc987e6a8ad0ee9664a41609731ff360dacf35e532080dcee74977ecd1",
+    "adaptive_trial_id": "r0000/parent/01",
+    "derived_private_config_sha256": "030f604a751bfc136c48c949ce815ed80e35711c756d9da9252e3ffc5b83c637",
+    "formal_frozen_sha256": "4db9301041d0cc6d858f4445a645203bbfe4702a110f767b0b3b08d3b21d27e1",
+    "formal_manifest_canonical_sha256": "6a93418186bf33d8779ac7c4b633431005c4a692ea705dd32ac7bc368bbdfd60",
+    "formal_pipeline_status_sha256": "a683befd332397e5d87e39e1bad950312cd99ec292959fbe3317522e9c0eb8f4",
+    "formal_private_config_sha256": "959c7fe29e1a0443404f201e278a7817d6d8afe144fad46b450daa86f4449e9c",
+    "formal_report_sha256": "4f563d86217d6bc6eb5be84a09bbce00387d86702609397aeb87b5de55fb3adf",
+    "preregistration_sha256": "47fb544e2c326d388d221101d652fb59073af1899ff69c949ffdf8bc07e7442d"
+  },
+  "kind": "sglang_post_freeze_native6144_v1",
+  "planned_jobs": 32,
+  "qualification_reuse": "completed same worker source, unchanged adapter identity, exact request and program hashes",
+  "schema": 1
+}

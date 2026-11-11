@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topomem-rsi"
+version = "0.2.0"
+description = "Recursive synthesis of memory managers for sparse attention and hardware topologies"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["rsi_memory*", "integrations*", "topomem_sglang_rsi*"]

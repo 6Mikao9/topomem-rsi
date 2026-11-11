@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "kind": "chatbot_growth",
+  "name": "chatbot-pottery-course",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Track the sequence and budget for a small arts class across the conversation.\n"
+    },
+    {
+      "id": "user-0",
+      "role": "user",
+      "text": "Plan a weekend pottery session that fits four beginners and one wheel.\n"
+    },
+    {
+      "id": "reply-1",
+      "role": "assistant",
+      "text": "Assign the first group to hand building while one person prepares the wheel.\n"
+    },
+    {
+      "id": "user-1",
+      "role": "user",
+      "text": "Add a fifteen-minute break before glazing and keep the afternoon free.\n"
+    },
+    {
+      "id": "reply-2",
+      "role": "assistant",
+      "text": "Move glazing to the following morning and leave time to clean the wheel.\n"
+    },
+    {
+      "id": "user-2",
+      "role": "user",
+      "text": "Keep the cleanup but add a separate station for the left-handed learner.\n"
+    },
+    {
+      "id": "reply-3",
+      "role": "assistant",
+      "text": "Use the east bench for a mirror setup and label both sides.\n"
+    },
+    {
+      "id": "user-3",
+      "role": "user",
+      "text": "Now shorten setup because a second class begins at ten.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "dialogue",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "system",
+      "at_ns": 49000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-0",
+      "at_ns": 98000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 12,
+      "select_rows": [
+        146,
+        49,
+        0
+      ],
+      "at_ns": 144000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-1",
+      "at_ns": 193000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-1",
+      "at_ns": 242000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 20,
+      "select_rows": [
+        294,
+        99,
+        0
+      ],
+      "at_ns": 288000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-2",
+      "at_ns": 337000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-2",
+      "at_ns": 386000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 18,
+      "select_rows": [
+        440,
+        147,
+        0
+      ],
+      "at_ns": 432000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-3",
+      "at_ns": 481000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-3",
+      "at_ns": 530000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 28,
+      "select_rows": [
+        556,
+        186,
+        0
+      ],
+      "at_ns": 576000000
+    },
+    {
+      "op": "close",
+      "session": "dialogue",
+      "at_ns": 625000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/chatbot-pottery-course.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "2f8184246a5451981d5cb67d33c993f79879f8371518755a831b5d00f17b2324"
+  }
+}

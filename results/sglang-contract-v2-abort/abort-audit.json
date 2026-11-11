@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "stopped_utc": "2026-11-10T20:13:45.567993+00:00",
+  "reason": "Audited conflicting trusted prompt contracts: unconditional allocate/place required while resident mode prohibits cold placement. Actual parent/00 candidate rejected for this precise compiler condition. Stop before promotion and heldout; preserve incomplete API and evaluation states, no resume under changed source.",
+  "protocol_config_sha256": "a4c62726543fa19ac815ddc8e5f21388789231940306df29c994f4e592813740",
+  "failed_evaluation": {
+    "input": {
+      "program": {
+        "kind": "kv_memory_program",
+        "rules": [
+          {
+            "action": "hot_capacity",
+            "event": "configure",
+            "score": {
+              "args": [
+                {
+                  "name": "candidate_hot_slots",
+                  "op": "feature"
+                },
+                {
+                  "op": "const",
+                  "value": 6144.0
+                },
+                {
+                  "op": "const",
+                  "value": 1000000.0
+                },
+                {
+                  "name": "candidate_hot_slots",
+                  "op": "feature"
+                }
+              ],
+              "op": "if_lt"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "backing_mode",
+            "event": "configure",
+            "score": {
+              "args": [
+                {
+                  "name": "candidate_backing_is_resident",
+                  "op": "feature"
+                },
+                {
+                  "op": "const",
+                  "value": 1.0
+                },
+                {
+                  "op": "const",
+                  "value": 1.0
+                },
+                {
+                  "args": [
+                    {
+                      "name": "resident_hot_slot_margin",
+                      "op": "feature"
+                    },
+                    {
+                      "op": "const",
+                      "value": 0.0
+                    },
+                    {
+                      "op": "const",
+                      "value": 2.0
+                    },
+                    {
+                      "op": "const",
+                      "value": 0.0
+                    }
+                  ],
+                  "op": "if_lt"
+                }
+              ],
+              "op": "if_lt"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "place",
+            "event": "allocate",
+            "score": {
+              "args": [
+                {
+                  "name": "target_is_local",
+                  "op": "feature"
+                },
+                {
+                  "op": "const",
+                  "value": 1.0
+                },
+                {
+                  "args": [
+                    {
+                      "name": "route_transfer_ns",
+                      "op": "feature"
+                    },
+                    {
+                      "name": "route_latency_ns",
+                      "op": "feature"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "op": "const",
+                  "value": 0.0
+                }
+              ],
+              "op": "if_lt"
+            },
+            "when": {
+              "args": [
+                {
+                  "name": "target_free_bytes",
+                  "op": "feature"
+                },
+                {
+                  "name": "bytes",
+                  "op": "feature"
+                },
+                {
+                  "op": "const",
+                  "value": 0.0
+                },
+                {
+                  "op": "const",
+                  "value": 1.0
+                }
+              ],
+              "op": "if_lt"
+            }
+          }
+        ],
+        "schema": 1
+      },
+      "split": "train"
+    },
+    "result": {
+      "feasible": false,
+      "feedback": {
+        "failure": "resident backing cannot include cold placement rules"
+      },
+      "metrics": {
+        "preflight_rejected": true,
+        "receipts": []
+      },
+      "score": null
+    },
+    "seconds": 0.0,
+    "status": "completed"
+  },
+  "record_statuses": {
+    "eval/native/train": "completed",
+    "eval/native/validation": "completed",
+    "eval/bootstrap/initial-incumbent": "completed",
+    "api/r0000/adaptive-meta": "completed",
+    "api/r0000/fixed-meta": "completed",
+    "api/r0000/parent/00": "completed",
+    "eval/r0000/parent/00": "completed",
+    "api/r0000/parent/01": "completed",
+    "eval/r0000/parent/01": "completed",
+    "api/r0000/child/00": "pending"
+  },
+  "pending_may_have_provider_side_completion": true,
+  "controller_child_pid": 18548
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "artifacts": [
+    {
+      "file": "resident-v3-evidence.zip",
+      "bytes": 453542,
+      "sha256": "e37c83b4f6f50d3291f5fe856fd65706490f8fdbcb6dcb9e3e22adafd8e26266"
+    },
+    {
+      "file": "topomem-sglang-resident-probe-v3.zip",
+      "bytes": 149882,
+      "sha256": "f9c123b39d7727a259e3ebd47445e1282d30a142740ce69dd14087696ad78ba5"
+    },
+    {
+      "file": "topomem-sglang-resident-probe-v3.source-manifest.json",
+      "bytes": 5904,
+      "sha256": "0f64a120aafa242f65efcef4cdf2cfaa9caa268bf8a10c5362d639ad28a66fff"
+    },
+    {
+      "file": "topomem-resident-integration-decision-plan-v1.json",
+      "bytes": 1298,
+      "sha256": "f9899e3fa88260b63e2a6edf418844646d17cd389bee83f118cd0dc8ed170971"
+    }
+  ]
+}

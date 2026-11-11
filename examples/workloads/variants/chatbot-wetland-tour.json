@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "kind": "chatbot_growth",
+  "name": "chatbot-wetland-tour",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Retain each visitor constraint and revise the same itinerary.\n"
+    },
+    {
+      "id": "user-0",
+      "role": "user",
+      "text": "Plan a quiet wetland tour for two adults and a child who uses a walking frame.\n"
+    },
+    {
+      "id": "reply-1",
+      "role": "assistant",
+      "text": "The boardwalk from the east kiosk has a rail and a level observation platform.\n"
+    },
+    {
+      "id": "user-1",
+      "role": "user",
+      "text": "Start at the east kiosk and avoid the bird hide while the school group is there.\n"
+    },
+    {
+      "id": "reply-2",
+      "role": "assistant",
+      "text": "We can cross the reed bridge first and visit the hide after eleven.\n"
+    },
+    {
+      "id": "user-2",
+      "role": "user",
+      "text": "Keep the reed bridge but add a sheltered rest stop if the rain begins.\n"
+    },
+    {
+      "id": "reply-3",
+      "role": "assistant",
+      "text": "The reed bridge leads to a covered seating area by the map cabinet.\n"
+    },
+    {
+      "id": "user-3",
+      "role": "user",
+      "text": "Keep the covered stop and make the whole trip fit before the noon ferry.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "dialogue",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "system",
+      "at_ns": 53000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-0",
+      "at_ns": 106000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 16,
+      "select_rows": [
+        138,
+        47,
+        0
+      ],
+      "at_ns": 156000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-1",
+      "at_ns": 209000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-1",
+      "at_ns": 262000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 24,
+      "select_rows": [
+        298,
+        100,
+        0
+      ],
+      "at_ns": 312000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-2",
+      "at_ns": 365000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-2",
+      "at_ns": 418000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 26,
+      "select_rows": [
+        437,
+        146,
+        0
+      ],
+      "at_ns": 468000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-3",
+      "at_ns": 521000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-3",
+      "at_ns": 574000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 38,
+      "select_rows": [
+        578,
+        193,
+        0
+      ],
+      "at_ns": 624000000
+    },
+    {
+      "op": "close",
+      "session": "dialogue",
+      "at_ns": 677000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/chatbot-wetland-tour.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "23947445604f25da5aeee94c4f83f06b284b191b1755487f43cd3fd68e646c17"
+  }
+}

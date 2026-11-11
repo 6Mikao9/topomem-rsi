@@ -1,0 +1,45 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "const",
+                "value": 1
+              },
+              {
+                "name": "target_is_local",
+                "op": "feature"
+              }
+            ],
+            "op": "sub"
+          },
+          {
+            "args": [
+              {
+                "op": "const",
+                "value": 2
+              },
+              {
+                "name": "target_is_host",
+                "op": "feature"
+              }
+            ],
+            "op": "sub"
+          }
+        ],
+        "op": "mul"
+      },
+      "when": {
+        "op": "const",
+        "value": 1
+      }
+    }
+  ],
+  "schema": 1
+}

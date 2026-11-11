@@ -1,0 +1,10 @@
+{
+  "html_sha256": "b4b9edb1153fe6c475e8390f01b24a714c7bc38ce14fdb9a289cd338f2f63f31",
+  "node_syntax": "passed",
+  "files": {
+    "final-desktop.png": "046f0843fbb9e270e97c0ec4c639f21df6f1f655bfeced16028554d91e9de8f2",
+    "final-desktop-paired.png": "c14c669ea8731435f0dfce18e174a6b9dfda27913f13a176ba640935be6bff18",
+    "final-mobile-390.png": "f530a6b33ec96a13ba03b02a7041e5bd82aea2fd8832ef643ccfa77587b51abd",
+    "browser-qa.json": "321b8ebf836e80ecea168a394362fee60da6fac601f7045736f0771d37619224"
+  }
+}

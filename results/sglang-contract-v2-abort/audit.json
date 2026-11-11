@@ -1,0 +1,56 @@
+{
+  "freeze_occurred": false,
+  "heldout_effects": 0,
+  "measured_native_training_baseline_ms": 1075.581884,
+  "measured_native_validation_baseline_ms": 1093.4893029999998,
+  "meta_source_from_original_api": {
+    "adaptive_proposed_source_sha256": "78375a0d838ff4f46291c555878172854863af9a74bc840c17cc7af4b9e66c4b",
+    "fixed_discarded_source_sha256": "b629decdb2453e56a1bc6265cff25b6167053e4a079379fee2ab966a4dbe9184"
+  },
+  "other_train_candidate": {
+    "backing_mode": "tiered",
+    "hot_slots": 4096,
+    "program_sha256": "0cfbceecf144d2d7302d6584b0087a71a3797fb083f21bdc38ebc7707a072dbf",
+    "trial": "r0000/parent/01",
+    "window_ms": 1082.140216
+  },
+  "paired_candidate_validation_effects": 0,
+  "private_schema3_bytes_sha256": "a4c62726543fa19ac815ddc8e5f21388789231940306df29c994f4e592813740",
+  "reported_api": {
+    "adaptive_completed_reported_tokens": 48461,
+    "completed": 4,
+    "completed_seconds": 449.7500000000582,
+    "fixed_completed_reported_tokens": 14104,
+    "pending_unknown": 1,
+    "total_reported_tokens": 62565
+  },
+  "rounds_completed": 0,
+  "schema": 1,
+  "scope": "training-stage protocol abort, including preliminary native validation baseline",
+  "server_raw_index_sha256": "40003a2c07139e3d20e19eaff084b318be716ff14cef607640ab86f06ee96054",
+  "trial_gate": {
+    "candidate_rule_actions": [
+      [
+        "configure",
+        "hot_capacity"
+      ],
+      [
+        "configure",
+        "backing_mode"
+      ],
+      [
+        "allocate",
+        "place"
+      ]
+    ],
+    "frozen_compiler_offline_train_only_exact_failure": "resident backing cannot include cold placement rules",
+    "program_sha256": "8cc6847d3369a9adeb0ac9b90afb9e0e32816817c3ec12854819a0b4b691f7c8",
+    "real_domain_requires_resident_to_omit_cold_placement": true,
+    "real_prompt_required_rule": {
+      "action": "place",
+      "event": "allocate"
+    },
+    "recorded_gpu_jobs_for_failed_trial": 0,
+    "trial": "r0000/parent/00"
+  }
+}

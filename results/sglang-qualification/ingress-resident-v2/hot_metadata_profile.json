@@ -1,0 +1,84 @@
+{
+  "base_target_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+  "base_topology_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+  "calibration_adapter_sources_sha256": {
+    "sglang_backing.py": "b215147eacbedcd0beae2db61d8afb003f4ccd0e3401649b2a3b132d13f9ed6e",
+    "sglang_dependency.py": "e132cde88dee5e8e461be99dc17226a482f0f5a7aff1f3c5ef5e687de7c53aff",
+    "sglang_global_ticks.py": "6bcc31a7213b46f4d7cfe2173163f459cfd2c128005dd1ecda0f240b4c002ffa",
+    "sglang_ingress_gate.py": "eb6960f94bb50dfd471b27cbd7ad0f335b4f910acd7277890732948b59d4d48e",
+    "sglang_observe.py": "6d7e0aeecbeafa998b240243371383f56ce5481a12d3600f33eddae33087992c",
+    "sglang_relay.py": "50a99f37f5b42217bbf0e7760295d0c1997fb1a348395561aec9e3b7e61460f8",
+    "sglang_resident.py": "2b731f48d35cb9e918ad8c8524320f2b7dda795cf04561656787d26ae916e0f6",
+    "sglang_resident_oracle.py": "754559181820f3c991973e6a1b6118d48bccd7bbed3ec93d4c0a5dfc592f8c89",
+    "sglang_serving.py": "4b1729045045204a579ad899fad59e31c371f6eb06ee7d05a2184d806a0953b4",
+    "sglang_smoke.py": "5eb3a93e55304474f533f9bbf2988b8e3cc18a77e25af0161ecb36bacfc2e025",
+    "sglang_sources.py": "c8d8bbf91c7f46feeaa1bf19cb42eb31c427cfbafea3f47fe6d11b3c24889ced"
+  },
+  "calibration_workload_sha256": "dc18d47ebbb2e2f16275b8ec8b2c37a4b4eee1f4bff2fc9685ce78484558ab4c",
+  "kind": "sglang_native_hot_metadata",
+  "observations": {
+    "4096": {
+      "case_manifest_sha256": "b61e9f34c7d4a03ceb891c706cc7ece7301ee0bfb48f23851339c28d8982f6af",
+      "ranks": [
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 588800,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        },
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 588800,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        }
+      ],
+      "result_sha256": "518f411edfd92c4aaba11b54ae9db8c8c783a39879ba4073249193be7f9a466a"
+    },
+    "6144": {
+      "case_manifest_sha256": "dad042d93c7eab2b00e35b5e357179c9893c884db1cffd7f6bb58c8f03518e6e",
+      "ranks": [
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 879616,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        },
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 879616,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        }
+      ],
+      "result_sha256": "b82b697498dafed06cca5182e1bfb254052fb584edfaf335d9798a6030c34c63"
+    },
+    "8192": {
+      "case_manifest_sha256": "e0169b5f8ad0eecd6c6ebab7159449a27c4e452aa779ac1fa651fe241e164bfc",
+      "ranks": [
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 1170432,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        },
+        {
+          "device_logical_row_capacity": 16384,
+          "device_physical_rows": 16448,
+          "hot_metadata_bytes": 1170432,
+          "packed_device_payload_bytes": 64739328,
+          "request_metadata_slots_including_pad": 2
+        }
+      ],
+      "result_sha256": "ee995303132bd60e038ecab515bd996431f3a46dcc03d2685c6a2a83cb1ccb96"
+    }
+  },
+  "runtime_identity_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff",
+  "schema": 1,
+  "status": "observed_native_parity"
+}

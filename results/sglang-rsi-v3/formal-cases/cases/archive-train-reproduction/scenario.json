@@ -1,0 +1,23 @@
+{
+  "attention": {
+    "family": "dsa",
+    "kv_row_bytes": 656,
+    "selection_unit": "token",
+    "selector": "torch-unfused",
+    "top_k": 2048
+  },
+  "rank_placement": [
+    {
+      "node": "gpu-a",
+      "rank": 0
+    },
+    {
+      "node": "gpu-b",
+      "rank": 1
+    }
+  ],
+  "schedule_sha256": "52473a070915abe68bfc0c7705d4db2aa3c0b7bc0c4cecf895193b0cc5eef5ae",
+  "schema": 1,
+  "target_sha256": "12ec69716036b6c3e5e92e302689cb6d95fac0da981bee488f82157b479d3546",
+  "workload_sha256": "b497bc971bed3aa9065bf300ac2219043d2205c95ec96ec06c96349c0454860e"
+}

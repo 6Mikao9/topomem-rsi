@@ -1,0 +1,185 @@
+{
+  "actions": [
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l0",
+      "layer": 0,
+      "node": "gpu-a",
+      "rank": 0,
+      "read_links": [],
+      "rule_index": 0,
+      "write_links": []
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l1",
+      "layer": 1,
+      "node": "host",
+      "rank": 0,
+      "read_links": [
+        "gpu-a-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-a-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l2",
+      "layer": 2,
+      "node": "host",
+      "rank": 0,
+      "read_links": [
+        "gpu-a-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-a-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l3",
+      "layer": 3,
+      "node": "host",
+      "rank": 0,
+      "read_links": [
+        "gpu-a-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-a-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l4",
+      "layer": 4,
+      "node": "host",
+      "rank": 0,
+      "read_links": [
+        "gpu-a-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-a-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r0-l5",
+      "layer": 5,
+      "node": "host",
+      "rank": 0,
+      "read_links": [
+        "gpu-a-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-a-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l0",
+      "layer": 0,
+      "node": "gpu-b",
+      "rank": 1,
+      "read_links": [],
+      "rule_index": 0,
+      "write_links": []
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l1",
+      "layer": 1,
+      "node": "host",
+      "rank": 1,
+      "read_links": [
+        "gpu-b-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-b-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l2",
+      "layer": 2,
+      "node": "host",
+      "rank": 1,
+      "read_links": [
+        "gpu-b-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-b-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l3",
+      "layer": 3,
+      "node": "host",
+      "rank": 1,
+      "read_links": [
+        "gpu-b-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-b-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l4",
+      "layer": 4,
+      "node": "host",
+      "rank": 1,
+      "read_links": [
+        "gpu-b-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-b-d2h"
+      ]
+    },
+    {
+      "action": "reserve_backing",
+      "bytes": 21537792,
+      "key": "r1-l5",
+      "layer": 5,
+      "node": "host",
+      "rank": 1,
+      "read_links": [
+        "gpu-b-h2d"
+      ],
+      "rule_index": 0,
+      "write_links": [
+        "gpu-b-d2h"
+      ]
+    }
+  ],
+  "program_sha256": "bfa8203b433f28ab4fc16f575e3030bf83ec59e07cf22f5a6a86ff2a6bb911f2",
+  "scenario_sha256": "0e8d9a5f0974bebc428f5439f0c333af19a942270638ffca63c52187919b7d3d",
+  "schema": 1,
+  "topology_sha256": "cfa50feef3fc275c3bf7ee7ba07b440a218dd10d44c58d24bcb284999e064310",
+  "used_bytes_by_node": {
+    "gpu-a": 21537792,
+    "gpu-b": 21537792,
+    "host": 215377920
+  }
+}

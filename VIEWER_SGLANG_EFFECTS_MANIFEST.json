@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Postprocessing-only overlay; frozen experimental controllers and workers unchanged",
+  "files": {
+    "rsi_memory/topology_report.py": "b22e77c2d14f54dfcbcaef66af4087cd6ccd54c0383923d8a66b65e24c3abddc",
+    "rsi_memory/topology_report_assets.py": "6deee5ef4c2c0aac56f80a1afddab8f3652bcf94c306dfc60a9eac36cf40eb12",
+    "rsi_memory/topology_report_sglang.py": "1cdb9798862673ab13da22afceba85c946cba9b8cc76178b9708aa0d3fa0d929",
+    "tests/test_topology_report_sglang.py": "910ff4113682371a62c596737b480ba1bc93891cab9b253555f0e4a164d834b0"
+  },
+  "previous_files": {
+    "rsi_memory/topology_report.py": "11925335f9fd305586a77899ad4a002ff9ee8b60d433a767d01c1db1192c1193",
+    "rsi_memory/topology_report_assets.py": "f6f7b00beaa7a222fe6b1d6fe9bacde5e8808e60b965aa3fb4d986a536c413a4",
+    "rsi_memory/topology_report_sglang.py": null,
+    "tests/test_topology_report_sglang.py": null
+  },
+  "base_viewer_manifest_sha256": "44e5cc05b6c1eafb1412eec5285c7b4dee1dae416923a47215aa0b906df2edea",
+  "evidence_description": "Descriptive per-case observed SGLang configurations; retains original statistics and decisions; no claim of complete physical equivalence."
+}

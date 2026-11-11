@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "kind": "chatbot_growth",
+  "name": "chatbot-library-project",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Keep the current plan and answer only for the fictional community library.\n"
+    },
+    {
+      "id": "user-0",
+      "role": "user",
+      "text": "Organize a two-week catalog migration while the small reading room remains open.\n"
+    },
+    {
+      "id": "reply-1",
+      "role": "assistant",
+      "text": "Migrate the north shelves first and reserve the desk beside the lift for returns.\n"
+    },
+    {
+      "id": "user-1",
+      "role": "user",
+      "text": "Keep that desk and schedule a volunteer training hour before the Friday deliveries.\n"
+    },
+    {
+      "id": "reply-2",
+      "role": "assistant",
+      "text": "The training can run Thursday evening while the reference desk handles returns.\n"
+    },
+    {
+      "id": "user-2",
+      "role": "user",
+      "text": "Retain Thursday. Add separate checklists for staff, volunteers, and the accessibility reviewer.\n"
+    },
+    {
+      "id": "reply-3",
+      "role": "assistant",
+      "text": "Use the same catalog snapshot for all checklists and include shelf labels for accessibility.\n"
+    },
+    {
+      "id": "user-3",
+      "role": "user",
+      "text": "Update the signage plan for large-print readers without extending the closure.\n"
+    },
+    {
+      "id": "reply-4",
+      "role": "assistant",
+      "text": "Put temporary signs at each aisle entrance and keep the lift route clear.\n"
+    },
+    {
+      "id": "user-4",
+      "role": "user",
+      "text": "Now finish the plan with the original north shelves and an extra return station.\n"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "dialogue",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "system",
+      "at_ns": 60000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-0",
+      "at_ns": 120000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 24,
+      "select_rows": [
+        153,
+        52,
+        0
+      ],
+      "at_ns": 177000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-1",
+      "at_ns": 237000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-1",
+      "at_ns": 297000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 24,
+      "select_rows": [
+        319,
+        107,
+        0
+      ],
+      "at_ns": 354000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-2",
+      "at_ns": 414000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-2",
+      "at_ns": 474000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 32,
+      "select_rows": [
+        495,
+        166,
+        0
+      ],
+      "at_ns": 531000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-3",
+      "at_ns": 591000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-3",
+      "at_ns": 651000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 24,
+      "select_rows": [
+        667,
+        223,
+        0
+      ],
+      "at_ns": 708000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "reply-4",
+      "at_ns": 768000000
+    },
+    {
+      "op": "append",
+      "session": "dialogue",
+      "segment": "user-4",
+      "at_ns": 828000000
+    },
+    {
+      "op": "infer",
+      "session": "dialogue",
+      "max_new_tokens": 40,
+      "select_rows": [
+        822,
+        275,
+        0
+      ],
+      "at_ns": 885000000
+    },
+    {
+      "op": "close",
+      "session": "dialogue",
+      "at_ns": 945000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/chatbot-library-project.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "83d3a6fad71649041043294dc6c66d1cbec7537a45f693c98e0f25bb9e35e9b9"
+  }
+}

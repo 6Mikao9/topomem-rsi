@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "file": "rsi_memory/topology_report_assets.py",
+  "base_sha256": "6a6c5bbe8b535b823fd30449c5b803e83ec845e3cd43943a9e7ef91ea733a3df",
+  "draft_sha256": "b8e56afa2eb1c5bc18913f41673f1aceb8c1f9b6b93454a50c41572308b20397",
+  "check": "Node syntax"
+}

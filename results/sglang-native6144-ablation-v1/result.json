@@ -1,0 +1,293 @@
+{
+  "complete_blocks": [
+    {
+      "block_id": "n6144-b01",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-a944c8c364f7bfb42bd1c1a0bfba8cdc8c9639af80e6689c",
+          "archive-test-new-observation": "sg-a7c3c485ba29780f751dd051dc352a8260284f16976acab0"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-022f2313637cff9bff9eac17e9dc6c6ffc85132090ea77eb",
+          "archive-test-new-observation": "sg-0e066cfad19d8ddb57c5ee2d3cb5d67f60e9d5e2e5823603"
+        }
+      },
+      "native_minus_adaptive_ms": 7.357954999999492,
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1091.028692,
+          "archive-test-new-observation": 1093.359868
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1103.077569,
+          "archive-test-new-observation": 1088.668946
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2184.3885600000003,
+        "native6144_all_host": 2191.746515
+      }
+    },
+    {
+      "block_id": "n6144-b02",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-f9ee090fd7bfb30d310069e7880a4fc0a82590996f1077e6",
+          "archive-test-new-observation": "sg-4c94544983ead8f547f690ee55f707f88ac3d60d96ea4ba5"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-83d6e0fa2ef30d616dc5fce809e7dffadb553fe45b81f97b",
+          "archive-test-new-observation": "sg-f6e7a546174798a113c0c447486affa88dc883c37e0fd18d"
+        }
+      },
+      "native_minus_adaptive_ms": -14.350875999999516,
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1087.520343,
+          "archive-test-new-observation": 1100.341323
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1083.888209,
+          "archive-test-new-observation": 1089.622581
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2187.861666,
+        "native6144_all_host": 2173.5107900000003
+      }
+    },
+    {
+      "block_id": "n6144-b03",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-9686c8f482a5d5bdff438543739465a344f5d7b2a6244cb8",
+          "archive-test-new-observation": "sg-f64d605acc32e7598d6fcffa81673726f844c46406a523f1"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-1950a1e62bb844a22eac375eed16e195f2f44e309a117c26",
+          "archive-test-new-observation": "sg-eeb7e404b9948559165f301dd01f125abdb187cbde350568"
+        }
+      },
+      "native_minus_adaptive_ms": 16.48892399999977,
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1086.559003,
+          "archive-test-new-observation": 1076.891119
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1084.906281,
+          "archive-test-new-observation": 1095.032765
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2163.450122,
+        "native6144_all_host": 2179.939046
+      }
+    },
+    {
+      "block_id": "n6144-b04",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-e09192acef9d95bbcbbd8fa088da71d6468a5c7395cbaa79",
+          "archive-test-new-observation": "sg-a524c8d69c9250c064d1854a8fe39a65e4e3f140664f7e92"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-cd9843f539dfddf67cfe8d59ff296f7833de8666eac7e283",
+          "archive-test-new-observation": "sg-5e1054f405a8e3c378eaf07a4f39d00612431398df0ee7f1"
+        }
+      },
+      "native_minus_adaptive_ms": 22.39895899999965,
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1090.316382,
+          "archive-test-new-observation": 1082.5189440000001
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1080.235776,
+          "archive-test-new-observation": 1114.998509
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2172.8353260000004,
+        "native6144_all_host": 2195.234285
+      }
+    },
+    {
+      "block_id": "n6144-b05",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-ba5a114992923950f02610416db782e4aaf7684137459b09",
+          "archive-test-new-observation": "sg-670eb396a48530e4f32fdd5b2fb0fbec0f8e2502afa4d13e"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-8eb20ad510547b37b2b98440025d97b626dfd876b7c7d852",
+          "archive-test-new-observation": "sg-b4a59e63c2323b41e10f2e6e6cbf457421ecc73a4e4618ca"
+        }
+      },
+      "native_minus_adaptive_ms": 20.669840999999906,
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1086.003807,
+          "archive-test-new-observation": 1082.419081
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1088.996539,
+          "archive-test-new-observation": 1100.09619
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2168.422888,
+        "native6144_all_host": 2189.092729
+      }
+    },
+    {
+      "block_id": "n6144-b06",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-e6283602bbf9106c3084b89f8882256aa7f059cd342ad50f",
+          "archive-test-new-observation": "sg-bb1bcaeedab5f5a2bdfde08f06d46af7cad7b03c753c3efd"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-cf06e51b5228acd37d778e547f84afec17d23d3225b85187",
+          "archive-test-new-observation": "sg-a8be3bd26bee0edbb5f29046c8442554d7712ad0aa703ec3"
+        }
+      },
+      "native_minus_adaptive_ms": 17.76476199999979,
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1080.319287,
+          "archive-test-new-observation": 1084.464763
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1089.3006480000001,
+          "archive-test-new-observation": 1093.248164
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2164.78405,
+        "native6144_all_host": 2182.548812
+      }
+    },
+    {
+      "block_id": "n6144-b07",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-b9cf01aa9919e147bf930174591a48540ff314f7d96f3c1f",
+          "archive-test-new-observation": "sg-947f289784e1c254eb83e6ae66d199fe1221b6373aa59509"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-5714a0273cc082e88b3ce7b2532bdb54aa6c654d34596f6e",
+          "archive-test-new-observation": "sg-e82d4a9e28a840cdf8c50f218e7fd4a987eb22c79fc49ac4"
+        }
+      },
+      "native_minus_adaptive_ms": -22.940827000000354,
+      "order": [
+        "frozen_adaptive",
+        "native6144_all_host"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1101.558548,
+          "archive-test-new-observation": 1090.2259350000002
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1087.6371060000001,
+          "archive-test-new-observation": 1081.20655
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2191.7844830000004,
+        "native6144_all_host": 2168.843656
+      }
+    },
+    {
+      "block_id": "n6144-b08",
+      "job_id_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": "sg-e1bdef15eb27c5f64798150e56b26a7cb7498c021fdd4cb8",
+          "archive-test-new-observation": "sg-4369e6fabf5b0f1c21986030313d64afca2d0c2c0d86f85e"
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": "sg-1a5080c49b816bba0ca7293954bbef3cce3ec2835c776876",
+          "archive-test-new-observation": "sg-b04501a323e274c8b6ccaecee766c7b6b1280427e68e137c"
+        }
+      },
+      "native_minus_adaptive_ms": -3.360697000000073,
+      "order": [
+        "native6144_all_host",
+        "frozen_adaptive"
+      ],
+      "window_ms_by_arm_case": {
+        "frozen_adaptive": {
+          "archive-test-delayed-review": 1096.636826,
+          "archive-test-new-observation": 1087.9921800000002
+        },
+        "native6144_all_host": {
+          "archive-test-delayed-review": 1090.863149,
+          "archive-test-new-observation": 1090.40516
+        }
+      },
+      "window_ms_sum_by_arm": {
+        "frozen_adaptive": 2184.629006,
+        "native6144_all_host": 2181.268309
+      }
+    }
+  ],
+  "finished_utc": "2026-11-10T23:54:28.322875+00:00",
+  "median_ms": 11.923439499999631,
+  "performance_gate": "failed",
+  "positive_blocks": 5,
+  "practical_margin_ms": 11.49229000000014,
+  "preregistration_sha256": "47fb544e2c326d388d221101d652fb59073af1899ff69c949ffdf8bc07e7442d",
+  "started_utc": "2026-11-10T23:30:54.787481+00:00",
+  "startup_by_case": {
+    "archive-test-delayed-review": {
+      "frozen_adaptive": {
+        "backing_mode": "tiered",
+        "hot_slots": 4096
+      },
+      "native6144_all_host": {
+        "backing_mode": "tiered",
+        "hot_slots": 6144
+      },
+      "same_hot_capacity": false
+    },
+    "archive-test-new-observation": {
+      "frozen_adaptive": {
+        "backing_mode": "tiered",
+        "hot_slots": 4096
+      },
+      "native6144_all_host": {
+        "backing_mode": "tiered",
+        "hot_slots": 6144
+      },
+      "same_hot_capacity": false
+    }
+  },
+  "status": "completed",
+  "timed_jobs_completed": 32
+}

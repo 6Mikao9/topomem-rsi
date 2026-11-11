@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "kind": "agent_tools",
+  "name": "agent-observatory-handoff",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "Work from signed field observations when planning an observatory handoff.\n"
+    },
+    {
+      "id": "question",
+      "role": "user",
+      "text": "Find the receiver that can stay powered overnight, its clean interval, and the duty contact.\n"
+    },
+    {
+      "id": "call-1",
+      "role": "tool_call",
+      "text": "{\"tool\": \"receiver_registry\", \"input\": \"night operation\"}\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "result-1",
+      "role": "tool_result",
+      "text": "Receiver R4 is approved with the low-noise supply. Receiver R7 remains locked after the fan alarm.\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "call-2",
+      "role": "tool_call",
+      "text": "{\"tool\": \"interference_log\", \"input\": \"R4\"}\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "result-2",
+      "role": "tool_result",
+      "text": "The current spectrum sweep shows a clean interval of 02:35 to 03:25 UTC. The first interval on the schedule was superseded when the neighboring uplink restarted.\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "call-3",
+      "role": "tool_call",
+      "text": "{\"tool\": \"duty_roster\", \"input\": \"clean interval\"}\n",
+      "call_id": "call-3"
+    },
+    {
+      "id": "result-3",
+      "role": "tool_result",
+      "text": "Duties transfer at 03:00. Before transfer, the active pager is Quarry. After transfer, use Lakeside and include observation ticket 52.\n",
+      "call_id": "call-3"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "operator",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "system",
+      "at_ns": 52000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "question",
+      "at_ns": 104000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 20,
+      "select_rows": [
+        162,
+        0,
+        83
+      ],
+      "at_ns": 153000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-1",
+      "at_ns": 205000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-1",
+      "at_ns": 257000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 18,
+      "select_rows": [
+        321,
+        13,
+        108
+      ],
+      "at_ns": 306000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-2",
+      "at_ns": 358000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-2",
+      "at_ns": 410000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 30,
+      "select_rows": [
+        527,
+        13,
+        176
+      ],
+      "at_ns": 459000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-3",
+      "at_ns": 511000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-3",
+      "at_ns": 563000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 36,
+      "select_rows": [
+        713,
+        13,
+        238
+      ],
+      "at_ns": 612000000
+    },
+    {
+      "op": "close",
+      "session": "operator",
+      "at_ns": 664000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/agent-observatory-handoff.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "dbe35e6dacac514fb44c9f5d362c115cdc2db63872fc49652cd945c2dacf06f5"
+  }
+}

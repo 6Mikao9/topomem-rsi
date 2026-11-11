@@ -1,0 +1,45 @@
+{
+  "allowed_nodes": {
+    "gpu-a": [
+      "gpu-a",
+      "gpu-b",
+      "host"
+    ],
+    "gpu-b": [
+      "gpu-a",
+      "gpu-b",
+      "host"
+    ]
+  },
+  "attention_dp_size": 2,
+  "gpu_bindings": {
+    "gpu-a": {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 0,
+      "uuid": "GPU-2a66a29f-9c52-6365-d76b-57d2116826c7"
+    },
+    "gpu-b": {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 1,
+      "uuid": "GPU-c9891208-c33c-f89b-e575-7fe0d73c8f43"
+    }
+  },
+  "model_config_sha256": "09d6d0b4b1131cfc79e280bd71a38f2700b433d868d34d02e92c5e56900d2cdd",
+  "model_weights_sha256": "51bba6b768ddcdb97b7595d0b9a3c18cb82c4f8efa77e2f7924c4d1d46cb3aed",
+  "native_host": "host",
+  "pool": {
+    "hot_slots": 4096,
+    "layers": 6,
+    "page_size": 64,
+    "rows": 32832
+  },
+  "schema": 1
+}

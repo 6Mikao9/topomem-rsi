@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "cpu_tests": {
+    "command": "python -B -m unittest discover -s tests",
+    "passed": 132,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 19.864
+  },
+  "viewer_browser_qa": "../../demo/qa/browser-qa.json",
+  "publication_scan": {
+    "scope": "Git publication candidates, nested ZIP members, binary SQLite included; authorized API key matched without disclosure.",
+    "candidate_files": 491,
+    "candidate_bytes": 442501331,
+    "objects_scanned": 13538,
+    "uncompressed_bytes_scanned": 3081097146,
+    "actual_key_matches": [],
+    "credential_format_flags": [],
+    "largest_files": [
+      [
+        33753792,
+        "results/cuda-rsi-v7/agent_tools/receipts.zip"
+      ],
+      [
+        20755326,
+        "results/sglang-qualification/ingress-resident-v2/raw/resident-native-parity-v2-evidence.zip"
+      ],
+      [
+        20749412,
+        "results/sglang-qualification/ingress-v1/raw/final-qualification-v1-ingress.zip"
+      ],
+      [
+        20735952,
+        "results/sglang-qualification/ingress-v1/raw/final-qualification-v1-ungated.zip"
+      ],
+      [
+        16693863,
+        "results/cuda-transfer-v11/cuda-transfer-v11-raw-receipts.zip"
+      ],
+      [
+        10355369,
+        "results/sglang-qualification/ingress-v1/raw/hot-native-parity-v1-aa-repeat-evidence.zip"
+      ],
+      [
+        10354352,
+        "results/sglang-qualification/ingress-v1/raw/hot-native-parity-v1-evidence.zip"
+      ],
+      [
+        9614074,
+        "demo/topomem-evidence.html"
+      ]
+    ]
+  },
+  "links": {
+    "files_checked": 21,
+    "broken": 0
+  },
+  "scope": "Checks completed before initial Git publication. This record itself was added after the credential scan; no benchmark or generated result bytes were changed."
+}

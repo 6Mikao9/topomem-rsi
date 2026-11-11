@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "kind": "agent_tools",
+  "name": "agent-clinic-supply",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "As a fictional clinic logistics planner, use the depot records and route restrictions.\n"
+    },
+    {
+      "id": "question",
+      "role": "user",
+      "text": "Arrange collection of the sealed research kits and identify what must be signed on receipt.\n"
+    },
+    {
+      "id": "call-1",
+      "role": "tool_call",
+      "text": "{\"tool\": \"inventory\", \"input\": \"sealed research kits\"}\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "result-1",
+      "role": "tool_result",
+      "text": "Twelve cases are at depot Bay Blue. Four are reserved for inspection, leaving eight available. The RFID receipt must list each available case.\n",
+      "call_id": "call-1"
+    },
+    {
+      "id": "call-2",
+      "role": "tool_call",
+      "text": "{\"tool\": \"courier_slots\", \"input\": \"depot\"}\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "result-2",
+      "role": "tool_result",
+      "text": "The covered courier enters at 13:10. A previous confirmation at 12:50 was withdrawn after the elevator inspection.\n",
+      "call_id": "call-2"
+    },
+    {
+      "id": "call-3",
+      "role": "tool_call",
+      "text": "{\"tool\": \"handoff_record\", \"input\": \"Bay Blue\"}\n",
+      "call_id": "call-3"
+    },
+    {
+      "id": "result-3",
+      "role": "tool_result",
+      "text": "Sign the batch identity and outer seal condition before transfer. A humidity flag triggers a separate inventory note; it does not replace the seal check.\n",
+      "call_id": "call-3"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "operator",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "system",
+      "at_ns": 32000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "question",
+      "at_ns": 64000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 14,
+      "select_rows": [
+        174,
+        0,
+        89
+      ],
+      "at_ns": 93000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-1",
+      "at_ns": 125000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-1",
+      "at_ns": 157000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 20,
+      "select_rows": [
+        374,
+        13,
+        125
+      ],
+      "at_ns": 186000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-2",
+      "at_ns": 218000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-2",
+      "at_ns": 250000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 28,
+      "select_rows": [
+        533,
+        13,
+        178
+      ],
+      "at_ns": 279000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "call-3",
+      "at_ns": 311000000
+    },
+    {
+      "op": "append",
+      "session": "operator",
+      "segment": "result-3",
+      "at_ns": 343000000
+    },
+    {
+      "op": "infer",
+      "session": "operator",
+      "max_new_tokens": 44,
+      "select_rows": [
+        735,
+        13,
+        246
+      ],
+      "at_ns": 372000000
+    },
+    {
+      "op": "close",
+      "session": "operator",
+      "at_ns": 404000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/agent-clinic-supply.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "2e2d08c6a3ac2c21fed9b42a9b4e0f22cae6abb198b072d73a2016c2b1566e0b"
+  }
+}

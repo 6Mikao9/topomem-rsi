@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "stages": [
+    "run",
+    "freeze",
+    "test"
+  ],
+  "scope": "Predeclared two-round search, then controller-verified freeze, then sealed heldout; stop on any nonzero exit, no retries.",
+  "config_sha256": "959c7fe29e1a0443404f201e278a7817d6d8afe144fad46b450daa86f4449e9c",
+  "source_root": "D:\\ws\\.scratch\\topomem-sglang-contract-v3-draft",
+  "started_utc": "2026-11-10T20:20:04.110170+00:00",
+  "private_key_on_controller_only": true
+}

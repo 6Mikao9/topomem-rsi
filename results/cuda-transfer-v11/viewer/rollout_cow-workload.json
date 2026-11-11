@@ -1,0 +1,116 @@
+{
+  "events": [
+    {
+      "at_ns": 0,
+      "op": "open",
+      "session": "root"
+    },
+    {
+      "at_ns": 50000000,
+      "op": "append",
+      "segment": "shared",
+      "session": "root"
+    },
+    {
+      "at_ns": 100000000,
+      "max_new_tokens": 8,
+      "op": "infer",
+      "select_rows": [
+        0,
+        30,
+        74
+      ],
+      "session": "root"
+    },
+    {
+      "at_ns": 150000000,
+      "op": "fork",
+      "parent": "root",
+      "session": "north"
+    },
+    {
+      "at_ns": 200000000,
+      "op": "fork",
+      "parent": "root",
+      "session": "south"
+    },
+    {
+      "at_ns": 250000000,
+      "op": "append",
+      "segment": "north",
+      "session": "north"
+    },
+    {
+      "at_ns": 300000000,
+      "op": "append",
+      "segment": "south",
+      "session": "south"
+    },
+    {
+      "at_ns": 350000000,
+      "max_new_tokens": 16,
+      "op": "infer",
+      "select_rows": [
+        81,
+        74,
+        0
+      ],
+      "session": "north"
+    },
+    {
+      "at_ns": 400000000,
+      "max_new_tokens": 16,
+      "op": "infer",
+      "select_rows": [
+        81,
+        74,
+        0
+      ],
+      "session": "south"
+    },
+    {
+      "at_ns": 450000000,
+      "op": "close",
+      "session": "north"
+    },
+    {
+      "at_ns": 500000000,
+      "op": "close",
+      "session": "south"
+    },
+    {
+      "at_ns": 550000000,
+      "op": "close",
+      "session": "root"
+    }
+  ],
+  "kind": "rollout_cow",
+  "name": "rollout-bridge-options",
+  "page_rows": 16,
+  "schema": 1,
+  "segments": [
+    {
+      "id": "shared",
+      "role": "user",
+      "text": "Bridge test: keep freight below the old span and leave the inspection lane open.\n"
+    },
+    {
+      "id": "north",
+      "role": "assistant",
+      "text": "North route takes the covered ramp and reserves the lower bay."
+    },
+    {
+      "id": "south",
+      "role": "assistant",
+      "text": "South route crosses the yard and reserves the east bay."
+    }
+  ],
+  "source": {
+    "content_sha256": "2e34b483f1b0c996666be0b97e58c51e45a8789563e61d74d448d8723269c094",
+    "kind": "authored_fixture",
+    "license": "CC0-1.0",
+    "locator": "examples/workloads/rollout-bridge-options.json",
+    "revision": "fixture-v1"
+  },
+  "task": {}
+}

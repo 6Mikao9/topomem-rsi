@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "event": "allocate",
+      "action": "place",
+      "when": {
+        "op": "feature",
+        "name": "target_is_host"
+      },
+      "score": {
+        "op": "feature",
+        "name": "route_transfer_ns"
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "replicate",
+      "when": {
+        "op": "feature",
+        "name": "target_is_local"
+      },
+      "score": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "event": "access",
+      "action": "replicate",
+      "when": {
+        "op": "feature",
+        "name": "target_is_local"
+      },
+      "score": {
+        "op": "feature",
+        "name": "route_transfer_ns"
+      }
+    },
+    {
+      "event": "allocate",
+      "action": "evict",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "feature",
+        "name": "last_use_step"
+      }
+    },
+    {
+      "event": "access",
+      "action": "evict",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "feature",
+        "name": "last_use_step"
+      }
+    },
+    {
+      "event": "release",
+      "action": "reclaim",
+      "when": {
+        "op": "const",
+        "value": 1.0
+      },
+      "score": {
+        "op": "const",
+        "value": 1.0
+      }
+    }
+  ]
+}

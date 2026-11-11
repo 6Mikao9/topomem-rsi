@@ -1,0 +1,371 @@
+{
+  "changes": {
+    "README.md": {
+      "before_sha256": "af2e50139025baa0629be5b9764e8c71b038e4a343d8b9edb2e38f7b5f36b11b",
+      "documentation_update_after_copy": true,
+      "merged_sha256": "b3ad00b8166ec48b242382ba05ad0bb41d2964be6a96bbc12902d75c4e819892",
+      "operation": "replace",
+      "rc_sha256": "63cdf1b50586231dce2ba2fc94cc29050e04d2d715a086d8f6f9df80204b2a9b"
+    },
+    "README.zh-CN.md": {
+      "before_sha256": "dd09eeb05c254d2513b2850231b75cf1e19b47e353da6834a057291a52ff1a92",
+      "documentation_update_after_copy": true,
+      "merged_sha256": "63744ce1d8200e8532da2c1af4b08c03ced085a916f177d86bcd437ec3dee03b",
+      "operation": "replace",
+      "rc_sha256": "83e8658bce0d635c88fd02be69531f1457d631936c48c68786605425acba6b5a"
+    },
+    "docs/SG_CONFIGURABLE_RELEASE.md": {
+      "before_sha256": null,
+      "documentation_update_after_copy": true,
+      "merged_sha256": "c65e8e4c215469699fa3770e987f123611933a55e1cf9e6f3f7df3450d010401",
+      "operation": "add",
+      "rc_sha256": "02cdfb422dcf0681115cd77d0bd79d380b6790e0d554a4ee65b122935e942ccd"
+    },
+    "docs/SG_GATED_QUALIFICATION_ZH.md": {
+      "before_sha256": null,
+      "documentation_update_after_copy": true,
+      "merged_sha256": "7d4085674aad6f0bf3ce68d8eb6cf159a4880ffc70aba45e622c56e39c7f869e",
+      "operation": "add",
+      "rc_sha256": "282e9c5d256796c14986ce17ae01477c354f98c1ee7950dd03141e86626c9e45"
+    },
+    "docs/SG_HAND_SWEEP.md": {
+      "before_sha256": null,
+      "merged_sha256": "0c6e7f184db74c1f307b8db1f65eb9409662569025b4bf5d4cfff5431393c065",
+      "operation": "add",
+      "rc_sha256": "0c6e7f184db74c1f307b8db1f65eb9409662569025b4bf5d4cfff5431393c065"
+    },
+    "integrations/topology_memory/SGLANG.md": {
+      "before_sha256": "7c2434a32a232b186ea538349f68f9d40036167e7b27bdf635148107a58b56f2",
+      "merged_sha256": "11104ca634cbdaa421ef1e23c91fb4ddc18d9838d73658554d05da5b28b4e723",
+      "operation": "replace",
+      "rc_sha256": "11104ca634cbdaa421ef1e23c91fb4ddc18d9838d73658554d05da5b28b4e723"
+    },
+    "integrations/topology_memory/sglang_backing.py": {
+      "before_sha256": "937246b8b8ef4fc77b6d496c69efefec2396084a5b0737050b31db071434aa08",
+      "merged_sha256": "b215147eacbedcd0beae2db61d8afb003f4ccd0e3401649b2a3b132d13f9ed6e",
+      "operation": "replace",
+      "rc_sha256": "b215147eacbedcd0beae2db61d8afb003f4ccd0e3401649b2a3b132d13f9ed6e"
+    },
+    "integrations/topology_memory/sglang_global_ticks.py": {
+      "before_sha256": null,
+      "merged_sha256": "6bcc31a7213b46f4d7cfe2173163f459cfd2c128005dd1ecda0f240b4c002ffa",
+      "operation": "add",
+      "rc_sha256": "6bcc31a7213b46f4d7cfe2173163f459cfd2c128005dd1ecda0f240b4c002ffa"
+    },
+    "integrations/topology_memory/sglang_ingress_gate.py": {
+      "before_sha256": null,
+      "merged_sha256": "eb6960f94bb50dfd471b27cbd7ad0f335b4f910acd7277890732948b59d4d48e",
+      "operation": "add",
+      "rc_sha256": "eb6960f94bb50dfd471b27cbd7ad0f335b4f910acd7277890732948b59d4d48e"
+    },
+    "integrations/topology_memory/sglang_observe.py": {
+      "before_sha256": "00d8b262fe8dce9a130a3b40f3252e7c02883b34a9675109bbcc906908485dc1",
+      "merged_sha256": "d03ed75cb2049f8abf283523124fe5521fa7264f264ce1e1924225083c66bff5",
+      "operation": "replace",
+      "rc_sha256": "d03ed75cb2049f8abf283523124fe5521fa7264f264ce1e1924225083c66bff5"
+    },
+    "integrations/topology_memory/sglang_serving.py": {
+      "before_sha256": "1a39b805c4f3b72c3cec658f697f6c07742dc81c27e3885f1af4274da3dbce68",
+      "merged_sha256": "642ff531d63b25d5d145da96cbbc147c237828e902a5eabdf6aad502c11567ac",
+      "operation": "replace",
+      "rc_sha256": "642ff531d63b25d5d145da96cbbc147c237828e902a5eabdf6aad502c11567ac"
+    },
+    "integrations/topology_memory/sglang_sources.py": {
+      "before_sha256": "eaf4bfdf7a9a41b8223eff0c05c7d68ed0b278dcb09ff97ba33e4e07a7849974",
+      "merged_sha256": "c8d8bbf91c7f46feeaa1bf19cb42eb31c427cfbafea3f47fe6d11b3c24889ced",
+      "operation": "replace",
+      "rc_sha256": "c8d8bbf91c7f46feeaa1bf19cb42eb31c427cfbafea3f47fe6d11b3c24889ced"
+    },
+    "integrations/topology_memory/torch_eval.py": {
+      "before_sha256": "a2635ff6141526bed482ad2629e0d6d5fac20a16878ceded78971924aa97c258",
+      "merged_sha256": "dfd307487dd200cda60e794fba9ff68116a809f5b2f331b0e02adda8b7a4b2a1",
+      "operation": "replace",
+      "rc_sha256": "dfd307487dd200cda60e794fba9ff68116a809f5b2f331b0e02adda8b7a4b2a1"
+    },
+    "integrations/topology_memory/torch_pressure_lowering.py": {
+      "before_sha256": null,
+      "merged_sha256": "948965532877024b729b3c8053b8a3e380f73522475426604cbdd1dc18eda56d",
+      "operation": "add",
+      "rc_sha256": "948965532877024b729b3c8053b8a3e380f73522475426604cbdd1dc18eda56d"
+    },
+    "integrations/topology_memory/torch_route_lowering.py": {
+      "before_sha256": null,
+      "merged_sha256": "c590b6123150f78b3b8473712c3df404b36731cdd12b9a0a1ac7c22009a1ff99",
+      "operation": "add",
+      "rc_sha256": "c590b6123150f78b3b8473712c3df404b36731cdd12b9a0a1ac7c22009a1ff99"
+    },
+    "integrations/topology_memory/torch_runtime.py": {
+      "before_sha256": "3cdf9a4eef034f33717e0e065ad9460a1002beeaba2c8df45bd32fa3b84340aa",
+      "merged_sha256": "3bb7a74a8ac96f31d7497c576e3b654edb4ba2d7f45b2be8db11b9ed579d8ecd",
+      "operation": "replace",
+      "rc_sha256": "3bb7a74a8ac96f31d7497c576e3b654edb4ba2d7f45b2be8db11b9ed579d8ecd"
+    },
+    "integrations/topology_memory/torch_work_counts.py": {
+      "before_sha256": null,
+      "merged_sha256": "680a20c47dd8bc8558e2dded0bc78fb6f5ce996f95c5801b77cc30a773f2fbb2",
+      "operation": "add",
+      "rc_sha256": "680a20c47dd8bc8558e2dded0bc78fb6f5ce996f95c5801b77cc30a773f2fbb2"
+    },
+    "pack_source.py": {
+      "before_sha256": null,
+      "merged_sha256": "630797537f5c9e33986a4d159da8f9c6f94eecfd7bee2daf578f5eb119d69e70",
+      "operation": "add",
+      "rc_sha256": "630797537f5c9e33986a4d159da8f9c6f94eecfd7bee2daf578f5eb119d69e70"
+    },
+    "pyproject.toml": {
+      "before_sha256": "547cfd1f866bd5d4bb8be7579db8f522103957fea650887a417c07d862f602bf",
+      "merged_sha256": "1b357cb6d738b13b9fc6ce78771204634b8961fb54d1a92bbbd94faa0a8b05aa",
+      "operation": "replace",
+      "rc_sha256": "1b357cb6d738b13b9fc6ce78771204634b8961fb54d1a92bbbd94faa0a8b05aa"
+    },
+    "rsi_memory/cuda_domain.py": {
+      "before_sha256": "7f20616f92fd350bedaff0f2a3324a8f2ca71c15ebd1998ef418a56f8dc5c352",
+      "merged_sha256": "a704f68d9c387f696a23fcf6afb856adac407b9e8f0c25c9e0850ce8574e25ab",
+      "operation": "replace",
+      "rc_sha256": "a704f68d9c387f696a23fcf6afb856adac407b9e8f0c25c9e0850ce8574e25ab"
+    },
+    "rsi_memory/memory_program.py": {
+      "before_sha256": "41343171335c5f13afe83d2d06c040b6bf3c38998d6d3caa946e580c07c32319",
+      "merged_sha256": "af31e0a9b5dc019198e83ca9e71dd20e5cf2d7ef1afbab35d007ade04a344545",
+      "operation": "replace",
+      "rc_sha256": "af31e0a9b5dc019198e83ca9e71dd20e5cf2d7ef1afbab35d007ade04a344545"
+    },
+    "rsi_memory/topology_report.py": {
+      "before_sha256": "f5762c6dcca697d8c2b659f21c573b7bf7939543e36a9286784e5c997415d9c1",
+      "merged_sha256": "e321530fc32e6ad92bfee196fdcb39a842fa107b0eefc0be359e1be7ab87101a",
+      "operation": "replace",
+      "rc_sha256": "e321530fc32e6ad92bfee196fdcb39a842fa107b0eefc0be359e1be7ab87101a"
+    },
+    "rsi_memory/topology_report_assets.py": {
+      "before_sha256": "3362b189519be908bcb03f1eb84fdc8d11323429a08421ab9a64f920b866cdff",
+      "merged_sha256": "0c25881a36529d459c4f038842fb9cb20d16e2c197eeef727dec95c6baef9b1f",
+      "operation": "replace",
+      "rc_sha256": "0c25881a36529d459c4f038842fb9cb20d16e2c197eeef727dec95c6baef9b1f"
+    },
+    "rsi_memory/topology_report_transfer.py": {
+      "before_sha256": null,
+      "merged_sha256": "e6807fcb91ed1f5054b4c55e56363ca90c47097759ac908b6da9a808178434bd",
+      "operation": "add",
+      "rc_sha256": "e6807fcb91ed1f5054b4c55e56363ca90c47097759ac908b6da9a808178434bd"
+    },
+    "rsi_memory/topology_rsi.py": {
+      "before_sha256": "1a82517fd2b1700706bf30a0632416ee7a3507c8708b7dd3db6ad65617b898a5",
+      "merged_sha256": "b12a011fc360648ddfad1738a5f27ef26925201e99c5c909765e960d9350244a",
+      "operation": "replace",
+      "rc_sha256": "b12a011fc360648ddfad1738a5f27ef26925201e99c5c909765e960d9350244a"
+    },
+    "sglang_executor_worker.py": {
+      "before_sha256": null,
+      "merged_sha256": "00ab863433ee40876c747e960a4447f8f6c8fad7ec51499fc29a477c01a6e091",
+      "operation": "add",
+      "rc_sha256": "00ab863433ee40876c747e960a4447f8f6c8fad7ec51499fc29a477c01a6e091"
+    },
+    "sglang_launch.py": {
+      "before_sha256": null,
+      "merged_sha256": "0abda9c7719d0e44e1dfb41cacede3c79213d5a9bdda94c33eb05c4cbc083e87",
+      "operation": "add",
+      "rc_sha256": "0abda9c7719d0e44e1dfb41cacede3c79213d5a9bdda94c33eb05c4cbc083e87"
+    },
+    "sglang_nccl_manifest.json": {
+      "before_sha256": null,
+      "merged_sha256": "c895a6e71860589c3321cf931eb24b1e0073d0f1c38075249e9b0fd8f8e0c262",
+      "operation": "add",
+      "rc_sha256": "c895a6e71860589c3321cf931eb24b1e0073d0f1c38075249e9b0fd8f8e0c262"
+    },
+    "tests/test_configurable_sglang.py": {
+      "before_sha256": null,
+      "merged_sha256": "63856167feb8dd9b92a550f59ab6fb257a82d280de67af1401a15caa096877c7",
+      "operation": "add",
+      "rc_sha256": "63856167feb8dd9b92a550f59ab6fb257a82d280de67af1401a15caa096877c7"
+    },
+    "tests/test_cuda_domain.py": {
+      "before_sha256": "14d0f4677068ccd256e11cc35f8d78ce10b8a2c5c2bf0035be0b334e1aa6fa47",
+      "merged_sha256": "2c0d257a02e86c2e58ad01c144f773336590a0034f73eb8a3eb800bc21f2261f",
+      "operation": "replace",
+      "rc_sha256": "2c0d257a02e86c2e58ad01c144f773336590a0034f73eb8a3eb800bc21f2261f"
+    },
+    "tests/test_gated_case_subset.py": {
+      "before_sha256": null,
+      "merged_sha256": "61ea98e4c3bfeaeddc140c259083307beb0b9e685f98a997ba5c2113b1900b3f",
+      "operation": "add",
+      "rc_sha256": "61ea98e4c3bfeaeddc140c259083307beb0b9e685f98a997ba5c2113b1900b3f"
+    },
+    "tests/test_pressure_demotion.py": {
+      "before_sha256": "0c236576f8a450aa67cb0d983ae477f39fd80456018afb343e7210a45db4025c",
+      "merged_sha256": "867bd4b71955ad4f3cfe2eddb6acf97329488fc09256bdfbd8ce0bbd9e876b55",
+      "operation": "replace",
+      "rc_sha256": "867bd4b71955ad4f3cfe2eddb6acf97329488fc09256bdfbd8ce0bbd9e876b55"
+    },
+    "tests/test_sglang_global_ticks.py": {
+      "before_sha256": null,
+      "merged_sha256": "e625e55b4b88aea281e5d203750daf6e05c7259a6ae27a8b97a4d0bba28a63cf",
+      "operation": "add",
+      "rc_sha256": "e625e55b4b88aea281e5d203750daf6e05c7259a6ae27a8b97a4d0bba28a63cf"
+    },
+    "tests/test_sglang_ingress_gate.py": {
+      "before_sha256": null,
+      "merged_sha256": "3fe0e5ae0659cc62045067163c0895045a6f3adf49322fd87c2a118bedfd5ff3",
+      "operation": "add",
+      "rc_sha256": "3fe0e5ae0659cc62045067163c0895045a6f3adf49322fd87c2a118bedfd5ff3"
+    },
+    "tests/test_sglang_ingress_integration.py": {
+      "before_sha256": null,
+      "merged_sha256": "a6a1b9813b40b55a1449d89016ac09a0e203fd68518862af11070d6b22186a30",
+      "operation": "add",
+      "rc_sha256": "a6a1b9813b40b55a1449d89016ac09a0e203fd68518862af11070d6b22186a30"
+    },
+    "tests/test_sglang_manual_selection.py": {
+      "before_sha256": null,
+      "merged_sha256": "6dc9fed83a4e93a106d74eec4382a17d34f8b05f5fcf5ead4779b983da568a16",
+      "operation": "add",
+      "rc_sha256": "6dc9fed83a4e93a106d74eec4382a17d34f8b05f5fcf5ead4779b983da568a16"
+    },
+    "tests/test_sglang_manual_sweep.py": {
+      "before_sha256": null,
+      "merged_sha256": "88c18e72466eb6946bcc51bc52fd3ba1270b3820dea58be522e8e71c902e179a",
+      "operation": "add",
+      "rc_sha256": "88c18e72466eb6946bcc51bc52fd3ba1270b3820dea58be522e8e71c902e179a"
+    },
+    "tests/test_static_route_lowering.py": {
+      "before_sha256": null,
+      "merged_sha256": "99156c854846c7ac013624ef15e038882954a5721a64d631f13f1f2388aea959",
+      "operation": "add",
+      "rc_sha256": "99156c854846c7ac013624ef15e038882954a5721a64d631f13f1f2388aea959"
+    },
+    "tests/test_topology_report.py": {
+      "before_sha256": "46ee041344a333877f4709fdbda60af9237784b6a5ee0129277d09f5e7e9de73",
+      "merged_sha256": "910bcefb1797a7c341ebcee7088f8a1298ef302eee665c90046b68a405951fa0",
+      "operation": "replace",
+      "rc_sha256": "910bcefb1797a7c341ebcee7088f8a1298ef302eee665c90046b68a405951fa0"
+    },
+    "tests/test_topology_report_transfer.py": {
+      "before_sha256": null,
+      "merged_sha256": "b3b6279823f7ca29e102f2aa63b867f6fc955f5aec663d631ccffa26f1cd577c",
+      "operation": "add",
+      "rc_sha256": "b3b6279823f7ca29e102f2aa63b867f6fc955f5aec663d631ccffa26f1cd577c"
+    },
+    "tests/test_topology_rsi.py": {
+      "before_sha256": "f512ba4476116e41713478e44f8ef487c168a39784da03370f7702babaac39cb",
+      "merged_sha256": "a49f3ee286a0b8b0a20e4066572c436114ead9a79b00db4bc545ce28f09cf0cc",
+      "operation": "replace",
+      "rc_sha256": "a49f3ee286a0b8b0a20e4066572c436114ead9a79b00db4bc545ce28f09cf0cc"
+    },
+    "tests/test_topology_sglang_serving.py": {
+      "before_sha256": "429448bf21dcfece91e7358efc02a093d5ecb88e88d6e4c5e1fc8ea49bb9c0de",
+      "merged_sha256": "d52442af9a1fee03d391661ada4f2d666c9e63fbd38af2cb7d68036a03a1884f",
+      "operation": "replace",
+      "rc_sha256": "d52442af9a1fee03d391661ada4f2d666c9e63fbd38af2cb7d68036a03a1884f"
+    },
+    "topomem_sglang_rsi/__init__.py": {
+      "before_sha256": null,
+      "merged_sha256": "0a7c189ed60d479fdc4960558bdca95b533d6fa25f48defcf30ee6f1640cb6e8",
+      "operation": "add",
+      "rc_sha256": "0a7c189ed60d479fdc4960558bdca95b533d6fa25f48defcf30ee6f1640cb6e8"
+    },
+    "topomem_sglang_rsi/collect_hot_profile.py": {
+      "before_sha256": null,
+      "merged_sha256": "eafa7b6234fd49ac957bc0b3b31462ad5eb2663c04db0bb4c5eddbe930e6a52a",
+      "operation": "add",
+      "rc_sha256": "eafa7b6234fd49ac957bc0b3b31462ad5eb2663c04db0bb4c5eddbe930e6a52a"
+    },
+    "topomem_sglang_rsi/contract.py": {
+      "before_sha256": null,
+      "merged_sha256": "5dca8b450cb8b4d88afaaff2355d9654237503ede5183bc3a7987b64ef1e08b1",
+      "operation": "add",
+      "rc_sha256": "5dca8b450cb8b4d88afaaff2355d9654237503ede5183bc3a7987b64ef1e08b1"
+    },
+    "topomem_sglang_rsi/domain.py": {
+      "before_sha256": null,
+      "merged_sha256": "2c5bcc91006b2f504dea19e753d6e8f360cce93caa2d751ac14c64e48bf35f29",
+      "operation": "add",
+      "rc_sha256": "2c5bcc91006b2f504dea19e753d6e8f360cce93caa2d751ac14c64e48bf35f29"
+    },
+    "topomem_sglang_rsi/hot_config.py": {
+      "before_sha256": null,
+      "merged_sha256": "728412d4a1a4960f7951debbff04fddcb9fa64914e817832baf2c8ab1027f917",
+      "operation": "add",
+      "rc_sha256": "728412d4a1a4960f7951debbff04fddcb9fa64914e817832baf2c8ab1027f917"
+    },
+    "topomem_sglang_rsi/make_cases.py": {
+      "before_sha256": null,
+      "merged_sha256": "aa8229e8ed1fafa5c39062636d8257be56b1dd86e01dc34a092d20e667d8e9bd",
+      "operation": "add",
+      "rc_sha256": "aa8229e8ed1fafa5c39062636d8257be56b1dd86e01dc34a092d20e667d8e9bd"
+    },
+    "topomem_sglang_rsi/make_config.py": {
+      "before_sha256": null,
+      "merged_sha256": "3ec64cea153dd77c395052648d63038bd5a6779af048aa8e0ccade4589e2303a",
+      "operation": "add",
+      "rc_sha256": "3ec64cea153dd77c395052648d63038bd5a6779af048aa8e0ccade4589e2303a"
+    },
+    "topomem_sglang_rsi/manual_selection.py": {
+      "before_sha256": null,
+      "merged_sha256": "435ff602497d96037e92b1e51fb873e192591335cf043d418c42f35e73f14ced",
+      "operation": "add",
+      "rc_sha256": "435ff602497d96037e92b1e51fb873e192591335cf043d418c42f35e73f14ced"
+    },
+    "topomem_sglang_rsi/manual_sweep.py": {
+      "before_sha256": null,
+      "merged_sha256": "08224c992b9d5c3015b583aa277f43cbf07c99003dfbae55e0141c5be070399c",
+      "operation": "add",
+      "rc_sha256": "08224c992b9d5c3015b583aa277f43cbf07c99003dfbae55e0141c5be070399c"
+    },
+    "topomem_sglang_rsi/rebind_cases.py": {
+      "before_sha256": null,
+      "merged_sha256": "3b176cdbd796f4f40ce9df008279d4c26b4ebece1e977c09824b093d704e5c84",
+      "operation": "add",
+      "rc_sha256": "3b176cdbd796f4f40ce9df008279d4c26b4ebece1e977c09824b093d704e5c84"
+    },
+    "topomem_sglang_rsi/sglang_eval.py": {
+      "before_sha256": null,
+      "merged_sha256": "a135d7ea129b634f357cf87847bfa87c89959906326e14c037ae6a37b783a362",
+      "operation": "add",
+      "rc_sha256": "a135d7ea129b634f357cf87847bfa87c89959906326e14c037ae6a37b783a362"
+    }
+  },
+  "evidence": {
+    "native_ingress_hot_profile_sha256": "ce1926181a763dd52882024ae27681dcd506174b1f64ebda5d006eb4a8ef9975",
+    "native_ingress_qualification_sha256": "a8c385514f2ebe7732f5bffcf8e4dd4f2c66171e7a1462dea30bfec413648012",
+    "transfer_heldout_sha256": "0194e6e5c7d081f23d156923e8e24345503ebed854403d002ddd2f5b3c475174"
+  },
+  "kind": "gated_sglang_rc_merge",
+  "protected_main_paths": [
+    ".gitignore",
+    ".gitattributes",
+    "NOTICE.md",
+    "results/"
+  ],
+  "schema": 1,
+  "scope": {
+    "deployment": "The training sweep and formal controller use their original frozen RC. Resident backing work remains a separate draft.",
+    "documentation": "Four Markdown files incorporate later native qualification and transfer results. Their merged hashes differ from the frozen RC.",
+    "merge": "Changed allowlisted software, tests and documentation are merged; other existing paths are retained.",
+    "scope_of_qualification": "Six native TP2/attention-DP2 jobs on the fixed tiny-GLM public replay. Formal RSI, held-out serving improvement and a production-quality model are separate evaluations."
+  },
+  "source": {
+    "archive_name": "topomem-sglang-gated-rc-draft.source.zip",
+    "archive_sha256": "722dd25cd966f0c0620560e611958373e99eb488b382a297fddcac9881d74eef",
+    "embedded_manifest_name": "LOCAL_SOURCE_MANIFEST.json",
+    "embedded_manifest_sha256": "a256121662c607176c5567b9b0657ba3f03c5c984cd0eca72460aa7b82ddaeb5",
+    "exact_main_matches": 116,
+    "verified_rc_files": 121
+  },
+  "validation": {
+    "isolated_wheel_imports": [
+      "rsi_memory.topology_report",
+      "rsi_memory.topology_rsi",
+      "integrations.topology_memory.sglang_ingress_gate",
+      "integrations.topology_memory.sglang_global_ticks",
+      "topomem_sglang_rsi.domain",
+      "topomem_sglang_rsi.make_config",
+      "topomem_sglang_rsi.manual_sweep",
+      "topomem_sglang_rsi.sglang_eval"
+    ],
+    "offline_wheel_command": "python -B -m pip wheel --no-deps --no-build-isolation --no-index --wheel-dir <output> <staged-source>",
+    "tests_passed": 109,
+    "unittest_command": "python -B -m unittest discover -s tests",
+    "viewer": "Rendered the original six-round journal, all four transfer scenarios with 12 held-out blocks each, one SHA-verified original GPU receipt, and the distinct v11 engineering audit. The input journals and receipt retained their byte hashes.",
+    "wheel_name": "topomem_rsi-0.2.0-py3-none-any.whl",
+    "wheel_sha256": "a373ca6b72b9b23921762ef187ad9cb1befd89c47d01f20615f1c250a8609a49"
+  }
+}

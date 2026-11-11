@@ -1,0 +1,296 @@
+{
+  "schema": 1,
+  "kind": "gated_native_dp2_three_capacity_qualification",
+  "transfer_manifest_sha256": "bbfffcf215e5bf9da4dc2e6c2b4ca45a55a90bb06bfc3cad71f3d1596229f43e",
+  "repeat_count": 2,
+  "same_capacity_aa": {
+    "4096": {
+      "mismatches": []
+    },
+    "6144": {
+      "mismatches": []
+    },
+    "8192": {
+      "mismatches": []
+    }
+  },
+  "cross_capacity_all_fields_equal": true,
+  "qualification_passed": true,
+  "observations": {
+    "1": {
+      "4096": {
+        "result_sha256": "518f411edfd92c4aaba11b54ae9db8c8c783a39879ba4073249193be7f9a466a",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            74
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 2579162,
+              "warmup": 1034962
+            },
+            {
+              "requests": 261169,
+              "warmup": 889405
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      },
+      "6144": {
+        "result_sha256": "b82b697498dafed06cca5182e1bfb254052fb584edfaf335d9798a6030c34c63",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            73
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 2486037,
+              "warmup": 1067996
+            },
+            {
+              "requests": 381364,
+              "warmup": 990219
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      },
+      "8192": {
+        "result_sha256": "ee995303132bd60e038ecab515bd996431f3a46dcc03d2685c6a2a83cb1ccb96",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            73
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 283055,
+              "warmup": 1189557
+            },
+            {
+              "requests": 297257,
+              "warmup": 869707
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      }
+    },
+    "2": {
+      "4096": {
+        "result_sha256": "fbd3decccc042b24865e0455be53b387d0535c0e8e7a1daf235e27bd9303196b",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            73
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 335443,
+              "warmup": 981442
+            },
+            {
+              "requests": 354251,
+              "warmup": 874080
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      },
+      "6144": {
+        "result_sha256": "a8dcedbfb6714c7e3fb5d5377c22c57796f885384cc85db667535fd885148a3a",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            72
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 465488,
+              "warmup": 1286500
+            },
+            {
+              "requests": 378328,
+              "warmup": 1079058
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      },
+      "8192": {
+        "result_sha256": "d0def41eab948d4891098ce8eedbfa7f895427e3bff6afdd183c08fff2f9d57f",
+        "comparison_fields": {
+          "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+          "dispatch_sha256": "196f1124327deb5b25964cba97d51b7c24ac861929c396f73f3880c8a2af5fdb",
+          "output_ids_sha256": "7b7e9a9de6442b7bfecfb07796c33e79adc1dc93c62866b56ad53ab04927d4cf",
+          "packed_kv_sha256_by_rank": [
+            "284f1a979165e3510d6f8f41d3927d4d6eab7425bf813c8587726baa36068a52",
+            "dabc2552fa6c60ebbba2843fd59de77f5775f2ce9a994e44edd6d15df2fe3ae3"
+          ],
+          "ingress_contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "input_tokenization_sha256": "c2cfbdf4afe13a0a6e0aa1522767126ac6978077c138c78c357e912114006066",
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+        },
+        "against_first_4096_mismatches": [],
+        "ingress": {
+          "completed_groups": [
+            "warmup",
+            "requests"
+          ],
+          "contract_sha256": "9c024ac4e1d372b90f0bab56c9e880b91021dff1b1fa34db1733e96393379526",
+          "release_vote_indices": [
+            2,
+            73
+          ],
+          "wait_ns_by_rank": [
+            {
+              "requests": 310426,
+              "warmup": 1025540
+            },
+            {
+              "requests": 252369,
+              "warmup": 878419
+            }
+          ]
+        },
+        "global_ticks": {
+          "active_forward_count": 132,
+          "global_ticks_sha256": "6cab0274a6043ba25e866239b400db8be9d45da210ddc88dcc86fda3d1b9d0e4",
+          "policy": "all_global_forwards_including_local_idle_v1",
+          "rank_idle_forward_count": 0,
+          "schema": 1
+        }
+      }
+    }
+  },
+  "scope": "native architecture integration, fixed authored replay, no generated strategy or timing claim"
+}

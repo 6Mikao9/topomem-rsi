@@ -1,0 +1,34 @@
+{
+  "additions": {
+    "docs/SG_CONTRACT_V3_ZH.md": "8e73781b682a6844d933232d7486f818a19d6a10deec2bd0eda81026cde3fd5c",
+    "rsi_memory/topology_rsi_contract.py": "1de81833bba0f85fb27a153e7980fa1e62acd3c72d5b474b874dc62dc0030f3b",
+    "tests/test_topology_rsi_contract_v3.py": "26d23b0d9bbd6feb4ec79abf84a44651f7961ee37ff472284a2d230dac75152b",
+    "topomem_sglang_rsi/contract_v3.py": "c80d9c0dba7e0f3e79a47a998fac045f6d998468365c53870e42e7300dd8ab97"
+  },
+  "human_engineering_protocol_fix": true,
+  "kind": "sglang_contract_v3_main_overlay",
+  "previous_main_paths_sha256": {
+    ".gitignore": "b5591c89f42a65054a19c4b4fb1cbbebe6e999884ff6fe11971740631df512f3",
+    "AGENTS.md": "06d646c6b1cfaa469901017a65fd5ada5474e5ecbaa82372b7cbc5271e28b747",
+    "MERGE_MANIFEST.json": "3e2be221b076e1365dbf5ab18739d287a75cd260a61d62c47d639429aad15b0a",
+    "NOTICE.md": "d6e4cda69e6accde30e15e195f534ddeec1c9d4efba6aee10d0d73732dae1a2a",
+    "README.md": "bd7f3ff06f1ed987e3d5374b6d8eeb8d64439e6cc792f33937b3622b120fb2a2",
+    "README.zh-CN.md": "3ddffcc87d64d29db5039264f1c7be61cc48ec3960fabc70498a45428b1c6dc9",
+    "rsi_memory/topology_report.py": "11925335f9fd305586a77899ad4a002ff9ee8b60d433a767d01c1db1192c1193",
+    "rsi_memory/topology_report_assets.py": "f6f7b00beaa7a222fe6b1d6fe9bacde5e8808e60b965aa3fb4d986a536c413a4"
+  },
+  "schema": 1,
+  "scope": "Additive controller and documentation overlay. The frozen v2 worker and hand-sweep receipts still supply the evaluator and comparisons. Main viewer and earlier merge history are preserved.",
+  "source_archive_sha256": "ab8479bbb8b017a50673c07485ddb0fd88252dc24ec9a7467e4b214f9dfdb7b9",
+  "source_manifest_sha256": "f452f06968cb2b1df687eba72e6dabcd3e5e419fe15bd205b555dce1f0485c9b",
+  "validation": {
+    "frozen_v3_unittest_passed": 119,
+    "frozen_v3_unittest_run": 119,
+    "frozen_v3_unittest_skipped": 0,
+    "main_unittest_passed": 126,
+    "main_unittest_run": 126,
+    "main_unittest_skipped": 0,
+    "v3_offline_wheel_sha256": "4d80bf81eeea06bdd10175c84b5c6b25787fc6e5ed68db54ba56565deb8bce40"
+  },
+  "worker_source_manifest_sha256": "b73995aea418432831366a7c2de0af038fbe8eae2f2f85ac164d2e88e4c81909"
+}

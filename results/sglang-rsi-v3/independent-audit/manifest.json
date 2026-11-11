@@ -1,0 +1,36 @@
+{
+  "files": {
+    "TERMINAL_AUDIT_ZH.md": {
+      "bytes": 7959,
+      "sha256": "fdeabeb85ae3c50d3d980ce045d3aec283008dc6a98fe9704868719dc7f82836"
+    },
+    "audit_native6144.py": {
+      "bytes": 12958,
+      "sha256": "cd71fb5da04053097afb6dea615b5b3c9180fd247f2c6a5f74fd646b691e3f1e"
+    },
+    "audit_protocol.py": {
+      "bytes": 12993,
+      "sha256": "ea45fe3c0474dca893cabd9ac1b9209e30143a2f7fc057d3d1f83f09f79b439f"
+    },
+    "audit_results.py": {
+      "bytes": 28644,
+      "sha256": "0995fff665c513228ddcc0d06e16c8474e5194ee1e0236b5fc6bb2b17edd7b6b"
+    },
+    "native6144-full-inventory-audit.json": {
+      "bytes": 7766,
+      "sha256": "26db4506f4356aa513b730b8a683b50ec7b49be0b008c425676d175f3c988c2c"
+    },
+    "v3-terminal-independent-audit.json": {
+      "bytes": 143409,
+      "sha256": "54471819fa7fff4e9c2ef0a7af06f49f612624bc5c3e5daecdba862f1936df95"
+    },
+    "v3-two-round-validation-audit.json": {
+      "bytes": 95378,
+      "sha256": "5d1087d9a83c75e614a94493149aaf04e43c2d7d2fb71eebd085a6f4e6d56fbf"
+    }
+  },
+  "formal_report_sha256": "4f563d86217d6bc6eb5be84a09bbce00387d86702609397aeb87b5de55fb3adf",
+  "kind": "sglang_rsi_v3_independent_audit_publication",
+  "schema": 1,
+  "scope": "Independent offline audit of formal and supplementary records."
+}

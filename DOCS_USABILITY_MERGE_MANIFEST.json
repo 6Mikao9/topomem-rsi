@@ -1,0 +1,36 @@
+{
+  "files": {
+    "README.md": {
+      "base_sha256": "2549b01e8ee9db1fb46104cb6d1f9d0b3d9a527597eb38fa3aab90eb694d4cf3",
+      "draft_sha256": "8e1ef63982fb3d9d04738a8d2a59a088ac3ca689893c813efd1066fc4cff3069"
+    },
+    "README.zh-CN.md": {
+      "base_sha256": "c377370f73acf653c0e5149365b14c70f31a8789d24013443ee1c1f2fab96903",
+      "draft_sha256": "5db80fbb8fe2086c9ab5aca50678e5af247ecfdfb14677d001271d50527cc93f"
+    },
+    "docs/REPRODUCE_SGLANG_ZH.md": {
+      "base_sha256": "eb10100fd6728ccb04da6e52f559ebb1deda798f045787051af46328982fe92f",
+      "draft_sha256": "fb50096641efec71949e4be193d0b2898d3bde4f2d84d0095835133c1ab8de44"
+    }
+  },
+  "kind": "topomem_release_docs_usability_draft",
+  "pending": [
+    "Insert the finalized demo link after formal SGLang data settles and is approved for publication.",
+    "Add the final measured outcome separately and run final HTML visual QA."
+  ],
+  "schema": 1,
+  "scope": "read-only demo entry, standard-library smoke tests, archived audit and opt-in GPU instructions",
+  "verified": {
+    "bash_syntax_blocks": null,
+    "cpu_memory_program_tests": 8,
+    "cpu_viewer_tests": 21,
+    "engineering_archive_members": {
+      "v10-paired": 32,
+      "v11-paired": 32,
+      "v5-v6": 13,
+      "v8-public": 14
+    },
+    "markdown_links": "verified against repository",
+    "resident_v3_engineering_json_reconstruction": "equal"
+  }
+}

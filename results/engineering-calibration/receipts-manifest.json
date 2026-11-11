@@ -1,0 +1,472 @@
+{
+  "archives": {
+    "v10-paired": {
+      "bytes": 3722678,
+      "file": "cuda-v10-paired-gpu3-engineering-receipts.zip",
+      "members": {
+        "qualification-v10-paired-gpu3-b0-h64-lru-equivalent.json": {
+          "bytes": 2467972,
+          "sha256": "3dbff0733e96dd0173e5b3252aae4ed26052eb0df69ada018876a7c1ad03a3a9"
+        },
+        "qualification-v10-paired-gpu3-b0-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "1b4e0c189749e7a64a7818e7031958ed8228f85314fd257caa5a9e65d4379c29"
+        },
+        "qualification-v10-paired-gpu3-b0-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "0f9ed8f079599248fb9492cca24d56e1a48144061f4d1b31f6f7992a94b44bc5"
+        },
+        "qualification-v10-paired-gpu3-b0-h64-writeback.json": {
+          "bytes": 2035192,
+          "sha256": "c50ce09e920fbab0217dfa70d68a074976ffa6fbbd484d9206b3d25e0735a87e"
+        },
+        "qualification-v10-paired-gpu3-b1-h64-lru-equivalent.json": {
+          "bytes": 2467973,
+          "sha256": "64d7aaa3e7afbdb0fd27cd212372708e1d881d60737c436c523abcb82ff128a2"
+        },
+        "qualification-v10-paired-gpu3-b1-h64-manual-direct.json": {
+          "bytes": 2110772,
+          "sha256": "a9624ced0db64a7aff385d2d46e11a13f47430506321fc3a16f54d0d2adab032"
+        },
+        "qualification-v10-paired-gpu3-b1-h64-native.json": {
+          "bytes": 2156250,
+          "sha256": "493e507dc46c7251f61a02b8a8eca05965f88e02ad7bc20fe62f2816daa146cb"
+        },
+        "qualification-v10-paired-gpu3-b1-h64-writeback.json": {
+          "bytes": 2035190,
+          "sha256": "6ad259265121b0d35d5eced8c0620b674565f7cbecf9ab41698068016f67f340"
+        },
+        "qualification-v10-paired-gpu3-b2-h64-lru-equivalent.json": {
+          "bytes": 2467973,
+          "sha256": "da881e8f9559715585958274ead75c18ff7ed84a1c63d10f52bcbac4044e3437"
+        },
+        "qualification-v10-paired-gpu3-b2-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "921d10c051829c2bc7c19ed245b9125ccfab9a0644357e211dc1a52044e32274"
+        },
+        "qualification-v10-paired-gpu3-b2-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "5663083510064fa5248655f50e516ac52147499e410f693e885e5b7ee1c8a43a"
+        },
+        "qualification-v10-paired-gpu3-b2-h64-writeback.json": {
+          "bytes": 2035177,
+          "sha256": "cabe37a68b838fdce799ddf582099e19e972e12f66ca16ad9dfe3f0ebad930cd"
+        },
+        "qualification-v10-paired-gpu3-b3-h64-lru-equivalent.json": {
+          "bytes": 2467973,
+          "sha256": "f0faa65aa34dcd4b851a46591a532200a76d7925898d67cf3cb82a38ddd57a40"
+        },
+        "qualification-v10-paired-gpu3-b3-h64-manual-direct.json": {
+          "bytes": 2110788,
+          "sha256": "d95b6a3444a2f216bca3945a37a914f2f9588c90c6b979040c9d8bb022f0bef9"
+        },
+        "qualification-v10-paired-gpu3-b3-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "8245077b87864bbfcb15527948a9fd1bdec9d919e5e59d2e2f7255e2062ed1b0"
+        },
+        "qualification-v10-paired-gpu3-b3-h64-writeback.json": {
+          "bytes": 2035178,
+          "sha256": "a6b65afe9d14770a03f2c2cbf5f2864ab8df8c51b0e8d2fdbf05cd5dd41a60a5"
+        },
+        "qualification-v10-paired-gpu3-b4-h64-lru-equivalent.json": {
+          "bytes": 2467960,
+          "sha256": "c0cbadd1f169bb3bbd275e3154316d88b965aaa3ff8d705bc073b51a438d895a"
+        },
+        "qualification-v10-paired-gpu3-b4-h64-manual-direct.json": {
+          "bytes": 2110773,
+          "sha256": "b52bf5720cf533bd4ac0cdc537430acf59218dd5aa9527e518a411774d1c008f"
+        },
+        "qualification-v10-paired-gpu3-b4-h64-native.json": {
+          "bytes": 2156251,
+          "sha256": "d8948f7426b5a3c3954847059fc0fca6e8a384880e5ed061bf7f3d2acba51898"
+        },
+        "qualification-v10-paired-gpu3-b4-h64-writeback.json": {
+          "bytes": 2035188,
+          "sha256": "b417410edad74ed32ac8b782549ba85a33cf39d253fea92d5f9de1d97958fa57"
+        },
+        "qualification-v10-paired-gpu3-b5-h64-lru-equivalent.json": {
+          "bytes": 2467973,
+          "sha256": "d610296506a9ced6862cdfdf5f9a4397ea42966e1ef2effe1d1ed79373b622f2"
+        },
+        "qualification-v10-paired-gpu3-b5-h64-manual-direct.json": {
+          "bytes": 2110784,
+          "sha256": "ca6af97ebfcc9367a58a742ce37019bf2cc7a81cc9ab232726ce025947e6d3ec"
+        },
+        "qualification-v10-paired-gpu3-b5-h64-native.json": {
+          "bytes": 2156252,
+          "sha256": "ea7cfa8b60dcc3aa5758acb9353344376e58d0b2e033ddbe9e87644aa4e66a08"
+        },
+        "qualification-v10-paired-gpu3-b5-h64-writeback.json": {
+          "bytes": 2035189,
+          "sha256": "e9a105eaa7e0de2db5977f10a84dc4bd84b3b1beb51203b2fd99f7a39d163bd2"
+        },
+        "qualification-v10-paired-gpu3-b6-h64-lru-equivalent.json": {
+          "bytes": 2467975,
+          "sha256": "564ecd96dd8bc471eefc347c9e47c211aab27dc737358ca3b6d09a2e508bbdf8"
+        },
+        "qualification-v10-paired-gpu3-b6-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "d3e721c75d8058f28cd5660d4e04f4df734ef2c629a52966da9538276b77d107"
+        },
+        "qualification-v10-paired-gpu3-b6-h64-native.json": {
+          "bytes": 2156252,
+          "sha256": "aa87196adb93753785694dbd52515b6a69e536788cfd6d02ec7d66a319ba93b7"
+        },
+        "qualification-v10-paired-gpu3-b6-h64-writeback.json": {
+          "bytes": 2035189,
+          "sha256": "15e0fcce7cf4a4066084535addcf8bc13a210f36a2ed47c54502bbd04f295fed"
+        },
+        "qualification-v10-paired-gpu3-b7-h64-lru-equivalent.json": {
+          "bytes": 2467975,
+          "sha256": "ae43754c758225d7a990f8fe0ddb11c6d41a06745316a4352aa8d3bf0f4ce903"
+        },
+        "qualification-v10-paired-gpu3-b7-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "5fa59aad79a98ee63aa740076720bf1edc695c4439a3a74e0e3e1909064828c3"
+        },
+        "qualification-v10-paired-gpu3-b7-h64-native.json": {
+          "bytes": 2156248,
+          "sha256": "5f84890a9dcd91f61ff0dce04ebd3482e521d6147b1f0b684b4f2fae524479c8"
+        },
+        "qualification-v10-paired-gpu3-b7-h64-writeback.json": {
+          "bytes": 2035189,
+          "sha256": "3cf0f59b38263b62c2f1930849d96302f6ab115035a3a78deded494c6de1eba6"
+        }
+      },
+      "scope": "CUDA v10 single-GPU GPU3 public training-only engineering",
+      "sha256": "c93cdad838f833eb5311b1b9bb84769d80b5b91db8516e616622ad837e459a11",
+      "source_manifest_sha256": "68fe058da35c3b0517b6a2a769077693cea0774277ebdb8cd420958f4c774367"
+    },
+    "v11-paired": {
+      "bytes": 3723034,
+      "file": "cuda-v11-paired-gpu3-engineering-receipts.zip",
+      "members": {
+        "qualification-v11-paired-gpu3-b0-h64-lru-equivalent.json": {
+          "bytes": 2467130,
+          "sha256": "e7d457e9d8fd972a34e5dc8ffe91c79f93efc09a6c50ce90b56076ac40bd1e0f"
+        },
+        "qualification-v11-paired-gpu3-b0-h64-manual-direct.json": {
+          "bytes": 2110784,
+          "sha256": "badfcf693a33d9c263a4015f0baf6ea6e43026b272dcd00c10e07857276010cd"
+        },
+        "qualification-v11-paired-gpu3-b0-h64-native.json": {
+          "bytes": 2156251,
+          "sha256": "ba1bfe301ca6e0bcd569f9e34dcc77d0900db9a11a8a20e365fa4c2232f72a07"
+        },
+        "qualification-v11-paired-gpu3-b0-h64-writeback.json": {
+          "bytes": 2034326,
+          "sha256": "644592c8fd9ae39012653cdf4de439dd5d0e726928dc2ec68689934bce105721"
+        },
+        "qualification-v11-paired-gpu3-b1-h64-lru-equivalent.json": {
+          "bytes": 2467128,
+          "sha256": "913824a277f465742b2c77b178846b84b4ef6ff0933d09e12c8f909f42d716a4"
+        },
+        "qualification-v11-paired-gpu3-b1-h64-manual-direct.json": {
+          "bytes": 2110786,
+          "sha256": "2f5667da1b47e9806a51858ac28369e311ad983cf49bf6e1f4a1523698981fc7"
+        },
+        "qualification-v11-paired-gpu3-b1-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "42cb072ad85ce1b1d3c190a624fa6317a5b0fedc5c6ea43e580f036be8826694"
+        },
+        "qualification-v11-paired-gpu3-b1-h64-writeback.json": {
+          "bytes": 2034340,
+          "sha256": "cd8d22f9889dfb301d2a59f2ac69a01024263e6e0444d4ecda6e5f68cfe5e50c"
+        },
+        "qualification-v11-paired-gpu3-b2-h64-lru-equivalent.json": {
+          "bytes": 2467130,
+          "sha256": "0b74d9bc90c51cdc901d24ad708a16f6a01dcbc73e2b5522b3f712e695e7d04d"
+        },
+        "qualification-v11-paired-gpu3-b2-h64-manual-direct.json": {
+          "bytes": 2110786,
+          "sha256": "f110c1b7ff87391ae0986a3da6f4fe6ef8326448afa03254667a652be2c062ba"
+        },
+        "qualification-v11-paired-gpu3-b2-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "05409e950b980f39d1b2cf473560715aeb37a032411453dbc96ae8314a8b91f0"
+        },
+        "qualification-v11-paired-gpu3-b2-h64-writeback.json": {
+          "bytes": 2034340,
+          "sha256": "c9923b81605c88abe2955224c09df391bc63fab4c974ca0d3b3245acb368039d"
+        },
+        "qualification-v11-paired-gpu3-b3-h64-lru-equivalent.json": {
+          "bytes": 2467127,
+          "sha256": "d92d0ff34ada21ae0ba4dc14697c7aab83d49fb085161415c22134e6d3f4b282"
+        },
+        "qualification-v11-paired-gpu3-b3-h64-manual-direct.json": {
+          "bytes": 2110787,
+          "sha256": "cdb929cb90da8a8a6244cd50da3a28aa9d68ec3a36b865ecd990641af2adffc4"
+        },
+        "qualification-v11-paired-gpu3-b3-h64-native.json": {
+          "bytes": 2156250,
+          "sha256": "7e9c491e0e3e242700c16f3e2ef06432f082bdc166f30cc742d6c878d37bdc3c"
+        },
+        "qualification-v11-paired-gpu3-b3-h64-writeback.json": {
+          "bytes": 2034342,
+          "sha256": "559d21d3d906cd6d0311a2da2c8357be27bd78940d581c7cea8fa460f969ba5a"
+        },
+        "qualification-v11-paired-gpu3-b4-h64-lru-equivalent.json": {
+          "bytes": 2467130,
+          "sha256": "fe227967954b8fd394bc8b76d59576237bf9e17f1d546bd2971cb3c94dc92ad9"
+        },
+        "qualification-v11-paired-gpu3-b4-h64-manual-direct.json": {
+          "bytes": 2110786,
+          "sha256": "90b9f6d545bf220cdae9a3049bf95e4298a92401e3a276d9b499e393f02a05d4"
+        },
+        "qualification-v11-paired-gpu3-b4-h64-native.json": {
+          "bytes": 2156249,
+          "sha256": "c6db48f426caa9fbb932b16c4925d9aa692332c810db33247fc571fafd9ac04c"
+        },
+        "qualification-v11-paired-gpu3-b4-h64-writeback.json": {
+          "bytes": 2034329,
+          "sha256": "eda55a93ea231d649b9017dbed15d287783ddeda2f11c846e1b7b8a326bc9d0b"
+        },
+        "qualification-v11-paired-gpu3-b5-h64-lru-equivalent.json": {
+          "bytes": 2467130,
+          "sha256": "e921cbcd8d9cadcfdd7d3d9114eb9c8eed081a1a24242fa371cc2952243c4ebc"
+        },
+        "qualification-v11-paired-gpu3-b5-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "e343be30c86b925c2fb6a8fe8c6864877753a9c83c25fd361501916b3a969bf1"
+        },
+        "qualification-v11-paired-gpu3-b5-h64-native.json": {
+          "bytes": 2156251,
+          "sha256": "d5befdcb2e772702198c7b18efb941070ee4470b6a38065423f4b3b1c134e935"
+        },
+        "qualification-v11-paired-gpu3-b5-h64-writeback.json": {
+          "bytes": 2034326,
+          "sha256": "b5381870873a2f5d8821f24569e054e6ac5b968c1dfac3d6c04db2455937c263"
+        },
+        "qualification-v11-paired-gpu3-b6-h64-lru-equivalent.json": {
+          "bytes": 2467129,
+          "sha256": "00b8a5df877bc82cf3fa48479e62cab3b17a5a2404c19a773356f76401f53b5e"
+        },
+        "qualification-v11-paired-gpu3-b6-h64-manual-direct.json": {
+          "bytes": 2110785,
+          "sha256": "6f3f3764cffec10e2669325f51b8c050a1a17992d2439e7b442de9292e905f12"
+        },
+        "qualification-v11-paired-gpu3-b6-h64-native.json": {
+          "bytes": 2156250,
+          "sha256": "88059d9436123c14644bbd1c6bedfbca2397cced2774e454d8ff06e44c7ac448"
+        },
+        "qualification-v11-paired-gpu3-b6-h64-writeback.json": {
+          "bytes": 2034337,
+          "sha256": "2510dd2b981a1fb9e655689d155057ca1bfb898cb5377cef90580374c9d3d018"
+        },
+        "qualification-v11-paired-gpu3-b7-h64-lru-equivalent.json": {
+          "bytes": 2467132,
+          "sha256": "1f7943acb1a34aa84ed1abef634c4a0e0e388a7a655cdd82824efa2a0cc81bb6"
+        },
+        "qualification-v11-paired-gpu3-b7-h64-manual-direct.json": {
+          "bytes": 2110773,
+          "sha256": "ce05516c871f71781063063ca4def286b00ebbd4186e26f1aea491f8a968ff27"
+        },
+        "qualification-v11-paired-gpu3-b7-h64-native.json": {
+          "bytes": 2156246,
+          "sha256": "f58f324cb563eb100a33fa94edfd4b29a5f1db02d98769a56b7979af6c8f3051"
+        },
+        "qualification-v11-paired-gpu3-b7-h64-writeback.json": {
+          "bytes": 2034339,
+          "sha256": "a9060be1cd74d9f64e6c4d9c4b9a630cbb18d895af18b76262b391e32dfdc883"
+        }
+      },
+      "scope": "CUDA v11 single-GPU GPU3 public training-only engineering",
+      "sha256": "f0b68d7fa6734412c39d7305f61747224fa57b3e7aec6236b7b684c8129b811b",
+      "source_manifest_sha256": "944183b276b231c2dd306dbfc9ddbbf9823d94875e21a94b76008ef2b91ba0a8"
+    },
+    "v5-v6": {
+      "bytes": 2079293,
+      "file": "cuda-v5-v6-engineering-receipts.zip",
+      "members": {
+        "v5/qualification-v5-lru-equivalent.json": {
+          "bytes": 9520173,
+          "sha256": "4af05804c03c165506f76c0226ec9886f5022adb10c5e0b26d1fe6ce3f0e39c6"
+        },
+        "v5/qualification-v5-manual-direct.json": {
+          "bytes": 8020674,
+          "sha256": "47411b34350cc03cd14001c62f14c821b9edcc519d17b845e0a25dd33a6b8607"
+        },
+        "v5/qualification-v5-manual-ir.json": {
+          "bytes": 9320451,
+          "sha256": "dffb1777ee40c3499beab8d6626529020a8625c4ac311dc0ce44ccd7bd47cabe"
+        },
+        "v5/qualification-v5-native.json": {
+          "bytes": 8213041,
+          "sha256": "4fe99f599695e9c305fb3c31cf7c0a4902af109cedc6be6e57bd455809e8d33f"
+        },
+        "v6/qualification-v6-lru-equivalent.json": {
+          "bytes": 2425560,
+          "sha256": "b8110feac2cf999fb9990a679f0125d2126e7bbdb47d1d60fc126fc54354877c"
+        },
+        "v6/qualification-v6-manual-direct.json": {
+          "bytes": 2071363,
+          "sha256": "9aa340fed016139381ce8cccf41c17d53180a13ea7ba25167c8624a52efb193f"
+        },
+        "v6/qualification-v6-manual-ir.json": {
+          "bytes": 2378346,
+          "sha256": "4360eee5fcba372b5fb568e6577528dd111458507b6929ee0b771a6646ab2c1f"
+        },
+        "v6/qualification-v6-native-a1.json": {
+          "bytes": 2116875,
+          "sha256": "03aa27b291a3bc4a18659e85a35ade9605ffc139065879bdb72f31bde84754f5"
+        },
+        "v6/qualification-v6-native-a2.json": {
+          "bytes": 2116872,
+          "sha256": "a8905216a290f7762edd38083de21871a863601d0db44e663f5a2bab7cf6f14b"
+        },
+        "v6/qualification-v6-native-a3.json": {
+          "bytes": 2116874,
+          "sha256": "eeed279c49b8857967e3b4c46d6b5bb1e10f10cb2a0250c4cac91eebefca9188"
+        },
+        "v6/qualification-v6-native-b1.json": {
+          "bytes": 2116876,
+          "sha256": "edf1e9dd1db37147e59ad9ff5b7d47acc58ebb449fa5778cd8688a31c10b0f75"
+        },
+        "v6/qualification-v6-native-b2.json": {
+          "bytes": 2116861,
+          "sha256": "902de7d5e0e055b878752d960c8f31550d4c38e80dd3320f5f90989897d6c6be"
+        },
+        "v6/qualification-v6-native-b3.json": {
+          "bytes": 2116875,
+          "sha256": "c770159e979f055dc2fe02e5ffff08d545ea944002bc39d0f229f45efb0274f2"
+        }
+      },
+      "scope": "CUDA v5/v6 human engineering, including v6 native A/A",
+      "sha256": "3d552cf9caf3f42c378ff644a3cef0b38374d1f1d41031e63288aad91bea37f6",
+      "source_manifests": {
+        "v5": "949801c4c6bfe67997aeed4dfb9fd799381f5d35524a42a3fcb2162d64fcd72d",
+        "v6": "b1d08ce10e6ca4f19c40576c0b833492f72a50b1f6b7c29d8b52713c47d31e6e"
+      }
+    },
+    "v8-public": {
+      "bytes": 1489636,
+      "file": "cuda-v8-single-gpu-geometry-public.zip",
+      "members": {
+        "geometry-v8-gpu3-h1024-manual-direct.json": {
+          "bytes": 2069242,
+          "sha256": "3a797d99a8fee779ae7f8f6849a25f081c0f5635d8469c35e53041577e0a683f"
+        },
+        "geometry-v8-gpu3-h1024-native.json": {
+          "bytes": 2114743,
+          "sha256": "c6fd7ac3286ed0f81759e3a1bab685aaea7d67b943bf4afa9a547d085f963544"
+        },
+        "geometry-v8-gpu3-h1024-tail-cold.json": {
+          "bytes": 2330643,
+          "sha256": "406cbb8ae9b9e3b123ce3531ca9aa9f377c83b30d908f2930299a81e4f239f58"
+        },
+        "geometry-v8-gpu3-h1024-writeback.json": {
+          "bytes": 1989890,
+          "sha256": "3c90449d27000f353fdf82cfbf882ea3a03966aa0a467fefec9aa7ca91d87f62"
+        },
+        "geometry-v8-gpu3-h256-manual-direct.json": {
+          "bytes": 2069088,
+          "sha256": "8ade7024083a17e39c65375ea8d43d194cdb193a9c7ab5bae1b73b60757b0ec7"
+        },
+        "geometry-v8-gpu3-h256-native.json": {
+          "bytes": 2114579,
+          "sha256": "558283fd433c532f8dc80e5b4ec3507791d3b76f49531007f12a66d479fd3325"
+        },
+        "geometry-v8-gpu3-h256-tail-cold.json": {
+          "bytes": 2330501,
+          "sha256": "b1fe3676e7ad43c25e48453912c1729d9e436846190ffcf34b8389e44618b4cf"
+        },
+        "geometry-v8-gpu3-h256-writeback.json": {
+          "bytes": 1989719,
+          "sha256": "3f2269f28606b7b4455ea7a0eac6c9b021141e665ad66fdd003d3d134aba700d"
+        },
+        "geometry-v8-gpu3-h64-manual-direct.json": {
+          "bytes": 2069146,
+          "sha256": "4bc7162bf1bee932a4315f43c668124a9711ebd712b795730204a6559c94c2ab"
+        },
+        "geometry-v8-gpu3-h64-native.json": {
+          "bytes": 2114637,
+          "sha256": "f8a5168d7f08a196448c2de7893a2b63fe6bb0ed73d9b7e382af51d4415a0142"
+        },
+        "geometry-v8-gpu3-h64-tail-cold.json": {
+          "bytes": 2330532,
+          "sha256": "8c11f18c914a3ee14b01c24d2df50b0d720efccf273fa6a3ff7a272e171b55cb"
+        },
+        "geometry-v8-gpu3-h64-writeback.json": {
+          "bytes": 1989763,
+          "sha256": "1cfa7908065032fa9b2cef30b65b48c2674b08e14b6216db134742bbe4663446"
+        },
+        "topomem-src-v8-geometry.zip": {
+          "bytes": 169924,
+          "sha256": "3cb2fb6fa8d89a6b9cb4a69d467ba5738a46155e47add6c63fd6f800f4753231"
+        },
+        "torch-profile-v7-gpu3-cpu64.json": {
+          "bytes": 4580,
+          "sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4"
+        }
+      },
+      "scope": "v8 public derivative preserving original receipt, profile and nested source bytes",
+      "sha256": "1eaff611197ac58112b7e13003428eb56f48d3a822eb014d75c0c7bb31d407a7"
+    }
+  },
+  "copied_originals": {
+    "ENGINEERING_V7_V11_ZH.md": {
+      "bytes": 7762,
+      "sha256": "23fc890c9fcfa241bf046fd9e1ec36b63b0452b85ae5f240eca10b9e233f550a"
+    },
+    "build_v10_gpu3_calibration.py": {
+      "bytes": 10141,
+      "sha256": "65b7a85586241dad3c339d1dcaf361e576b35e40c2a38bb92e76047ecba76d13"
+    },
+    "build_v11_gpu3_calibration.py": {
+      "bytes": 3826,
+      "sha256": "ecb80aceea13ecd7b35c635ff09793f62a92a582cd7b2cd079765cacb06b41e6"
+    },
+    "engineering-v10-gpu3-qualification.json": {
+      "bytes": 363159,
+      "sha256": "58af16d2f1e18f21d472ec815f2ebaf8655a101b7ac108d02c7819300b4c3b7b"
+    },
+    "engineering-v11-gpu3-qualification.json": {
+      "bytes": 357648,
+      "sha256": "6b299a93f8913df2ad2b38a18ef797c352b8086ce279e35e2434ff63b1d93d8e"
+    },
+    "qualify_v11_paired_gpu3.py": {
+      "bytes": 8206,
+      "sha256": "7940f7aa82320cac5ff9ababe4d806e6a6449575d43d08e6930e2dac4c692ede"
+    },
+    "topomem-src-v10-qualification.zip": {
+      "bytes": 172754,
+      "sha256": "2d785af01db853ed3be4b4204d70825bb758795e8cf174b86410a2a73756147e"
+    },
+    "topomem-src-v5.zip": {
+      "bytes": 88094,
+      "sha256": "b43f58d3b29daf3d73b94c12a0f9eec7cd206a6caacbaa1a226202aa0a13d096"
+    },
+    "topomem-v10-paired-preregistration.json": {
+      "bytes": 687,
+      "sha256": "556ff90e8aa7bad3ab6c26acfe145aeb37a0a5d0d0eeaaeffb12a03b45919451"
+    },
+    "topomem-v11-paired-preregistration.json": {
+      "bytes": 52430,
+      "sha256": "8da4c6d303f22133e5084f47dd39a0cc970d26f3faaa4b8375a1f93c63764390"
+    }
+  },
+  "derivations": {
+    "v10-replay": {
+      "original_recipe_excluded_reason": "machine-specific operator network address",
+      "original_recipe_file": "qualify_v10_paired_gpu3.py",
+      "original_recipe_sha256": "ca4aeafddb5bd52cc66df605bc0db1f4c647d3f505b272c57748dcc74311e3dc",
+      "public_parameterized_recipe": "replay_v10_gpu3.py",
+      "public_parameterized_recipe_sha256": "983435101345e01fea4c1ab1c7136598bc9716faf9c2a683343f5fa3a9cc459b"
+    },
+    "v8-public": {
+      "excluded_members": {
+        "qualify_geometry_v8.py": {
+          "reason": "machine-specific operator network address",
+          "sha256": "35ab56d46430b85b6b12f26bce485fdf0753d4820a09d37ef6c434d0064c9a17"
+        }
+      },
+      "original_archive_bytes": 1604419,
+      "original_archive_file": "cuda-v8-single-gpu-geometry-evidence.zip",
+      "original_archive_sha256": "a67055baa7c2a1f692920ab94045333a3acda918ec4e67b2697fd8c25997d7fa",
+      "retained_member_bytes_match_original": true
+    }
+  },
+  "kind": "byte_preserving_receipts",
+  "schema": 1,
+  "scope": "human engineering calibration, no model-generated improvement, no heldout claim"
+}

@@ -1,0 +1,2168 @@
+{
+  "counts_by_round_and_arm": {
+    "r0000/adaptive": 5,
+    "r0000/fixed": 5,
+    "r0001/adaptive": 5,
+    "r0001/fixed": 5
+  },
+  "frozen": null,
+  "heldout": null,
+  "kind": "sglang_strict_rsi_independent_audit",
+  "limits": "Local proof and supervisor summaries only. No model calls, original packed payload replay, GPU or benchmark fixture contents.",
+  "manifest_sha256": "6a93418186bf33d8779ac7c4b633431005c4a692ea705dd32ac7bc368bbdfd60",
+  "meta_plans": {
+    "plan/r0000/adaptive": {
+      "archived_before_task_calls": true,
+      "arm": "adaptive",
+      "decision": {
+        "evidence": [
+          "bootstrap/initial-incumbent",
+          "native"
+        ],
+        "guidance": "Use the past training evidence to improve both future search and self-revision.",
+        "mode": "revise"
+      },
+      "failure": null,
+      "function_ast_changes": {
+        "build_meta_prompt": true,
+        "build_prompt": true
+      },
+      "parent_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "plan": {
+        "expected_effect": "Hypothesis: the search will spend a slot on a complete proof-qualified resident or measured hot-capacity candidate instead of repeating the parent construct/mutate wording, while the meta decision forces a round-0 rethink. This should produce a selected program distinct from the parent and improve replay-window score over both parent and incumbent if valid resident or backing proof is available.",
+        "falsification": "Falsified if the gate shows no changed task or meta decision on the matched starting archive, if both function ASTs do not change, if the resident proof is invalid, or if the selected candidate fails to lower the training replay score versus the parent and incumbent. Also falsified if the changed evidence order alone causes an invalid family or duplicate decisions.",
+        "kind": "pre_evaluation_hypothesis",
+        "mechanism_change": "build_prompt now reverses the selected evidence order, uses even slots for construct guidance that checks qualified resident proof against a safe tiered fallback, and uses odd slots to mutate the last parent at rule 0 toward hot-capacity or backing-mode repair. build_meta_prompt switches round 0 to rethink with reversed evidence and uses revise later, explicitly preserving the best measured training program.",
+        "observed_problem": "The selected training evidence shows the incumbent and native baselines are close tiered/all-host replays with 4096 hot slots and similar cold-miss diagnostics. The parent generator only alternates construct and mutate, always orders evidence the same way, and always uses revise, so it does not push a proof-first comparison of legal backing modes and measured hot capacities after seeing that close result.",
+        "training_evidence_ids": [
+          "bootstrap/initial-incumbent",
+          "native"
+        ]
+      },
+      "proposed_child_sha256": "627653ec22f4fb179466e4bc0e9c339bc204436087f41dc4646ff387aa36c7af",
+      "response_and_plan_jointly_proposed": true,
+      "status": "recorded_before_evaluation"
+    },
+    "plan/r0000/fixed": {
+      "archived_before_task_calls": true,
+      "arm": "fixed",
+      "decision": {
+        "evidence": [
+          "bootstrap/initial-incumbent",
+          "native"
+        ],
+        "guidance": "Use the past training evidence to improve both future search and self-revision.",
+        "mode": "revise"
+      },
+      "failure": null,
+      "function_ast_changes": {
+        "build_meta_prompt": true,
+        "build_prompt": true
+      },
+      "parent_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "plan": {
+        "expected_effect": "Hypothesis: the revised decisions will generate a resident 6144-slot candidate that avoids host cold slabs, is distinct from the tiered parent and incumbent outputs, and scores lower than both training baselines when feasible. Meta rethink should preserve the best measured program while testing the resident family.",
+        "falsification": "Hypothesis is falsified if the resident 6144 program is infeasible, if the selected output is not distinct from parent or incumbent, if its training score is not below 1084.00793 and 1085.67842 ms, or if gate evaluation finds no changed task decision or meta mode on the matched starting archive.",
+        "kind": "pre_evaluation_hypothesis",
+        "mechanism_change": "build_prompt rotates evidence order so task decisions differ, constructs a resident-family program with qualified 6144 hot slots, resident backing and no allocate/place, and uses a tiered fallback. Slot 1 checks candidates for an existing resident parent and mutates it if present; otherwise it switches from mutate to construct a resident variant. build_meta_prompt changes mode to rethink and rotates evidence.",
+        "observed_problem": "Training evidence shows bootstrap/initial-incumbent at 1084.00793 ms and native at 1085.67842 ms, both tiered all-host with 4096 hot slots; the gap is below the 11.49 ms paired threshold. The parent generator only constructs/mutates without steering to the resident 6144-slot family, and its meta step repeats revise with unchanged evidence.",
+        "training_evidence_ids": [
+          "bootstrap/initial-incumbent",
+          "native"
+        ]
+      },
+      "proposed_child_sha256": "dbb9f3f14975059c7c8217972519c6d371fcdd0a2c5b8153593986c1010654a7",
+      "response_and_plan_jointly_proposed": true,
+      "status": "recorded_before_evaluation"
+    },
+    "plan/r0001/adaptive": {
+      "archived_before_task_calls": true,
+      "arm": "adaptive",
+      "decision": {
+        "evidence": [
+          "r0000/child/01",
+          "r0000/child/00",
+          "r0000/parent/01",
+          "r0000/parent/00"
+        ],
+        "guidance": "Use the past training evidence to improve both future search and self-revision.",
+        "mode": "revise"
+      },
+      "failure": null,
+      "function_ast_changes": {
+        "build_meta_prompt": true,
+        "build_prompt": true
+      },
+      "parent_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "plan": {
+        "expected_effect": "The tiered 6144 hypothesis is expected to remove the selected cold misses seen at 4096 while earliest-layer local placement reduces host-tier access; the fallback mutation is expected to retain the best measured resident 6144 behavior. Together the two decisions should produce a candidate distinct from parent outputs and at least match or beat the incumbent 1057.002 ms training score if the tiered 6144 access path is cheaper than resident sentinel overhead.",
+        "falsification": "The hypothesis is falsified if the best candidate on the matched starting archive scores at or above the incumbent 1057.002 ms, if tiered 6144 cannot be assembled as a legal family with zero selected cold misses, or if the mutated fallback fails to retain the best resident 6144 behavior. It is also falsified if earliest-layer local placement does not improve over the parent tiered 4096 runs.",
+        "kind": "pre_evaluation_hypothesis",
+        "mechanism_change": "Sort evidence IDs so child/00 and parent/00 are prioritized. Slot0 constructs a tiered 6144 candidate with earliest-layer local-HBM placement and valid tiered allocate/place rules. Slot1 mutates the top ranked parent as a safe fallback, preserving resident 6144 or replacing only the hot-capacity rule in tiered parents. Meta changes to repair and uses the sorted evidence to compare resident and tiered 6144.",
+        "observed_problem": "Training evidence shows the parent slot0 construct leads with child/01, a tiered 4096 run at 1090.814 ms, instead of the best child/00 resident 6144 run at 1057.002 ms; parent slot1 mutates an unprioritized parent and the meta decision repeats the same evidence order. The 4096 tiered runs still report selected cold-miss payloads, while 6144 covers the fixed 5206-token request and resident avoids cold backing.",
+        "training_evidence_ids": [
+          "r0000/child/01",
+          "r0000/child/00",
+          "r0000/parent/01",
+          "r0000/parent/00"
+        ]
+      },
+      "proposed_child_sha256": "9808763d24c6b7ccf27307f77f3018d06200ed47ca8ab1123727c81e9f159bed",
+      "response_and_plan_jointly_proposed": true,
+      "status": "recorded_before_evaluation"
+    },
+    "plan/r0001/fixed": {
+      "archived_before_task_calls": true,
+      "arm": "fixed",
+      "decision": {
+        "evidence": [
+          "r0000/fixed-b/01",
+          "r0000/fixed-b/00",
+          "r0000/fixed-a/01",
+          "r0000/fixed-a/00"
+        ],
+        "guidance": "Use the past training evidence to improve both future search and self-revision.",
+        "mode": "revise"
+      },
+      "failure": null,
+      "function_ast_changes": {
+        "build_meta_prompt": true,
+        "build_prompt": true
+      },
+      "parent_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "plan": {
+        "expected_effect": "The next task prompt should start from the lowest-scoring feasible measured archive rather than an infeasible failure, while still carrying the capacity failure as a hard guardrail. This should make the generated program preserve parity and capacity safety, then improve over the parent slot-0 output and incumbent. The meta prompt should force a repair-oriented self-revision instead of a broad revise, so future generator changes concentrate on the observed capacity infeasibility before adding search breadth.",
+        "falsification": "Pre-evaluation: if both new entry points do not emit distinct decisions on the matched starting archive, or if the task evidence still omits the best feasible case when its feedback is present, the mechanism is falsified. If the next measured run is infeasible again or fails to beat both the parent slot-0 output and the incumbent after this evidence ordering, or if meta still selects revise or all-four archive-order evidence when an infeasible case exists, the repair strategy is falsified.",
+        "kind": "pre_evaluation_hypothesis",
+        "mechanism_change": "Rank context evidence by observed status and score: feasible non-null scores ascending first, then infeasible failures, then unknowns. For task decisions select the two lowest-score feasible IDs plus one failure guardrail; mutation keeps the first ranked parent and construct keeps no parent. For meta, switch to repair whenever an infeasible training case exists and set evidence to best feasible, second feasible, failure, then next feasible or unknown. Guidance requires preserving the capacity-safe family and using the failure only as a constraint.",
+        "observed_problem": "Current slot-0 task decision constructs from evidence r0000/fixed-b/01, r0000/fixed-b/00, and r0000/fixed-a/01, omitting the best feasible training case r0000/fixed-a/00 at 1061.81 ms and ranking the infeasible capacity failure r0000/fixed-a/01 alongside feasible comparators. That failure reports no capacity-safe generated backing for slab r0-l1. The meta decision keeps all four evidence IDs in archive order and stays in revise, so it does not explicitly repair the capacity failure or foreground the best measured feasible program.",
+        "training_evidence_ids": [
+          "r0000/fixed-b/01",
+          "r0000/fixed-b/00",
+          "r0000/fixed-a/01",
+          "r0000/fixed-a/00"
+        ]
+      },
+      "proposed_child_sha256": "87a236cf1b6dcc324e88ce7826768e97913f796721c10127442a23a677a0fd70",
+      "response_and_plan_jointly_proposed": true,
+      "status": "recorded_before_evaluation"
+    }
+  },
+  "provider_usage": {
+    "adaptive": {
+      "calls": 10,
+      "calls_with_usage": 10,
+      "completed": 10,
+      "known_tokens": {
+        "completion_tokens": 68060,
+        "completion_tokens_details.reasoning_tokens": 65047,
+        "prompt_tokens": 68406,
+        "prompt_tokens_details.cached_tokens": 0,
+        "total_tokens": 136466
+      },
+      "states": {
+        "completed": 10
+      }
+    },
+    "fixed": {
+      "calls": 10,
+      "calls_with_usage": 10,
+      "completed": 10,
+      "known_tokens": {
+        "completion_tokens": 82646,
+        "completion_tokens_details.reasoning_tokens": 78994,
+        "prompt_tokens": 63359,
+        "prompt_tokens_details.cached_tokens": 0,
+        "total_tokens": 146005
+      },
+      "states": {
+        "completed": 10
+      }
+    }
+  },
+  "rounds": [
+    {
+      "active_after": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "active_before": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "actual_meta_requests": {
+        "adaptive": {
+          "actual_decision": {
+            "evidence": [
+              "bootstrap/initial-incumbent",
+              "native"
+            ],
+            "guidance": "Use the past training evidence to improve both future search and self-revision.",
+            "mode": "revise"
+          },
+          "api_id": "api/r0000/adaptive-meta",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "state": "completed"
+        },
+        "fixed": {
+          "actual_decision": {
+            "evidence": [
+              "bootstrap/initial-incumbent",
+              "native"
+            ],
+            "guidance": "Use the past training evidence to improve both future search and self-revision.",
+            "mode": "revise"
+          },
+          "api_id": "api/r0000/fixed-meta",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "state": "completed"
+        }
+      },
+      "all_candidates": {
+        "r0000/child/00": {
+          "arm": "child",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "627653ec22f4fb179466e4bc0e9c339bc204436087f41dc4646ff387aa36c7af",
+          "raw_program_sha256": "faebc28591a6af32ce3461738fa05608deb4b1be65cde09f944021ba2c77d083",
+          "status": "feasible",
+          "training_score_ms": 1057.002301
+        },
+        "r0000/child/01": {
+          "arm": "child",
+          "effective_training_program_sha256": "7ed07739efb2e78228e5177a06845b0c77a2894551c33312033ac373a50faf0e",
+          "harness_sha256": "627653ec22f4fb179466e4bc0e9c339bc204436087f41dc4646ff387aa36c7af",
+          "raw_program_sha256": "f1bf39f0e5599e886ed9e020958f31d0d1945c8e819b99c8b8c6884d13c7074d",
+          "status": "feasible",
+          "training_score_ms": 1090.814244
+        },
+        "r0000/fixed-a/00": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "dc3ca18c68bfb509c90bc634cd260e84c05f519ff181c5b0949a7ed955efa3f4",
+          "status": "feasible",
+          "training_score_ms": 1061.812933
+        },
+        "r0000/fixed-a/01": {
+          "arm": "fixed",
+          "effective_training_program_sha256": null,
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "75775c125a022ee284635fa4fe24d6aea7dcdf2bcec4464bd33cf7854cad277b",
+          "status": "infeasible",
+          "training_score_ms": null
+        },
+        "r0000/fixed-b/00": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "9d34da3a8ec96f954e437e67cbf6ad11342721a78a6cee66979ce271cfab433d",
+          "status": "feasible",
+          "training_score_ms": 1076.295239
+        },
+        "r0000/fixed-b/01": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "fcb444553dfe8a8457ea750dedfe7088972b472b7279840c80f81de0d167e89e",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "b7e1d92b886ab6a412ed06d9a7000f071e35a24ce55a839cc3350e01d4bf2f16",
+          "status": "feasible",
+          "training_score_ms": 1081.751663
+        },
+        "r0000/parent/00": {
+          "arm": "parent",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "9d34da3a8ec96f954e437e67cbf6ad11342721a78a6cee66979ce271cfab433d",
+          "status": "feasible",
+          "training_score_ms": 1082.374225
+        },
+        "r0000/parent/01": {
+          "arm": "parent",
+          "effective_training_program_sha256": "fcb444553dfe8a8457ea750dedfe7088972b472b7279840c80f81de0d167e89e",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "be70b6cc987e6a8ad0ee9664a41609731ff360dacf35e532080dcee74977ecd1",
+          "status": "feasible",
+          "training_score_ms": 1082.367042
+        }
+      },
+      "candidate_ids_by_effect": {
+        "7ed07739efb2e78228e5177a06845b0c77a2894551c33312033ac373a50faf0e": [
+          "r0000/child/01"
+        ],
+        "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b": [
+          "r0000/parent/00",
+          "r0000/child/00",
+          "r0000/fixed-a/00",
+          "r0000/fixed-b/00"
+        ],
+        "fcb444553dfe8a8457ea750dedfe7088972b472b7279840c80f81de0d167e89e": [
+          "r0000/parent/01",
+          "r0000/fixed-b/01"
+        ]
+      },
+      "controlled_behavior": {
+        "build_meta_prompt": {
+          "ast_changed": true,
+          "decisions": [
+            {
+              "after": {
+                "evidence": [
+                  "native",
+                  "bootstrap/initial-incumbent"
+                ],
+                "guidance": "Self-revise by comparing the incumbent and native training evidence. Keep the best measured training program, then use construct to test a proof-qualified resident or hot-capacity strategy and use mutate only to repair one rule without breaking the selected program family.",
+                "mode": "rethink"
+              },
+              "before": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native"
+                ],
+                "guidance": "Use the past training evidence to improve both future search and self-revision.",
+                "mode": "revise"
+              },
+              "changed_fields": [
+                "evidence",
+                "mode"
+              ],
+              "slot": 0
+            }
+          ]
+        },
+        "build_prompt": {
+          "ast_changed": true,
+          "decisions": [
+            {
+              "after": {
+                "evidence": [
+                  "native",
+                  "bootstrap/initial-incumbent"
+                ],
+                "guidance": "Construct a complete proof-first program from the measured startup evidence. Prefer a qualified resident backing choice only when the fixed prompt plus decode bound fits the native page-reserved hot pool; otherwise keep a valid tiered program with measured hot capacity and a safe fallback. Do not rely on cold allocation when resident proof holds.",
+                "operator": "construct",
+                "parents": [],
+                "rule": 0
+              },
+              "before": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native"
+                ],
+                "guidance": "Try a topology-aware rule with a fallback and a specific transfer hypothesis.",
+                "operator": "construct",
+                "parents": [],
+                "rule": 0
+              },
+              "changed_fields": [
+                "evidence"
+              ],
+              "slot": 0
+            },
+            {
+              "after": {
+                "evidence": [
+                  "native",
+                  "bootstrap/initial-incumbent"
+                ],
+                "guidance": "Mutate the selected parent at rule 0 toward the measured hot-capacity or backing-mode decision. Remove cold-backup dependence only with a valid resident proof; otherwise retune one hot-capacity rule and preserve the selected family and all byte and route checks.",
+                "operator": "mutate",
+                "parents": [
+                  "0c94d9fe081017b791f2d20c316a3ae65ffbd1321d85d2bfe903f052857ca708"
+                ],
+                "rule": 0
+              },
+              "before": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native"
+                ],
+                "guidance": "Use measured failures to revise the first allocation rule.",
+                "operator": "mutate",
+                "parents": [
+                  "0c94d9fe081017b791f2d20c316a3ae65ffbd1321d85d2bfe903f052857ca708"
+                ],
+                "rule": 0
+              },
+              "changed_fields": [
+                "evidence"
+              ],
+              "slot": 1
+            }
+          ]
+        }
+      },
+      "decision": "rejected",
+      "effective_program_fingerprints": {
+        "0c94d9fe081017b791f2d20c316a3ae65ffbd1321d85d2bfe903f052857ca708": "b062170bf95e7fb05e41550a650fbc91e3a8d8ebdc6cb719bb56f5b9e5c31e24",
+        "9d34da3a8ec96f954e437e67cbf6ad11342721a78a6cee66979ce271cfab433d": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "be70b6cc987e6a8ad0ee9664a41609731ff360dacf35e532080dcee74977ecd1": "fcb444553dfe8a8457ea750dedfe7088972b472b7279840c80f81de0d167e89e",
+        "dc3ca18c68bfb509c90bc634cd260e84c05f519ff181c5b0949a7ed955efa3f4": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "faebc28591a6af32ce3461738fa05608deb4b1be65cde09f944021ba2c77d083": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b"
+      },
+      "fixed_discarded_child_sha256": "dbb9f3f14975059c7c8217972519c6d371fcdd0a2c5b8153593986c1010654a7",
+      "fresh_best_ids": {
+        "child": "r0000/child/00",
+        "fixed": "r0000/fixed-a/00",
+        "fixed_a": "r0000/fixed-a/00",
+        "fixed_b": "r0000/fixed-b/00",
+        "parent": "r0000/parent/01"
+      },
+      "previous_admission_reuse": null,
+      "proposed_child_sha256": "627653ec22f4fb179466e4bc0e9c339bc204436087f41dc4646ff387aa36c7af",
+      "reason": "insufficient_stable_paired_improvement",
+      "round": 0,
+      "selected_output_ids": {
+        "child": "r0000/child/00",
+        "fixed": "r0000/fixed-a/00",
+        "parent": "r0000/parent/01"
+      },
+      "selected_output_origins": {
+        "child": "fresh",
+        "fixed": "fresh",
+        "parent": "fresh"
+      },
+      "shared_incumbent_id": "bootstrap/initial-incumbent",
+      "source_diff": [
+        "--- \n",
+        "+++ \n",
+        "@@ -1,13 +1,20 @@\n",
+        " def build_prompt(context):",
+        "-    parents = context[\"parent_ids\"]",
+        "-    evidence = context[\"evidence_ids\"]",
+        "-    slot = context[\"slot\"]",
+        "-    if parents and slot % 2 == 1:",
+        "-        return str({\"operator\": \"mutate\", \"parents\": parents[:1], \"evidence\": evidence[:3],",
+        "-                    \"rule\": 0, \"guidance\": \"Use measured failures to revise the first allocation rule.\"})",
+        "-    return str({\"operator\": \"construct\", \"parents\": [], \"evidence\": evidence[:3], \"rule\": 0,",
+        "-                \"guidance\": \"Try a topology-aware rule with a fallback and a specific transfer hypothesis.\"})",
+        "+    parents = context.get('parent_ids', [])",
+        "+    evidence = context.get('evidence_ids', [])",
+        "+    slot = context.get('slot', 0)",
+        "+    ordered = list(reversed(evidence[:4]))",
+        "+    if slot % 2 == 0:",
+        "+        return str({'operator': 'construct', 'parents': [], 'evidence': ordered, 'rule': 0, 'guidance': 'Construct a complete proof-first program from the measured startup evidence. Prefer a qualified resident backing choice only when the fixed prompt plus decode bound fits the native page-reserved hot pool; otherwise keep a valid tiered program with measured hot capacity and a safe fallback. Do not rely on cold allocation when resident proof holds.'})",
+        "+    if parents:",
+        "+        return str({'operator': 'mutate', 'parents': parents[-1:], 'evidence': ordered, 'rule': 0, 'guidance': 'Mutate the selected parent at rule 0 toward the measured hot-capacity or backing-mode decision. Remove cold-backup dependence only with a valid resident proof; otherwise retune one hot-capacity rule and preserve the selected family and all byte and route checks.'})",
+        "+    return str({'operator': 'construct', 'parents': [], 'evidence': ordered, 'rule': 0, 'guidance': 'Construct a proof-first candidate: test a qualified resident startup if the fixed bound fits, or a tiered program with measured hot capacity and safe fallback.'})",
+        " ",
+        " def build_meta_prompt(context):",
+        "-    return str({\"mode\": \"revise\", \"evidence\": context[\"evidence_ids\"][:4],",
+        "-                \"guidance\": \"Use the past training evidence to improve both future search and self-revision.\"})",
+        "+    evidence = context.get('evidence_ids', [])",
+        "+    ordered = list(reversed(evidence[:4]))",
+        "+    round_no = context.get('round', 0)",
+        "+    if round_no == 0:",
+        "+        mode = 'rethink'",
+        "+    else:",
+        "+        mode = 'revise'",
+        "+    return str({'mode': mode, 'evidence': ordered, 'guidance': 'Self-revise by comparing the incumbent and native training evidence. Keep the best measured training program, then use construct to test a proof-qualified resident or hot-capacity strategy and use mutate only to repair one rule without breaking the selected program family.'})"
+      ],
+      "validation_comparisons": {
+        "child_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 21.615228000000116
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 24.362898000000314
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 4.911183999999821
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 7.6136800000001585
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 19.5155749999999
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 6.696956
+            }
+          ],
+          "median_improvement": 13.564627500000029,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "child_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -2.18520599999988
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 4.849558999999999
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 1.533773999999994
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -14.571774999999889
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -0.6507269999999608
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -14.168309999999792
+            }
+          ],
+          "median_improvement": -1.4179664999999204,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 11.723277000000053
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 36.378142000000025
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 24.51457800000003
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 7.4317690000002585
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 18.978247000000238
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 3.08061500000008
+            }
+          ],
+          "median_improvement": 15.350762000000145,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "child_vs_parent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 16.699153000000024
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 31.069811000000072
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 7.75587900000005
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -4.614906000000019
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 16.651420000000144
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 12.008147000000008
+            }
+          ],
+          "median_improvement": 14.329783500000076,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -1.6983600000000934
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 0.4095439999998689
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -9.689954999999827
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -1.9411159999999654
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -2.373207999999977
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -7.539663999999675
+            }
+          ],
+          "median_improvement": -2.157161999999971,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 12.21012299999984
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 31.938126999999895
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 13.290849000000208
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 20.062428000000182
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 17.25576600000022
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 9.709261000000197
+            }
+          ],
+          "median_improvement": 15.273307500000215,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "incumbent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -23.800433999999996
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": -19.513339000000315
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -3.377409999999827
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -22.185455000000047
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -20.16630199999986
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -20.865265999999792
+            }
+          ],
+          "median_improvement": -20.515783999999826,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "incumbent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -9.891951000000063
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 12.015243999999711
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 19.603394000000208
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -0.1819109999999
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -0.5373279999996612
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -3.6163409999999203
+            }
+          ],
+          "median_improvement": -0.3596194999997806,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 4.916075000000092
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": -6.7069129999997585
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -2.844695000000229
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 12.228586000000178
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 2.864154999999755
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -5.311191000000008
+            }
+          ],
+          "median_improvement": 0.009729999999763095,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -18.884358999999904
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": -26.220252000000073
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -6.222105000000056
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -9.95686899999987
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -17.302147000000105
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -26.1764569999998
+            }
+          ],
+          "median_improvement": -18.093253000000004,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -4.975875999999971
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 5.308330999999953
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 16.75869899999998
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 12.046675000000278
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 2.326827000000094
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -8.927531999999928
+            }
+          ],
+          "median_improvement": 3.8175790000000234,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        }
+      },
+      "validation_receipts": {
+        "arms": {
+          "child": {
+            "feasible": true,
+            "median_window_ms": 1073.8877585,
+            "receipt_sha256": {
+              "sg-0209ab0bf2b8bdd756c56fcf9b3c4366f44e500d6f78e6c7": "694da7ae9bc6f06861b8948f31ff1484fe1354b718ebd65c2e28284e8741ffc1",
+              "sg-215de0a277d5b81efcfcb7dc2dedf551e0efe7fabbf1b729": "c25d0879a997759eca3ed373612a302fa66ba2fcc275e2b75c3178c1b8c74dc2",
+              "sg-277b02c0f898397ae075a34299e32ab79835fb3fe4503163": "b510522793a8a4745ff0587cb7a80ee86c21792c6a404970a4ce58d0aacc4100",
+              "sg-43df9dccdabcc274c25774ca3a01733bf340662dfdd756f7": "3639db07e7c2d6e77f9a5809483424f8a00b6217b0f3f68e1c1c64fef04067ca",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-89689ad8a0bb3aad4bb04ccd7cf9e1020554c78cbf880498": "7f273bdf583b4da546fce1d91f3430bc5c920bfb81460989121e4ae1aa5fe3f2",
+              "sg-b76a88468f13712d3612c3a946a88465bf21bbbfa668faf1": "a244a7ff7f0f93dee912f70448f5562b0210a0458670cea2a84f12da67c6885e",
+              "sg-f90bf98f9133f096a6484d71047c5cc67614007c63fd327b": "4eaeaa6a279439470bf10edeb66a7478a00d9096b9a47aa7fc28b01080cdd7f2"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1070.11124
+                },
+                "score": 1070.11124
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1064.9481819999999
+                },
+                "score": 1064.9481819999999
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1077.664277
+                },
+                "score": 1077.664277
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1082.697577
+                },
+                "score": 1082.697577
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.729883
+                },
+                "score": 1069.729883
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1080.717148
+                },
+                "score": 1080.717148
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "fixed": {
+            "feasible": true,
+            "median_window_ms": 1070.759641,
+            "receipt_sha256": {
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-6a17a740cd0bee5c55c4c509afbe70222ae9e466ebe74c4a": "222b1348b213495e7f734e9e99e020a28357613d08338a3c4b8ee8bb4cba8f55",
+              "sg-86c00f371a672f501bda8a188c711edfb91771045e190793": "0a4dd60b78c34cc619e72f546672d64427dcf3179086b7e69438d3e29945feba",
+              "sg-a1046bc817958edf759bf34807aede5ed3cb01f75e63b5bf": "30bda741a9f838bfd5e1112d7af84660805c70d8f27ab441fbbb4fcf26426ebf",
+              "sg-bc14a462182bae6deeccab3814d037fa66ed2d22b19333dc": "debd60d22117df396908ddfd06906e0d6f960ea2b9536ce765cdef9c3da466d7",
+              "sg-c4708c428aafe8a19edc1cf5a4ecd902b09c00656237ec3f": "3d3c43b2fe5eb8fa4bad64e4e8ab8272fdc8567eca288497e6ff3506392eb341",
+              "sg-c5974fad09dcf49953ba89ea790256bd0165214ac402fc70": "540a5eb0201485ca12a48be434a382544ab9403b1b42fbdc61b555b5165db218",
+              "sg-dbc28ee7f7d9ff587621d22066dddf9b728302a3d0e6e376": "00ac7806dac4cfba3b52d9d84c06a2319c7885da72195b180aad1b78a2bab588"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.6243940000002
+                },
+                "score": 1069.6243940000002
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.388197
+                },
+                "score": 1069.388197
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1088.888006
+                },
+                "score": 1088.888006
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1070.066918
+                },
+                "score": 1070.066918
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1071.452364
+                },
+                "score": 1071.452364
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1074.0885019999998
+                },
+                "score": 1074.0885019999998
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "incumbent": {
+            "feasible": true,
+            "median_window_ms": 1089.278269,
+            "receipt_sha256": {
+              "sg-017f04126ca522ad08c0f80237b8d02dd7249500914f287b": "6f7e898a76d2a8ed7b157f6913bf974211a035b3c818f20830d966def2944b83",
+              "sg-041898b4ac42659730d13922c380286f5ba81074c9be25a0": "78cc0bfcd6564ef1f651614379788357627ea85bf1d403bdf8de1fe840aff4ba",
+              "sg-0be9adc616d5967da28ccc5e5f6579d2682d84ad8888fbe9": "9e2fbaa317b93c797ce1465bab960c0694935ccf9a8a1a77f3cc03db2c56c46c",
+              "sg-246e28627cf13c9b03ca82774203d4c971dca7fbba783949": "b005a7b9bd4a6d25fcb107da1d984debe01a98ac74244d2bdcf560b7989a9bbe",
+              "sg-573ecf16c7715df7ee2f7eb442a3f04cca13c1911c0a22de": "a21eddc84f998f2003ddbb4fb7e2b0de2ee5c7648c5a674301ee1531ba8c3e10",
+              "sg-83e48a992db2ba9c03010df1ffc5067f84ec7491c963cfd9": "bdeed8e11310e94bb33772b2f588d787217775a0dbcc6e034b9c3bedcd1f3683",
+              "sg-b8331ef44b479ae46aac43f6ed045500901e972ae4cd32f6": "b65dece0cc1300403ca178a6684dff845cca8659c2a1056f5f6a10cd1f5f0d13",
+              "sg-f56ba54d20fcc373200ca8e3817e24fdeed5f1b3f80e0c68": "c7926f6658a75113cc4001c16d4803eb3a243732034438f74b017f52d973a600"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1091.726468
+                },
+                "score": 1091.726468
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1089.3110800000002
+                },
+                "score": 1089.3110800000002
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1082.575461
+                },
+                "score": 1082.575461
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1090.311257
+                },
+                "score": 1090.311257
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1089.2454579999999
+                },
+                "score": 1089.2454579999999
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1087.414104
+                },
+                "score": 1087.414104
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "manual": {
+            "feasible": true,
+            "median_window_ms": 1068.6024790000001,
+            "receipt_sha256": {
+              "sg-0e5a7db59556cedf8c79e59d5099ba5b8f129ffff9b57638": "e916bdcef1388a0c6b0800782b29d9825e8da77c5cf9d8b27e37d68e1f09aab8",
+              "sg-21a6aa6dcd8ad23adcde204cbbcb50f7c9dc4f80439e7ed7": "a5ed2c9a26c6406fe68118b4ac73c5f95888cf9e40d88ab2840d3515e8a28236",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-65696cbf03907e5014cde011aef466920b6ffde10cba8b1e": "05fb7167686e8a34df184dfcf976f4f389a182770d6740f69ec1e6dc6e970671",
+              "sg-67dbcab1475e4edd13b19f062e6101874584c2b1d7e429b5": "56c45cf15f99d9b6b8de553f96e4190c401bece322f1f7b89b5c11a6ed0e31bf",
+              "sg-7bf3636ca6ce90e4537b2429b9c8942fc42d64f5ad5d51f9": "8509094ca0b56dbc35c291abe29a7b1af5ac2be90499d4f10b3fa8d962774e2c",
+              "sg-d89854b72f16373a5d2e08426e062c6007804daa52aa4199": "16969777ea2d6578dc8ff9e0461a19164f622a3d861ebed564e71c7e65b693fd",
+              "sg-db31561e68584daad84a6b061a75cc1469299c55d8020ef5": "61126eb4751a4ae309eebae8c7f413dabb2632a7eee4fb8365d768227f55f08b"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1067.926034
+                },
+                "score": 1067.926034
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.7977409999999
+                },
+                "score": 1069.7977409999999
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1079.198051
+                },
+                "score": 1079.198051
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1068.125802
+                },
+                "score": 1068.125802
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.079156
+                },
+                "score": 1069.079156
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1066.5488380000002
+                },
+                "score": 1066.5488380000002
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "native": {
+            "feasible": true,
+            "median_window_ms": 1089.4187380000003,
+            "receipt_sha256": {
+              "sg-041898b4ac42659730d13922c380286f5ba81074c9be25a0": "78cc0bfcd6564ef1f651614379788357627ea85bf1d403bdf8de1fe840aff4ba",
+              "sg-3b423c6ba31e60d5970316afeb001995e6ac33bf6860f11d": "ee66e0e666f08699009612c90aedbc23ba0e6b40805b9a196d960dd5e1051bc7",
+              "sg-4860e387a58c05fee248b6da04c1b62f5cb6b317d7f60e08": "e4ce9e86592c305a8c0cdb3c162d971e85dfbeb964edeebb4c7024d05233d7c7",
+              "sg-4f248403f12174ec6a6e169e371da29bb63399e863c7a9f7": "fb84a4c4aa65a7638d4e9b2cf6d24afa948e59aad7e5c5141a63090892de3229",
+              "sg-74d2002923a0a5b55e562688377b31c6ec99d2c8d435bb1e": "25aad8f0e254db0e61e01476b3fae96c070a81185b410c9abf9c884a6a29e1f0",
+              "sg-771f6000a7c9c5dc437fcae235387420e6b8f2a4414458ba": "79b164ecb87021c1cd3025aece23a5957464c2b8aa81251db390c33a8e053103",
+              "sg-c3bcfd688586054a51257c5822afc16f39c087987c95bb9c": "c0be30d929f5bed72fb47759129b71c1424d48fc53aed67aaa6ac6b848a993df",
+              "sg-fe6f06f3b6d9fecceee2218b0855606138553f0c7c221ea2": "356325889d7387b805c2a622af57b81ac88d06ed5a1eb8c5941a7c0fc364d13d"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1081.834517
+                },
+                "score": 1081.834517
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1101.3263239999999
+                },
+                "score": 1101.3263239999999
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1102.178855
+                },
+                "score": 1102.178855
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1090.1293460000002
+                },
+                "score": 1090.1293460000002
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1088.7081300000002
+                },
+                "score": 1088.7081300000002
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1083.797763
+                },
+                "score": 1083.797763
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "parent": {
+            "feasible": true,
+            "median_window_ms": 1086.595848,
+            "receipt_sha256": {
+              "sg-0040afbb374958c14701fd379179c47a121ef8a4114e0efd": "9796df3c086cafe1af1d53c3b2b8a4ee65a709350d5f45c01696908bdd703f72",
+              "sg-041898b4ac42659730d13922c380286f5ba81074c9be25a0": "78cc0bfcd6564ef1f651614379788357627ea85bf1d403bdf8de1fe840aff4ba",
+              "sg-448889b431756c76714e1aa588a4500bf02e04f9df4414c4": "268112a26ea029d9ecf8f7d03d044881a0267667bc81ec112fc373472ce55bf4",
+              "sg-4a6dfa08f8a15a3adf32873a365e1dec7755d852c9da097c": "000af0be224d7c00aad1efdec5918b7e9c71a13d1bb8ebfaa0c07f475a407a5a",
+              "sg-5ea56902309fc3641d7bc108389da726d7c86d150b035034": "c855dff33d4a42b1884b33a7d09a20b293a33a0ec497eba5bdc10427c0e13530",
+              "sg-5f374272d11cbff19a2aa26055c0d3a36544a01411e3e6b4": "bf7a6bb14c4ccb7bc12e4c98e097aaff7101e06c28affc6ed9a77c733a4e14d8",
+              "sg-b60e0bb57252256d97f5f43bd3447df5ec9ffefc6c528b6a": "f2b9fab8418a87baa599583a27239a4dd82d32a92bd789e390413ae32634069b",
+              "sg-df07087414dcb0ffc2c01d04fa738c21ca276bc54c8c2d03": "6a8f59af9b04819064b142f4050e00e3cad7840c30ad20c7f8203d21ea3a8864"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1086.810393
+                },
+                "score": 1086.810393
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1096.017993
+                },
+                "score": 1096.017993
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1085.4201560000001
+                },
+                "score": 1085.4201560000001
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1078.082671
+                },
+                "score": 1078.082671
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1086.3813030000001
+                },
+                "score": 1086.3813030000001
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1092.725295
+                },
+                "score": 1092.725295
+              }
+            ],
+            "timing_receipts": 6
+          }
+        },
+        "per_case_matching_receipt_signatures": {
+          "archive-validation-support": {
+            "dispatch_sha256": "0bf6fb141a7dd74975013b25412eb8a816ff30fc8e9940774ae6874d1b1e7b4c",
+            "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+            "global_ticks_sha256": "2fbdcb8fb35780e411e2b94d09aac904be90cc57fa4cd4761f936d5ab36ae94c",
+            "input_tokenization_sha256": "7516ff483506dba8d748cd14dc4d00f42e817a84ddfccc4c29263d46143464cd",
+            "output_ids_sha256": "49975051e1e938b3ea1586231addfa7e2675784a70c04f7d8721e5ce20517421",
+            "packed_kv_sha256_by_rank": [
+              "1a44fa10410cef7d0bc76fed6f581737badd9d4ec5dd7a71dcecb225e6039f39",
+              "a3915aea5c6921ba506dfdf515acfe085a979ed726d8d2069a6666c19d980b4d"
+            ],
+            "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+          }
+        },
+        "status": "completed"
+      }
+    },
+    {
+      "active_after": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "active_before": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "actual_meta_requests": {
+        "adaptive": {
+          "actual_decision": {
+            "evidence": [
+              "r0000/child/01",
+              "r0000/child/00",
+              "r0000/parent/01",
+              "r0000/parent/00"
+            ],
+            "guidance": "Use the past training evidence to improve both future search and self-revision.",
+            "mode": "revise"
+          },
+          "api_id": "api/r0001/adaptive-meta",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "state": "completed"
+        },
+        "fixed": {
+          "actual_decision": {
+            "evidence": [
+              "r0000/fixed-b/01",
+              "r0000/fixed-b/00",
+              "r0000/fixed-a/01",
+              "r0000/fixed-a/00"
+            ],
+            "guidance": "Use the past training evidence to improve both future search and self-revision.",
+            "mode": "revise"
+          },
+          "api_id": "api/r0001/fixed-meta",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "state": "completed"
+        }
+      },
+      "all_candidates": {
+        "r0001/child/00": {
+          "arm": "child",
+          "effective_training_program_sha256": "cc07264edaed68da227498e4340146ae0eb69bc8be59684156d55dec75f52471",
+          "harness_sha256": "9808763d24c6b7ccf27307f77f3018d06200ed47ca8ab1123727c81e9f159bed",
+          "raw_program_sha256": "0d96a539d912376555de41583af40f0bcc3c89e25ada92ea2bf06837c30f2a3c",
+          "status": "feasible",
+          "training_score_ms": 1079.4864129999999
+        },
+        "r0001/child/01": {
+          "arm": "child",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "9808763d24c6b7ccf27307f77f3018d06200ed47ca8ab1123727c81e9f159bed",
+          "raw_program_sha256": "e3fd43ba7a39b17baaa095b0760c7668818532b55606985276dd074dc894cc40",
+          "status": "feasible",
+          "training_score_ms": 1058.151619
+        },
+        "r0001/fixed-a/00": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "bf0f64c6a40e0456ad0f6f8305f4acbc730d1d297acfe70fd1e7e41acc5815c7",
+          "status": "feasible",
+          "training_score_ms": 1059.675794
+        },
+        "r0001/fixed-a/01": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "576fdd9e74b69220bcde6f3c08cbd198fab6f466358455a8ea6c06d89c7e11b0",
+          "status": "feasible",
+          "training_score_ms": 1059.389345
+        },
+        "r0001/fixed-b/00": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "0c5c889db881dd7487f058861b618723fcdfe5ef7d98792424c86507546acb86",
+          "status": "feasible",
+          "training_score_ms": 1060.6720579999999
+        },
+        "r0001/fixed-b/01": {
+          "arm": "fixed",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "9d34da3a8ec96f954e437e67cbf6ad11342721a78a6cee66979ce271cfab433d",
+          "status": "feasible",
+          "training_score_ms": 1062.8098889999999
+        },
+        "r0001/parent/00": {
+          "arm": "parent",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "bf0f64c6a40e0456ad0f6f8305f4acbc730d1d297acfe70fd1e7e41acc5815c7",
+          "status": "feasible",
+          "training_score_ms": 1070.6900150000001
+        },
+        "r0001/parent/01": {
+          "arm": "parent",
+          "effective_training_program_sha256": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+          "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "raw_program_sha256": "11669133816e5ba5753131bb4566b55f4edf50926ad36e962b606eae8b81364e",
+          "status": "feasible",
+          "training_score_ms": 1060.582843
+        }
+      },
+      "candidate_ids_by_effect": {
+        "cc07264edaed68da227498e4340146ae0eb69bc8be59684156d55dec75f52471": [
+          "r0001/child/00"
+        ],
+        "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b": [
+          "r0001/parent/00",
+          "r0001/parent/01",
+          "r0001/child/01",
+          "r0001/fixed-a/00",
+          "r0001/fixed-a/01",
+          "r0001/fixed-b/00",
+          "r0001/fixed-b/01"
+        ]
+      },
+      "controlled_behavior": {
+        "build_meta_prompt": {
+          "ast_changed": true,
+          "decisions": [
+            {
+              "after": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native",
+                  "r0000/child/00",
+                  "r0000/child/01"
+                ],
+                "guidance": "Repair the search using sorted training evidence: prioritize the best-scoring child, compare it with the resident parent and the strongest tiered parent, and keep the resident 6144 proof as the incumbent unless a tiered 6144 variant with zero selected misses is measured better. Change one operator or parent rule at a time.",
+                "mode": "repair"
+              },
+              "before": {
+                "evidence": [
+                  "r0000/child/01",
+                  "r0000/child/00",
+                  "r0000/parent/01",
+                  "r0000/parent/00"
+                ],
+                "guidance": "Use the past training evidence to improve both future search and self-revision.",
+                "mode": "revise"
+              },
+              "changed_fields": [
+                "evidence",
+                "mode"
+              ],
+              "slot": 0
+            }
+          ]
+        },
+        "build_prompt": {
+          "ast_changed": true,
+          "decisions": [
+            {
+              "after": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native",
+                  "r0000/child/00"
+                ],
+                "guidance": "Construct a tiered candidate with hot_capacity=6144 and backing_mode=tiered. Training shows 4096 leaves selected cold misses while 6144 covers the fixed maximum request, so place the earliest layer slabs on local HBM first and use host only after local HBM is exhausted. Keep a valid tiered family with at least one allocate/place rule.",
+                "operator": "construct",
+                "parents": [],
+                "rule": 0
+              },
+              "before": {
+                "evidence": [
+                  "r0000/child/01",
+                  "r0000/child/00",
+                  "r0000/parent/01"
+                ],
+                "guidance": "Try a topology-aware rule with a fallback and a specific transfer hypothesis.",
+                "operator": "construct",
+                "parents": [],
+                "rule": 0
+              },
+              "changed_fields": [
+                "evidence"
+              ],
+              "slot": 0
+            },
+            {
+              "after": {
+                "evidence": [
+                  "bootstrap/initial-incumbent",
+                  "native",
+                  "r0000/child/00"
+                ],
+                "guidance": "Mutate the best measured parent. If it is the resident 6144 program, keep the qualified hot_capacity and backing_mode rules and test only a single rule replacement that cannot add allocate/place rules. Otherwise replace the hot_capacity rule with 6144 and preserve earliest-layer local-HBM placement.",
+                "operator": "mutate",
+                "parents": [
+                  "faebc28591a6af32ce3461738fa05608deb4b1be65cde09f944021ba2c77d083"
+                ],
+                "rule": 0
+              },
+              "before": {
+                "evidence": [
+                  "r0000/child/01",
+                  "r0000/child/00",
+                  "r0000/parent/01"
+                ],
+                "guidance": "Use measured failures to revise the first allocation rule.",
+                "operator": "mutate",
+                "parents": [
+                  "faebc28591a6af32ce3461738fa05608deb4b1be65cde09f944021ba2c77d083"
+                ],
+                "rule": 0
+              },
+              "changed_fields": [
+                "evidence"
+              ],
+              "slot": 1
+            }
+          ]
+        }
+      },
+      "decision": "rejected",
+      "effective_program_fingerprints": {
+        "0c5c889db881dd7487f058861b618723fcdfe5ef7d98792424c86507546acb86": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "11669133816e5ba5753131bb4566b55f4edf50926ad36e962b606eae8b81364e": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "576fdd9e74b69220bcde6f3c08cbd198fab6f466358455a8ea6c06d89c7e11b0": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "dc3ca18c68bfb509c90bc634cd260e84c05f519ff181c5b0949a7ed955efa3f4": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "e3fd43ba7a39b17baaa095b0760c7668818532b55606985276dd074dc894cc40": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b",
+        "faebc28591a6af32ce3461738fa05608deb4b1be65cde09f944021ba2c77d083": "e74d5c0c5dc03c97ffaff24d51e0be52efd6d932b7dd132a123b2c0809d57f6b"
+      },
+      "fixed_discarded_child_sha256": "87a236cf1b6dcc324e88ce7826768e97913f796721c10127442a23a677a0fd70",
+      "fresh_best_ids": {
+        "child": "r0001/child/01",
+        "fixed": "r0001/fixed-a/01",
+        "fixed_a": "r0001/fixed-a/01",
+        "fixed_b": "r0001/fixed-b/00",
+        "parent": "r0001/parent/01"
+      },
+      "previous_admission_reuse": null,
+      "proposed_child_sha256": "9808763d24c6b7ccf27307f77f3018d06200ed47ca8ab1123727c81e9f159bed",
+      "reason": "child_retained_incumbent",
+      "round": 1,
+      "selected_output_ids": {
+        "child": "r0000/child/00",
+        "fixed": "r0000/fixed-a/00",
+        "parent": "r0000/child/00"
+      },
+      "selected_output_origins": {
+        "child": "incumbent",
+        "fixed": "incumbent",
+        "parent": "incumbent"
+      },
+      "shared_incumbent_id": "r0000/child/00",
+      "source_diff": [
+        "--- \n",
+        "+++ \n",
+        "@@ -1,13 +1,18 @@\n",
+        " def build_prompt(context):",
+        "-    parents = context[\"parent_ids\"]",
+        "-    evidence = context[\"evidence_ids\"]",
+        "-    slot = context[\"slot\"]",
+        "-    if parents and slot % 2 == 1:",
+        "-        return str({\"operator\": \"mutate\", \"parents\": parents[:1], \"evidence\": evidence[:3],",
+        "-                    \"rule\": 0, \"guidance\": \"Use measured failures to revise the first allocation rule.\"})",
+        "-    return str({\"operator\": \"construct\", \"parents\": [], \"evidence\": evidence[:3], \"rule\": 0,",
+        "-                \"guidance\": \"Try a topology-aware rule with a fallback and a specific transfer hypothesis.\"})",
+        "+    slot = context.get('slot', 0)",
+        "+    parents = list(context.get('parent_ids', []))",
+        "+    evidence = sorted(context.get('evidence_ids', []))",
+        "+    if len(evidence) > 4:",
+        "+        evidence = evidence[:4]",
+        "+    if slot % 2 == 0:",
+        "+        ev = evidence[:3]",
+        "+        if len(ev) == 0:",
+        "+            ev = evidence",
+        "+        return str({'operator': 'construct', 'parents': [], 'evidence': ev, 'rule': 0, 'guidance': 'Construct a tiered candidate with hot_capacity=6144 and backing_mode=tiered. Training shows 4096 leaves selected cold misses while 6144 covers the fixed maximum request, so place the earliest layer slabs on local HBM first and use host only after local HBM is exhausted. Keep a valid tiered family with at least one allocate/place rule.'})",
+        "+    if len(parents) == 0:",
+        "+        return str({'operator': 'construct', 'parents': [], 'evidence': evidence[:3], 'rule': 0, 'guidance': 'Construct the best resident 6144 program from evidence; require hot_capacity=6144 and backing_mode=resident with no allocate/place rules.'})",
+        "+    return str({'operator': 'mutate', 'parents': parents[:1], 'evidence': evidence[:3], 'rule': 0, 'guidance': 'Mutate the best measured parent. If it is the resident 6144 program, keep the qualified hot_capacity and backing_mode rules and test only a single rule replacement that cannot add allocate/place rules. Otherwise replace the hot_capacity rule with 6144 and preserve earliest-layer local-HBM placement.'})",
+        " ",
+        " def build_meta_prompt(context):",
+        "-    return str({\"mode\": \"revise\", \"evidence\": context[\"evidence_ids\"][:4],",
+        "-                \"guidance\": \"Use the past training evidence to improve both future search and self-revision.\"})",
+        "+    evidence = sorted(context.get('evidence_ids', []))[:4]",
+        "+    return str({'mode': 'repair', 'evidence': evidence, 'guidance': 'Repair the search using sorted training evidence: prioritize the best-scoring child, compare it with the resident parent and the strongest tiered parent, and keep the resident 6144 proof as the incumbent unless a tiered 6144 variant with zero selected misses is measured better. Change one operator or parent rule at a time.'})"
+      ],
+      "validation_comparisons": {
+        "child_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -10.753834999999754
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 7.846811000000116
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 7.827298999999812
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 9.236713000000009
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 11.683498999999756
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -5.244724000000133
+            }
+          ],
+          "median_improvement": 7.837054999999964,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -19.261550999999827
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 19.58093400000007
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 5.023511999999982
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -6.068858000000091
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 0.9331349999999929
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 5.0751430000000255
+            }
+          ],
+          "median_improvement": 2.9783234999999877,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -0.9107149999997546
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 12.788023000000067
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 25.065579999999954
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 31.217298000000028
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 22.95733099999984
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 20.811660999999958
+            }
+          ],
+          "median_improvement": 21.8844959999999,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_parent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -18.63214099999982
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": -6.409198999999944
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 24.669959999999946
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 4.5791840000001685
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 12.219291999999996
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": -10.654727000000321
+            }
+          ],
+          "median_improvement": -0.9150074999998878,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 6.542961999999989
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 14.151785000000018
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -13.538649999999961
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -19.169241000000284
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -0.1595270000000255
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 2.1724960000001374
+            }
+          ],
+          "median_improvement": 1.006484500000056,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 24.89379800000006
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 7.358874000000014
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 6.503418000000011
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 18.116914999999835
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 21.86466899999982
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 17.90901400000007
+            }
+          ],
+          "median_improvement": 18.012964499999953,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "incumbent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -8.507716000000073
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 11.734122999999954
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -2.8037869999998293
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -15.3055710000001
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -10.750363999999763
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 10.319867000000158
+            }
+          ],
+          "median_improvement": -5.655751499999951,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "incumbent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 9.843119999999999
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 4.94121199999995
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 17.238281000000143
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 21.98058500000002
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 11.273832000000084
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 26.05638500000009
+            }
+          ],
+          "median_improvement": 14.256056500000113,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "parent_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 7.878306000000066
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 14.25601000000006
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -16.842661000000135
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 4.65752899999984
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -0.5357930000002398
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 5.410003000000188
+            }
+          ],
+          "median_improvement": 5.033766000000014,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": -0.6294100000000071
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 25.990133000000014
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": -19.646447999999964
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": -10.64804200000026
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": -11.286157000000003
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 15.729870000000346
+            }
+          ],
+          "median_improvement": -5.638726000000133,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "v1",
+              "reference_minus_candidate": 17.721426000000065
+            },
+            {
+              "block_id": "v2",
+              "reference_minus_candidate": 19.19722200000001
+            },
+            {
+              "block_id": "v3",
+              "reference_minus_candidate": 0.3956200000000081
+            },
+            {
+              "block_id": "v4",
+              "reference_minus_candidate": 26.63811399999986
+            },
+            {
+              "block_id": "v5",
+              "reference_minus_candidate": 10.738038999999844
+            },
+            {
+              "block_id": "v6",
+              "reference_minus_candidate": 31.46638800000028
+            }
+          ],
+          "median_improvement": 18.459324000000038,
+          "passed": true,
+          "reason": "stable_gain"
+        }
+      },
+      "validation_receipts": {
+        "arms": {
+          "child": {
+            "feasible": true,
+            "median_window_ms": 1070.8233845,
+            "receipt_sha256": {
+              "sg-0fd8bdf6726c7a639567c6ded8f6e54acca80465014f5518": "8ab662072412f0bffb4d513fec4dd5211ba50c0f0d4ac6e60dbc6f674d77af9a",
+              "sg-277b02c0f898397ae075a34299e32ab79835fb3fe4503163": "b510522793a8a4745ff0587cb7a80ee86c21792c6a404970a4ce58d0aacc4100",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-5977762de26d705b93dabb31bba0bd6713a758732a27188f": "18252be065613f4ab9a27d91d2c1747ab73afe2ece3668d7532a95ba33bfa21a",
+              "sg-997e7ed9cca9b3d2bfd76b18fa34f59d0421b4a8106c7df4": "85277e325cc2780eac467b8d15cc09acad6ad056de67057a69b04ff0c7888946",
+              "sg-9cfc89f807b032574aee7e059c3370b608637843a7b969a7": "f0f6de0d0cbae3a2e19653339b44995f43dec9a5bbd2f2096faf0d836f51768d",
+              "sg-a0bdb4c968827ffbfb3ec7ead2c858de488bd9c9a4e339d3": "a6a001234269d4005dc3ecaaa44ac234e7f11bd9b567a8471856560fc9ba89be",
+              "sg-f1bb31eeb3af64f9a2ed99ee34af3dbb5f7413286adc4dd8": "742de5ff4162d9b8d83b9856bbfc2489a967b5d3a1f5530218a2c60c9902ea16"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1089.7524919999998
+                },
+                "score": 1089.7524919999998
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1071.883613
+                },
+                "score": 1071.883613
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1066.585074
+                },
+                "score": 1066.585074
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.763156
+                },
+                "score": 1069.763156
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1069.553374
+                },
+                "score": 1069.553374
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1077.0336140000002
+                },
+                "score": 1077.0336140000002
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "fixed": {
+            "feasible": true,
+            "median_window_ms": 1078.6245115000002,
+            "receipt_sha256": {
+              "sg-3929d96590ef2403068b7085cc450a0266df005400b79865": "7f38bf8f5e23c7a27e16c0bf038ca6f2ab433acf1d0f9c86cc30f29eab9aae71",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-6a17a740cd0bee5c55c4c509afbe70222ae9e466ebe74c4a": "222b1348b213495e7f734e9e99e020a28357613d08338a3c4b8ee8bb4cba8f55",
+              "sg-ae5424b9b52d0355db08a665217cad9da99d7c7a4d04be7b": "2313c4624f80543c355ecf1e5b6ed2820a1a50fd5b6c942da34224f752be5fde",
+              "sg-b26edaf36e4ca807baa3d63647df84140791f670128fbe46": "882043fe7410889517359a004c9aa83b774180b20fb67f106a9ed761466bfc90",
+              "sg-b4787108d0f8068aae7c8a0c4783a380cfe641232fce57b8": "5371c753b294f70724fdbc373078dd946c8cf7d33325a4380ffa14af35d1f169",
+              "sg-d7b40a95bc2595fd9b85e70e34e144a0e6f19ea9fedd5e30": "3fa17af3acc5f970033e5105e7a870138a9bc25d4086e436e40cacf3177c9ab5",
+              "sg-e0aba268c15cbc044a721877c2ecc0ff6b47882480ac4056": "aa8682bad0ffadb4182ae316826dfe22353d74f16f8f56d5be208cbfa914ffa6"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1063.947979
+                },
+                "score": 1063.947979
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1077.312762
+                },
+                "score": 1077.312762
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1085.147236
+                },
+                "score": 1085.147236
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1082.8635390000002
+                },
+                "score": 1082.8635390000002
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1070.646036
+                },
+                "score": 1070.646036
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1079.936261
+                },
+                "score": 1079.936261
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "incumbent": {
+            "feasible": true,
+            "median_window_ms": 1078.9992630000002,
+            "receipt_sha256": {
+              "sg-1864ad46a595b1ac7b24819de3b38230c906a45d4963f475": "61df6ebfbf652d4cf6e74468622c7985f6a0ec7d669e44cab9f9b560526610ed",
+              "sg-277b02c0f898397ae075a34299e32ab79835fb3fe4503163": "b510522793a8a4745ff0587cb7a80ee86c21792c6a404970a4ce58d0aacc4100",
+              "sg-28dc25438f252dfb545c693a1cc3b3f447469a3bbe4bbf4a": "9f2fc2c5eb1acbc4696c565db282b442ec09d24a1333368049b63eb2f2fce7b8",
+              "sg-301d646f039389ac64c53f139a0dc7164f7e919dec7f0534": "623f21f862fc24f7badee763de9a3040d1c85758c2b8d3f936750d8afe00c57c",
+              "sg-39c712c8436fe1b4a7111f924c2c66b0d10ac03ec8d6b121": "40194a00f8430dbb43abfb07b906510d1c2d4f0157142fc71db2285597296ed9",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-7b6fe9e8ec34fe2d0b2d3d4165a1c11dc61e48652b46354f": "ff671861ce92587856b2a682570eb212deb323f9f4e4db62f3797d2d7e991918",
+              "sg-8eddc65d5784cf4464acb2a044fc6828f1fddebbf2938ea4": "7143bb4f36578b34e19c72c4473be62a681ff4abba2ad6bf0b25f9009e5c8786"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1078.998657
+                },
+                "score": 1078.998657
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1079.730424
+                },
+                "score": 1079.730424
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1074.412373
+                },
+                "score": 1074.412373
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1078.999869
+                },
+                "score": 1078.999869
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1081.2368729999998
+                },
+                "score": 1081.2368729999998
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1071.78889
+                },
+                "score": 1071.78889
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "manual": {
+            "feasible": true,
+            "median_window_ms": 1071.0497635000002,
+            "receipt_sha256": {
+              "sg-00fe1853087802a0f36f6b969cce26dad74626b3d579a86b": "ed239a838b5d6ba7490573cef6e747f605c059ca3c58f16ca367afbcbca838f2",
+              "sg-0fbd991da386b1dfc33d34a0d3cb83705d25dff7124a0919": "26665c564b4e226e48539fb3c7f314bff6fc66198f112f32db2f731f0d7c6c2b",
+              "sg-1086cff59bf20413b1ee071a9e3d90b84fdb6515734bab7d": "d28de085233d704da588f6ca8d30943ddbe8e12071a00dcac46e716fcc7d5741",
+              "sg-4d31d626acfe1f603e9d3f1f02ceef704cbcf56f9d78093c": "eb39fe718aeb53cca35b559070295cabde257e73bd49c4c8d434207364ce21cd",
+              "sg-542be1283842c9539a53c1421d7c0437a233fef6a6a96558": "550405efceaf4864d9b32aa6bfa6ba1594dbf9a4e79a2550a65080156913bb13",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-890761e90672f1f70805d9b5ac58a4164eea4ea51fcccab7": "6544520a868596d71dd8367835efcf31104af2808ccc071a84c6597130ba4c6c",
+              "sg-d89854b72f16373a5d2e08426e062c6007804daa52aa4199": "16969777ea2d6578dc8ff9e0461a19164f622a3d861ebed564e71c7e65b693fd"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1070.490941
+                },
+                "score": 1070.490941
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1091.464547
+                },
+                "score": 1091.464547
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1071.608586
+                },
+                "score": 1071.608586
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1063.694298
+                },
+                "score": 1063.694298
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1070.486509
+                },
+                "score": 1070.486509
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1082.1087570000002
+                },
+                "score": 1082.1087570000002
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "native": {
+            "feasible": true,
+            "median_window_ms": 1092.0806794999999,
+            "receipt_sha256": {
+              "sg-041898b4ac42659730d13922c380286f5ba81074c9be25a0": "78cc0bfcd6564ef1f651614379788357627ea85bf1d403bdf8de1fe840aff4ba",
+              "sg-0ef6bbf8c490204b68b9cedb4230478cb239f41474038689": "3847ba49f221370bec993c39e15cf8d8eb820b802fc8ffc2daf6ddcbb3a02abb",
+              "sg-320d2dfdc1169dbf0a1c8bc1a87e329e650c402d6a287263": "1aa64776b0346cbb9ebc02b2ae809db7dc44a798a5e54a4f8f9f7fdf8f9ecc77",
+              "sg-4230850ee20744d9319a4091610d553c833786b3d80cf350": "ed327422d9566d071e8ce784fa50b4571a585b3af277965c3b2bafdc8a73e1c5",
+              "sg-47c7b845f51862c3ca53df1ad1aca8f0686de231b9b23597": "194dc1cfc5d3ac21296b583ccf9013199fbff6cadea5a29d9acfeb7ff3663fa5",
+              "sg-5d3029290000cdb3f3982404bfb3cadbd006f3c47cc8d13e": "32c7e02a9ae1d5726012af0b21154b1f9da254a3a19fcfeae8dc721217f4c0e0",
+              "sg-74a872b91499794d67db80c59cdb83e6f6ce2b7578094489": "1949cadef46195e0f874711e88def028430b0107f65f3170ffc6c6c7d53ddfa5",
+              "sg-fe6f06f3b6d9fecceee2218b0855606138553f0c7c221ea2": "356325889d7387b805c2a622af57b81ac88d06ed5a1eb8c5941a7c0fc364d13d"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1088.841777
+                },
+                "score": 1088.841777
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1084.671636
+                },
+                "score": 1084.671636
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1091.650654
+                },
+                "score": 1091.650654
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1100.980454
+                },
+                "score": 1100.980454
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1092.510705
+                },
+                "score": 1092.510705
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1097.8452750000001
+                },
+                "score": 1097.8452750000001
+              }
+            ],
+            "timing_receipts": 6
+          },
+          "parent": {
+            "feasible": true,
+            "median_window_ms": 1072.7313455,
+            "receipt_sha256": {
+              "sg-277b02c0f898397ae075a34299e32ab79835fb3fe4503163": "b510522793a8a4745ff0587cb7a80ee86c21792c6a404970a4ce58d0aacc4100",
+              "sg-5831310393263643f1b61337d0889a3ae7367dea1ce58ea9": "70595575f9da300f54d6b5347090ac6f633540f4a74edf94b7562ac3e9dd8a3c",
+              "sg-5e4f900819288bc4a6db2aea8ada0823180ef44c8dd257d1": "8204d81133c4f0221ec3b5629d6568a2f7739d9d01d434664cb0b0f8f83381ae",
+              "sg-98a8a8ca1396670e82de1b780cc42ae2c0477ad9eef07232": "56b9234d60196ebb3ba116278efdc48eac13b5746f0ff4024f63b5a9bb2c90da",
+              "sg-9bae03e6eb938cc188da96565e9e0e8a9a45fa2642a8aa80": "28857f2ecff599ea07a85cf4ab1dd23068382204f1820030d10f3d2304183276",
+              "sg-a1a776154f7f512d00958c345e2e49377864e11ec701d161": "77366983050de906b744fc18470d3aec8a6d8109b8beec901c3a6160b2b89612",
+              "sg-c2aff98c75ef80ddae34cc1747dd70bdd3732cd1e3de1d0a": "5f06e609bc9582af1edc96d78778868790fa7e1404707cca7fedf7cea4ac9346",
+              "sg-ee4931005162af765c2a588780a3123a68e912aa61e4f5b4": "2406b2ef448c89741792c1d1403506598848a09995d2f9c6e59b5f3587769ef3"
+            },
+            "samples": [
+              {
+                "block_id": "v1",
+                "case_scores_ms": {
+                  "archive-validation-support": 1071.120351
+                },
+                "score": 1071.120351
+              },
+              {
+                "block_id": "v2",
+                "case_scores_ms": {
+                  "archive-validation-support": 1065.474414
+                },
+                "score": 1065.474414
+              },
+              {
+                "block_id": "v3",
+                "case_scores_ms": {
+                  "archive-validation-support": 1091.255034
+                },
+                "score": 1091.255034
+              },
+              {
+                "block_id": "v4",
+                "case_scores_ms": {
+                  "archive-validation-support": 1074.3423400000001
+                },
+                "score": 1074.3423400000001
+              },
+              {
+                "block_id": "v5",
+                "case_scores_ms": {
+                  "archive-validation-support": 1081.772666
+                },
+                "score": 1081.772666
+              },
+              {
+                "block_id": "v6",
+                "case_scores_ms": {
+                  "archive-validation-support": 1066.3788869999998
+                },
+                "score": 1066.3788869999998
+              }
+            ],
+            "timing_receipts": 6
+          }
+        },
+        "per_case_matching_receipt_signatures": {
+          "archive-validation-support": {
+            "dispatch_sha256": "0bf6fb141a7dd74975013b25412eb8a816ff30fc8e9940774ae6874d1b1e7b4c",
+            "effective_schedule_sha256": "3050a5edc4b65aefb5885ad2d091537fdd3c4f8e55f560071ac54fd135125b4d",
+            "global_ticks_sha256": "2fbdcb8fb35780e411e2b94d09aac904be90cc57fa4cd4761f936d5ab36ae94c",
+            "input_tokenization_sha256": "7516ff483506dba8d748cd14dc4d00f42e817a84ddfccc4c29263d46143464cd",
+            "output_ids_sha256": "49975051e1e938b3ea1586231addfa7e2675784a70c04f7d8721e5ce20517421",
+            "packed_kv_sha256_by_rank": [
+              "1a44fa10410cef7d0bc76fed6f581737badd9d4ec5dd7a71dcecb225e6039f39",
+              "a3915aea5c6921ba506dfdf515acfe085a979ed726d8d2069a6666c19d980b4d"
+            ],
+            "runtime_sha256": "2a1ed1c2df53344d81f443112f38be442beaf30734a162842249077ad3cd2eff"
+          }
+        },
+        "status": "completed"
+      }
+    }
+  ],
+  "schema": 1
+}

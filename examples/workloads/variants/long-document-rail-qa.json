@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "kind": "long_document_qa",
+  "name": "long-document-rail-qa",
+  "page_rows": 128,
+  "segments": [
+    {
+      "id": "cover",
+      "role": "document",
+      "text": "Foxline depot transfer annual record. This packet contains field notes, proposed releases, signed closures and an index of the records transferred to the mechanical desk. The field procedures describe collection of evidence and can precede a final authorization by several shifts. Each team logs its work under the numbered place in the appendix. When a local note conflicts with a signed decision, apply the decision for the site and record in question. Duplicate counts in handwritten tables are retained as audit evidence. The revised handoff superseded a preliminary proposal from the previous morning.\n"
+    },
+    {
+      "id": "entry-01",
+      "role": "document",
+      "text": "Appendix entry 01 for Yard One. The lead marked 3 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Yard One, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-02",
+      "role": "document",
+      "text": "Appendix entry 02 for Ramp Finch. The lead marked 4 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Ramp Finch, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-03",
+      "role": "document",
+      "text": "Appendix entry 03 for Bay Three. The lead marked 5 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Bay Three, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-04",
+      "role": "document",
+      "text": "Appendix entry 04 for North Shed. The lead marked 6 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of North Shed, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-05",
+      "role": "document",
+      "text": "Appendix entry 05 for Depot Nine. The lead marked 7 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Depot Nine, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\nDepot Nine order DN-51, signed controlling copy. Release requires the brake cylinder to hold at least 82 psi for five uninterrupted minutes. The earlier 75 psi draft remains filed but has no authority.\n"
+    },
+    {
+      "id": "entry-06",
+      "role": "document",
+      "text": "Appendix entry 06 for Loop Track. The lead marked 8 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Loop Track, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-07",
+      "role": "document",
+      "text": "Appendix entry 07 for Crew Bay. The lead marked 9 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Crew Bay, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-08",
+      "role": "document",
+      "text": "Appendix entry 08 for Switch Hill. The lead marked 10 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Switch Hill, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-09",
+      "role": "document",
+      "text": "Appendix entry 09 for Hopper Shop. The lead marked 11 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Hopper Shop, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "entry-10",
+      "role": "document",
+      "text": "Appendix entry 10 for Bridge Dock. The lead marked 12 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Bridge Dock, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+    },
+    {
+      "id": "question",
+      "role": "question",
+      "text": "What pressure hold does signed order DN-51 require?\n"
+    }
+  ],
+  "task": {
+    "minimum_document_bytes": 12288,
+    "expected_answers": [
+      "Hold at least 82 psi for five uninterrupted minutes."
+    ]
+  },
+  "events": [
+    {
+      "op": "open",
+      "session": "reader",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "cover",
+      "at_ns": 34000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-01",
+      "at_ns": 68000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-02",
+      "at_ns": 99000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-03",
+      "at_ns": 133000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-04",
+      "at_ns": 167000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-05",
+      "at_ns": 198000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-06",
+      "at_ns": 232000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-07",
+      "at_ns": 266000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-08",
+      "at_ns": 297000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-09",
+      "at_ns": 331000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "entry-10",
+      "at_ns": 365000000
+    },
+    {
+      "op": "append",
+      "session": "reader",
+      "segment": "question",
+      "at_ns": 396000000
+    },
+    {
+      "op": "infer",
+      "session": "reader",
+      "max_new_tokens": 40,
+      "select_rows": [
+        7031,
+        13675,
+        6839,
+        0
+      ],
+      "at_ns": 430000000
+    },
+    {
+      "op": "close",
+      "session": "reader",
+      "at_ns": 464000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/variants/long-document-rail-qa.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "78110511f17456c0339c1f3f0488d452db8c7e9b67006cdb6cc9c3b2270abd58"
+  }
+}

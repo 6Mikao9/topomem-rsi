@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "kind": "agent_tools",
+  "name": "agent-water-inspection",
+  "page_rows": 32,
+  "segments": [
+    {
+      "id": "system",
+      "role": "system",
+      "text": "You are the field operations assistant. Use only recorded tool evidence.\n"
+    },
+    {
+      "id": "user",
+      "role": "user",
+      "text": "Find the east reservoir inspection window and the access code.\n"
+    },
+    {
+      "id": "lookup",
+      "role": "tool_call",
+      "text": "{\"name\":\"inspection_calendar\",\"station\":\"east\"}\n",
+      "call_id": "calendar-1"
+    },
+    {
+      "id": "window",
+      "role": "tool_result",
+      "text": "{\"day\":\"Tuesday\",\"window\":\"09:40-10:10\",\"crew\":\"Delta\"}\n",
+      "call_id": "calendar-1"
+    },
+    {
+      "id": "access",
+      "role": "tool_call",
+      "text": "{\"name\":\"access_register\",\"crew\":\"Delta\"}\n",
+      "call_id": "access-2"
+    },
+    {
+      "id": "code",
+      "role": "tool_result",
+      "text": "{\"gate\":\"North\",\"temporary_code\":\"EAST-17\",\"valid_until\":\"10:20\"}\n",
+      "call_id": "access-2"
+    }
+  ],
+  "task": {},
+  "events": [
+    {
+      "op": "open",
+      "session": "agent",
+      "at_ns": 0
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 50000000,
+      "segment": "system"
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 100000000,
+      "segment": "user"
+    },
+    {
+      "op": "infer",
+      "session": "agent",
+      "at_ns": 150000000,
+      "max_new_tokens": 24,
+      "select_rows": [
+        17,
+        0,
+        56
+      ]
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 200000000,
+      "segment": "lookup"
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 250000000,
+      "segment": "window"
+    },
+    {
+      "op": "infer",
+      "session": "agent",
+      "at_ns": 300000000,
+      "max_new_tokens": 24,
+      "select_rows": [
+        148,
+        0,
+        56
+      ]
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 350000000,
+      "segment": "access"
+    },
+    {
+      "op": "append",
+      "session": "agent",
+      "at_ns": 400000000,
+      "segment": "code"
+    },
+    {
+      "op": "infer",
+      "session": "agent",
+      "at_ns": 450000000,
+      "max_new_tokens": 32,
+      "select_rows": [
+        285,
+        148,
+        56,
+        0
+      ]
+    },
+    {
+      "op": "close",
+      "session": "agent",
+      "at_ns": 500000000
+    }
+  ],
+  "source": {
+    "kind": "authored_fixture",
+    "locator": "examples/workloads/agent-water-inspection.json",
+    "revision": "fixture-v1",
+    "license": "CC0-1.0",
+    "content_sha256": "5cb489eec9c6c64cc2cbe5655a1e75fc3023139cef0cb6c0e8820dba6380a161"
+  }
+}

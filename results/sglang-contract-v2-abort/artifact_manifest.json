@@ -1,0 +1,53 @@
+{
+  "api_and_plan_member_sha256": {
+    "api/r0000/adaptive-meta.json": "7dbc81a5c964bd70d057382135073df9f2918d14015233430024ea57adb9ab3f",
+    "api/r0000/child/00.json": "2d926f7f47560cabe75c7ce220a205a57dec86891882309f736facf1e333acab",
+    "api/r0000/fixed-meta.json": "91fae6b8df6048f653d60a792ad7c1838f26874e795644d6ed86ce8b0e224e82",
+    "api/r0000/parent/00.json": "f7db5e20e595d78a834c46257f72959872979e644740c5bef0d95ba72f2417bd",
+    "api/r0000/parent/01.json": "8be46d6d194deb83beab0c04d58a513a512d613779a162256980cf152e3459a4",
+    "plan/r0000/adaptive.json": "d18d1a796532caf83880fbc4b6b836fe29aaf3841e923b900d7924239fe9f0cb",
+    "plan/r0000/fixed.json": "dfb769d488bdbbdb2db18b36bd21dfa43819e1d7e4c5fe65eb0e2e815b401bdb"
+  },
+  "before_server_raw_release_manifest_sha256": "fd08bac624b9f486a21f4bb4921845d3b91cbcf9a5748ac68b41e980d74c56cc",
+  "files_sha256": {
+    "README_ZH.md": "42ff99656bfa045ec4546f5c7c42e332ab8f1a1feee69c9c20532b1ccbcff434",
+    "abort-audit.json": "a10760608c88f94d9c02637808fe29557d599dd2b241c90e67172daf460ade88",
+    "adapter_contract.json": "fad3cd72ad1982c6fc311627fa926f940d4cb5e10f1e5ba06bbbf8f4fb109c92",
+    "audit.json": "84af3b2098482855a874dc588d13234a645dbddb87821629ff5189c9f03c0a27",
+    "controller/harnesses/42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38.py": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+    "controller/harnesses/78375a0d838ff4f46291c555878172854863af9a74bc840c17cc7af4b9e66c4b.py": "78375a0d838ff4f46291c555878172854863af9a74bc840c17cc7af4b9e66c4b",
+    "controller/journal.sqlite": "4e0e815af25f794fc0b3564ca4f0fac40a9cdd6af6d142c9cda4f92d70c83ca3",
+    "controller/lease.sqlite": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller/lease.sqlite-journal": "76b2939784fa333e59d17b8862a1a4706d92acd42724fc8d2abe97946c3c49b2",
+    "controller/manifest.json": "fae6d23189616b4c951492947144f9c8a2523e977381d024d1c1148634350bcc",
+    "export_audit.json": "6fb5aea52c1ebe62d8ff2f01247ce72ed322e87af8cfaf16fa303aafa7046819",
+    "frozen-source-manifest.json": "3457812f3de98131438ee50f89e4991fcc0154f788569223611a6f870beb2b3b",
+    "frozen-source.zip": "2bc3fb7584720c2761be4a38fb34232f130f83ba624bb293d7749ce417a82290",
+    "leased-receipts.zip": "18e8ac16cfca81c7e12a4ca04c7bddff04ede87925b686e3ce996e47bad5ba5c",
+    "original-api-and-plans.zip": "8f4ac72b813d26fde38f819ba34a69112b8bde02a581298a56742e464e1fd32b",
+    "pipeline-plan.json": "63b7a0a6cd85c7672f9e8c1714783e78a01921fec739a866ef6a69aef406dc7a",
+    "pipeline-run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pipeline-status.json": "79f685ddcde5e7c3e9fe126b3c547d8407f140a757a94a780a1f7ff96eceb06f",
+    "schema3.template.json": "84ed3ac4f3879a998afc10f519d0a4363495ae740d16bdfd8f01bf1e3c0160fa",
+    "server_job_index.json": "af23507276ff6f3f0b57abe1cd9e2ee7bec6e64415689926271acf740c22c290",
+    "server_raw/contract-v2-abort-server-00.zip": "472d25b1f0df95b2705a13f0cb2898077de2c9c9fcfa02422d5dd4813054fd69",
+    "server_raw/contract-v2-abort-server-01.zip": "6f89a223e2a2bae7856af469492291c13663eaf805b89feda771c37575fca787",
+    "server_raw/contract-v2-abort-server-02.zip": "efe007dc49a676d9b5bce3c2f3e8eaf60ec4e2ec308e33bbe4baebbc9dbf3a21",
+    "server_raw/index.json": "40003a2c07139e3d20e19eaff084b318be716ff14cef607640ab86f06ee96054"
+  },
+  "private_schema3_bytes_sha256": "a4c62726543fa19ac815ddc8e5f21388789231940306df29c994f4e592813740",
+  "receipt_member_sha256": {
+    "receipts/sg-1cb2bddd7e675cb0d9eeadf177f0cdca229fa743bfbf3e76.json": "baf502f74459ce91e7a2b020f0543aa17b5d27855a056ded40f01daf5765c915",
+    "receipts/sg-1f760ce690c448e08b7337fe34ad53ef4e1bc8eed40b4745.json": "01c3f094387835a46f95842756c7c1292fce77f28bfec67b0e9f3026d48a8768",
+    "receipts/sg-29ad2bbfee48b0074a3cdd91b2b0aa5ee5983a59f3acffaa.json": "31572c6b0be44acadbcd2e239c57807bfaba265e6a8674fa0141f6926a969b1b",
+    "receipts/sg-87fac35ab3dc0c8014619f60ba48e93b1b50429f4c7bc7bd.json": "24fc66ba2852b7daee16ef75d74f1cdf3924eedcfb40961f0ba0d187c8ecc458",
+    "receipts/sg-a1f97a4ff52224ab3ede397a004df34532f77342fe7c04ba.json": "db653a22e2f544720c6311925a33b4d33f031eb14658733a4bb85d9afd35ddac",
+    "receipts/sg-ae426937b083405fb40828832ac96bde58f6dace0ff1faa7.json": "b8b35fa7554abb8ca1cd1a96acabad7cd5b701d2488f03d9b393a33a47376bb2",
+    "receipts/sg-afd6602d6648b6a2b6d8deaa515ce0348e0666e6388b3880.json": "ef3ec04fd94c846e95d6a1ef4adf304b05b9cc4c8ef91d947bbe33463e072d9c",
+    "receipts/sg-cd5eae0397f71c6564605aa93c2550daaae3c074c4f37ebf.json": "045e25f9d95eb66c5772facc04651b3b2f7f00bd818915479bd357f2941a2d7b",
+    "receipts/sg-cf92124892a524f92fa97d035ba2caa9b9970c66ef35d1b0.json": "dd1c4f734e982b815577952e99a2f56712761767fd737c84916e3e111495b870",
+    "receipts/sg-e8268e485c067cfa901c3d7fc2e5ce3f9e562a1bae4b63df.json": "a4746597e7b5855714b4fbf738c08f63a45540fdaef7dbbc5d762b78c2d0f9d9"
+  },
+  "schema": 1,
+  "status": "contract_abort"
+}
