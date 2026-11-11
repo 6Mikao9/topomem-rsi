@@ -1,0 +1,1540 @@
+{
+  "arm": "initial",
+  "result": {
+    "feasible": true,
+    "feedback": {
+      "cases": [
+        {
+          "action_counts": {
+            "evict": 71,
+            "place": 194,
+            "place_owner": 194,
+            "reclaim": 371,
+            "replicate": 54,
+            "retain_producer_replica": 194
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu0-host0"
+              ],
+              "rule": 0,
+              "src": "gpu0",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 1,
+              "dst": "host0",
+              "links": [
+                "gpu0-host0"
+              ],
+              "rule": 0,
+              "src": "gpu0",
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "indexed_choices": 27,
+              "rows_scanned": 352
+            },
+            "access/replicate": {
+              "static_route_choices": 721
+            },
+            "allocate/evict": {
+              "indexed_choices": 44,
+              "rows_scanned": 669
+            },
+            "allocate/place": {
+              "static_route_choices": 194
+            },
+            "allocate/replicate": {
+              "candidate_records": 194,
+              "choice_calls": 194,
+              "predicate_evals": 194,
+              "score_evals": 194
+            },
+            "release/reclaim": {
+              "indexed_choices": 565,
+              "rows_scanned": 371
+            }
+          },
+          "fetch_misses": 54,
+          "fixture_kind": "agent_tools",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_elapsed_ms": 53.516201,
+          "median_transfer_ms": 4.108194,
+          "name": "v4-h256-agent-water-inspection-00",
+          "page_activity": [
+            {
+              "attention_reads": 56,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 6
+            },
+            {
+              "attention_reads": 56,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 6
+            },
+            {
+              "attention_reads": 51,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 51,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 11
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 11
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 4
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 5,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 9
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 9
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 14
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 14
+            },
+            {
+              "attention_reads": 14,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 15
+            },
+            {
+              "attention_reads": 14,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 15
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 10
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 10
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 12
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 12
+            },
+            {
+              "attention_reads": 5,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 7
+            },
+            {
+              "attention_reads": 5,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 7
+            },
+            {
+              "attention_reads": 4,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 8
+            },
+            {
+              "attention_reads": 4,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 8
+            },
+            {
+              "attention_reads": 3,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 3,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 13
+            }
+          ],
+          "page_activity_total_entries": 32,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 194,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 194,
+              "rule": 0
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 194,
+              "rule": 1
+            },
+            {
+              "action": "reclaim",
+              "count": 371,
+              "rule": 5
+            },
+            {
+              "action": "evict",
+              "count": 44,
+              "rule": 3
+            },
+            {
+              "action": "evict",
+              "count": 27,
+              "rule": 4
+            },
+            {
+              "action": "replicate",
+              "count": 54,
+              "rule": 2
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 94,
+            "place": 228,
+            "place_owner": 228,
+            "reclaim": 433,
+            "replicate": 71,
+            "retain_producer_replica": 228
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 1,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 2,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 3,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "indexed_choices": 37,
+              "rows_scanned": 482
+            },
+            "access/replicate": {
+              "static_route_choices": 876
+            },
+            "allocate/evict": {
+              "indexed_choices": 57,
+              "rows_scanned": 869
+            },
+            "allocate/place": {
+              "static_route_choices": 228
+            },
+            "allocate/replicate": {
+              "candidate_records": 228,
+              "choice_calls": 228,
+              "predicate_evals": 228,
+              "score_evals": 228
+            },
+            "release/reclaim": {
+              "indexed_choices": 661,
+              "rows_scanned": 433
+            }
+          },
+          "fetch_misses": 71,
+          "fixture_kind": "chatbot_growth",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_elapsed_ms": 65.449675,
+          "median_transfer_ms": 5.306756,
+          "name": "v4-h256-chatbot-trip-planning-00",
+          "page_activity": [
+            {
+              "attention_reads": 65,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 65,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 9
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 9
+            },
+            {
+              "attention_reads": 42,
+              "fetch_misses": 5,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 42,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 14
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 14
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 21,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 21,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 4
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 11
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 11
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 17
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 17
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 12
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 12
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 6
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 10
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 16
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 6
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 10
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 16
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 18
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 18
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 7
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 8
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 7
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 8
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 13
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 15
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 15
+            }
+          ],
+          "page_activity_total_entries": 38,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 228,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 228,
+              "rule": 0
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 228,
+              "rule": 1
+            },
+            {
+              "action": "reclaim",
+              "count": 433,
+              "rule": 5
+            },
+            {
+              "action": "evict",
+              "count": 57,
+              "rule": 3
+            },
+            {
+              "action": "evict",
+              "count": 37,
+              "rule": 4
+            },
+            {
+              "action": "replicate",
+              "count": 71,
+              "rule": 2
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 1273,
+            "place": 1278,
+            "place_owner": 1278,
+            "reclaim": 1440,
+            "replicate": 157,
+            "retain_producer_replica": 1278
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 6,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 7,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "indexed_choices": 98,
+              "rows_scanned": 1361
+            },
+            "access/replicate": {
+              "static_route_choices": 767
+            },
+            "allocate/evict": {
+              "indexed_choices": 1175,
+              "rows_scanned": 18715
+            },
+            "allocate/place": {
+              "static_route_choices": 1278
+            },
+            "allocate/replicate": {
+              "candidate_records": 1278,
+              "choice_calls": 1278,
+              "predicate_evals": 1278,
+              "score_evals": 1278
+            },
+            "release/reclaim": {
+              "indexed_choices": 2718,
+              "rows_scanned": 1440
+            }
+          },
+          "fetch_misses": 157,
+          "fixture_kind": "long_document_qa",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_elapsed_ms": 162.495023,
+          "median_transfer_ms": 19.664716,
+          "name": "v4-h256-long-document-estuary-qa-00",
+          "page_activity": [
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 128
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 128
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 562
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 563
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 564
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 562
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 563
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 564
+            },
+            {
+              "attention_reads": 15,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 561
+            },
+            {
+              "attention_reads": 15,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 561
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 256
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 404
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 457
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 497
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 508
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 256
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 404
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 457
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 497
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 508
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 36
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 39
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 55
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 57
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 62
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 64
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 70
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 83
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 115
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 124
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 151
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 161
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 169
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 184
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 191
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 204
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 213
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 219
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 235
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 241
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 244
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 250
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 270
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 287
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 304
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 313
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 319
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 320
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 334
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 356
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 357
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 364
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 368
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 370
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 375
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 377
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 396
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 405
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 425
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 427
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 447
+            }
+          ],
+          "page_activity_total_entries": 155,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 1278,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 1278,
+              "rule": 0
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 1278,
+              "rule": 1
+            },
+            {
+              "action": "evict",
+              "count": 1175,
+              "rule": 3
+            },
+            {
+              "action": "evict",
+              "count": 98,
+              "rule": 4
+            },
+            {
+              "action": "replicate",
+              "count": 157,
+              "rule": 2
+            },
+            {
+              "action": "reclaim",
+              "count": 1440,
+              "rule": 5
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 9,
+            "place": 94,
+            "place_owner": 94,
+            "reclaim": 183,
+            "replicate": 4,
+            "retain_producer_replica": 94
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "host0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 1,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 0,
+              "src": "gpu1",
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "indexed_choices": 1,
+              "rows_scanned": 13
+            },
+            "access/replicate": {
+              "static_route_choices": 309
+            },
+            "allocate/evict": {
+              "indexed_choices": 8,
+              "rows_scanned": 123
+            },
+            "allocate/place": {
+              "static_route_choices": 94
+            },
+            "allocate/replicate": {
+              "candidate_records": 94,
+              "choice_calls": 94,
+              "predicate_evals": 94,
+              "score_evals": 94
+            },
+            "release/reclaim": {
+              "indexed_choices": 277,
+              "rows_scanned": 183
+            }
+          },
+          "fetch_misses": 4,
+          "fixture_kind": "rollout_cow",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_elapsed_ms": 25.44858,
+          "median_transfer_ms": 1.646186,
+          "name": "v4-h256-rollout-bridge-options-00",
+          "page_activity": [
+            {
+              "attention_reads": 40,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 40,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 27,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 27,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 4
+            }
+          ],
+          "page_activity_total_entries": 12,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 94,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 94,
+              "rule": 0
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 94,
+              "rule": 1
+            },
+            {
+              "action": "reclaim",
+              "count": 183,
+              "rule": 5
+            },
+            {
+              "action": "evict",
+              "count": 8,
+              "rule": 3
+            },
+            {
+              "action": "replicate",
+              "count": 4,
+              "rule": 2
+            },
+            {
+              "action": "evict",
+              "count": 1,
+              "rule": 4
+            }
+          ]
+        }
+      ],
+      "lower_is_better": true,
+      "objective": "sum_case_median_ms"
+    },
+    "metrics": {
+      "receipts": [
+        "eval-0b7bd1cd6132b5c513b0c7ab7a0ef898773fb06b4271ac91"
+      ],
+      "scope": "cuda_text_derived_fixed_block_sparse",
+      "score_unit": "sum_case_median_ms"
+    },
+    "score": 306.909479
+  }
+}

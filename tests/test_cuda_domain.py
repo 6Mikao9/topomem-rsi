@@ -175,6 +175,7 @@ class CudaDomainTests(unittest.TestCase):
             domain = CudaDomain(_mock_config("receipts"), Path(tmp))
             executor = domain.executor = _Executor()
             executor.work_counts = {"allocate/place": {"static_route_choices": 19, "elapsed_ns": 900},
+                                    "allocate/replicate": {"static_producer_retain_choices": 7},
                                     "access/evict": {"indexed_choices": 4, "rows_scanned": 12, "predicate_evals": -1},
                                     "access/replicate": {"choice_calls": True, "score_evals": 2**64},
                                     "unknown/private": {"rows_scanned": 18}}
@@ -183,6 +184,7 @@ class CudaDomainTests(unittest.TestCase):
             self.assertEqual(train["score"], 0.000123)
             self.assertEqual(train["feedback"]["cases"][0]["diagnostic_work_counts"],
                              {"allocate/place": {"static_route_choices": 19},
+                              "allocate/replicate": {"static_producer_retain_choices": 7},
                               "access/evict": {"indexed_choices": 4, "rows_scanned": 12}})
             self.assertEqual(checked.evaluate("validation", checked.initial_program, "sealed")["feedback"], {})
             domain.close()

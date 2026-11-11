@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "report_sha256": "96f02b292a42197be2739695339ac4cfa0d132b2c6a28508c22178b0a42b87e2",
+  "html_sha256": "92bc409a88be0fc5d1ab55d04424a866708b69c8f53867c8681909615b1b768b",
+  "checks": [
+    {
+      "check": "mobile R1 plan, rejection and expanded source",
+      "pass": true,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "check": "mobile test table and 24 scenario comparisons",
+      "pass": true,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "check": "mobile autonomy limits and engineering attribution",
+      "pass": true
+    },
+    {
+      "check": "desktop settled outcomes",
+      "pass": true
+    },
+    {
+      "check": "no captured browser errors",
+      "pass": true
+    }
+  ],
+  "initial_attempt": "browser-qa.json",
+  "scope": "Corrected grid intrinsic width; actual final data. Desktop and 390px mobile checked. Viewport reset."
+}

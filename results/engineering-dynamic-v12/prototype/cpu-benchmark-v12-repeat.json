@@ -1,0 +1,468 @@
+{
+  "cases": {
+    "multiple_rules_cold_fallback": {
+      "median_v11_ns_per_choice": 9516.891666666666,
+      "median_v12_ns_per_choice": 10028.758333333335,
+      "paired_median_gain_ns_per_choice": -586.789999999999,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9704.186666666666,
+          "v12_ns_per_choice": 10197.386666666667
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9231.213333333333,
+          "v12_ns_per_choice": 10048.726666666667
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9352.333333333334,
+          "v12_ns_per_choice": 10008.79
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 16432.17,
+          "v12_ns_per_choice": 9933.313333333334
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 22776.926666666666,
+          "v12_ns_per_choice": 23673.953333333335
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 21315.48,
+          "v12_ns_per_choice": 23463.84
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 15362.826666666666,
+          "v12_ns_per_choice": 10207.74
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9470.7,
+          "v12_ns_per_choice": 10279.586666666666
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9302.473333333333,
+          "v12_ns_per_choice": 9979.733333333334
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9614.636666666667,
+          "v12_ns_per_choice": 9826.096666666666
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9486.32,
+          "v12_ns_per_choice": 9654.39
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9312.286666666667,
+          "v12_ns_per_choice": 9723.663333333334
+        },
+        {
+          "block": 13,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9150.036666666667,
+          "v12_ns_per_choice": 9745.186666666666
+        },
+        {
+          "block": 14,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9406.836666666666,
+          "v12_ns_per_choice": 9703.943333333333
+        },
+        {
+          "block": 15,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9689.816666666668,
+          "v12_ns_per_choice": 10268.246666666666
+        },
+        {
+          "block": 16,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9547.463333333333,
+          "v12_ns_per_choice": 10280.603333333333
+        }
+      ]
+    },
+    "multiple_rules_hot_first_rule": {
+      "median_v11_ns_per_choice": 6733.036666666667,
+      "median_v12_ns_per_choice": 5143.718333333333,
+      "paired_median_gain_ns_per_choice": 1600.7650000000003,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 7279.916666666667,
+          "v12_ns_per_choice": 5155.356666666667
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6667.62,
+          "v12_ns_per_choice": 5130.75
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6551.94,
+          "v12_ns_per_choice": 4916.6033333333335
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6491.806666666666,
+          "v12_ns_per_choice": 4925.3966666666665
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6460.8,
+          "v12_ns_per_choice": 5266.58
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6744.483333333334,
+          "v12_ns_per_choice": 5132.08
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6815.036666666667,
+          "v12_ns_per_choice": 5048.42
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6771.926666666666,
+          "v12_ns_per_choice": 5101.22
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6878.56,
+          "v12_ns_per_choice": 5211.753333333333
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6971.76,
+          "v12_ns_per_choice": 5227.986666666667
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6943.626666666667,
+          "v12_ns_per_choice": 5273.8133333333335
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6848.013333333333,
+          "v12_ns_per_choice": 5258.886666666666
+        },
+        {
+          "block": 13,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6665.7266666666665,
+          "v12_ns_per_choice": 5081.75
+        },
+        {
+          "block": 14,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6529.5233333333335,
+          "v12_ns_per_choice": 5103.03
+        },
+        {
+          "block": 15,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6721.59,
+          "v12_ns_per_choice": 5161.73
+        },
+        {
+          "block": 16,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6684.633333333333,
+          "v12_ns_per_choice": 5253.5633333333335
+        }
+      ]
+    },
+    "one_dynamic_feature": {
+      "median_v11_ns_per_choice": 4930.13,
+      "median_v12_ns_per_choice": 5226.0616666666665,
+      "paired_median_gain_ns_per_choice": -310.86833333333334,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4758.69,
+          "v12_ns_per_choice": 5224.873333333333
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4816.683333333333,
+          "v12_ns_per_choice": 5022.98
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4885.246666666667,
+          "v12_ns_per_choice": 5201.97
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4905.166666666667,
+          "v12_ns_per_choice": 5257.966666666666
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4938.0233333333335,
+          "v12_ns_per_choice": 5301.1466666666665
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4869.656666666667,
+          "v12_ns_per_choice": 5106.01
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4784.71,
+          "v12_ns_per_choice": 4940.533333333334
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4741.763333333333,
+          "v12_ns_per_choice": 5116.89
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 5014.75,
+          "v12_ns_per_choice": 5123.57
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 5157.213333333333,
+          "v12_ns_per_choice": 7072.7733333333335
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4974.856666666667,
+          "v12_ns_per_choice": 5097.736666666667
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4922.236666666667,
+          "v12_ns_per_choice": 5227.25
+        },
+        {
+          "block": 13,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 5264.53,
+          "v12_ns_per_choice": 5684.596666666666
+        },
+        {
+          "block": 14,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 5355.776666666667,
+          "v12_ns_per_choice": 6002.193333333334
+        },
+        {
+          "block": 15,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 5864.883333333333,
+          "v12_ns_per_choice": 5255.966666666666
+        },
+        {
+          "block": 16,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 5959.33,
+          "v12_ns_per_choice": 6209.536666666667
+        }
+      ]
+    }
+  },
+  "iterations_per_arm_block": 30000,
+  "paired_blocks": 16,
+  "python": "3.12.14",
+  "schema": 1,
+  "scope": "CPU route choice only, no Torch tensor ops, CUDA, serving, or RSI",
+  "source_sha256": {
+    "v11_runtime": "3bb7a74a8ac96f31d7497c576e3b654edb4ba2d7f45b2be8db11b9ed579d8ecd",
+    "v12_feature_view": "e5b636b177c2cceae9328a48bb51e1ba46de585312630aa28285dd7509b3a445",
+    "v12_runtime": "2b50f89c6541cd4d47af774a5c9ac7d841c03c7e3ab9c81afbed6d1a0c9c97ab"
+  },
+  "system": "Windows-11-10.0.26200-SP0"
+}

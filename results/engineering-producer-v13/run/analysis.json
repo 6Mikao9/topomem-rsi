@@ -1,0 +1,1212 @@
+{
+  "blocks": [
+    {
+      "block": 0,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 52.000023,
+            "samples_ns": [
+              52684811,
+              52463308,
+              52000023,
+              51777608,
+              51858690
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 49.679729,
+            "samples_ns": [
+              50272198,
+              49894200,
+              49596333,
+              49385687,
+              49679729
+            ]
+          },
+          "native": {
+            "median_ms": 46.991719,
+            "samples_ns": [
+              47930959,
+              46991719,
+              46893280,
+              47332531,
+              46878459
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.443536,
+            "samples_ns": [
+              62867914,
+              62432329,
+              62443536,
+              62277717,
+              68026092
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.466768,
+            "samples_ns": [
+              60466768,
+              60130493,
+              60189753,
+              60579708,
+              60600459
+            ]
+          },
+          "native": {
+            "median_ms": 56.902365,
+            "samples_ns": [
+              56985930,
+              56422824,
+              56902365,
+              57206752,
+              56708293
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 158.774259,
+            "samples_ns": [
+              158246049,
+              160267185,
+              158042614,
+              159776405,
+              158774259
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 152.074744,
+            "samples_ns": [
+              151339692,
+              153956650,
+              152074744,
+              151310427,
+              152633934
+            ]
+          },
+          "native": {
+            "median_ms": 150.751731,
+            "samples_ns": [
+              149925901,
+              150751731,
+              150801796,
+              150171415,
+              151045899
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.645542,
+            "samples_ns": [
+              24060315,
+              23442427,
+              23800625,
+              23645542,
+              23586484
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 22.731906,
+            "samples_ns": [
+              23331477,
+              22678056,
+              22966539,
+              22731906,
+              22666719
+            ]
+          },
+          "native": {
+            "median_ms": 20.975887,
+            "samples_ns": [
+              21825202,
+              21252993,
+              20905681,
+              20791761,
+              20975887
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -9.331444999999974,
+      "old_minus_new_ms": 11.910212999999999,
+      "order": [
+        "native",
+        "lru-equivalent-v11",
+        "lru-equivalent-v13"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 296.86336,
+        "lru-equivalent-v13": 284.953147,
+        "native": 275.621702
+      }
+    },
+    {
+      "block": 1,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 52.06927,
+            "samples_ns": [
+              52571954,
+              52629831,
+              52069270,
+              51913715,
+              51896239
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.476039,
+            "samples_ns": [
+              50982329,
+              50516790,
+              50476039,
+              50001506,
+              50242478
+            ]
+          },
+          "native": {
+            "median_ms": 47.220485,
+            "samples_ns": [
+              47772984,
+              47312282,
+              47220485,
+              46699352,
+              46833795
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.890417,
+            "samples_ns": [
+              62210767,
+              62808755,
+              63255877,
+              62890417,
+              68808003
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.355884,
+            "samples_ns": [
+              60355884,
+              60283505,
+              60420591,
+              60312108,
+              66043402
+            ]
+          },
+          "native": {
+            "median_ms": 56.730612,
+            "samples_ns": [
+              56811063,
+              56423100,
+              56573396,
+              56730612,
+              56855900
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 159.815706,
+            "samples_ns": [
+              161523041,
+              161396160,
+              159321104,
+              159815706,
+              159472919
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 153.315974,
+            "samples_ns": [
+              152665407,
+              156691011,
+              152933048,
+              153928483,
+              153315974
+            ]
+          },
+          "native": {
+            "median_ms": 149.772935,
+            "samples_ns": [
+              148987075,
+              149513405,
+              152411426,
+              149772935,
+              151381188
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 24.359538,
+            "samples_ns": [
+              24359538,
+              24923584,
+              24540469,
+              24064104,
+              23850203
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 22.986062,
+            "samples_ns": [
+              23199883,
+              22986062,
+              22931659,
+              22915155,
+              23024369
+            ]
+          },
+          "native": {
+            "median_ms": 21.019426,
+            "samples_ns": [
+              21420839,
+              20920478,
+              20815079,
+              21019426,
+              21042631
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -12.390501000000029,
+      "old_minus_new_ms": 12.00097199999999,
+      "order": [
+        "lru-equivalent-v11",
+        "lru-equivalent-v13",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 299.134931,
+        "lru-equivalent-v13": 287.133959,
+        "native": 274.743458
+      }
+    },
+    {
+      "block": 2,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 53.121856,
+            "samples_ns": [
+              53121856,
+              52793292,
+              53679422,
+              53330730,
+              52201404
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.82475,
+            "samples_ns": [
+              51191281,
+              51025882,
+              50824750,
+              50517268,
+              50437758
+            ]
+          },
+          "native": {
+            "median_ms": 47.060563,
+            "samples_ns": [
+              47676958,
+              46963137,
+              47060563,
+              47544549,
+              46803858
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 63.526302,
+            "samples_ns": [
+              63416417,
+              62966772,
+              68607929,
+              63831761,
+              63526302
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 61.095888,
+            "samples_ns": [
+              61380987,
+              61048767,
+              61095888,
+              60913906,
+              61135158
+            ]
+          },
+          "native": {
+            "median_ms": 56.996697,
+            "samples_ns": [
+              56996697,
+              56751629,
+              56864378,
+              57048205,
+              57367854
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 161.230107,
+            "samples_ns": [
+              162096810,
+              160411560,
+              161092029,
+              161230107,
+              161566190
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 152.393881,
+            "samples_ns": [
+              152393881,
+              154977690,
+              152019838,
+              152798126,
+              152227279
+            ]
+          },
+          "native": {
+            "median_ms": 152.051758,
+            "samples_ns": [
+              151062243,
+              155296398,
+              152051758,
+              151280681,
+              152973692
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 24.187715,
+            "samples_ns": [
+              24231580,
+              23920794,
+              24057949,
+              24187715,
+              26763130
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 23.125075,
+            "samples_ns": [
+              23507198,
+              23283222,
+              23121639,
+              23119566,
+              23125075
+            ]
+          },
+          "native": {
+            "median_ms": 20.99862,
+            "samples_ns": [
+              21577099,
+              20947634,
+              20810207,
+              20998620,
+              21100432
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -10.331955999999991,
+      "old_minus_new_ms": 14.626386000000025,
+      "order": [
+        "lru-equivalent-v13",
+        "native",
+        "lru-equivalent-v11"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 302.06598,
+        "lru-equivalent-v13": 287.439594,
+        "native": 277.107638
+      }
+    },
+    {
+      "block": 3,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 51.742514,
+            "samples_ns": [
+              52076295,
+              51712690,
+              51742514,
+              51959340,
+              51706660
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.712443,
+            "samples_ns": [
+              51225373,
+              50712443,
+              50969970,
+              50213595,
+              50315287
+            ]
+          },
+          "native": {
+            "median_ms": 47.017328,
+            "samples_ns": [
+              47693693,
+              47183787,
+              46935786,
+              46771799,
+              47017328
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.119817,
+            "samples_ns": [
+              62233598,
+              62100719,
+              66727964,
+              61992927,
+              62119817
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.873123,
+            "samples_ns": [
+              61047375,
+              60873123,
+              60854164,
+              65334158,
+              60696477
+            ]
+          },
+          "native": {
+            "median_ms": 56.780748,
+            "samples_ns": [
+              57099889,
+              56693398,
+              56780748,
+              56573609,
+              61747272
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 158.574487,
+            "samples_ns": [
+              159106258,
+              158397514,
+              158354638,
+              159781559,
+              158574487
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 152.477645,
+            "samples_ns": [
+              151822230,
+              153632678,
+              152477645,
+              152786398,
+              152443133
+            ]
+          },
+          "native": {
+            "median_ms": 149.177462,
+            "samples_ns": [
+              148808088,
+              151348821,
+              149134989,
+              149177462,
+              150068659
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.661379,
+            "samples_ns": [
+              23897914,
+              23454699,
+              23834118,
+              23661379,
+              23519426
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 23.119929,
+            "samples_ns": [
+              23375433,
+              22895443,
+              23061121,
+              23331847,
+              23119929
+            ]
+          },
+          "native": {
+            "median_ms": 20.760093,
+            "samples_ns": [
+              21677721,
+              20707925,
+              20609888,
+              20760093,
+              20777149
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -13.447508999999968,
+      "old_minus_new_ms": 8.915057000000047,
+      "order": [
+        "lru-equivalent-v13",
+        "lru-equivalent-v11",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 296.098197,
+        "lru-equivalent-v13": 287.18314,
+        "native": 273.735631
+      }
+    },
+    {
+      "block": 4,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 52.263387,
+            "samples_ns": [
+              52811660,
+              52263387,
+              52390218,
+              51960753,
+              51856647
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.395899,
+            "samples_ns": [
+              50725955,
+              50551243,
+              50395899,
+              49884281,
+              50327156
+            ]
+          },
+          "native": {
+            "median_ms": 46.761249,
+            "samples_ns": [
+              47613148,
+              46826458,
+              46690273,
+              46459978,
+              46761249
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.804763,
+            "samples_ns": [
+              62647788,
+              62889671,
+              62804763,
+              62739656,
+              68428211
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.549154,
+            "samples_ns": [
+              60289545,
+              60823656,
+              60253060,
+              60549154,
+              60686480
+            ]
+          },
+          "native": {
+            "median_ms": 56.503118,
+            "samples_ns": [
+              57343839,
+              56287824,
+              56503118,
+              56617470,
+              56369578
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 160.084949,
+            "samples_ns": [
+              158681735,
+              161339554,
+              159973864,
+              160269287,
+              160084949
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 153.629256,
+            "samples_ns": [
+              152017840,
+              156167094,
+              153987884,
+              153227554,
+              153629256
+            ]
+          },
+          "native": {
+            "median_ms": 150.476858,
+            "samples_ns": [
+              149242027,
+              148640584,
+              152451493,
+              150804340,
+              150476858
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.797906,
+            "samples_ns": [
+              24031066,
+              23797906,
+              23642222,
+              23880360,
+              23572398
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 22.964357,
+            "samples_ns": [
+              23041833,
+              22917116,
+              22964357,
+              23145198,
+              22822575
+            ]
+          },
+          "native": {
+            "median_ms": 20.957027,
+            "samples_ns": [
+              21382074,
+              20776205,
+              20969446,
+              20871408,
+              20957027
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -12.840413999999953,
+      "old_minus_new_ms": 11.412339000000031,
+      "order": [
+        "native",
+        "lru-equivalent-v13",
+        "lru-equivalent-v11"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 298.951005,
+        "lru-equivalent-v13": 287.538666,
+        "native": 274.698252
+      }
+    },
+    {
+      "block": 5,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 53.135161,
+            "samples_ns": [
+              53610565,
+              52022042,
+              53135161,
+              51349682,
+              53259558
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.848363,
+            "samples_ns": [
+              51098739,
+              50829885,
+              50902935,
+              50848363,
+              50649835
+            ]
+          },
+          "native": {
+            "median_ms": 47.159964,
+            "samples_ns": [
+              47902777,
+              47159964,
+              47360053,
+              46948246,
+              46886613
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.302194,
+            "samples_ns": [
+              62623186,
+              61872811,
+              62302194,
+              62296246,
+              67791751
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.795515,
+            "samples_ns": [
+              60682216,
+              60828305,
+              60776216,
+              60795515,
+              61119381
+            ]
+          },
+          "native": {
+            "median_ms": 56.671402,
+            "samples_ns": [
+              56660927,
+              56603241,
+              57012475,
+              56798483,
+              56671402
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 158.499019,
+            "samples_ns": [
+              157598048,
+              160317367,
+              158874341,
+              158499019,
+              158343405
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 153.858034,
+            "samples_ns": [
+              152320620,
+              155148122,
+              152768131,
+              153878746,
+              153858034
+            ]
+          },
+          "native": {
+            "median_ms": 149.608881,
+            "samples_ns": [
+              148944734,
+              149385105,
+              151364504,
+              149608881,
+              149942661
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.573087,
+            "samples_ns": [
+              23724834,
+              23444774,
+              23573087,
+              23504895,
+              23718185
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 23.124381,
+            "samples_ns": [
+              23502999,
+              23136388,
+              23101947,
+              23097961,
+              23124381
+            ]
+          },
+          "native": {
+            "median_ms": 21.025894,
+            "samples_ns": [
+              21368598,
+              21025894,
+              20810661,
+              21207456,
+              20829540
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -14.160151999999982,
+      "old_minus_new_ms": 8.883168000000012,
+      "order": [
+        "lru-equivalent-v11",
+        "native",
+        "lru-equivalent-v13"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 297.509461,
+        "lru-equivalent-v13": 288.626293,
+        "native": 274.466141
+      }
+    },
+    {
+      "block": 6,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 51.936862,
+            "samples_ns": [
+              52718352,
+              52545835,
+              51936862,
+              51840517,
+              51721348
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.326095,
+            "samples_ns": [
+              50422428,
+              50351263,
+              50326095,
+              49788931,
+              49822021
+            ]
+          },
+          "native": {
+            "median_ms": 46.936311,
+            "samples_ns": [
+              47796553,
+              46952927,
+              46936311,
+              46780237,
+              46641619
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 63.012671,
+            "samples_ns": [
+              62597688,
+              63012671,
+              68493510,
+              62795846,
+              63226824
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.30689,
+            "samples_ns": [
+              60318958,
+              59984338,
+              60177447,
+              65232221,
+              60306890
+            ]
+          },
+          "native": {
+            "median_ms": 56.518897,
+            "samples_ns": [
+              57215291,
+              56342883,
+              56510564,
+              56518897,
+              61290635
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 161.487442,
+            "samples_ns": [
+              163406089,
+              160900055,
+              161083679,
+              161511068,
+              161487442
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 151.632268,
+            "samples_ns": [
+              151391839,
+              153853018,
+              152058065,
+              151632268,
+              151623738
+            ]
+          },
+          "native": {
+            "median_ms": 150.130974,
+            "samples_ns": [
+              150103564,
+              151323584,
+              150130974,
+              151192998,
+              149957925
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.829277,
+            "samples_ns": [
+              24268894,
+              23829277,
+              23764851,
+              23784841,
+              26565676
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 22.745411,
+            "samples_ns": [
+              23013852,
+              22696258,
+              22774604,
+              22745411,
+              22638922
+            ]
+          },
+          "native": {
+            "median_ms": 20.916367,
+            "samples_ns": [
+              21319963,
+              20862036,
+              21127694,
+              20916367,
+              20775135
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -10.508115000000032,
+      "old_minus_new_ms": 15.255587999999989,
+      "order": [
+        "native",
+        "lru-equivalent-v11",
+        "lru-equivalent-v13"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 300.266252,
+        "lru-equivalent-v13": 285.010664,
+        "native": 274.502549
+      }
+    },
+    {
+      "block": 7,
+      "case_scores": {
+        "agent-water-inspection": {
+          "lru-equivalent-v11": {
+            "median_ms": 51.999408,
+            "samples_ns": [
+              52356953,
+              52102853,
+              51811768,
+              51421644,
+              51999408
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 50.559289,
+            "samples_ns": [
+              50778978,
+              50578118,
+              50426110,
+              50559289,
+              49821477
+            ]
+          },
+          "native": {
+            "median_ms": 47.472348,
+            "samples_ns": [
+              47667589,
+              46727224,
+              47472348,
+              47596814,
+              47146150
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "lru-equivalent-v11": {
+            "median_ms": 62.355106,
+            "samples_ns": [
+              62355106,
+              61971402,
+              61861749,
+              69363621,
+              63650213
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 60.847056,
+            "samples_ns": [
+              60633095,
+              60332876,
+              67204105,
+              60847056,
+              60957932
+            ]
+          },
+          "native": {
+            "median_ms": 58.344178,
+            "samples_ns": [
+              57008402,
+              58344178,
+              56554664,
+              58591228,
+              66119350
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "lru-equivalent-v11": {
+            "median_ms": 158.875914,
+            "samples_ns": [
+              161262070,
+              158446762,
+              158674813,
+              158922823,
+              158875914
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 151.433652,
+            "samples_ns": [
+              153721320,
+              152398914,
+              150539355,
+              150901085,
+              151433652
+            ]
+          },
+          "native": {
+            "median_ms": 151.384334,
+            "samples_ns": [
+              150774641,
+              153420496,
+              151384334,
+              152021176,
+              150668184
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "lru-equivalent-v11": {
+            "median_ms": 23.719903,
+            "samples_ns": [
+              24112320,
+              23565482,
+              23894935,
+              23719903,
+              23658242
+            ]
+          },
+          "lru-equivalent-v13": {
+            "median_ms": 22.894447,
+            "samples_ns": [
+              23086173,
+              22553067,
+              22942058,
+              22807687,
+              22894447
+            ]
+          },
+          "native": {
+            "median_ms": 21.137035,
+            "samples_ns": [
+              21498475,
+              20902765,
+              20925919,
+              21281100,
+              21137035
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -7.396548999999993,
+      "old_minus_new_ms": 11.21588700000001,
+      "order": [
+        "lru-equivalent-v13",
+        "lru-equivalent-v11",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "lru-equivalent-v11": 296.950331,
+        "lru-equivalent-v13": 285.734444,
+        "native": 278.337895
+      }
+    }
+  ],
+  "case_comparisons": {
+    "agent-water-inspection": {
+      "native_minus_new_paired_median_ms": -3.5122169999999997,
+      "native_minus_new_positive_blocks": 0,
+      "old_minus_new_paired_median_ms": 1.7391274999999986,
+      "old_minus_new_positive_blocks": 8
+    },
+    "chatbot-trip-planning": {
+      "native_minus_new_paired_median_ms": -3.9170145000000005,
+      "native_minus_new_positive_blocks": 0,
+      "old_minus_new_paired_median_ms": 2.1161885,
+      "old_minus_new_positive_blocks": 8
+    },
+    "long-document-estuary-qa": {
+      "native_minus_new_paired_median_ms": -2.3268460000000033,
+      "native_minus_new_positive_blocks": 0,
+      "old_minus_new_paired_median_ms": 6.599623499999993,
+      "old_minus_new_positive_blocks": 8
+    },
+    "rollout-bridge-options": {
+      "native_minus_new_paired_median_ms": -1.9869830000000004,
+      "native_minus_new_positive_blocks": 0,
+      "old_minus_new_paired_median_ms": 0.8735925000000009,
+      "old_minus_new_positive_blocks": 8
+    }
+  },
+  "expected_producer_bypass_verified": true,
+  "hardware": [
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 0,
+      "uuid": "68d15ed9-2302-ae94-1b4c-6aebd509c550"
+    }
+  ],
+  "jobs": 24,
+  "native_minus_new_paired_median_ms": -11.44930800000003,
+  "native_minus_new_positive_blocks": 0,
+  "old_minus_new_paired_median_ms": 11.661276000000015,
+  "old_minus_new_positive_blocks": 8,
+  "plan_sha256": "19789ad0cd6c55cd3faeed4aab151854f3c0c1f8608c9ccd173ccdfe90dc9e29",
+  "same_ir_physical_trace_verified": true,
+  "schema": 1,
+  "scope": "v13_single_gpu3_same_producer_retain_ir_engineering",
+  "status": "completed"
+}

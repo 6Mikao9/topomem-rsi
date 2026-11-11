@@ -1,0 +1,1191 @@
+{
+  "blocks": [
+    {
+      "block": 0,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.241497,
+            "samples_ns": [
+              49288599,
+              48642324,
+              48232874,
+              48185641,
+              48241497
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.127116,
+            "samples_ns": [
+              47083608,
+              46073964,
+              46352983,
+              46127116,
+              46047773
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.520223,
+            "samples_ns": [
+              47257097,
+              46762746,
+              46520223,
+              46429511,
+              45977505
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.204003,
+            "samples_ns": [
+              58705324,
+              57834154,
+              58122978,
+              58204003,
+              58376949
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 56.985333,
+            "samples_ns": [
+              57633871,
+              56655996,
+              56985333,
+              57194052,
+              56985289
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 56.522824,
+            "samples_ns": [
+              56834193,
+              56546450,
+              56522824,
+              56518858,
+              56409199
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 153.634002,
+            "samples_ns": [
+              153515680,
+              152527160,
+              153634002,
+              156433371,
+              155095082
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 206.256936,
+            "samples_ns": [
+              204779118,
+              207725561,
+              206523062,
+              205394700,
+              206256936
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 212.750446,
+            "samples_ns": [
+              210483596,
+              214849411,
+              213248258,
+              212750446,
+              211778362
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.350949,
+            "samples_ns": [
+              22110527,
+              21350949,
+              21430071,
+              21337578,
+              21303405
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.367009,
+            "samples_ns": [
+              23011952,
+              22292054,
+              22367009,
+              22278894,
+              22470840
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.290457,
+            "samples_ns": [
+              22695861,
+              22155540,
+              22290457,
+              22343779,
+              22140336
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -56.65349900000001,
+      "old_minus_new_ms": -6.347555999999997,
+      "order": [
+        "native",
+        "writeback-v11",
+        "writeback-v12"
+      ],
+      "sum_ms_by_arm": {
+        "native": 281.430451,
+        "writeback-v11": 331.736394,
+        "writeback-v12": 338.08395
+      }
+    },
+    {
+      "block": 1,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.844967,
+            "samples_ns": [
+              49625358,
+              48893734,
+              48844967,
+              48542491,
+              48749048
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.323962,
+            "samples_ns": [
+              47133677,
+              46649182,
+              46305283,
+              46323962,
+              45999552
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.910013,
+            "samples_ns": [
+              47532921,
+              46959810,
+              46864522,
+              46910013,
+              46864663
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.851969,
+            "samples_ns": [
+              59001479,
+              58422900,
+              58851969,
+              58815513,
+              67228056
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 56.943785,
+            "samples_ns": [
+              57668329,
+              56861198,
+              56943785,
+              57077220,
+              56779923
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 58.030553,
+            "samples_ns": [
+              58090866,
+              57677070,
+              58030553,
+              57881642,
+              58807983
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 153.569643,
+            "samples_ns": [
+              153569643,
+              153113433,
+              153497452,
+              156950827,
+              154348029
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 204.123936,
+            "samples_ns": [
+              203481252,
+              205391454,
+              207457740,
+              204015890,
+              204123936
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 216.0682,
+            "samples_ns": [
+              213858250,
+              216843476,
+              216922384,
+              216068200,
+              214974530
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.766762,
+            "samples_ns": [
+              22505156,
+              21766762,
+              21955172,
+              21730086,
+              21620548
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.578225,
+            "samples_ns": [
+              23095571,
+              22578225,
+              22448325,
+              22612658,
+              22322312
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.669061,
+            "samples_ns": [
+              23210745,
+              26017647,
+              22658125,
+              22507824,
+              22669061
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -60.64448599999997,
+      "old_minus_new_ms": -13.707919000000004,
+      "order": [
+        "writeback-v11",
+        "writeback-v12",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "native": 283.033341,
+        "writeback-v11": 329.969908,
+        "writeback-v12": 343.677827
+      }
+    },
+    {
+      "block": 2,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.580363,
+            "samples_ns": [
+              49458875,
+              48838270,
+              48580363,
+              48575296,
+              48338523
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 47.202404,
+            "samples_ns": [
+              47880004,
+              47509525,
+              46941313,
+              47202404,
+              46747045
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.93793,
+            "samples_ns": [
+              47341621,
+              46937930,
+              46532308,
+              46973185,
+              46505206
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.522145,
+            "samples_ns": [
+              59074243,
+              58448672,
+              58522145,
+              58588797,
+              58339624
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.573605,
+            "samples_ns": [
+              57885968,
+              57395965,
+              57537441,
+              57694560,
+              57573605
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 57.604157,
+            "samples_ns": [
+              58050296,
+              57439187,
+              57403121,
+              57604157,
+              58116884
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 156.107643,
+            "samples_ns": [
+              156443369,
+              155442212,
+              155792670,
+              158683347,
+              156107643
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 208.857345,
+            "samples_ns": [
+              206763604,
+              211063362,
+              208857345,
+              208614951,
+              209855766
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 215.11603,
+            "samples_ns": [
+              213869297,
+              217935181,
+              215116030,
+              214938104,
+              215279499
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.680716,
+            "samples_ns": [
+              22193272,
+              21637439,
+              21622036,
+              21680716,
+              21880031
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.959065,
+            "samples_ns": [
+              23454446,
+              23026038,
+              22959065,
+              22753419,
+              22806642
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.692923,
+            "samples_ns": [
+              23083912,
+              22692923,
+              22502130,
+              26688658,
+              22578355
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -57.460173,
+      "old_minus_new_ms": -5.758621000000005,
+      "order": [
+        "writeback-v12",
+        "native",
+        "writeback-v11"
+      ],
+      "sum_ms_by_arm": {
+        "native": 284.890867,
+        "writeback-v11": 336.592419,
+        "writeback-v12": 342.35104
+      }
+    },
+    {
+      "block": 3,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.84307,
+            "samples_ns": [
+              49424962,
+              48843070,
+              48859245,
+              48329223,
+              48270533
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.576773,
+            "samples_ns": [
+              47462110,
+              46576773,
+              46324645,
+              46525394,
+              46803831
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.816273,
+            "samples_ns": [
+              47406532,
+              47168928,
+              46783647,
+              46766338,
+              46816273
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.763954,
+            "samples_ns": [
+              59018454,
+              58445365,
+              58691393,
+              59049552,
+              58763954
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.15525,
+            "samples_ns": [
+              57434799,
+              57338051,
+              57089579,
+              56963016,
+              57155250
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 57.334168,
+            "samples_ns": [
+              57752379,
+              57311463,
+              57404025,
+              57316670,
+              57334168
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 154.866442,
+            "samples_ns": [
+              154142282,
+              154866442,
+              155131328,
+              158066458,
+              154691975
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 207.210292,
+            "samples_ns": [
+              206460382,
+              209458329,
+              206099759,
+              207210292,
+              207514191
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 216.546024,
+            "samples_ns": [
+              215474575,
+              219220541,
+              215739832,
+              217543329,
+              216546024
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.640256,
+            "samples_ns": [
+              22357596,
+              21757196,
+              21510808,
+              21640256,
+              21535015
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.459362,
+            "samples_ns": [
+              23069278,
+              22415165,
+              22459362,
+              22406271,
+              25939217
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.654555,
+            "samples_ns": [
+              23209916,
+              22604879,
+              26011894,
+              22595364,
+              22654555
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -59.23729800000001,
+      "old_minus_new_ms": -9.949342999999999,
+      "order": [
+        "writeback-v12",
+        "writeback-v11",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "native": 284.113722,
+        "writeback-v11": 333.401677,
+        "writeback-v12": 343.35102
+      }
+    },
+    {
+      "block": 4,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.432086,
+            "samples_ns": [
+              49742665,
+              49084225,
+              48432086,
+              48140960,
+              48000675
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.562273,
+            "samples_ns": [
+              47237939,
+              46648175,
+              46402239,
+              46459576,
+              46562273
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.811127,
+            "samples_ns": [
+              47368122,
+              46871913,
+              46659136,
+              46811127,
+              46446609
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 57.998041,
+            "samples_ns": [
+              58485398,
+              57806237,
+              58037812,
+              57998041,
+              57771234
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.41545,
+            "samples_ns": [
+              57465516,
+              57065385,
+              57458816,
+              57415450,
+              56991491
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 57.523427,
+            "samples_ns": [
+              57641637,
+              57614205,
+              57523427,
+              57269227,
+              57395380
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 155.63898,
+            "samples_ns": [
+              155258636,
+              155063322,
+              156157825,
+              159085100,
+              155638980
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 206.225286,
+            "samples_ns": [
+              204722565,
+              206225286,
+              209080798,
+              206431471,
+              206025976
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 215.683041,
+            "samples_ns": [
+              214508312,
+              218987152,
+              215683041,
+              215667125,
+              216861574
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.587885,
+            "samples_ns": [
+              22407572,
+              21493001,
+              21701319,
+              21505399,
+              21587885
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.609607,
+            "samples_ns": [
+              23055229,
+              22498837,
+              22522994,
+              22757923,
+              22609607
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.646025,
+            "samples_ns": [
+              23427121,
+              22661238,
+              22462433,
+              22646025,
+              22526812
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -59.00662799999998,
+      "old_minus_new_ms": -9.851003999999989,
+      "order": [
+        "native",
+        "writeback-v12",
+        "writeback-v11"
+      ],
+      "sum_ms_by_arm": {
+        "native": 283.656992,
+        "writeback-v11": 332.812616,
+        "writeback-v12": 342.66362
+      }
+    },
+    {
+      "block": 5,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.711764,
+            "samples_ns": [
+              49263228,
+              48847762,
+              48711764,
+              48377503,
+              48142382
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 47.119612,
+            "samples_ns": [
+              47830119,
+              47484981,
+              47119612,
+              47059570,
+              46647008
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.815111,
+            "samples_ns": [
+              47769971,
+              47332262,
+              46582244,
+              46815111,
+              46197135
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.410867,
+            "samples_ns": [
+              58759891,
+              58039738,
+              58410867,
+              58417447,
+              57991251
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.709711,
+            "samples_ns": [
+              58522334,
+              57709711,
+              58055580,
+              57679454,
+              57693225
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 57.812792,
+            "samples_ns": [
+              58020634,
+              57860728,
+              57466503,
+              57467484,
+              57812792
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 154.627911,
+            "samples_ns": [
+              153885156,
+              154812675,
+              154361154,
+              154627911,
+              158694314
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 206.240932,
+            "samples_ns": [
+              205655177,
+              209206644,
+              205178315,
+              206240932,
+              206244927
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 216.957664,
+            "samples_ns": [
+              216295114,
+              221533880,
+              216722115,
+              217818913,
+              216957664
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.680813,
+            "samples_ns": [
+              22233579,
+              21621502,
+              21734115,
+              21658830,
+              21680813
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.767356,
+            "samples_ns": [
+              23334244,
+              22656517,
+              22670748,
+              22871235,
+              22767356
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 22.761516,
+            "samples_ns": [
+              27503438,
+              22864072,
+              22761516,
+              22612668,
+              22522860
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -60.915728,
+      "old_minus_new_ms": -10.509472000000017,
+      "order": [
+        "writeback-v11",
+        "native",
+        "writeback-v12"
+      ],
+      "sum_ms_by_arm": {
+        "native": 283.431355,
+        "writeback-v11": 333.837611,
+        "writeback-v12": 344.347083
+      }
+    },
+    {
+      "block": 6,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.180004,
+            "samples_ns": [
+              49120272,
+              48180004,
+              48250672,
+              47878944,
+              48056365
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.602692,
+            "samples_ns": [
+              47017796,
+              46489589,
+              46326509,
+              46602692,
+              46694742
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 46.980486,
+            "samples_ns": [
+              48444293,
+              46927726,
+              46980486,
+              47679304,
+              46968768
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.007661,
+            "samples_ns": [
+              58453226,
+              57958940,
+              57770752,
+              58101785,
+              58007661
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.945781,
+            "samples_ns": [
+              57945781,
+              65563117,
+              58809131,
+              57639944,
+              57264860
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 58.476765,
+            "samples_ns": [
+              59069180,
+              57951011,
+              58476765,
+              58103554,
+              59334616
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 152.220825,
+            "samples_ns": [
+              151581116,
+              152094140,
+              152220825,
+              153268055,
+              156894107
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 207.633984,
+            "samples_ns": [
+              207633984,
+              206899186,
+              212252900,
+              206993521,
+              207849209
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 221.378264,
+            "samples_ns": [
+              219165652,
+              225347589,
+              221402100,
+              221378264,
+              218904072
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.580859,
+            "samples_ns": [
+              22227158,
+              21580859,
+              21505184,
+              21597816,
+              21437361
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.819924,
+            "samples_ns": [
+              23686589,
+              22990154,
+              22715744,
+              22819924,
+              22716045
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 23.053179,
+            "samples_ns": [
+              23356132,
+              22471910,
+              22538673,
+              23563148,
+              23053179
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -69.89934499999998,
+      "old_minus_new_ms": -14.886312999999973,
+      "order": [
+        "native",
+        "writeback-v11",
+        "writeback-v12"
+      ],
+      "sum_ms_by_arm": {
+        "native": 279.989349,
+        "writeback-v11": 335.002381,
+        "writeback-v12": 349.888694
+      }
+    },
+    {
+      "block": 7,
+      "case_scores": {
+        "agent-water-inspection": {
+          "native": {
+            "median_ms": 48.175708,
+            "samples_ns": [
+              48927325,
+              48068244,
+              48175708,
+              48213813,
+              48028580
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 46.508992,
+            "samples_ns": [
+              47660200,
+              46757301,
+              46508992,
+              46500378,
+              46299472
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 47.244787,
+            "samples_ns": [
+              48203723,
+              48326801,
+              47009739,
+              47244787,
+              46904929
+            ]
+          }
+        },
+        "chatbot-trip-planning": {
+          "native": {
+            "median_ms": 58.272353,
+            "samples_ns": [
+              58740989,
+              57889499,
+              58020829,
+              58424255,
+              58272353
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 57.524858,
+            "samples_ns": [
+              58408008,
+              57707757,
+              57524858,
+              57386184,
+              57197084
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 57.805241,
+            "samples_ns": [
+              58387443,
+              58901657,
+              57774834,
+              57805241,
+              57756066
+            ]
+          }
+        },
+        "long-document-estuary-qa": {
+          "native": {
+            "median_ms": 154.920414,
+            "samples_ns": [
+              153971845,
+              153877170,
+              154934776,
+              154920414,
+              157867403
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 208.213059,
+            "samples_ns": [
+              207159160,
+              208213059,
+              214941177,
+              209932755,
+              207530226
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 215.63881,
+            "samples_ns": [
+              214183007,
+              219589410,
+              214681568,
+              215840989,
+              215638810
+            ]
+          }
+        },
+        "rollout-bridge-options": {
+          "native": {
+            "median_ms": 21.663066,
+            "samples_ns": [
+              22212134,
+              21574551,
+              21663066,
+              21694313,
+              21509231
+            ]
+          },
+          "writeback-v11": {
+            "median_ms": 22.712668,
+            "samples_ns": [
+              23322069,
+              22712668,
+              22682382,
+              22628971,
+              22813142
+            ]
+          },
+          "writeback-v12": {
+            "median_ms": 23.015831,
+            "samples_ns": [
+              23229017,
+              23043433,
+              23015831,
+              22848947,
+              22926024
+            ]
+          }
+        }
+      },
+      "native_minus_new_ms": -60.67312800000002,
+      "old_minus_new_ms": -8.745092,
+      "order": [
+        "writeback-v12",
+        "writeback-v11",
+        "native"
+      ],
+      "sum_ms_by_arm": {
+        "native": 283.031541,
+        "writeback-v11": 334.959577,
+        "writeback-v12": 343.704669
+      }
+    }
+  ],
+  "hardware": [
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 0,
+      "uuid": "68d15ed9-2302-ae94-1b4c-6aebd509c550"
+    }
+  ],
+  "jobs": 24,
+  "native_minus_new_paired_median_ms": -59.94089199999999,
+  "native_minus_new_positive_blocks": 0,
+  "old_minus_new_case_paired_median_ms": {
+    "agent-water-inspection": -0.3133240000000015,
+    "chatbot-trip-planning": -0.14344749999999706,
+    "long-document-estuary-qa": -9.396743499999985,
+    "rollout-bridge-options": -0.06362700000000032
+  },
+  "old_minus_new_paired_median_ms": -9.900173499999994,
+  "old_minus_new_positive_blocks": 0,
+  "plan_sha256": "59d19cb8a0ca127fe7ac5b982e0b9b9f24d45dff7b1e33946f1ce734f0af2774",
+  "same_ir_physical_trace_verified": true,
+  "schema": 1,
+  "scope": "v12_single_gpu3_same_dynamic_ir_engineering",
+  "status": "completed"
+}

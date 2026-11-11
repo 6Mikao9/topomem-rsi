@@ -1,0 +1,1040 @@
+{
+  "fully_verified_jobs": 25,
+  "group": "v41-reboot-interruption",
+  "group_from_original_index": {
+    "archives": [
+      {
+        "bytes": 2302774,
+        "file_count": 52,
+        "name": "v41-reboot-interruption-server-00.zip",
+        "sha256": "2421618c5803fafc055df439d3784ba4ce7fac4704208ebd963fe0b21b33f91a",
+        "uncompressed_bytes": 39107491
+      },
+      {
+        "bytes": 2215488,
+        "file_count": 64,
+        "name": "v41-reboot-interruption-server-01.zip",
+        "sha256": "024ebee70229dabed158cad0087b0a1e01a68f625aadc35b5022c4fb250bd184",
+        "uncompressed_bytes": 39200799
+      },
+      {
+        "bytes": 1489042,
+        "file_count": 40,
+        "name": "v41-reboot-interruption-server-02.zip",
+        "sha256": "60676f99d1c569b09116d383f8956014bc42ebbe2f22acdc24f96ca6c2bb7ecd",
+        "uncompressed_bytes": 26366029
+      }
+    ],
+    "job_ids": [
+      "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3",
+      "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5",
+      "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0",
+      "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d",
+      "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59",
+      "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273",
+      "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56",
+      "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08",
+      "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123",
+      "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec",
+      "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840",
+      "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a",
+      "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7",
+      "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6",
+      "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367",
+      "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d",
+      "eval-960140543890d7588593c2bc332367896d8a1183b41a540e",
+      "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769",
+      "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4",
+      "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04",
+      "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90",
+      "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e",
+      "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333",
+      "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61",
+      "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f",
+      "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e"
+    ]
+  },
+  "job_checks": {
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "bdb7117dc07001297fd78205706cfb46b734afdc1d315155acb0dcfb776d47ca",
+      "result_sha256": "29ea6e1a3fe6d9905ef465e5a488763f5e22f30064d06cde23170dc3f63cc672",
+      "status": "verified"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "2171077dfcc5a0571e12c37e267b674df629697e8ba2989e0474bd1812b97710",
+      "result_sha256": "71e5826171f23e271e4f6a02a0815df163e5e1c04924c0f41a6ba779868d403f",
+      "status": "verified"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "08400771401d186f93f50f89ec7fab5a019a02884c5a4c75abc6a87362217854",
+      "result_sha256": "80ffb536471f2415bfd57e807575c71b83a44c11c65201aeb316608a7a090b40",
+      "status": "verified"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "3519954015bdfd04631c11ee14f0f129a2bbefb698127ba028cbe671973e46d0",
+      "result_sha256": "3a33328752fbb937862b4d5e9ea1ef6f0e84c5966b35bff85ee8bb91989f797b",
+      "status": "verified"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "cd9731686e9ade0232ec11701a28fb036d2ebe7684259823cadb6d890473126c",
+      "result_sha256": "2c82da528c89cddf2ad70838443fffb96407175b8d781d64751a10746776134b",
+      "status": "verified"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "68d56491bdcddc212528695a53e947e5518861a3ede01e04b45c4b6665daa251",
+      "result_sha256": "13b3e6f44811954cc22334c0e90938e1513d249c328e002485ce766d1bc418fa",
+      "status": "verified"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "e1799754b65c36f8d6479b8296caf0c5f9fb6548dad4806a4a915a5ff58ab135",
+      "result_sha256": "90ab1ec67e28f613a414ee8996d70d539930e1dc11308f55b28a437fbb35670c",
+      "status": "verified"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "20dec0adb71cd168041b172801008ed15738b8f9dbe9c9617f16723379f4130f",
+      "result_sha256": "b0e2cff094d25051b218beb18e7c5953031aba38495143c243b862c32c1c3765",
+      "status": "verified"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "24921c603ccabab200c30b80de6bd8cca8c01cfebe4e09eb7b258743787403aa",
+      "result_sha256": "c37ac5450ac7641057a4d7895deb401a021f5cb0d64bde9ac5658757933cc1ff",
+      "status": "verified"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "439e888ddfb3945877be977d261fa549306589e0686b5eeae7bcf290def9780c",
+      "result_sha256": "da5eb04f87e2226bf8c85fb735e0d800116460aa19205e227223f0779f480a29",
+      "status": "verified"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "db18750c80c810d6a40c30c888e6544fbe35e14234e52dc4fb6cb68f103482f2",
+      "result_sha256": "e76c37c32ee6da2011747ffa712a16ec121952f06232c0cd2648a4e4a9de04e1",
+      "status": "verified"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "07d33920164e8e3c4890189d7342b626ac2b375d373e19b844f267498b99fb6a",
+      "result_sha256": "047d589f20c9976ac0fff502f02b9391b7e9642f5976868e6e1790f37d51923c",
+      "status": "verified"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "7ce0fe33671037a6d3fa514b6a0e72ac0f39e1280b75724424e6c64a08239de0",
+      "result_sha256": "33b74287c2c7b6d8a2f77f5e241777910f55b120d4ae06cb92be22a2e77b22eb",
+      "status": "verified"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "ca9b13521ff21f5b255cd043d08485a39c22c485638d56dd2671616d3d15185d",
+      "result_sha256": "3dee9c2e6fc46da753ff7e3e2614d1798da1256d18a7711040c34b1794e3bc18",
+      "status": "verified"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367": {
+      "feasible": false,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "31bc06eafde712771ef9ad069a6310111cd7066b41fcd8b8fc46b1ac93cd9aec",
+      "result_sha256": "3fc7367fd6505e4698f7d3667545b2958499f00088865599ca771a5af7372b35",
+      "status": "verified"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d": {
+      "feasible": false,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "d6686ca726ba8c6e0791522db183a6c935a91dbe735ecaff7b15cacc135c48a2",
+      "result_sha256": "77906318b925a9f6ae04d1833af923248a160f96348c1ee002f712dc0fe35fef",
+      "status": "verified"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e": {
+      "empty_server_files": [
+        "receipt.json",
+        "result.json"
+      ],
+      "expected_result_sha256_from_local_receipt": "afc9a7fee458d66d812fe0ae53eefda5383fb9a831f4e2006e62abfc9af31bf7",
+      "local_feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "634ce1fa757f664412a53692d5b84ab413cedfb6b2be4d933227cb98634936cf",
+      "status": "partial_server_evidence",
+      "verified_files": [
+        "input.json",
+        "process.log",
+        "request.json",
+        "started.json"
+      ]
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "575816038090647d4c152530048f822cc29306092fae80dfe62d844fc9259c28",
+      "result_sha256": "e3728ba04b3485b448ad0ec28fdaf149f227ace51c23e17474a3ce1b6d5a0843",
+      "status": "verified"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "a428d5f6efa8e552b460614cf8898cb9e1633b5dd062eafa6ab28a681e093da5",
+      "result_sha256": "9b8e79cd1386c6a3854d59779a01657e6ed0cbc018024b62bcd31796447d0f4d",
+      "status": "verified"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "67669625b0780257aaa4f6251e899c68d76411291b94dd9b3057ffe074bb165b",
+      "result_sha256": "1e9a61422834bee9a88710d50e52e9db2bc7301f8c97469ce423cb10b6738fb4",
+      "status": "verified"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90": {
+      "feasible": false,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "e49777b81f2c8f76729e03383f09d412df65ffa1e84b9f075ea37b5eece89d4c",
+      "result_sha256": "b4f8fd357a289afab3b0d9da1c0292d8264ace89c13653e98df36f07900a5e91",
+      "status": "verified"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "9f8c14ef7493e08cbc0b17b3cee9929f64e2e04e52e37555194e2d5102cf865e",
+      "result_sha256": "7a9204d23492d7d44716ae40a3ba07ae5c6eb4328971870f70267fd16d3f0fbd",
+      "status": "verified"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333": {
+      "feasible": false,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "03143a5aed92a685cbf09f8841bb3fe9067434c2ad842d1d3c2abab4f3afbb42",
+      "result_sha256": "291e2a5add1ac9ab1967582237a31a42ba036e69bf102b50175f0e6f5c383fdc",
+      "status": "verified"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "ffdc7f6909d58e2820180da0fa2e0cb859f4290946cb3aad1848fb6177c91cef",
+      "result_sha256": "e66ff0ebdaf9a5abe1f31b0eda88af0ee0e0c22b17ece8a924dcb9b84c5d5e6c",
+      "status": "verified"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "a183d37fe3079df8f0ef641acbd2ed2b0f7f459ce3ba9c4aee4efe50a738c2cd",
+      "result_sha256": "3e68f41b5c3d679940540de7d448d5fc78f7716eb46f98d5941f0cefbcf23637",
+      "status": "verified"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e": {
+      "feasible": true,
+      "process_log_sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b",
+      "request_sha256": "96f4018906fed1d395e9c5f7d3d5d3a766eaa17db6852fc02f95eac7d7fad7fe",
+      "result_sha256": "d238ad5147554fd76a932ced0088cae4d30a8a756dbbbc00729f466dd2a8b751",
+      "status": "verified"
+    }
+  },
+  "members": {
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 45869,
+      "sha256": "82a3014d573bae22a9af13c8f306908c3b4f58106fbe7cc32091f3f93c00fea2"
+    },
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2028361,
+      "sha256": "cd7b031c218518f07f0ffe77b3a4793577b926436f830552e3cbaa0ffe817b03"
+    },
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 50380,
+      "sha256": "5b3d8ca44ab382c0da311e1c192020ff840b88b0d8f05b2f8315268160bd455b"
+    },
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1874275,
+      "sha256": "29ea6e1a3fe6d9905ef465e5a488763f5e22f30064d06cde23170dc3f63cc672"
+    },
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "a183d9c1746ddcfc217add2a4559d9c6d9d5effce6cc08d69bebddb64aa034d1"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47572,
+      "sha256": "f95ca5a997973428dfd60044d98c7c35bcf61cde3da44aa117e9d3fb15bdad67"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2355020,
+      "sha256": "254336379485e9104c28832369175387ccd26bf49d97fbfedbb15cfd0c5e6ab1"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52427,
+      "sha256": "7076b2506a53280a8d253b33198243e0b73919189b10c9b335b39f77b38c4491"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2173659,
+      "sha256": "71e5826171f23e271e4f6a02a0815df163e5e1c04924c0f41a6ba779868d403f"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "e60c68851e1cee7f5b3764d90fc3dbcee5825bb5d000800a459d5026ae6bba09"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47572,
+      "sha256": "f95ca5a997973428dfd60044d98c7c35bcf61cde3da44aa117e9d3fb15bdad67"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2355019,
+      "sha256": "a656360698106b38722d598df98b866528cb0892eb762c1fc6738c0f5880b1b0"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52427,
+      "sha256": "70044efa987c9bfb871c84aaa1f1a6ed4acf269851f30ab78b7ac16a6a184fa8"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2173659,
+      "sha256": "80ffb536471f2415bfd57e807575c71b83a44c11c65201aeb316608a7a090b40"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "5169abefe8c0d4123f234c372b87c8b03001ec3e023542ca3beb7bb2383a93d0"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 42227,
+      "sha256": "459a59d6068d90d2a855ee57075648a49e602ca87b8a739e29da966d68fe9097"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1820943,
+      "sha256": "2e6cb89147da1efc73d835980aa23611600807c0e43fbae730cc6c81b49f2dd5"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 46786,
+      "sha256": "cd6431eb02ec2e3869c4cba371b1b2786375bc3bbf58692be8aa7388a021fc8e"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1682901,
+      "sha256": "3a33328752fbb937862b4d5e9ea1ef6f0e84c5966b35bff85ee8bb91989f797b"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "70b9bae7bded4fbf7fe0a11f8ac65012cbf5610cadac91083fa507d2d1cf58cb"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47410,
+      "sha256": "59be69ff9f3ae305c6e73d07d94dc7e2b43d0e6b41e9ba60272cc2519975d3a5"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2326439,
+      "sha256": "eba3be2ceb82f98db12ecfeaf21ec78a85fed3cb74093a76ca61d68e42edf59f"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52229,
+      "sha256": "8f555c69986238af01585f93367538786fdae18df3314734e9bda2ac12e85182"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2147141,
+      "sha256": "2c82da528c89cddf2ad70838443fffb96407175b8d781d64751a10746776134b"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "57fe0dd61fd800beb05bcbcdb4287e729f69df6c9575e8c8f4ad6220bc5728f8"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 53604,
+      "sha256": "4ca33def968bfb4a4bb4b8c60f77af37342dc846c22674067fa5ef287d058bdd"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2792865,
+      "sha256": "f3c12ca3eac4ea131a57544dc72adf7dfc1c64a74c48806cf3a57288e75fb891"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 59431,
+      "sha256": "d4de9d3e5629efd96bede29864a76690190130262c7729f74c36f4ab71e4592f"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2575659,
+      "sha256": "13b3e6f44811954cc22334c0e90938e1513d249c328e002485ce766d1bc418fa"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "ac482cd9820685be3c3ed7c17c97da3b18f35058782f0b7eafe11a765454881c"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47410,
+      "sha256": "59be69ff9f3ae305c6e73d07d94dc7e2b43d0e6b41e9ba60272cc2519975d3a5"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2326440,
+      "sha256": "be8246f9dd3f3ca1c4004839697d7dda96962855861b9a2bf279e2490516086d"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52229,
+      "sha256": "b60a4a904cdbd43471b5fe2996c70eb3d7adf828b1623ab346aaac6002b68fee"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2147142,
+      "sha256": "90ab1ec67e28f613a414ee8996d70d539930e1dc11308f55b28a437fbb35670c"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "4ee011b51805b70e9e7fd85ba1811c1f8eeadc158026579d1f2627a5d32c49e7"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47916,
+      "sha256": "e2d3954a77c7ec6b4b8a4b8316f5bd159b8cdad2c18d4243cdd92b5c4761cea7"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2648610,
+      "sha256": "c5232b9cdeb4712893b9790dd9a7d42a72e94303dbaf8e382bdd2a0099c1d7f1"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52843,
+      "sha256": "8da227f61e6fefdb9b5fd08266409a9da29a949d199b6061e2a910c8f3845cb6"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/result.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2443112,
+      "sha256": "b0e2cff094d25051b218beb18e7c5953031aba38495143c243b862c32c1c3765"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08/started.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 1176,
+      "sha256": "5b4a7461c3a4c91221aeadb961f00813cc1fbeb09e8d4c3ee19464ce093ae3b6"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/input.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 47844,
+      "sha256": "7f231c66450ab2acad5afe57249154e8e5d8f8e7d94e7d4e2a8d75e1766e23fa"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/process.log": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/receipt.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 2326439,
+      "sha256": "d71604d1d8d3334e740f8ce1d3703a5017ea3ebbcf21dc02adf1e8bb3c1c5e33"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/request.json": {
+      "archive": "v41-reboot-interruption-server-00.zip",
+      "bytes": 52747,
+      "sha256": "a06c06e8346fcb75947095e2ffad55f64da67852152d6489f6ed60ab2c6a2fa8"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2147141,
+      "sha256": "c37ac5450ac7641057a4d7895deb401a021f5cb0d64bde9ac5658757933cc1ff"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "fe85a4840a38b5e3f8054abcb0541b61a7fb29af56e2e75c9221c54c9a3a8c00"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 51976,
+      "sha256": "c4a0ea7f39e6b72c09957cfb1ea43c7e4cc94dff09174b334bc6a919b7e04938"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2781908,
+      "sha256": "d6644426607c4628ffd602ee21c973294daa29defd9e1752849ef7c304bfda62"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 57599,
+      "sha256": "026e348c1f46cec99f76ffcc0de3068540e339710b99aa0474d7eee37af5e564"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2565641,
+      "sha256": "da5eb04f87e2226bf8c85fb735e0d800116460aa19205e227223f0779f480a29"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "3c96b03c2d6b69d07d6f426d3be0b384d89cdc6bbe23c4db80e41e5419b09d4e"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52565,
+      "sha256": "b8b77903663ae1d581e0568fef67ea3c8fbb3f431a64022361ec1560bc05d54c"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2704728,
+      "sha256": "368bbc117d91ecb6d4385ac3f13fad04c73d9150e671d9d357a8e5478d15ad09"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 58224,
+      "sha256": "4b471edcfdd702b90d819dff8d90e895cdf3f64a4eb908b67258a5a9d57f9b1d"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2494738,
+      "sha256": "e76c37c32ee6da2011747ffa712a16ec121952f06232c0cd2648a4e4a9de04e1"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "4f6ca1463dd3c99a2f0569618b99e436166c425b67f6e298f55815ae8868e8ef"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 53604,
+      "sha256": "4ca33def968bfb4a4bb4b8c60f77af37342dc846c22674067fa5ef287d058bdd"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2792866,
+      "sha256": "5a7ae2eaae19873e4717820c51f47928c215ddcf21edade1b5eb141891d474fc"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 59431,
+      "sha256": "1fff3e68725981aa9d74126ecc392e3e7be1862be2ce02780836bff07594644c"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2575659,
+      "sha256": "047d589f20c9976ac0fff502f02b9391b7e9642f5976868e6e1790f37d51923c"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "fd4bdf55d8c3d34e7db8dbed0e5da940fcefa1a443d0d624e4d4dff4dd9de1fd"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 51976,
+      "sha256": "c4a0ea7f39e6b72c09957cfb1ea43c7e4cc94dff09174b334bc6a919b7e04938"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2781908,
+      "sha256": "dbb92a96e29b8eacda41fff192a73b4eec16d173437f525106b2e033c8cc0fcd"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 57599,
+      "sha256": "1a75f4db238cffbc1fef1ab0155b4f56da66007b3370a38038af207a65a817b2"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2565641,
+      "sha256": "33b74287c2c7b6d8a2f77f5e241777910f55b120d4ae06cb92be22a2e77b22eb"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "625ea3040a924f7011707c7f6d7204568f6d6f54cba2d5294b098a42859d140c"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 47844,
+      "sha256": "7f231c66450ab2acad5afe57249154e8e5d8f8e7d94e7d4e2a8d75e1766e23fa"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2326438,
+      "sha256": "5991f63d1bb98234e9713879008c4edaf8b95acf6a768bf22ad952b26a31ee81"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52747,
+      "sha256": "732c54fb573f7d88fc6a75f4143e505837eb251442aba5fe5862152f6c5a3afd"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2147141,
+      "sha256": "3dee9c2e6fc46da753ff7e3e2614d1798da1256d18a7711040c34b1794e3bc18"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "37589c41c50a56145e14d65bb0deea4dae0668d6ce94da0a5b7122f947c26ed5"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 53821,
+      "sha256": "7e56567f028b1ee7f3c4b8b6c0489068ba2d75d59516d53f9c07a1fe06e67e71"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2480,
+      "sha256": "fe1810271d50b3b842511984f9347d1d78b0eb57427ea9f89b37cb4c96fceecb"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 59692,
+      "sha256": "f623af4cbc705f1482594962678686b9678c146459cd78ee90bc267bfe5a8b8e"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 633,
+      "sha256": "3fc7367fd6505e4698f7d3667545b2958499f00088865599ca771a5af7372b35"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "ab4c57dbf482cbac4b6666bbb0a6871b44f606f776683da8f0554becbbd56571"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 48391,
+      "sha256": "694bda801c5fc7d721e1e57ad79f1bcaba5399e57542a1a493c63607e2566e37"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2479,
+      "sha256": "6a7d377c910951f17362b3cd9abe3a273bcbf2186f7f234f0ef4e4cf3daf1374"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 53390,
+      "sha256": "12f12bae5d918c45b239202d88efd4001acc1ceba9367c02e62bc03dc2f85317"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 633,
+      "sha256": "77906318b925a9f6ae04d1833af923248a160f96348c1ee002f712dc0fe35fef"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "dd5fd04bbff578c396cb25a89cddfe61775139f1cec363ff400444ae4bc89d1b"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 47410,
+      "sha256": "59be69ff9f3ae305c6e73d07d94dc7e2b43d0e6b41e9ba60272cc2519975d3a5"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52229,
+      "sha256": "3a80fb92ecdeea89dfe91a46914d193d7115dd8acd3e3416fa3cf5d5018fe609"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "e6d84cbc6005f101a75f7616fbea5316332db364401c1c7c8765df8515d5f1b4"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 47916,
+      "sha256": "e2d3954a77c7ec6b4b8a4b8316f5bd159b8cdad2c18d4243cdd92b5c4761cea7"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2648609,
+      "sha256": "e420f47c2d8cae9277d129f23a674f39fb1e928f122dfd0931bfc1fe919a6c18"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52843,
+      "sha256": "f395185b29994935c42eb7cacd04f4b1840ff3f93a90fe08550bbb67c7042df7"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2443111,
+      "sha256": "e3728ba04b3485b448ad0ec28fdaf149f227ace51c23e17474a3ce1b6d5a0843"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "dadb1cbf27705c2882b6cd08d6d732a082e0d53ef926fcecc63ed0298f27a186"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 47916,
+      "sha256": "e2d3954a77c7ec6b4b8a4b8316f5bd159b8cdad2c18d4243cdd92b5c4761cea7"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/receipt.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2648611,
+      "sha256": "092f1e2b15c4784a29f45637183d1ca4f9f8613a48246511201c0b9e4d8432a5"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/request.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52843,
+      "sha256": "f11f96e2ec089021d3e606fcbe20ce1aa6b24dd168d51435a985990245f1cf61"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/result.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 2443113,
+      "sha256": "9b8e79cd1386c6a3854d59779a01657e6ed0cbc018024b62bcd31796447d0f4d"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4/started.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 1176,
+      "sha256": "49feadc8978827613a03fae84f1dce4c3941f571288dcd0576e9883020b859c6"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/input.json": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 52565,
+      "sha256": "b8b77903663ae1d581e0568fef67ea3c8fbb3f431a64022361ec1560bc05d54c"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/process.log": {
+      "archive": "v41-reboot-interruption-server-01.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2704726,
+      "sha256": "42fd9f1c55dfd35626cc0ea08a32aa7dfe4ff86e052081498df7bb88c9170220"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 58224,
+      "sha256": "bd0a5e4d73b824c34b6ccc8a4e605c5fbcb93b0049e29245307271bda3becfa6"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2494735,
+      "sha256": "1e9a61422834bee9a88710d50e52e9db2bc7301f8c97469ce423cb10b6738fb4"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "6e83621292b7bcd9eadef315e703983116740b941d96e3103cb545dfe21cede0"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 53821,
+      "sha256": "7e56567f028b1ee7f3c4b8b6c0489068ba2d75d59516d53f9c07a1fe06e67e71"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2478,
+      "sha256": "ab19f7c13b9a50b9631f414c6e2589668970fb0e5fcd4a2e41d19a4b961dd93e"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 59692,
+      "sha256": "ced755658f4f01a7e647e40f4d70263b25b5104f29c900643b30ef95d48f1d0b"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 633,
+      "sha256": "b4f8fd357a289afab3b0d9da1c0292d8264ace89c13653e98df36f07900a5e91"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "2311e4ac7c9c30578e6011e460535339d90875c10fdd9c2c5f224b3b38ef5e1c"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 51976,
+      "sha256": "c4a0ea7f39e6b72c09957cfb1ea43c7e4cc94dff09174b334bc6a919b7e04938"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2781908,
+      "sha256": "144a9672ea84faa320248916b7454a9832af8940bfd350b74f2f9fa19f3df0c6"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 57599,
+      "sha256": "42162aeb1674dd5a55bc5ea54f65a6eab216295948a0a5e04082ad7e976a0577"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2565641,
+      "sha256": "7a9204d23492d7d44716ae40a3ba07ae5c6eb4328971870f70267fd16d3f0fbd"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "baf61d83d656fa6dd94744fa5dcf4dd39e3ab98cc83252d6a9a792b2a8da978e"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 48391,
+      "sha256": "694bda801c5fc7d721e1e57ad79f1bcaba5399e57542a1a493c63607e2566e37"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2480,
+      "sha256": "7e2cab2be8c0c47d2e34850fd5abc9a9f9beda12fba2e7503ffcbb2e5a8fd0b4"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 53390,
+      "sha256": "8d7823fc2e6c172459c34fe45cc7f2ef4236d7399d5367b02a9c3c1eca0c1035"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 633,
+      "sha256": "291e2a5add1ac9ab1967582237a31a42ba036e69bf102b50175f0e6f5c383fdc"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "63a3dfd9886e718875debc06c6b83957068192a7bb8697a7c986b593e30acb05"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 52565,
+      "sha256": "b8b77903663ae1d581e0568fef67ea3c8fbb3f431a64022361ec1560bc05d54c"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2704725,
+      "sha256": "f76f7746c0b2808106e8ed5f4eff3336c0fa1de88e81810e5e82dae7f1cc35f9"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 58224,
+      "sha256": "aa08b340ca34877dc7553233c197c2b6ad01eb36eb335e09d90538e64fc0ba4c"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2494735,
+      "sha256": "e66ff0ebdaf9a5abe1f31b0eda88af0ee0e0c22b17ece8a924dcb9b84c5d5e6c"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "3bcd07acbee1fa1d9a5fec724dc536fa43f13eeb7dd96c84a6bdf3c285cf052a"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 53604,
+      "sha256": "4ca33def968bfb4a4bb4b8c60f77af37342dc846c22674067fa5ef287d058bdd"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2792865,
+      "sha256": "d76ec70736e3dbe36d1a94a66c261782c4e467a4a614329049da2e576e8ef666"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 59431,
+      "sha256": "4d1c393cfda624cdcdd63d1b913df1f792867230a16ac1520b9f981db8b0a011"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2575658,
+      "sha256": "3e68f41b5c3d679940540de7d448d5fc78f7716eb46f98d5941f0cefbcf23637"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "eb6cd78fbd5fbb064c832a343599e261e09ee933d9c7bf39c7e5b7b02b9e7b93"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/input.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 47572,
+      "sha256": "f95ca5a997973428dfd60044d98c7c35bcf61cde3da44aa117e9d3fb15bdad67"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/process.log": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 164,
+      "sha256": "6d5200f12b1332e1acd7207c9ab50d03ed58cc73c8833c990c069c43bd53197b"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/receipt.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2355020,
+      "sha256": "aac12d96adeec2598b9139de10cbe939d93d990a6137fd1bb8e3a60a73ad909c"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/request.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 52427,
+      "sha256": "f85a7b2471349fc78e117a105e4b1f378425616c9150dd26254f8d5f4891646a"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/result.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 2173660,
+      "sha256": "d238ad5147554fd76a932ced0088cae4d30a8a756dbbbc00729f466dd2a8b751"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e/started.json": {
+      "archive": "v41-reboot-interruption-server-02.zip",
+      "bytes": 1176,
+      "sha256": "c25685f3a9c8bf8fa4de7bb55923979ba7826558d8aab370e4679d7a1a25951f"
+    }
+  },
+  "original_artifact_manifest_sha256": "d2030731dadc5322f28cf033d24c922a8c20ac17420ee3cc8a0f453f743174df",
+  "original_combined_index_sha256": "41e3feaedb02ff4fb0313b4c7b05d1edf765e7024cf968b16c11044496832263",
+  "original_result_directory": "cuda-v41-reboot-interruption",
+  "partial_server_evidence_jobs": [
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e"
+  ],
+  "schema": 1
+}

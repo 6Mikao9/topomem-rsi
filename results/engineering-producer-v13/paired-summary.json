@@ -1,0 +1,546 @@
+{
+  "analysis_sha256": "10ba4b701f15630f9bf82a1a93d266c852cdb669f42cfcd07983ce74ea81e182",
+  "correctness_and_same_ir_physical_trace_verified": true,
+  "expected_producer_bypass_verified": true,
+  "ledger_sha256": "71e5e857e07cb066c0a3cca891963f7dc10f94a358dfc8d1da9ee7eda0031496",
+  "old_gap_recovery_definition": "median paired(v11 - v13) / median paired(v11 - native), only when denominator is positive",
+  "old_gap_recovery_preregistered": false,
+  "plan_sha256": "19789ad0cd6c55cd3faeed4aab151854f3c0c1f8608c9ccd173ccdfe90dc9e29",
+  "receipt_count": 24,
+  "schema": 1,
+  "scope": "same lru-equivalent IR engineering comparison on public training cases",
+  "statistics": {
+    "aggregate": {
+      "block_median_windows_ms_by_arm": [
+        {
+          "lru-equivalent-v11": 296.86336,
+          "lru-equivalent-v13": 284.953147,
+          "native": 275.621702
+        },
+        {
+          "lru-equivalent-v11": 299.134931,
+          "lru-equivalent-v13": 287.133959,
+          "native": 274.743458
+        },
+        {
+          "lru-equivalent-v11": 302.06598,
+          "lru-equivalent-v13": 287.439594,
+          "native": 277.107638
+        },
+        {
+          "lru-equivalent-v11": 296.098197,
+          "lru-equivalent-v13": 287.18314,
+          "native": 273.735631
+        },
+        {
+          "lru-equivalent-v11": 298.951005,
+          "lru-equivalent-v13": 287.538666,
+          "native": 274.698252
+        },
+        {
+          "lru-equivalent-v11": 297.509461,
+          "lru-equivalent-v13": 288.626293,
+          "native": 274.466141
+        },
+        {
+          "lru-equivalent-v11": 300.266252,
+          "lru-equivalent-v13": 285.010664,
+          "native": 274.502549
+        },
+        {
+          "lru-equivalent-v11": 296.950331,
+          "lru-equivalent-v13": 285.734444,
+          "native": 278.337895
+        }
+      ],
+      "median_window_ms_by_arm": {
+        "lru-equivalent-v11": 298.230233,
+        "lru-equivalent-v13": 287.1585495,
+        "native": 274.720855
+      },
+      "native_minus_v11": {
+        "deltas_ms": [
+          -21.241658,
+          -24.391473,
+          -24.958342,
+          -22.362566,
+          -24.252753,
+          -23.04332,
+          -25.763703,
+          -18.612436
+        ],
+        "maximum_ms": -18.612436,
+        "median_ms": -23.6480365,
+        "minimum_ms": -25.763703,
+        "negative_blocks": 8,
+        "positive_blocks": 0,
+        "tied_blocks": 0
+      },
+      "native_minus_v13": {
+        "deltas_ms": [
+          -9.331445,
+          -12.390501,
+          -10.331956,
+          -13.447509,
+          -12.840414,
+          -14.160152,
+          -10.508115,
+          -7.396549
+        ],
+        "maximum_ms": -7.396549,
+        "median_ms": -11.449308,
+        "minimum_ms": -14.160152,
+        "negative_blocks": 8,
+        "positive_blocks": 0,
+        "tied_blocks": 0
+      },
+      "old_gap_recovery_ratio": 0.49311814957660444,
+      "recovered_at_least_half_of_positive_old_gap": false,
+      "v11_gap_to_native_paired_median_ms": 23.6480365,
+      "v11_minus_v13": {
+        "deltas_ms": [
+          11.910213,
+          12.000972,
+          14.626386,
+          8.915057,
+          11.412339,
+          8.883168,
+          15.255588,
+          11.215887
+        ],
+        "maximum_ms": 15.255588,
+        "median_ms": 11.661276,
+        "minimum_ms": 8.883168,
+        "negative_blocks": 0,
+        "positive_blocks": 8,
+        "tied_blocks": 0
+      }
+    },
+    "cases": {
+      "agent-water-inspection": {
+        "block_median_windows_ms_by_arm": [
+          {
+            "lru-equivalent-v11": 52.000023,
+            "lru-equivalent-v13": 49.679729,
+            "native": 46.991719
+          },
+          {
+            "lru-equivalent-v11": 52.06927,
+            "lru-equivalent-v13": 50.476039,
+            "native": 47.220485
+          },
+          {
+            "lru-equivalent-v11": 53.121856,
+            "lru-equivalent-v13": 50.82475,
+            "native": 47.060563
+          },
+          {
+            "lru-equivalent-v11": 51.742514,
+            "lru-equivalent-v13": 50.712443,
+            "native": 47.017328
+          },
+          {
+            "lru-equivalent-v11": 52.263387,
+            "lru-equivalent-v13": 50.395899,
+            "native": 46.761249
+          },
+          {
+            "lru-equivalent-v11": 53.135161,
+            "lru-equivalent-v13": 50.848363,
+            "native": 47.159964
+          },
+          {
+            "lru-equivalent-v11": 51.936862,
+            "lru-equivalent-v13": 50.326095,
+            "native": 46.936311
+          },
+          {
+            "lru-equivalent-v11": 51.999408,
+            "lru-equivalent-v13": 50.559289,
+            "native": 47.472348
+          }
+        ],
+        "median_window_ms_by_arm": {
+          "lru-equivalent-v11": 52.0346465,
+          "lru-equivalent-v13": 50.517664,
+          "native": 47.0389455
+        },
+        "native_minus_v11": {
+          "deltas_ms": [
+            -5.008304,
+            -4.848785,
+            -6.061293,
+            -4.725186,
+            -5.502138,
+            -5.975197,
+            -5.000551,
+            -4.52706
+          ],
+          "maximum_ms": -4.52706,
+          "median_ms": -5.0044275,
+          "minimum_ms": -6.061293,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "native_minus_v13": {
+          "deltas_ms": [
+            -2.68801,
+            -3.255554,
+            -3.764187,
+            -3.695115,
+            -3.63465,
+            -3.688399,
+            -3.389784,
+            -3.086941
+          ],
+          "maximum_ms": -2.68801,
+          "median_ms": -3.512217,
+          "minimum_ms": -3.764187,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "old_gap_recovery_ratio": 0.3475177730119978,
+        "recovered_at_least_half_of_positive_old_gap": false,
+        "v11_gap_to_native_paired_median_ms": 5.0044275,
+        "v11_minus_v13": {
+          "deltas_ms": [
+            2.320294,
+            1.593231,
+            2.297106,
+            1.030071,
+            1.867488,
+            2.286798,
+            1.610767,
+            1.440119
+          ],
+          "maximum_ms": 2.320294,
+          "median_ms": 1.7391275,
+          "minimum_ms": 1.030071,
+          "negative_blocks": 0,
+          "positive_blocks": 8,
+          "tied_blocks": 0
+        }
+      },
+      "chatbot-trip-planning": {
+        "block_median_windows_ms_by_arm": [
+          {
+            "lru-equivalent-v11": 62.443536,
+            "lru-equivalent-v13": 60.466768,
+            "native": 56.902365
+          },
+          {
+            "lru-equivalent-v11": 62.890417,
+            "lru-equivalent-v13": 60.355884,
+            "native": 56.730612
+          },
+          {
+            "lru-equivalent-v11": 63.526302,
+            "lru-equivalent-v13": 61.095888,
+            "native": 56.996697
+          },
+          {
+            "lru-equivalent-v11": 62.119817,
+            "lru-equivalent-v13": 60.873123,
+            "native": 56.780748
+          },
+          {
+            "lru-equivalent-v11": 62.804763,
+            "lru-equivalent-v13": 60.549154,
+            "native": 56.503118
+          },
+          {
+            "lru-equivalent-v11": 62.302194,
+            "lru-equivalent-v13": 60.795515,
+            "native": 56.671402
+          },
+          {
+            "lru-equivalent-v11": 63.012671,
+            "lru-equivalent-v13": 60.30689,
+            "native": 56.518897
+          },
+          {
+            "lru-equivalent-v11": 62.355106,
+            "lru-equivalent-v13": 60.847056,
+            "native": 58.344178
+          }
+        ],
+        "median_window_ms_by_arm": {
+          "lru-equivalent-v11": 62.6241495,
+          "lru-equivalent-v13": 60.6723345,
+          "native": 56.75568
+        },
+        "native_minus_v11": {
+          "deltas_ms": [
+            -5.541171,
+            -6.159805,
+            -6.529605,
+            -5.339069,
+            -6.301645,
+            -5.630792,
+            -6.493774,
+            -4.010928
+          ],
+          "maximum_ms": -4.010928,
+          "median_ms": -5.8952985,
+          "minimum_ms": -6.529605,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "native_minus_v13": {
+          "deltas_ms": [
+            -3.564403,
+            -3.625272,
+            -4.099191,
+            -4.092375,
+            -4.046036,
+            -4.124113,
+            -3.787993,
+            -2.502878
+          ],
+          "maximum_ms": -2.502878,
+          "median_ms": -3.9170145,
+          "minimum_ms": -4.124113,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "old_gap_recovery_ratio": 0.3589620610389788,
+        "recovered_at_least_half_of_positive_old_gap": false,
+        "v11_gap_to_native_paired_median_ms": 5.8952985,
+        "v11_minus_v13": {
+          "deltas_ms": [
+            1.976768,
+            2.534533,
+            2.430414,
+            1.246694,
+            2.255609,
+            1.506679,
+            2.705781,
+            1.50805
+          ],
+          "maximum_ms": 2.705781,
+          "median_ms": 2.1161885000000002,
+          "minimum_ms": 1.246694,
+          "negative_blocks": 0,
+          "positive_blocks": 8,
+          "tied_blocks": 0
+        }
+      },
+      "long-document-estuary-qa": {
+        "block_median_windows_ms_by_arm": [
+          {
+            "lru-equivalent-v11": 158.774259,
+            "lru-equivalent-v13": 152.074744,
+            "native": 150.751731
+          },
+          {
+            "lru-equivalent-v11": 159.815706,
+            "lru-equivalent-v13": 153.315974,
+            "native": 149.772935
+          },
+          {
+            "lru-equivalent-v11": 161.230107,
+            "lru-equivalent-v13": 152.393881,
+            "native": 152.051758
+          },
+          {
+            "lru-equivalent-v11": 158.574487,
+            "lru-equivalent-v13": 152.477645,
+            "native": 149.177462
+          },
+          {
+            "lru-equivalent-v11": 160.084949,
+            "lru-equivalent-v13": 153.629256,
+            "native": 150.476858
+          },
+          {
+            "lru-equivalent-v11": 158.499019,
+            "lru-equivalent-v13": 153.858034,
+            "native": 149.608881
+          },
+          {
+            "lru-equivalent-v11": 161.487442,
+            "lru-equivalent-v13": 151.632268,
+            "native": 150.130974
+          },
+          {
+            "lru-equivalent-v11": 158.875914,
+            "lru-equivalent-v13": 151.433652,
+            "native": 151.384334
+          }
+        ],
+        "median_window_ms_by_arm": {
+          "lru-equivalent-v11": 159.34581,
+          "lru-equivalent-v13": 152.435763,
+          "native": 150.303916
+        },
+        "native_minus_v11": {
+          "deltas_ms": [
+            -8.022528,
+            -10.042771,
+            -9.178349,
+            -9.397025,
+            -9.608091,
+            -8.890138,
+            -11.356468,
+            -7.49158
+          ],
+          "maximum_ms": -7.49158,
+          "median_ms": -9.287687,
+          "minimum_ms": -11.356468,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "native_minus_v13": {
+          "deltas_ms": [
+            -1.323013,
+            -3.543039,
+            -0.342123,
+            -3.300183,
+            -3.152398,
+            -4.249153,
+            -1.501294,
+            -0.049318
+          ],
+          "maximum_ms": -0.049318,
+          "median_ms": -2.3268459999999997,
+          "minimum_ms": -4.249153,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "old_gap_recovery_ratio": 0.7105777251106761,
+        "recovered_at_least_half_of_positive_old_gap": true,
+        "v11_gap_to_native_paired_median_ms": 9.287687,
+        "v11_minus_v13": {
+          "deltas_ms": [
+            6.699515,
+            6.499732,
+            8.836226,
+            6.096842,
+            6.455693,
+            4.640985,
+            9.855174,
+            7.442262
+          ],
+          "maximum_ms": 9.855174,
+          "median_ms": 6.5996235,
+          "minimum_ms": 4.640985,
+          "negative_blocks": 0,
+          "positive_blocks": 8,
+          "tied_blocks": 0
+        }
+      },
+      "rollout-bridge-options": {
+        "block_median_windows_ms_by_arm": [
+          {
+            "lru-equivalent-v11": 23.645542,
+            "lru-equivalent-v13": 22.731906,
+            "native": 20.975887
+          },
+          {
+            "lru-equivalent-v11": 24.359538,
+            "lru-equivalent-v13": 22.986062,
+            "native": 21.019426
+          },
+          {
+            "lru-equivalent-v11": 24.187715,
+            "lru-equivalent-v13": 23.125075,
+            "native": 20.99862
+          },
+          {
+            "lru-equivalent-v11": 23.661379,
+            "lru-equivalent-v13": 23.119929,
+            "native": 20.760093
+          },
+          {
+            "lru-equivalent-v11": 23.797906,
+            "lru-equivalent-v13": 22.964357,
+            "native": 20.957027
+          },
+          {
+            "lru-equivalent-v11": 23.573087,
+            "lru-equivalent-v13": 23.124381,
+            "native": 21.025894
+          },
+          {
+            "lru-equivalent-v11": 23.829277,
+            "lru-equivalent-v13": 22.745411,
+            "native": 20.916367
+          },
+          {
+            "lru-equivalent-v11": 23.719903,
+            "lru-equivalent-v13": 22.894447,
+            "native": 21.137035
+          }
+        ],
+        "median_window_ms_by_arm": {
+          "lru-equivalent-v11": 23.7589045,
+          "lru-equivalent-v13": 22.9752095,
+          "native": 20.9872535
+        },
+        "native_minus_v11": {
+          "deltas_ms": [
+            -2.669655,
+            -3.340112,
+            -3.189095,
+            -2.901286,
+            -2.840879,
+            -2.547193,
+            -2.91291,
+            -2.582868
+          ],
+          "maximum_ms": -2.547193,
+          "median_ms": -2.8710825,
+          "minimum_ms": -3.340112,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "native_minus_v13": {
+          "deltas_ms": [
+            -1.756019,
+            -1.966636,
+            -2.126455,
+            -2.359836,
+            -2.00733,
+            -2.098487,
+            -1.829044,
+            -1.757412
+          ],
+          "maximum_ms": -1.756019,
+          "median_ms": -1.986983,
+          "minimum_ms": -2.359836,
+          "negative_blocks": 8,
+          "positive_blocks": 0,
+          "tied_blocks": 0
+        },
+        "old_gap_recovery_ratio": 0.3042728657222494,
+        "recovered_at_least_half_of_positive_old_gap": false,
+        "v11_gap_to_native_paired_median_ms": 2.8710825,
+        "v11_minus_v13": {
+          "deltas_ms": [
+            0.913636,
+            1.373476,
+            1.06264,
+            0.54145,
+            0.833549,
+            0.448706,
+            1.083866,
+            0.825456
+          ],
+          "maximum_ms": 1.373476,
+          "median_ms": 0.8735925,
+          "minimum_ms": 0.448706,
+          "negative_blocks": 0,
+          "positive_blocks": 8,
+          "tied_blocks": 0
+        }
+      }
+    }
+  }
+}

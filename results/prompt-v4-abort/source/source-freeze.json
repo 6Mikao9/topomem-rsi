@@ -1,0 +1,16 @@
+{
+  "bundle": {
+    "archive": "D:\\ws\\.scratch\\topomem-v4-cuda-engineering\\controller-source.zip",
+    "archive_sha256": "125dd63602ded697cb5a3ca4b99a47d0d1eb85d7f19750182aac18ddd1d5edb4",
+    "bytes": 244443,
+    "files": 74,
+    "source_manifest_sha256": "9302577e48c6b23e7bc343b35213120f8eaac70b90b2fb251d185129d37f9123"
+  },
+  "reviewed_files": {
+    "rsi_memory/cuda_v4.py": "62f575f82a867508276c6b744eb034975c7c4039022ed3c58fd5a75ba2a8b288",
+    "rsi_memory/selection_protocol.py": "062db2b4297f2178a81136672c178f62588630635a02afdaab7852f98baa97a6",
+    "rsi_memory/topology_rsi_v4.py": "bf71e0ccb132e8a97a535e5683bcfffb1c21a6442892175c6299c38552707190",
+    "tests/test_selection_protocol.py": "d66555655a9af63743db251535cb4ebb6976bcfc607bc045c49af654a7ca14f2",
+    "tests/test_topology_rsi_v4.py": "efadd64c32064e0877cc4e72db21e71dbd3c418afb064c047c25a1aeb57951e4"
+  }
+}

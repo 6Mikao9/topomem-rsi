@@ -1,0 +1,15 @@
+{
+  "case_plan_sha256": "caea3b9dd4b82b9b2e0412f158e755077f3837cb18e2e98bbe7c1e6b2b143bad",
+  "created_utc": "2026-11-11T06:39:10.439745+00:00",
+  "private_config_sha256": "79c1cd08835fc39873c4e512221e55ec17fa1c7d2bbf5b70d4ba9e2f18c413ac",
+  "schema": 1,
+  "scope": "Two-round single-GPU engineering recheck on already-public corpus. Separate from interrupted two-GPU H256 run; not new unseen-data generalization or a replacement multi-GPU proof.",
+  "script_sha256": "e214ce9513f67f9938cf002be88c7062a48e0612f3422f106ac87eab4262d08a",
+  "semantics": "Stop on any failed phase. Unknown external effects are not retried. No partial automatic freeze.",
+  "source_manifest_sha256": "6fc56c59daa4ed0deea1dfd2ff11ea0efe4b9670fd83b6270eb27a195463f650",
+  "stages": [
+    "run",
+    "freeze",
+    "test"
+  ]
+}

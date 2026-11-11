@@ -1,0 +1,15 @@
+{
+  "case_plan_sha256": "4128e5efc6049e5500509a9d5c69902f8fb492cec4648e24aa128a8310a0d133",
+  "created_utc": "2026-11-11T05:44:26.407876+00:00",
+  "private_config_sha256": "09a62b2044d70a18adb90dcb94e51f12c921c2f40083844606e09e9eedcdd324",
+  "schema": 1,
+  "scope": "Engineering reassessment on already-public corpus, not an independent unseen-data claim.",
+  "script_sha256": "e132879515ed3ca22948fe5a649de88757071126f416c368289ed2ecae193b6a",
+  "semantics": "Stop on any failed phase. Unknown external effects are not retried. No partial automatic freeze.",
+  "source_manifest_sha256": "9302577e48c6b23e7bc343b35213120f8eaac70b90b2fb251d185129d37f9123",
+  "stages": [
+    "run",
+    "freeze",
+    "test"
+  ]
+}

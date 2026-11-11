@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "report_sha256": "96f02b292a42197be2739695339ac4cfa0d132b2c6a28508c22178b0a42b87e2",
+  "html_sha256": "20836b19c12aed2ccc2a5ab77b354d1af995b7c8490d7bed30882c36eb645d5e",
+  "checks": [
+    {
+      "check": "R1 selection and measured rejection",
+      "pass": true
+    },
+    {
+      "check": "source disclosure",
+      "pass": true
+    },
+    {
+      "check": "heldout comparisons",
+      "pass": true,
+      "rows": 24
+    },
+    {
+      "check": "autonomy and human engineering attribution",
+      "pass": true
+    },
+    {
+      "check": "390px boundaries view has no page overflow",
+      "pass": true,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "check": "390px result table scroll containment",
+      "pass": false
+    },
+    {
+      "check": "390px R1 with expanded source has no page overflow",
+      "pass": false
+    },
+    {
+      "check": "no captured browser errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "scope": "Actual final report, desktop and 390px mobile; temporary viewport reset. Earlier 404 route corrected from observed directory listing."
+}

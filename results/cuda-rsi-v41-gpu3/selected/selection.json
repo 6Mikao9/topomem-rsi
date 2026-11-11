@@ -1,0 +1,59 @@
+{
+  "admitted_output": {
+    "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+    "program_sha256": "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231",
+    "provider_call_id": "api/r0001/parent/01",
+    "selection": {
+      "effect_sha256": "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231",
+      "excluded_infeasible_proposals": [
+        "r0001/parent/00"
+      ],
+      "frontier_effects": [
+        "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231"
+      ],
+      "proposal_id": "r0001/parent/01",
+      "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "status": "selected"
+    },
+    "training_score_ms": 301.021342,
+    "trial_id": "r0001/parent/01"
+  },
+  "fixed": {
+    "harness_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+    "program_sha256": "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6",
+    "provider_call_id": "api/r0000/fixed-a/00",
+    "selection": {
+      "effect_sha256": "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6",
+      "excluded_infeasible_proposals": [],
+      "frontier_effects": [
+        "032c739626fda0097479d9fd6f82b5b5ab9f4cb90ba59dc6368b7fcdf381adc9",
+        "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6"
+      ],
+      "proposal_id": "r0000/fixed-a/00",
+      "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "status": "selected"
+    },
+    "training_score_ms": 286.020065,
+    "trial_id": "r0000/fixed-a/00"
+  },
+  "manager_best": {
+    "harness_sha256": "7ef5507ac6345f80f0ea82b3a747fb39d67d767cbecae3c42ed1eb51012dcd62",
+    "program_sha256": "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526",
+    "provider_call_id": "api/r0001/child/00",
+    "selection": {
+      "effect_sha256": "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526",
+      "excluded_infeasible_proposals": [
+        "r0001/child/01",
+        "r0001/parent/00"
+      ],
+      "frontier_effects": [
+        "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526"
+      ],
+      "proposal_id": "r0001/child/00",
+      "source_sha256": "7ef5507ac6345f80f0ea82b3a747fb39d67d767cbecae3c42ed1eb51012dcd62",
+      "status": "selected"
+    },
+    "training_score_ms": 296.643452,
+    "trial_id": "r0001/child/00"
+  }
+}

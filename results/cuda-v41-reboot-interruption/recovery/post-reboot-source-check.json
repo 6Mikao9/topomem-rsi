@@ -1,0 +1,17 @@
+{
+  "boot_id": "24109ced-6a97-4c22-9794-a9e30d267d9b",
+  "gpu_state": "0, GPU-2a66a29f-9c52-6365-d76b-57d2116826c7, 595.99.02, 30482 MiB, 0 %\n1, GPU-c9891208-c33c-f89b-e575-7fe0d73c8f43, 595.99.02, 30482 MiB, 0 %\n3, GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550, 595.99.02, 4 MiB, 0 %\n",
+  "new_source_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d",
+  "verified_old_sources": [
+    {
+      "manifest_sha256": "944183b276b231c2dd306dbfc9ddbbf9823d94875e21a94b76008ef2b91ba0a8",
+      "source": "src-v11-single-qualification",
+      "verified_files": 63
+    },
+    {
+      "manifest_sha256": "877873960cd4da3c332891495fdc86d30fa59725b879d0fcffccb81fdef0c767",
+      "source": "src-v11-formal",
+      "verified_files": 63
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "op": "const",
+        "value": 0.0
+      },
+      "when": {
+        "name": "target_is_host",
+        "op": "feature"
+      }
+    },
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "op": "const",
+        "value": 1.0
+      },
+      "when": {
+        "name": "target_is_local",
+        "op": "feature"
+      }
+    },
+    {
+      "action": "replicate",
+      "event": "access",
+      "score": {
+        "op": "const",
+        "value": 0.0
+      },
+      "when": {
+        "args": [
+          {
+            "name": "target_has_copy",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "name": "target_is_local",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "evict",
+      "event": "allocate",
+      "score": {
+        "args": [
+          {
+            "op": "const",
+            "value": 0.0
+          },
+          {
+            "name": "recency_steps",
+            "op": "feature"
+          }
+        ],
+        "op": "sub"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "evict",
+      "event": "access",
+      "score": {
+        "args": [
+          {
+            "op": "const",
+            "value": 0.0
+          },
+          {
+            "name": "recency_steps",
+            "op": "feature"
+          }
+        ],
+        "op": "sub"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "release",
+      "score": {
+        "op": "const",
+        "value": 0.0
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    }
+  ],
+  "schema": 1
+}

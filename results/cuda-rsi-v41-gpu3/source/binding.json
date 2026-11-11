@@ -1,0 +1,6 @@
+{
+  "controller_source_archive_sha256": "1a2c88fe08cff40bd2ab3cf654646ce5c6e3312ae1fc0f891dfb201098273b3d",
+  "controller_source_manifest_sha256": "6fc56c59daa4ed0deea1dfd2ff11ea0efe4b9670fd83b6270eb27a195463f650",
+  "worker_source_archive_sha256": "8d3a98e1791fdc4fb40564e1341686de466b6e8105d033c7fd7f97459eee52f6",
+  "worker_source_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d"
+}

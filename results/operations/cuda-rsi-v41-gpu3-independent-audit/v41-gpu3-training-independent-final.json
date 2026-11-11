@@ -1,0 +1,1273 @@
+{
+  "admitted_sources": [
+    "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38"
+  ],
+  "kind": "cuda_v4_independent_completed_training_rounds",
+  "native_train": {
+    "case_signatures": {
+      "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+      "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+      "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+      "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+    },
+    "job_id": "eval-8ff599b7af805ed0c4bee97314dba9023dc8b1d961de9a4a",
+    "receipt_sha256": "8225b69b01bed2f391438793c17f0c9211d1c9d9586477199e31382bcf5188f1"
+  },
+  "provider_selection_contract_proofs": {
+    "api/r0000/adaptive-meta": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": true,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native"
+      ],
+      "system_sha256": "922b48b646287a4e6cc5f1f3080680ba887db1bdd0b5ab5dd4057c9131e138e4",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/child/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "native"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/child/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "native"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/fixed-a/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/fixed-a/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native",
+        "r0000/fixed-a/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/fixed-b/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/fixed-b/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native",
+        "r0000/fixed-b/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/fixed-meta": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": true,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native"
+      ],
+      "system_sha256": "922b48b646287a4e6cc5f1f3080680ba887db1bdd0b5ab5dd4057c9131e138e4",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/parent/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0000/parent/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native",
+        "r0000/parent/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/adaptive-meta": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": true,
+      "selected_training_evidence_ids": [
+        "r0000/child/00",
+        "r0000/child/01",
+        "r0000/parent/00",
+        "r0000/parent/01"
+      ],
+      "system_sha256": "922b48b646287a4e6cc5f1f3080680ba887db1bdd0b5ab5dd4057c9131e138e4",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/child/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native",
+        "r0000/child/00",
+        "r0000/child/01"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/child/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "bootstrap/initial-incumbent",
+        "native",
+        "r0000/child/01",
+        "r0001/child/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/fixed-a/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/fixed-a/01",
+        "r0000/fixed-b/00",
+        "r0000/fixed-b/01"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/fixed-a/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/fixed-b/00",
+        "r0000/fixed-b/01",
+        "r0001/fixed-a/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/fixed-b/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/fixed-a/01",
+        "r0000/fixed-b/00",
+        "r0000/fixed-b/01"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/fixed-b/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/fixed-b/00",
+        "r0000/fixed-b/01",
+        "r0001/fixed-b/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/fixed-meta": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": true,
+      "selected_training_evidence_ids": [
+        "r0000/fixed-a/00",
+        "r0000/fixed-a/01",
+        "r0000/fixed-b/00",
+        "r0000/fixed-b/01"
+      ],
+      "system_sha256": "922b48b646287a4e6cc5f1f3080680ba887db1bdd0b5ab5dd4057c9131e138e4",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/parent/00": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/child/00",
+        "r0000/child/01",
+        "r0000/parent/01"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    },
+    "api/r0001/parent/01": {
+      "legacy_selection_clause_absent": true,
+      "meta_system_matches_v41": false,
+      "selected_training_evidence_ids": [
+        "r0000/child/00",
+        "r0000/child/01",
+        "r0001/parent/00"
+      ],
+      "system_sha256": "e3786b5b32a550674c390fbadbb6cda75d4980236265c44085b17428b54ed365",
+      "trusted_selection_contract": {
+        "admission": "The fresh child requires a distinct training identity and a stable paired validation gain over the fresh parent and historical incumbent.",
+        "finalists": {
+          "admitted_output": "Training-selected program actually emitted by an admitted source, with its editing parents recorded.",
+          "fixed": "Training-selected program from the fixed seed archive.",
+          "manager_best": "Training-selected program from the adaptive discovery archive with its original source attribution."
+        },
+        "fresh_outputs": "Parent and child select from their own newly emitted programs using the complete repeated training matrix.",
+        "incumbent": "The historical manager incumbent is evaluated as a separate validation reference.",
+        "later_slots": "Later slots see earlier rough measurements from their own branch. These are single-evaluation training feedback.",
+        "round_start": "Adaptive parent and child share a frozen starting archive. Fixed branches use their own seed archive.",
+        "structure": "Both generator entries need a structural change on the common round-start context. Reordering identical evidence IDs does not count.",
+        "training_blocks": 3,
+        "training_margin_ms": 2.0,
+        "version": "4.1"
+      }
+    }
+  },
+  "rounds": [
+    {
+      "active_after": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "decision": "rejected",
+      "fresh_program_counts_by_exact_identity": {
+        "2f0966ae1d51fb7ee9aa87858109fea140c2c1b407bf736dfa1a621b21668e59": 1,
+        "6711f06dbc7355d10a557e0baf2211b6c159244575f9c3558d422de6270a4913": 1,
+        "860c6f29791c603d7f8194a33191fadea1803199921490385ac1047b70d7a9a3": 1,
+        "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2": 1,
+        "bd6cd4dd1b3e1de4c994524c6c25bb4f2a05290dc885395e3d325e4e877180e8": 1,
+        "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6": 1,
+        "e08e37acf8d55b0d65298b41d80e29efea100ad9ca8ff186336f8a584c3576cd": 1,
+        "e8a8fe481baaf1da9728b3af864b30b82a22a78e866f4b7e95d240ad64f46f07": 1
+      },
+      "previous_admission_reuse": null,
+      "reason": "insufficient_stable_paired_improvement_vs_parent",
+      "round": 0,
+      "selected": {
+        "admitted_output": {
+          "effect_sha256": "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2",
+          "excluded_infeasible_proposals": [],
+          "frontier_effects": [
+            "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2"
+          ],
+          "proposal_id": "r0000/parent/00",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        },
+        "child": {
+          "effect_sha256": "2f0966ae1d51fb7ee9aa87858109fea140c2c1b407bf736dfa1a621b21668e59",
+          "excluded_infeasible_proposals": [],
+          "frontier_effects": [
+            "2f0966ae1d51fb7ee9aa87858109fea140c2c1b407bf736dfa1a621b21668e59",
+            "6711f06dbc7355d10a557e0baf2211b6c159244575f9c3558d422de6270a4913"
+          ],
+          "proposal_id": "r0000/child/01",
+          "source_sha256": "55b13aee9a59e99891810d7af4c05dd4c9e37f1adad194255b5e9505bdf53612",
+          "status": "selected"
+        },
+        "fixed": {
+          "effect_sha256": "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6",
+          "excluded_infeasible_proposals": [
+            "r0000/fixed-a/01",
+            "r0000/fixed-b/01"
+          ],
+          "frontier_effects": [
+            "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6"
+          ],
+          "proposal_id": "r0000/fixed-a/00",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        },
+        "manager_best": {
+          "effect_sha256": "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2",
+          "excluded_infeasible_proposals": [],
+          "frontier_effects": [
+            "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2"
+          ],
+          "proposal_id": "r0000/parent/00",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        },
+        "parent": {
+          "effect_sha256": "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2",
+          "excluded_infeasible_proposals": [],
+          "frontier_effects": [
+            "a351b197cbcfde0613de935dd9fe30537015ff508efb67f5ca6161894287abb2"
+          ],
+          "proposal_id": "r0000/parent/00",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        }
+      },
+      "structural_behavior": {
+        "build_meta_prompt": {
+          "ast_changed": true,
+          "changed_fields_by_slot": {
+            "0": [
+              "evidence",
+              "mode"
+            ]
+          }
+        },
+        "build_prompt": {
+          "ast_changed": true,
+          "changed_fields_by_slot": {
+            "0": [
+              "evidence"
+            ],
+            "1": [
+              "evidence"
+            ]
+          }
+        }
+      },
+      "training_receipt_sha256_by_job": {
+        "eval-0078850e1e01f5e514b0045dd7895c27f39cea81a6f95097": "c2a0c6aea979f22abe6f7a96df5795dc111a75b5b78be258d20992ff197846de",
+        "eval-0b7d94d40351b6646ece32c5bcc7363ad3b9d2cc70cd8405": "471997446041eddfd678b256ed50115ad021897808b63b06842fdc412b70ed88",
+        "eval-11208f35c27bf69d0ae0b29ca5e7fc3e4189f95f15f45507": "074373276d350741a79ed7217be01fdf079d0a3d90129075c228e3ffac304512",
+        "eval-1e171e9230abb15e5af4a36dea44319785fd94de94f75d28": "e50bada158512be39fb9ae0219ed43fb349a6679f9ed7ca993d9ca2e2a7d9a0e",
+        "eval-42546538195de9f36822bee0474e4623e825353b3c7c9ace": "c18980b92a9c0181ca55a80f7e1d2e57b4a466c9579e5fcdb26c574b956d094a",
+        "eval-56347f29e3b51dada46aa2dbc859d2481680ddc9b705ad1a": "f857332953d3d89976496b437c1414f6b0f21f6d60bb28bd4eef3f00fcfa5939",
+        "eval-709d57b4a6db3aa99ca5aee9c5229646814bbc395339d498": "08476bc213a5233a238c026dafde723e84bd4ed34a1996e175e5d3d8c0a3d4d9",
+        "eval-7679def280f9a72ee2b343fc3ac5113c484461f73354ddbe": "0a50287bb774ca6355fa7d8fa01664ec1a9333f1b1517bc1f720e52298dceeea",
+        "eval-847a7e42cc002864a87a393fbf5c6a2ab1e87e7c7ecf9e5f": "2d39fd1e780eff82d0bf2145af7adbf6177e1ff36eba0a956dd084c4867e3799",
+        "eval-8ebafacbb81b68b5af28b94854dc8a59afb6b86cf52e1884": "16e883812080d847e1184542e982036a58117b83e1b10f6e1eb62db792343ce9",
+        "eval-a579f68a0ebf9ccbb0ebb77ca487e76c27b125567b4c1d93": "34495a8d581f38f47332342dd773f0e0abe6ca315c1b8594401bc6e5010d7b89",
+        "eval-a595ff84e4a6943a405b0a8b75adc08fa617fea16c49e42f": "20b1064b5dfe434ef95f6f2ec22412c2b0b4d2ed38c12146e991f8a68012f4d2",
+        "eval-b5add395d2058c7049a1980bc09896e3556062838601a25a": "62d45a0aab2a52b5d5104c8d276043ec4702e1e39a715f3f9849ccdd99b699a1",
+        "eval-b97465d00e5fdfa33288df238a1131442e3f4ecea7a5bdba": "3700f0c1578920a098540da3d396935ccd383def59f678019d6d59e239199f60",
+        "eval-c0e613ea640524b3c97078a9fd7088280c852a24db459d98": "f0d5f67b5c79f34664fd703c252ba679eb02f40d2b988d3c833c5a65c8030774",
+        "eval-c383a04f3d1fa0b5a2f1d5b206438822c3cbf0a302622594": "b7c0b1ab2a01af2e2227763e3207e22036fa7c0f8d64a650783c88b6f0fa211a",
+        "eval-cc1bca84ff8c1de9fec7e1514b22f9f80d19bdb4b5fd0255": "07b33126c29c4cbb5205237be01fd71e0beddec3d012a6465277ba807fa3b7bc",
+        "eval-ecc3e0145be1445a43ed4099902425584af4418987ca39f5": "47a3ccc7cad989be6efcc8b3f9c8f255f33e4b130d6167deb97b0bd6b79ff5fa",
+        "eval-f97d465774e5bf5ac7e257cd766e0c9f0a96b69c5c9a4c61": "5654feebaa4d3c5d30ca65ecddafed41047a3b32d6bcc318511bdc2775e2715d",
+        "eval-f9a8ac8589221ae29e09af32aad59b8c60cddfec620e5caf": "71ae2138dbf1b1b00022d30d9d0f51ccea6abad676803136b0bfed2dd8e85f3d",
+        "eval-ffeadc2726f175b520d2e107e3faf071598ad6fdcbdb34ca": "0a31af85fff83f8ea165bdf804fb727d3f7772b5916c08d0a3d927437b81c0b7"
+      },
+      "training_scope_sha256": "cbd7b6cb539a8b28da65239939082b7a8768f50a32f408b4a28c0123ba531f5e",
+      "validation_comparisons": {
+        "child_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -53.60708699999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -43.36887900000002
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -49.03504399999997
+            }
+          ],
+          "median_improvement": -49.03504399999997,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -23.326797
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -14.455910000000017
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -13.911264999999958
+            }
+          ],
+          "median_improvement": -14.455910000000017,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -64.328983
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -55.780377000000016
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -58.994755999999995
+            }
+          ],
+          "median_improvement": -58.994755999999995,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_parent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -28.82137899999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -20.323081000000002
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -22.643775000000005
+            }
+          ],
+          "median_improvement": -22.643775000000005,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 26.898077999999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 30.70125200000001
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 33.51442500000002
+            }
+          ],
+          "median_improvement": 30.70125200000001,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "fixed_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -14.104107999999997
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -10.623214999999988
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -11.56906600000002
+            }
+          ],
+          "median_improvement": -11.56906600000002,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "incumbent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 30.28028999999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 28.912969000000004
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 35.12377900000001
+            }
+          ],
+          "median_improvement": 30.28028999999998,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "incumbent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -10.721896000000015
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -12.411497999999995
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -9.959712000000025
+            }
+          ],
+          "median_improvement": -10.721896000000015,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -24.785708
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -23.04579800000002
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -26.391268999999966
+            }
+          ],
+          "median_improvement": -24.785708,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 5.49458199999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 5.867170999999985
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 8.732510000000048
+            }
+          ],
+          "median_improvement": 5.867170999999985,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "parent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -35.507604000000015
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -35.457296000000014
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -36.35098099999999
+            }
+          ],
+          "median_improvement": -35.507604000000015,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        }
+      },
+      "validation_receipt_sha256_by_job": {
+        "eval-018e1bb644b0675a29877e9718b7affea948b114ab4da578": "a8c6a411f6650dd2e3789e306d6c117fd7bbef9cef32eb1cd5d45545ff796c55",
+        "eval-04c539079b929ad613de03283a635859120205e9fd587327": "a93763a6013eb41b9ea9529711809e375815656912a5468fdb6e623faf9b491b",
+        "eval-147e49fe89988eb979e0386ded5da340bb63a7754febee8c": "dc9fcbd01da8597f901ec7f84d8768b3e9d54d62a2aa5eccfb204efdb7b39fa8",
+        "eval-3c28503dec16949233517ec759a1f42c5b43f737e450d58b": "7d893e37864dcd7795f3bd157e30d5adb76e971d4cf11af42f52a0b497a82b3f",
+        "eval-40bd96593918f3b80d0e91359f86594ceb654604c8719be1": "7813989f0014a82386276b4830d2f30dc2b10a27cc5054382b89960b21b94357",
+        "eval-6e311597d6e27acf1d04e503c8dd0166c1a19033133284a8": "21c3b044c567cd9149c808c16c38a0c39cd847c43156dde48a67f3e972150cdd",
+        "eval-71db1abcd005d65ec3cbff617aeb671888a42cf37cc43cf4": "7fa2cef865d38a6b94a4d321b375b01f8e39f06a91eb9b79d412a7609478d8e8",
+        "eval-77e906b52dcfb4f0fbf04678e6cfc16c7fdbdab3204acdbc": "59f843e122364737508d8854259d1f6348814fb67d0b8aa7de511eea32bfc1d0",
+        "eval-b25534a5d4899b8e070c609f24e1fda4e2626f5445bdab93": "18cc30d99d253a797581b3b91a9bcd5c31189b8f6c5b75462b1cad5b263fffef",
+        "eval-b902522dd43c34674c7cc86ae3164da0f7e085c8d6a1997d": "05faeed7f90599cc4fbb15cc652f3204abbb2f434a7a88fb12ec23083f36d2eb",
+        "eval-c2cc544390b7e79f840a9518636d1b19e19b89590a4bf279": "f0984e2664422872ee4448172567f8799894060f911fd36abb1fdb7e546471cc",
+        "eval-cce21691e15eea89b8eb41672cac81f08478e49b7e2b0d02": "a70dc0c27946fdeafa893c5a9e6b58ef56fc57c7a00bd348c29928a7909396f8",
+        "eval-cd7f6fb91029c2c11caca3ecc02af41b2a4b6c02cab76364": "0571dcdd69607a6785b9cf17882cc3f06c6871e98c834e05c6e921d57bec7948",
+        "eval-d28a3bdb78c1648b2ea56044324fdee449ce4b0491182abf": "6b84f8fbf92f0d68ad9b3716d870eb2e8aeedeca78335f43b2a723ed054a7c31",
+        "eval-d53da2f91ae7da266795098b9b0f5affac09ff34da743c24": "923f33699b706e878d8e6f556f26dfa3ec130e1343b189389362d7a2cd56813f",
+        "eval-d8c045f2cc8cd1701b7c19beadb33824c69c37fb1d300812": "42a3a0d3b866b5497385327b682fdf39ebde112766b432104e3ed97a09c5de44",
+        "eval-d9e89f3604ef73ebf5ede99b22ca1b97b70f5a1c28a2b4aa": "4d9996fae9773f5aae576069e5b8aaf0457a0cc830e0bb2cfab3d8cd0265fad8",
+        "eval-e8009e0f68c3f58074dab3f79e26e5fe6875e2285432ef7e": "4ff74b262d5d937319ecf69b29d222d1e5fc26149089e5a56d3ee2d540f95262"
+      },
+      "verified_train_case_signatures": {
+        "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+        "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+        "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+        "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+      },
+      "verified_validation_case_signatures": {
+        "37a2db0441267591a7a36b06319ab6894eed133d2c622a76ebf53c6d05da26d7": "f69f6d39c0dfafbb6ddf20d666e9d4dc322904c92cc0aa61b7350a5a49aaeef5",
+        "649cd554c81ac8c09c81d248122a6f154182898ceca2593560cafd9b8523b96f": "a80708cb887875567c7d91d46891de779aa649e02582fec4d87b9411ed5d537c",
+        "94d99aa3ae996b5479a082385b7ca1048c195796fa841d94177487f01d298cbf": "56a3e2afc66b4284cf2a953eee8d7e678862c04a28b68ae043f715f655dbbd44",
+        "a260a61c3bdfac42bb59bcf276ec4ae2ae23e4e086ccb21f6008e441aa9ee678": "4a7aca6a473ff3098fd230778e2a7d96e97cf86db670c32852c9826d5f9ff8cb"
+      }
+    },
+    {
+      "active_after": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "decision": "rejected",
+      "fresh_program_counts_by_exact_identity": {
+        "032c739626fda0097479d9fd6f82b5b5ab9f4cb90ba59dc6368b7fcdf381adc9": 1,
+        "2cee60e59fc841391c9ed575e89ab6fc753b5017ff3b12a537269068f53bfd2c": 1,
+        "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526": 1,
+        "7ed2f6942d11852f0acb130f876b9e84576d33858b402168415e57846dd580e1": 1,
+        "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231": 1,
+        "a067b97cf3be1340f9ce316adca044d8e48cbdb64f73a1be73298ad429850bdf": 1,
+        "e3400f94569e9e5ad32c934b4fa17db6029e179af5613bcfa55a1c8a78f1b7b5": 1,
+        "ebbdbc48407e65a1927e6392fded257f4c5352c03b8d4b49678421b908388595": 1
+      },
+      "previous_admission_reuse": null,
+      "reason": "insufficient_stable_paired_improvement_vs_parent",
+      "round": 1,
+      "selected": {
+        "admitted_output": {
+          "effect_sha256": "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231",
+          "excluded_infeasible_proposals": [
+            "r0001/parent/00"
+          ],
+          "frontier_effects": [
+            "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231"
+          ],
+          "proposal_id": "r0001/parent/01",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        },
+        "child": {
+          "effect_sha256": "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526",
+          "excluded_infeasible_proposals": [
+            "r0001/child/01"
+          ],
+          "frontier_effects": [
+            "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526"
+          ],
+          "proposal_id": "r0001/child/00",
+          "source_sha256": "7ef5507ac6345f80f0ea82b3a747fb39d67d767cbecae3c42ed1eb51012dcd62",
+          "status": "selected"
+        },
+        "fixed": {
+          "effect_sha256": "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6",
+          "excluded_infeasible_proposals": [],
+          "frontier_effects": [
+            "032c739626fda0097479d9fd6f82b5b5ab9f4cb90ba59dc6368b7fcdf381adc9",
+            "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6"
+          ],
+          "proposal_id": "r0000/fixed-a/00",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        },
+        "manager_best": {
+          "effect_sha256": "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526",
+          "excluded_infeasible_proposals": [
+            "r0001/child/01",
+            "r0001/parent/00"
+          ],
+          "frontier_effects": [
+            "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526"
+          ],
+          "proposal_id": "r0001/child/00",
+          "source_sha256": "7ef5507ac6345f80f0ea82b3a747fb39d67d767cbecae3c42ed1eb51012dcd62",
+          "status": "selected"
+        },
+        "parent": {
+          "effect_sha256": "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231",
+          "excluded_infeasible_proposals": [
+            "r0001/parent/00"
+          ],
+          "frontier_effects": [
+            "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231"
+          ],
+          "proposal_id": "r0001/parent/01",
+          "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+          "status": "selected"
+        }
+      },
+      "structural_behavior": {
+        "build_meta_prompt": {
+          "ast_changed": true,
+          "changed_fields_by_slot": {
+            "0": [
+              "evidence",
+              "mode"
+            ]
+          }
+        },
+        "build_prompt": {
+          "ast_changed": true,
+          "changed_fields_by_slot": {
+            "0": [
+              "evidence"
+            ],
+            "1": [
+              "evidence",
+              "rule"
+            ]
+          }
+        }
+      },
+      "training_receipt_sha256_by_job": {
+        "eval-0f6d2ebb01859177abe5a16c0015ad90e6b8a7f6983a3e58": "6371e0ed34caf6f34946706a473423ac5e0f8fdabca4e6456cd23e90fce00c79",
+        "eval-1e6a0c0b369c2318e62bc04343495d59a3a5dcfee0723636": "fb8cf9b49e379c61a3bbf7146431e7daab068e81a346d6dcf96dfcc994a1e7e4",
+        "eval-30735c386cd81d9d7c59ec4d59fa6ad2c2380b8c860f30fe": "5321381a9ff8f972de1266fd471a25f5b00a4cb2c8619f66c116a636878279b6",
+        "eval-35787be649405e5309de1bc62455b13a73a14659bac3edab": "99e8833cdc607cb1a4554e2ee479a2e48765db0b0c84bf9f61fe743906853616",
+        "eval-41ec0cc8c85bbcaa435bc97ca8357ec63abfcafc1a48fe54": "e0696589c51923106c28561a149f1a4974610335b6eb6e74da3686e258d14735",
+        "eval-49729bfa691688d5df447e3f88d2dc755af8a93e2ffaddc0": "2489f0a8b7d3a840ffacbd9b69df215c0cd7a18472ad27e4e9f045a5a4a6094d",
+        "eval-4a12008ae8245c07cf3540204702e00b3eadecbd6d269a49": "b941f7889d5236715cb7832bd4bef6f5351734d24de199586254c4553ab55233",
+        "eval-627fdad96dee567cb9ae32126dddbe1c96ce90df59303eed": "e4862a1e842d891e3eff626914923729fcdb11e5e8fc8bfb77b3c8ed532257d6",
+        "eval-6428ef48d885df498d961678c9946214f27985312e7be8ec": "c2e0158170308e5776bcac9fcbf284f36c496ca002aba79f6a8fbd0069d05b95",
+        "eval-7d3c2f1a42bf6f4cfb699a7239be2e7eac65e9aeb64c2410": "795ea7a2466911fc3293de4546496ba236af35a0da86e98971eac5b42ab39f99",
+        "eval-81cf6faca089e0a5e1abfb56abea4845cc19cb595bfddb88": "d9e37e8f354073d83be44b89ee800b59f3df998b8e31e6aa067d766e03185f10",
+        "eval-84af68cc8887fc117426e503f52c74a9c7782128dac77deb": "13788ab52802e9368a185eb7f3a5e03b5d7c177d814367ba1bae77c85b3014f2",
+        "eval-8c98e40e6c81de3284510a57913a1ffa2e9823fe867215f6": "1b646710dc70993258c8f12d430b700868c6dc54eac68e74e0ffe7b6a670d7d4",
+        "eval-8e8ac78e9b39f393a8caa0aac90a8e8c9a9e3ff35aa725cd": "3b00a739d564801bf28a57bd16497b272857fcbaa887d739299df9dca6a5aab9",
+        "eval-951e9eec07e241f45de640df61e40b403b80c65d7a3a2631": "e35a4ed4ea5cbace98b6c25833263484487a5cc1ea61ab3d12fd474c473021d4",
+        "eval-9f7ac87d3b37e3e77c9a93594b4f25e9675e2875607b0446": "1a7f1cefc0eadabcb0d3fdde2f585d1164b5d58212af2d726e21ba2257fedf38",
+        "eval-ac48fbf97396dcd22681ccd94cb9d160ed198940f1242652": "404cc5d2a72ec54d81492878546afe12ac87d54eadf03fc029a73cfc5a78cf71",
+        "eval-d1def146b1163f22a14d588d7d3aa61ea42c9dabe655357b": "978a349ac65508bb336b7a9c797633607eeee6fa1c6d511767dc6dc30c4f2616",
+        "eval-d47a4dcde9c47716fb6d6e56a03969da9a426f4cf8a58607": "1e05ea614b626eb8f54919ac8c37e88703ddf7eec82b6df141d8f406cc6d6ea3",
+        "eval-d798d897d374b68c070373b71038e83a40bf3bb94ae68f44": "71457aa8383f31d40ba2612318fc44c89b29701cda33eca32d809b99ab27bf44",
+        "eval-df723c7ee56fd0685b1190639877f8e8451fac9e6a617f94": "106ed9a82d61be20091969d7494688ec42eed9ab42243c305e1783b669c48384",
+        "eval-e23a28b0733e60af814af4b39cbf2bdaa397385ae119f695": "e317113c7d491ed8942b005d9833205bddfe13b843a5a66ceefc29952c1cf478",
+        "eval-f8f72ca3d9315120a2a119dc8519836065efa8d9472154a6": "81ef5d5b30d597784ddfc445396cf29d07d20ee0a6233e380168417825f61ba9",
+        "eval-fad4992798d3937a8d121b8f872458c7261ba29844b2bbb9": "06da338b7b4871e78bfb4b3a12df88a2312f6fc582ddb7eb7ad7dec82fd0e024"
+      },
+      "training_scope_sha256": "b5eaa5847cc83ffaf125d699c1437040e5e760e81f6ddb391647fb96a741e0a1",
+      "validation_comparisons": {
+        "child_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 12.180772999999988
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 8.461917999999969
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 9.675568999999996
+            }
+          ],
+          "median_improvement": 9.675568999999996,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "child_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 17.494440999999995
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 19.17454299999997
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 16.52222599999999
+            }
+          ],
+          "median_improvement": 17.494440999999995,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "child_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -24.99416400000004
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -27.099928000000034
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -28.520487000000003
+            }
+          ],
+          "median_improvement": -27.099928000000034,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "child_vs_parent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -2.2528200000000425
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -2.968272000000013
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -2.0888239999999882
+            }
+          ],
+          "median_improvement": -2.2528200000000425,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "fixed_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 30.211543000000034
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 31.234195
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 30.13504999999998
+            }
+          ],
+          "median_improvement": 30.211543000000034,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "fixed_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -12.277062
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -15.040276000000006
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -14.907663000000014
+            }
+          ],
+          "median_improvement": -14.907663000000014,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "incumbent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 5.313668000000007
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 10.712625000000003
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 6.846656999999993
+            }
+          ],
+          "median_improvement": 6.846656999999993,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "incumbent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -37.17493700000003
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -35.561846
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -38.196056
+            }
+          ],
+          "median_improvement": -37.17493700000003,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        },
+        "parent_vs_incumbent": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 14.43359300000003
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 11.430189999999982
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 11.764392999999984
+            }
+          ],
+          "median_improvement": 11.764392999999984,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "parent_vs_manual": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": 19.747261000000037
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": 22.142814999999985
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": 18.611049999999977
+            }
+          ],
+          "median_improvement": 19.747261000000037,
+          "passed": true,
+          "reason": "stable_gain"
+        },
+        "parent_vs_native": {
+          "deltas": [
+            {
+              "block_id": "gpu3-supp-validation-01",
+              "reference_minus_candidate": -22.741343999999998
+            },
+            {
+              "block_id": "gpu3-supp-validation-02",
+              "reference_minus_candidate": -24.13165600000002
+            },
+            {
+              "block_id": "gpu3-supp-validation-03",
+              "reference_minus_candidate": -26.431663000000015
+            }
+          ],
+          "median_improvement": -24.13165600000002,
+          "passed": false,
+          "reason": "insufficient_stable_gain"
+        }
+      },
+      "validation_receipt_sha256_by_job": {
+        "eval-1cfa6d3d3ef523f7a734b5c34a6c648ee5c10520bc685c1a": "dfce61aa9e1843d517c804a8b28451b8114ef4f96dae0ec94d575a1406054c89",
+        "eval-2642c5c4e6bf36a46c0e313d3bdeea34d1d82c8ace786086": "05d46bf33a3c0e5fb59aa91e72ec0434b9e3d5c333e34582a4bcce8e0551e51b",
+        "eval-31604ff441c6a5fafbf06f393ae712210e29098a4b6ddfef": "336144704158ddd878d4b9d597d70cd778ae5fac16dd1887d774ac7cf7fe10be",
+        "eval-3e209fd5c88b4326ad1cea618f221f8b1a7f09dce8f0d647": "2ed6bfe5fd019cfebb81c6db10ea2ad7d4cfe1a67ddb766b0691fbe5b894a427",
+        "eval-54155b7e81a6dab51a0877f62dcf69f9a05c558cf977da11": "f71c0c97f43f7985a3d6465c98c1d22198be31b6defed26056577f3027f43f16",
+        "eval-602419f2da1ccebddb082cc4c7d013d8da3bfcd89ce41ba6": "ebb6d44a61c0ae1b6c66e57326fe7246a0a09694a730d9477e36be466c6b973f",
+        "eval-624ab2bcdd13ffddf5b349a00e42b2abaa6f4c0bcc8eebe2": "6da2e199bfd8be4a9c67d8d1e67911ab93d63c76d26ee9d340ff08f593c0d54c",
+        "eval-6392c444b3ce3490a2749287c6ad4ec1ba953e1880eaa447": "8c418cc5605b3cdbd84a7c791dc9a2e06797e77086972a9ae1ee79d33d75a5b5",
+        "eval-6e6f67a97c071888017fa89dc64998ab9801306ff04d2565": "704e9f02ecc3c7495cf8a26a05ec8a9820bf2e9867b4e8ba6fdac0eb0d13defc",
+        "eval-7f411b041f912fa5956d71692b72cea24d208d5edff5f276": "df2a0808a22ad4429370e175a345154b5a3e06dcba4aa0f794adba79020f94ab",
+        "eval-833aa883f175f903989ca98e3ef8963df05023e76b4a48e9": "da3a61a5daa2003bb1ddb45e2090ba731c3ebbe77ef084741db7ea3648a8e9de",
+        "eval-86c3d7e7723c43f16b467cf613594843b580035a5301912c": "8bb9559e0c3fe0e7bcff7ab9864b28d18f61d9fac31fbf4331408f49fa1c2c4d",
+        "eval-8851340227d599b2246026b63d8bd1d70185b557007beedc": "6848167e53261b64d83d5bf47ade98e94b2b2b12df18e660722fcd4171b6dfcb",
+        "eval-937d8363e70ae9a88a164ea05b3762f8d95d92732de086d7": "acbeb06a11c011f12f99bb9fb4bdf007a93c6979289c63329092cd4df4295943",
+        "eval-9e2fcea91d23ad069f265e75896a78cd4d232f936095fbcd": "bb2bfa1ac0a0f83ab45b99e577835ef6bb8643dd7e8c9db77f18444e5383db52",
+        "eval-ad198bc1e22226138ecdec105cbcd2f9a316f2d6b1d7ee40": "401c2bada294ae03b9434255f9bad34d5dd49275420a65d41ecb15d47ecf4416",
+        "eval-c3fc1b7b86a3ed5fcf1633556479e6ac20bcbff3461149b5": "2c75a0996d4954729948acc0fa69a6bbdc5a3d403bd8b8bed4bebd090107e41f",
+        "eval-deeb9982ae4781a92eaea198e1c6dff343cf97c80f1e7736": "8ea097e5c2dabac609608d68f152bde11af2590c39957ac1185a403fae1863c4"
+      },
+      "verified_train_case_signatures": {
+        "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a": "48f893ac3e4e5415f3bb576f73264f9fd5c25df1726c081abc1ab9d7dba8e12f",
+        "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250": "13a1dfc1aec8820d30323afa835f571e2e3d0b383383f9dc8ea9755d7ebc59f4",
+        "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f": "d22ffccea6291c2171e9db26c73448db69410ea62a0da1a02821580ad20e2d8a",
+        "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65": "8c94b063a0f3a733120b71ccd76ac4ee1a49f4918017ea3eef2951490945b9a6"
+      },
+      "verified_validation_case_signatures": {
+        "37a2db0441267591a7a36b06319ab6894eed133d2c622a76ebf53c6d05da26d7": "f69f6d39c0dfafbb6ddf20d666e9d4dc322904c92cc0aa61b7350a5a49aaeef5",
+        "649cd554c81ac8c09c81d248122a6f154182898ceca2593560cafd9b8523b96f": "a80708cb887875567c7d91d46891de779aa649e02582fec4d87b9411ed5d537c",
+        "94d99aa3ae996b5479a082385b7ca1048c195796fa841d94177487f01d298cbf": "56a3e2afc66b4284cf2a953eee8d7e678862c04a28b68ae043f715f655dbbd44",
+        "a260a61c3bdfac42bb59bcf276ec4ae2ae23e4e086ccb21f6008e441aa9ee678": "4a7aca6a473ff3098fd230778e2a7d96e97cf86db670c32852c9826d5f9ff8cb"
+      }
+    }
+  ],
+  "schema": 1,
+  "scope": "Completed discovery rounds only. API projection covers status, source hashes, system digest and selection contract, without model responses or held-out rows.",
+  "source_manifest_sha256": "6fc56c59daa4ed0deea1dfd2ff11ea0efe4b9670fd83b6270eb27a195463f650",
+  "training_receipt_count": 45
+}

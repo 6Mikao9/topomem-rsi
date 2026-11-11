@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "case_sha256": "0870695ef60ce1dd7d861d560f13dc815b7fe9f878b89266b7fcda3a90a42d45",
+      "compute_node": "gpu0",
+      "original_case_sha256": "afde1e6455211fbbe8d739d0db1640806b93cb7497730f97a0df2fe34343b1f2",
+      "scenario": "agent_tools",
+      "split": "train"
+    },
+    {
+      "case_sha256": "278f4e35ef9e21a2ae45f4a972058fa02588deafe32cd9379c80995a0537891a",
+      "compute_node": "gpu0",
+      "original_case_sha256": "3ffbf0fc78ee733790c25f129d5ad2a224b4c5a00ce37fb6095009d87254da24",
+      "scenario": "agent_tools",
+      "split": "validation"
+    },
+    {
+      "case_sha256": "77475fe619824d0aa478fb707a4e04147fcd3fbba973327a92a8d8881f730c20",
+      "compute_node": "gpu0",
+      "original_case_sha256": "5f980c5cbaa7ef2aae369b105e951013c04726f1d1355c42cad87c61948235c2",
+      "scenario": "agent_tools",
+      "split": "test"
+    },
+    {
+      "case_sha256": "a6d9a0356ba31ffc135b646fbacf2bc59c92a2824efcebba9bca0060ad2e9ebb",
+      "compute_node": "gpu1",
+      "original_case_sha256": "64a9c90e6d0fa8e65ee70b7d7601ee8b85700eb245c193f26d116ca144e98aed",
+      "scenario": "chatbot_growth",
+      "split": "train"
+    },
+    {
+      "case_sha256": "439fb6ba5564b7e027b2fa95299e8695c61f24f73b14e6224ec8b007940850ea",
+      "compute_node": "gpu1",
+      "original_case_sha256": "2a9dc21ee45b1703b79c48400354e4338a1401e74cef3a627991a57766484406",
+      "scenario": "chatbot_growth",
+      "split": "validation"
+    },
+    {
+      "case_sha256": "5daf0f8f2aac8c360dc33d4a26ed505aca1697ebaf9ed57a5676649dc337ae8f",
+      "compute_node": "gpu1",
+      "original_case_sha256": "e2c11099ee4fda3447bd0f3d9642025387cdb282cb90916b9591f03e5a66dd97",
+      "scenario": "chatbot_growth",
+      "split": "test"
+    },
+    {
+      "case_sha256": "3261b0aa5d6ff82dc1321c67e3273d59beb7a94957d2996c9402eb6957743b60",
+      "compute_node": "gpu0",
+      "original_case_sha256": "f7f08e6555c9c269348f69b757dfb557a9e6d830ae591fe5835268fe9821d64b",
+      "scenario": "long_document_qa",
+      "split": "train"
+    },
+    {
+      "case_sha256": "e72dad7e822f04e30b710cb02b82f6c50303dd7aedec967a3fc19a889a57024c",
+      "compute_node": "gpu0",
+      "original_case_sha256": "45ff6886ac35a04f06636f4aab14089b7c56d012edf0fd68c84f0ceb741ff561",
+      "scenario": "long_document_qa",
+      "split": "validation"
+    },
+    {
+      "case_sha256": "86e12bbcf8cfe1ee865a17382779cd6780a7a9f475f5459ed3154329593b74aa",
+      "compute_node": "gpu0",
+      "original_case_sha256": "1ca5a6a87a4cd50021ee9f54dfe6980082e3f01a6bda2add50074abda01fb26f",
+      "scenario": "long_document_qa",
+      "split": "test"
+    },
+    {
+      "case_sha256": "26a80e2c7d2d9b0e5e09f1159ffc57710e4a807f6fabeb134901e4be7fde4796",
+      "compute_node": "gpu1",
+      "original_case_sha256": "7f18a416921adeaf24159dc5bedf176d2271f741d5b0f3e1b07f6fdb3e270a20",
+      "scenario": "rollout_cow",
+      "split": "train"
+    },
+    {
+      "case_sha256": "3a2b3403f6cbbf164ae5d49b03705d507ce4e43e035909b8b415ac6b50064b76",
+      "compute_node": "gpu1",
+      "original_case_sha256": "c5bb75f67005b2d02f6fb720372414a74910c5c0f0510fd4f8f17b2f0cc9d0d7",
+      "scenario": "rollout_cow",
+      "split": "validation"
+    },
+    {
+      "case_sha256": "90a12841c03c5bd5ff799da7d13e9e13421d1afec9d51c7a3ac267c9e73050b7",
+      "compute_node": "gpu1",
+      "original_case_sha256": "0376c254f707edb1bc4de65c44a564910eec67f98810f3e133da5df2efced18b",
+      "scenario": "rollout_cow",
+      "split": "test"
+    }
+  ],
+  "controller_change": "repeated training selection and separate manager/source provenance; human engineering",
+  "created_utc": "2026-11-11T05:32:28.090844+00:00",
+  "fixed_inputs": [
+    "sparse selection",
+    "event order",
+    "batching",
+    "rank placement",
+    "budgets",
+    "topology"
+  ],
+  "margin_basis": "fixed engineering materiality threshold, not inferred confidence bound",
+  "predeclared_margin_ms": 2.0,
+  "preparation_script_sha256": "2711ae64b179dc344fc742e75fd631d076de21754288f7c1349c787e75db4e2d",
+  "private_config_sha256": "6178f07b9ad1ba55abf51f8864556fe1ea776180b1c119b82a45ff982e2516a3",
+  "qualification_order": [
+    "native-a",
+    "initial",
+    "manual",
+    "native-b"
+  ],
+  "schema": 1,
+  "scope": "Engineering reassessment on already-public corpus, not an independent unseen-data claim.",
+  "worker_source_manifest_sha256": "877873960cd4da3c332891495fdc86d30fa59725b879d0fcffccb81fdef0c767"
+}

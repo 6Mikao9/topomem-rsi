@@ -1,0 +1,32 @@
+{
+  "historical_artifact_manifest_sha256": "4d9e36cd23c2206135f950839a007405981ca24e6daa186968bb9c2671f4ef38",
+  "historical_job_ids": [
+    "qualification-v13-19789ad0cd6c-b0-native",
+    "qualification-v13-19789ad0cd6c-b0-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b0-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b1-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b1-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b1-native",
+    "qualification-v13-19789ad0cd6c-b2-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b2-native",
+    "qualification-v13-19789ad0cd6c-b2-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b3-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b3-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b3-native",
+    "qualification-v13-19789ad0cd6c-b4-native",
+    "qualification-v13-19789ad0cd6c-b4-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b4-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b5-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b5-native",
+    "qualification-v13-19789ad0cd6c-b5-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b6-native",
+    "qualification-v13-19789ad0cd6c-b6-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b6-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b7-lru-equivalent-v13",
+    "qualification-v13-19789ad0cd6c-b7-lru-equivalent-v11",
+    "qualification-v13-19789ad0cd6c-b7-native"
+  ],
+  "schema": 1,
+  "scope": "Independent same-IR lowering experiment; none of these jobs are current controller effects.",
+  "source_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d"
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ws\.scratch\topomem-v41-controller-source\rsi_memory\cuda_v4.py", line 95, in <module>
+    main()
+  File "D:\ws\.scratch\topomem-v41-controller-source\rsi_memory\cuda_v4.py", line 84, in main
+    summary = {"status": "frozen", "rounds": controller.freeze(allow_partial=args.allow_partial)["rounds"]}
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ws\.scratch\topomem-v41-controller-source\rsi_memory\topology_rsi_v4.py", line 450, in freeze
+    raise ValueError("configured rounds are incomplete; explicitly allow a partial freeze")
+ValueError: configured rounds are incomplete; explicitly allow a partial freeze

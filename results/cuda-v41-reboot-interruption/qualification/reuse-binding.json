@@ -1,0 +1,11 @@
+{
+  "original_public_artifact_manifest_sha256": "b5e2d70cdefc441a4c6fa30eaa7aaadefe1933bed47081779cf491a403bc74d5",
+  "reused_job_ids": [
+    "eval-3c0b33cb1bb94f9a0af6379015e1e9dcd147229a02583e6c",
+    "eval-0b7bd1cd6132b5c513b0c7ab7a0ef898773fb06b4271ac91",
+    "eval-1721f13c97e8c2c44bcbc530478e796f0080b2df5efbf613",
+    "eval-1f2f019a380384a43f8e3a34bba47ff678f1e9b060fa0c07"
+  ],
+  "schema": 1,
+  "scope": "same public training geometry, GPU allocation, worker and initial policies; earlier physical jobs"
+}

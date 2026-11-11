@@ -1,0 +1,1133 @@
+{
+  "analysis": "Compare per-block case-median sums and per-case medians. Same-IR v11/v13 requires ordered actions, lifecycle, bytes, capacity, selected bytes, outputs and timed signatures to match. Diagnostic producer work must change from generic single-candidate evaluation to the proved fast path; all other policy counts must match. Native is an independent reference.",
+  "arms": {
+    "lru-equivalent-v11": {
+      "arm": "generated",
+      "program": {
+        "kind": "kv_memory_program",
+        "rules": [
+          {
+            "action": "place",
+            "event": "allocate",
+            "score": {
+              "name": "route_transfer_ns",
+              "op": "feature"
+            },
+            "when": {
+              "name": "target_is_host",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "replicate",
+            "event": "allocate",
+            "score": {
+              "op": "const",
+              "value": 1.0
+            },
+            "when": {
+              "name": "target_is_local",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "replicate",
+            "event": "access",
+            "score": {
+              "name": "route_transfer_ns",
+              "op": "feature"
+            },
+            "when": {
+              "name": "target_is_local",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "evict",
+            "event": "allocate",
+            "score": {
+              "name": "last_use_step",
+              "op": "feature"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "evict",
+            "event": "access",
+            "score": {
+              "name": "last_use_step",
+              "op": "feature"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "reclaim",
+            "event": "release",
+            "score": {
+              "op": "const",
+              "value": 1.0
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          }
+        ],
+        "schema": 1
+      },
+      "source": "v11"
+    },
+    "lru-equivalent-v13": {
+      "arm": "generated",
+      "program": {
+        "kind": "kv_memory_program",
+        "rules": [
+          {
+            "action": "place",
+            "event": "allocate",
+            "score": {
+              "name": "route_transfer_ns",
+              "op": "feature"
+            },
+            "when": {
+              "name": "target_is_host",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "replicate",
+            "event": "allocate",
+            "score": {
+              "op": "const",
+              "value": 1.0
+            },
+            "when": {
+              "name": "target_is_local",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "replicate",
+            "event": "access",
+            "score": {
+              "name": "route_transfer_ns",
+              "op": "feature"
+            },
+            "when": {
+              "name": "target_is_local",
+              "op": "feature"
+            }
+          },
+          {
+            "action": "evict",
+            "event": "allocate",
+            "score": {
+              "name": "last_use_step",
+              "op": "feature"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "evict",
+            "event": "access",
+            "score": {
+              "name": "last_use_step",
+              "op": "feature"
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          },
+          {
+            "action": "reclaim",
+            "event": "release",
+            "score": {
+              "op": "const",
+              "value": 1.0
+            },
+            "when": {
+              "op": "const",
+              "value": 1.0
+            }
+          }
+        ],
+        "schema": 1
+      },
+      "source": "v13"
+    },
+    "native": {
+      "arm": "native_lru",
+      "program": null,
+      "source": "v11"
+    }
+  },
+  "case_sha256": {
+    "agent-water-inspection": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+    "chatbot-trip-planning": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+    "long-document-estuary-qa": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+    "rollout-bridge-options": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f"
+  },
+  "gpu_indices": [
+    3
+  ],
+  "host_cpu_affinity": [
+    64
+  ],
+  "kind": "v13_single_gpu3_same_producer_retain_ir_engineering",
+  "parent_plan_sha256": "8da4c6d303f22133e5084f47dd39a0cc970d26f3faaa4b8375a1f93c63764390",
+  "payload": {
+    "arm": "native_lru",
+    "cases": [
+      {
+        "compile": {
+          "block_rows": 16,
+          "head_dim": 64,
+          "layers": 2,
+          "seed": 101,
+          "text_bytes_per_row": 2,
+          "top_k": 4
+        },
+        "compute_node": "gpu0",
+        "device_map": {
+          "gpu0": 0
+        },
+        "name": "agent-water-inspection",
+        "target": {
+          "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+          "head_dim": 64,
+          "host_cpu_affinity": [
+            64
+          ],
+          "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+          "scope": "public-training-geometry-qualification-only",
+          "torch_version": "2.13.0+cu130"
+        },
+        "topology": {
+          "bottlenecks": [],
+          "links": [
+            {
+              "bandwidth_bytes_per_s": 29703883288,
+              "bottlenecks": [],
+              "dst": "gpu0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0-gpu0",
+              "latency_ns": 6347,
+              "src": "host0",
+              "transport": "pinned_host"
+            },
+            {
+              "bandwidth_bytes_per_s": 56395041789,
+              "bottlenecks": [],
+              "dst": "host0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0-host0",
+              "latency_ns": 6106,
+              "src": "gpu0",
+              "transport": "pinned_host"
+            }
+          ],
+          "nodes": [
+            {
+              "capacity_bytes": 131072,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0",
+              "kind": "gpu",
+              "physical_bytes": 33670758400
+            },
+            {
+              "capacity_bytes": 33554432,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0",
+              "kind": "host"
+            }
+          ],
+          "schema": 1
+        },
+        "workload": {
+          "events": [
+            {
+              "at_ns": 0,
+              "op": "open",
+              "session": "agent"
+            },
+            {
+              "at_ns": 50000000,
+              "op": "append",
+              "segment": "system",
+              "session": "agent"
+            },
+            {
+              "at_ns": 100000000,
+              "op": "append",
+              "segment": "user",
+              "session": "agent"
+            },
+            {
+              "at_ns": 150000000,
+              "max_new_tokens": 24,
+              "op": "infer",
+              "select_rows": [
+                17,
+                0,
+                56
+              ],
+              "session": "agent"
+            },
+            {
+              "at_ns": 200000000,
+              "op": "append",
+              "segment": "lookup",
+              "session": "agent"
+            },
+            {
+              "at_ns": 250000000,
+              "op": "append",
+              "segment": "window",
+              "session": "agent"
+            },
+            {
+              "at_ns": 300000000,
+              "max_new_tokens": 24,
+              "op": "infer",
+              "select_rows": [
+                148,
+                0,
+                56
+              ],
+              "session": "agent"
+            },
+            {
+              "at_ns": 350000000,
+              "op": "append",
+              "segment": "access",
+              "session": "agent"
+            },
+            {
+              "at_ns": 400000000,
+              "op": "append",
+              "segment": "code",
+              "session": "agent"
+            },
+            {
+              "at_ns": 450000000,
+              "max_new_tokens": 32,
+              "op": "infer",
+              "select_rows": [
+                285,
+                148,
+                56,
+                0
+              ],
+              "session": "agent"
+            },
+            {
+              "at_ns": 500000000,
+              "op": "close",
+              "session": "agent"
+            }
+          ],
+          "kind": "agent_tools",
+          "name": "agent-water-inspection",
+          "page_rows": 32,
+          "schema": 1,
+          "segments": [
+            {
+              "id": "system",
+              "role": "system",
+              "text": "You are the field operations assistant. Use only recorded tool evidence.\n"
+            },
+            {
+              "id": "user",
+              "role": "user",
+              "text": "Find the east reservoir inspection window and the access code.\n"
+            },
+            {
+              "call_id": "calendar-1",
+              "id": "lookup",
+              "role": "tool_call",
+              "text": "{\"name\":\"inspection_calendar\",\"station\":\"east\"}\n"
+            },
+            {
+              "call_id": "calendar-1",
+              "id": "window",
+              "role": "tool_result",
+              "text": "{\"day\":\"Tuesday\",\"window\":\"09:40-10:10\",\"crew\":\"Delta\"}\n"
+            },
+            {
+              "call_id": "access-2",
+              "id": "access",
+              "role": "tool_call",
+              "text": "{\"name\":\"access_register\",\"crew\":\"Delta\"}\n"
+            },
+            {
+              "call_id": "access-2",
+              "id": "code",
+              "role": "tool_result",
+              "text": "{\"gate\":\"North\",\"temporary_code\":\"EAST-17\",\"valid_until\":\"10:20\"}\n"
+            }
+          ],
+          "source": {
+            "content_sha256": "5cb489eec9c6c64cc2cbe5655a1e75fc3023139cef0cb6c0e8820dba6380a161",
+            "kind": "authored_fixture",
+            "license": "CC0-1.0",
+            "locator": "examples/workloads/agent-water-inspection.json",
+            "revision": "fixture-v1"
+          },
+          "task": {}
+        }
+      },
+      {
+        "compile": {
+          "block_rows": 16,
+          "head_dim": 64,
+          "layers": 2,
+          "seed": 101,
+          "text_bytes_per_row": 2,
+          "top_k": 4
+        },
+        "compute_node": "gpu0",
+        "device_map": {
+          "gpu0": 0
+        },
+        "name": "chatbot-trip-planning",
+        "target": {
+          "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+          "head_dim": 64,
+          "host_cpu_affinity": [
+            64
+          ],
+          "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+          "scope": "public-training-geometry-qualification-only",
+          "torch_version": "2.13.0+cu130"
+        },
+        "topology": {
+          "bottlenecks": [],
+          "links": [
+            {
+              "bandwidth_bytes_per_s": 29703883288,
+              "bottlenecks": [],
+              "dst": "gpu0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0-gpu0",
+              "latency_ns": 6347,
+              "src": "host0",
+              "transport": "pinned_host"
+            },
+            {
+              "bandwidth_bytes_per_s": 56395041789,
+              "bottlenecks": [],
+              "dst": "host0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0-host0",
+              "latency_ns": 6106,
+              "src": "gpu0",
+              "transport": "pinned_host"
+            }
+          ],
+          "nodes": [
+            {
+              "capacity_bytes": 131072,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0",
+              "kind": "gpu",
+              "physical_bytes": 33670758400
+            },
+            {
+              "capacity_bytes": 33554432,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0",
+              "kind": "host"
+            }
+          ],
+          "schema": 1
+        },
+        "workload": {
+          "events": [
+            {
+              "at_ns": 0,
+              "op": "open",
+              "session": "chat"
+            },
+            {
+              "at_ns": 50000000,
+              "op": "append",
+              "segment": "system",
+              "session": "chat"
+            },
+            {
+              "at_ns": 100000000,
+              "op": "append",
+              "segment": "turn-one",
+              "session": "chat"
+            },
+            {
+              "at_ns": 150000000,
+              "max_new_tokens": 32,
+              "op": "infer",
+              "select_rows": [
+                70,
+                0,
+                23
+              ],
+              "session": "chat"
+            },
+            {
+              "at_ns": 200000000,
+              "op": "append",
+              "segment": "reply-one",
+              "session": "chat"
+            },
+            {
+              "at_ns": 250000000,
+              "op": "append",
+              "segment": "turn-two",
+              "session": "chat"
+            },
+            {
+              "at_ns": 300000000,
+              "max_new_tokens": 32,
+              "op": "infer",
+              "select_rows": [
+                225,
+                23,
+                0
+              ],
+              "session": "chat"
+            },
+            {
+              "at_ns": 350000000,
+              "op": "append",
+              "segment": "reply-two",
+              "session": "chat"
+            },
+            {
+              "at_ns": 400000000,
+              "op": "append",
+              "segment": "turn-three",
+              "session": "chat"
+            },
+            {
+              "at_ns": 450000000,
+              "max_new_tokens": 32,
+              "op": "infer",
+              "select_rows": [
+                332,
+                225,
+                23
+              ],
+              "session": "chat"
+            },
+            {
+              "at_ns": 500000000,
+              "op": "close",
+              "session": "chat"
+            }
+          ],
+          "kind": "chatbot_growth",
+          "name": "chatbot-trip-planning",
+          "page_rows": 24,
+          "schema": 1,
+          "segments": [
+            {
+              "id": "system",
+              "role": "system",
+              "text": "Give concise options and carry forward confirmed constraints.\n"
+            },
+            {
+              "id": "turn-one",
+              "role": "user",
+              "text": "Plan a walking route from a ferry terminal for a family with a stroller.\n"
+            },
+            {
+              "id": "reply-one",
+              "role": "assistant",
+              "text": "We can take the paved waterfront path. Allow twenty minutes to the market.\n"
+            },
+            {
+              "id": "turn-two",
+              "role": "user",
+              "text": "Keep the waterfront plan. Find a sheltered stop midway if it rains.\n"
+            },
+            {
+              "id": "reply-two",
+              "role": "assistant",
+              "text": "The west arcade is midway and has a ramp from the path.\n"
+            },
+            {
+              "id": "turn-three",
+              "role": "user",
+              "text": "Keep the arcade stop and adjust the plan to finish before noon.\n"
+            }
+          ],
+          "source": {
+            "content_sha256": "5d6e4c154ef67e11327c1f6c693525351fee3aea64d46b9269ce1ded94f33462",
+            "kind": "authored_fixture",
+            "license": "CC0-1.0",
+            "locator": "examples/workloads/chatbot-trip-planning.json",
+            "revision": "fixture-v1"
+          },
+          "task": {}
+        }
+      },
+      {
+        "compile": {
+          "block_rows": 16,
+          "head_dim": 64,
+          "layers": 2,
+          "seed": 101,
+          "text_bytes_per_row": 2,
+          "top_k": 4
+        },
+        "compute_node": "gpu0",
+        "device_map": {
+          "gpu0": 0
+        },
+        "name": "long-document-estuary-qa",
+        "target": {
+          "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+          "head_dim": 64,
+          "host_cpu_affinity": [
+            64
+          ],
+          "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+          "scope": "public-training-geometry-qualification-only",
+          "torch_version": "2.13.0+cu130"
+        },
+        "topology": {
+          "bottlenecks": [],
+          "links": [
+            {
+              "bandwidth_bytes_per_s": 29703883288,
+              "bottlenecks": [],
+              "dst": "gpu0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0-gpu0",
+              "latency_ns": 6347,
+              "src": "host0",
+              "transport": "pinned_host"
+            },
+            {
+              "bandwidth_bytes_per_s": 56395041789,
+              "bottlenecks": [],
+              "dst": "host0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0-host0",
+              "latency_ns": 6106,
+              "src": "gpu0",
+              "transport": "pinned_host"
+            }
+          ],
+          "nodes": [
+            {
+              "capacity_bytes": 131072,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0",
+              "kind": "gpu",
+              "physical_bytes": 33670758400
+            },
+            {
+              "capacity_bytes": 33554432,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0",
+              "kind": "host"
+            }
+          ],
+          "schema": 1
+        },
+        "workload": {
+          "events": [
+            {
+              "at_ns": 0,
+              "op": "open",
+              "session": "reader"
+            },
+            {
+              "at_ns": 50000000,
+              "op": "append",
+              "segment": "overview",
+              "session": "reader"
+            },
+            {
+              "at_ns": 100000000,
+              "op": "append",
+              "segment": "station-01",
+              "session": "reader"
+            },
+            {
+              "at_ns": 150000000,
+              "op": "append",
+              "segment": "station-02",
+              "session": "reader"
+            },
+            {
+              "at_ns": 200000000,
+              "op": "append",
+              "segment": "station-03",
+              "session": "reader"
+            },
+            {
+              "at_ns": 250000000,
+              "op": "append",
+              "segment": "station-04",
+              "session": "reader"
+            },
+            {
+              "at_ns": 300000000,
+              "op": "append",
+              "segment": "station-05",
+              "session": "reader"
+            },
+            {
+              "at_ns": 350000000,
+              "op": "append",
+              "segment": "station-06",
+              "session": "reader"
+            },
+            {
+              "at_ns": 400000000,
+              "op": "append",
+              "segment": "station-07",
+              "session": "reader"
+            },
+            {
+              "at_ns": 450000000,
+              "op": "append",
+              "segment": "station-08",
+              "session": "reader"
+            },
+            {
+              "at_ns": 500000000,
+              "op": "append",
+              "segment": "station-09",
+              "session": "reader"
+            },
+            {
+              "at_ns": 550000000,
+              "op": "append",
+              "segment": "station-10",
+              "session": "reader"
+            },
+            {
+              "at_ns": 600000000,
+              "op": "append",
+              "segment": "station-11",
+              "session": "reader"
+            },
+            {
+              "at_ns": 650000000,
+              "op": "append",
+              "segment": "station-12",
+              "session": "reader"
+            },
+            {
+              "at_ns": 700000000,
+              "op": "append",
+              "segment": "question",
+              "session": "reader"
+            },
+            {
+              "at_ns": 750000000,
+              "max_new_tokens": 64,
+              "op": "infer",
+              "select_rows": [
+                0,
+                4096,
+                8192,
+                12000
+              ],
+              "session": "reader"
+            },
+            {
+              "at_ns": 800000000,
+              "op": "close",
+              "session": "reader"
+            }
+          ],
+          "kind": "long_document_qa",
+          "name": "long-document-estuary-qa",
+          "page_rows": 128,
+          "schema": 1,
+          "segments": [
+            {
+              "id": "overview",
+              "role": "document",
+              "text": "2029 Estuary Works handover memorandum. This is a fictional document QA fixture.\nThe Works Board uses spring inspections to transfer responsibility across three crews. Each station has a working log, a field action, and a signed release order. The field log describes conditions observed by the first crew. The release order overrides earlier notes only when it explicitly says 'controlling copy'. Tool codes are listed for audit and may refer to a physical location that remained closed. Do not infer that a location reopened solely because the crew finished sampling. The question concerns the controlling Harbor Nine order, and the rest of this document is included so a reader must distinguish it from earlier drafts and the procedures of adjacent stations.\n\n"
+            },
+            {
+              "id": "station-01",
+              "role": "document",
+              "text": "Station 01, Alder Gate. Inspection date April 8.\nOn arrival the crew requested temporary access through the west pedestrian portal. The gate operations logged 7 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Alder Gate lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the west pedestrian portal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-02",
+              "role": "document",
+              "text": "Station 02, Brindle Wharf. Inspection date April 9.\nOn arrival the crew requested temporary access through the weighbridge ramp. The freight desk logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Brindle Wharf lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the weighbridge ramp was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-03",
+              "role": "document",
+              "text": "Station 03, Copper Steps. Inspection date April 10.\nOn arrival the crew requested temporary access through the gallery drain. The masonry crew logged 6 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Copper Steps lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the gallery drain was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-04",
+              "role": "document",
+              "text": "Station 04, Drift Basin. Inspection date April 11.\nOn arrival the crew requested temporary access through the upper intake. The pump crew logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Drift Basin lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the upper intake was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-05",
+              "role": "document",
+              "text": "Station 05, Elm Lock. Inspection date April 12.\nOn arrival the crew requested temporary access through the canal control cabinet. The night supervisor logged 4 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Elm Lock lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the canal control cabinet was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-06",
+              "role": "document",
+              "text": "Station 06, Fern Depot. Inspection date April 15.\nOn arrival the crew requested temporary access through the covered sorting bay. The stores office logged 8 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Fern Depot lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the covered sorting bay was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-07",
+              "role": "document",
+              "text": "Station 07, Gannet Bend. Inspection date April 16.\nOn arrival the crew requested temporary access through the rail warning signal. The signalling team logged 11 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Gannet Bend lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the rail warning signal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-08",
+              "role": "document",
+              "text": "Station 08, Harbor Nine. Inspection date April 17.\nOn arrival the crew requested temporary access through the north conduit. The safety office logged 12 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Harbor Nine lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the north conduit was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\nHarbor Nine addendum, order H9-47, controlling copy. Earlier field notes proposed reopening the north conduit when the photographs were uploaded, but that proposal was withdrawn. The authorized release condition is receipt of two signed chloride readings below 18 mg/L, taken thirty minutes apart. The safety office archives both readings and writes the clearance in the shift ledger. The order applies to the north conduit only. The evening crew must leave the service ladder isolated until a separate inspection.\n\n"
+            },
+            {
+              "id": "station-09",
+              "role": "document",
+              "text": "Station 09, Ivory Shed. Inspection date April 18.\nOn arrival the crew requested temporary access through the fuel line gate. The mechanical crew logged 3 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Ivory Shed lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the fuel line gate was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-10",
+              "role": "document",
+              "text": "Station 10, Juniper Run. Inspection date April 19.\nOn arrival the crew requested temporary access through the boat lifting track. The dock master logged 14 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Juniper Run lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the boat lifting track was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-11",
+              "role": "document",
+              "text": "Station 11, Kite Point. Inspection date April 22.\nOn arrival the crew requested temporary access through the signal bridge. The telemetry team logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Kite Point lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the signal bridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "station-12",
+              "role": "document",
+              "text": "Station 12, Larch Crossing. Inspection date April 23.\nOn arrival the crew requested temporary access through the south footbridge. The pedestrian office logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Larch Crossing lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the south footbridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+            },
+            {
+              "id": "question",
+              "role": "question",
+              "text": "According to the controlling Harbor Nine order H9-47, which measurement condition must be met before the north conduit can reopen?\n"
+            }
+          ],
+          "source": {
+            "content_sha256": "94cfd892f8d306f6b8b4e5b06e17e13772d79ca75a568d26b3d4b63c639516bf",
+            "kind": "authored_fixture",
+            "license": "CC0-1.0",
+            "locator": "examples/workloads/long-document-estuary-qa.json",
+            "revision": "fixture-v1"
+          },
+          "task": {
+            "expected_answers": [
+              "Two signed chloride readings below 18 mg/L, taken thirty minutes apart."
+            ],
+            "minimum_document_bytes": 12288
+          }
+        }
+      },
+      {
+        "compile": {
+          "block_rows": 16,
+          "head_dim": 64,
+          "layers": 2,
+          "seed": 101,
+          "text_bytes_per_row": 2,
+          "top_k": 4
+        },
+        "compute_node": "gpu0",
+        "device_map": {
+          "gpu0": 0
+        },
+        "name": "rollout-bridge-options",
+        "target": {
+          "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+          "head_dim": 64,
+          "host_cpu_affinity": [
+            64
+          ],
+          "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+          "scope": "public-training-geometry-qualification-only",
+          "torch_version": "2.13.0+cu130"
+        },
+        "topology": {
+          "bottlenecks": [],
+          "links": [
+            {
+              "bandwidth_bytes_per_s": 29703883288,
+              "bottlenecks": [],
+              "dst": "gpu0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0-gpu0",
+              "latency_ns": 6347,
+              "src": "host0",
+              "transport": "pinned_host"
+            },
+            {
+              "bandwidth_bytes_per_s": 56395041789,
+              "bottlenecks": [],
+              "dst": "host0",
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0-host0",
+              "latency_ns": 6106,
+              "src": "gpu0",
+              "transport": "pinned_host"
+            }
+          ],
+          "nodes": [
+            {
+              "capacity_bytes": 131072,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "gpu0",
+              "kind": "gpu",
+              "physical_bytes": 33670758400
+            },
+            {
+              "capacity_bytes": 33554432,
+              "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+              "id": "host0",
+              "kind": "host"
+            }
+          ],
+          "schema": 1
+        },
+        "workload": {
+          "events": [
+            {
+              "at_ns": 0,
+              "op": "open",
+              "session": "root"
+            },
+            {
+              "at_ns": 50000000,
+              "op": "append",
+              "segment": "shared",
+              "session": "root"
+            },
+            {
+              "at_ns": 100000000,
+              "max_new_tokens": 8,
+              "op": "infer",
+              "select_rows": [
+                0,
+                30,
+                74
+              ],
+              "session": "root"
+            },
+            {
+              "at_ns": 150000000,
+              "op": "fork",
+              "parent": "root",
+              "session": "north"
+            },
+            {
+              "at_ns": 200000000,
+              "op": "fork",
+              "parent": "root",
+              "session": "south"
+            },
+            {
+              "at_ns": 250000000,
+              "op": "append",
+              "segment": "north",
+              "session": "north"
+            },
+            {
+              "at_ns": 300000000,
+              "op": "append",
+              "segment": "south",
+              "session": "south"
+            },
+            {
+              "at_ns": 350000000,
+              "max_new_tokens": 16,
+              "op": "infer",
+              "select_rows": [
+                81,
+                74,
+                0
+              ],
+              "session": "north"
+            },
+            {
+              "at_ns": 400000000,
+              "max_new_tokens": 16,
+              "op": "infer",
+              "select_rows": [
+                81,
+                74,
+                0
+              ],
+              "session": "south"
+            },
+            {
+              "at_ns": 450000000,
+              "op": "close",
+              "session": "north"
+            },
+            {
+              "at_ns": 500000000,
+              "op": "close",
+              "session": "south"
+            },
+            {
+              "at_ns": 550000000,
+              "op": "close",
+              "session": "root"
+            }
+          ],
+          "kind": "rollout_cow",
+          "name": "rollout-bridge-options",
+          "page_rows": 16,
+          "schema": 1,
+          "segments": [
+            {
+              "id": "shared",
+              "role": "user",
+              "text": "Bridge test: keep freight below the old span and leave the inspection lane open.\n"
+            },
+            {
+              "id": "north",
+              "role": "assistant",
+              "text": "North route takes the covered ramp and reserves the lower bay."
+            },
+            {
+              "id": "south",
+              "role": "assistant",
+              "text": "South route crosses the yard and reserves the east bay."
+            }
+          ],
+          "source": {
+            "content_sha256": "2e34b483f1b0c996666be0b97e58c51e45a8789563e61d74d448d8723269c094",
+            "kind": "authored_fixture",
+            "license": "CC0-1.0",
+            "locator": "examples/workloads/rollout-bridge-options.json",
+            "revision": "fixture-v1"
+          },
+          "task": {}
+        }
+      }
+    ],
+    "expected_gpu_uuids": [
+      "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550"
+    ],
+    "program": null,
+    "samples": 5,
+    "schema": 1,
+    "warmup": 3
+  },
+  "producer_retain_witness": {
+    "generic_producer_choices_by_case": {
+      "agent-water-inspection": 194,
+      "chatbot-trip-planning": 228,
+      "long-document-estuary-qa": 1278,
+      "rollout-bridge-options": 94
+    },
+    "receipt": "qualification-v11-paired-gpu3-b0-h64-lru-equivalent.json",
+    "receipt_sha256": "e7d457e9d8fd972a34e5dc8ffe91c79f93efc09a6c50ce90b56076ac40bd1e0f"
+  },
+  "program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+  "schedule": [
+    {
+      "block": 0,
+      "order": [
+        "native",
+        "lru-equivalent-v11",
+        "lru-equivalent-v13"
+      ]
+    },
+    {
+      "block": 1,
+      "order": [
+        "lru-equivalent-v11",
+        "lru-equivalent-v13",
+        "native"
+      ]
+    },
+    {
+      "block": 2,
+      "order": [
+        "lru-equivalent-v13",
+        "native",
+        "lru-equivalent-v11"
+      ]
+    },
+    {
+      "block": 3,
+      "order": [
+        "lru-equivalent-v13",
+        "lru-equivalent-v11",
+        "native"
+      ]
+    },
+    {
+      "block": 4,
+      "order": [
+        "native",
+        "lru-equivalent-v13",
+        "lru-equivalent-v11"
+      ]
+    },
+    {
+      "block": 5,
+      "order": [
+        "lru-equivalent-v11",
+        "native",
+        "lru-equivalent-v13"
+      ]
+    },
+    {
+      "block": 6,
+      "order": [
+        "native",
+        "lru-equivalent-v11",
+        "lru-equivalent-v13"
+      ]
+    },
+    {
+      "block": 7,
+      "order": [
+        "lru-equivalent-v13",
+        "lru-equivalent-v11",
+        "native"
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "engineering on four historical public training fixtures, single GPU3, CPU64",
+  "script_sha256": "9c29a4d2cbda9f9a5c475f83e9127d1b256b386ed98afaa2b536d0149600ccc8",
+  "selection_reason": "The historical LRU-equivalent arm has exactly one generic allocate/replicate candidate per producer retain. The case roster and IR are fixed from those diagnostics before timing.",
+  "single_gpu_gate_preserved": true,
+  "source_versions": {
+    "v11": {
+      "archive_sha256": "afca095a53ddd69f038ff7a9806e76da72f8b7411a54b8448ad3494dfedb6aac",
+      "manifest_sha256": "944183b276b231c2dd306dbfc9ddbbf9823d94875e21a94b76008ef2b91ba0a8",
+      "runtime_sha256": "ada57d5b110fd1090cde60732b254e8e03dab4859ef87d865e315182e278761c"
+    },
+    "v13": {
+      "archive_sha256": "8d3a98e1791fdc4fb40564e1341686de466b6e8105d033c7fd7f97459eee52f6",
+      "manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d",
+      "runtime_sha256": "8c3798f8feab6e281d650f025a247c416662eec1c49f304a587b3493ae85a7fb"
+    }
+  },
+  "timeout_seconds": 600
+}

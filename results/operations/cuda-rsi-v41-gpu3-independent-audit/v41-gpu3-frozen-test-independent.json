@@ -1,0 +1,962 @@
+{
+  "admissions": 0,
+  "blocks": [
+    "gpu3-supp-test-01",
+    "gpu3-supp-test-02",
+    "gpu3-supp-test-03",
+    "gpu3-supp-test-04",
+    "gpu3-supp-test-05",
+    "gpu3-supp-test-06"
+  ],
+  "controller_manifest_sha256": "6fc56c59daa4ed0deea1dfd2ff11ea0efe4b9670fd83b6270eb27a195463f650",
+  "declared_program_relations": {
+    "admitted_output_vs_fixed": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    },
+    "admitted_output_vs_manual": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    },
+    "admitted_output_vs_native": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    },
+    "manager_best_vs_fixed": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    },
+    "manager_best_vs_manual": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    },
+    "manager_best_vs_native": {
+      "same_raw_program": false,
+      "same_training_effect": false
+    }
+  },
+  "frozen_finalists": {
+    "admitted_output": {
+      "from_admitted_generator": true,
+      "program_sha256": "9a19fea77f5c92836d20f04156112a4594136c379158c040e20b60d5e8386231",
+      "proposal_id": "r0001/parent/01",
+      "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "training_median_ms": 301.021342
+    },
+    "fixed": {
+      "from_admitted_generator": true,
+      "program_sha256": "d7f0e1fe52b9ca4e4ab9aef0d211cea027f0627e3456a343d4b6496314f387c6",
+      "proposal_id": "r0000/fixed-a/00",
+      "source_sha256": "42699e4d5148ee3dc3f41f7ffeab8a3020e8fb75a5a433940d7ae88e4c08ca38",
+      "training_median_ms": 286.020065
+    },
+    "manager_best": {
+      "from_admitted_generator": false,
+      "program_sha256": "355acd9210fcb804801cd094610ad0a1866536e12d2734ab25296a8c80bc3526",
+      "proposal_id": "r0001/child/00",
+      "source_sha256": "7ef5507ac6345f80f0ea82b3a747fb39d67d767cbecae3c42ed1eb51012dcd62",
+      "training_median_ms": 296.643452
+    }
+  },
+  "frozen_sha256": "748a3cdb6941c47abc053643dd9b874aa69ac6f709d69d9a38f231828d929a0b",
+  "kind": "cuda_v41_gpu3_independent_frozen_test",
+  "observations_by_arm": {
+    "admitted_output": [
+      {
+        "block_id": "gpu3-supp-test-01",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 95.106314,
+          "chatbot-library-project-00": 104.819999,
+          "long-document-flood-ledger-00": 188.339739,
+          "rollout-ferry-recovery-00": 44.057084
+        },
+        "receipt_id": "eval-a13177af1c6ce8f03025e6acfe9e6aa1e31e01d44d4c93f1",
+        "score_ms": 432.323136
+      },
+      {
+        "block_id": "gpu3-supp-test-02",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 95.745371,
+          "chatbot-library-project-00": 105.178816,
+          "long-document-flood-ledger-00": 192.495117,
+          "rollout-ferry-recovery-00": 44.286838
+        },
+        "receipt_id": "eval-22d2df192895cefff3aea0940a794aa5afe594f26f2d5ad4",
+        "score_ms": 437.706142
+      },
+      {
+        "block_id": "gpu3-supp-test-03",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 93.884309,
+          "chatbot-library-project-00": 103.540098,
+          "long-document-flood-ledger-00": 186.959854,
+          "rollout-ferry-recovery-00": 43.487018
+        },
+        "receipt_id": "eval-5174699e3626a04a004b54c2ace443fa29919c58f1936303",
+        "score_ms": 427.871279
+      },
+      {
+        "block_id": "gpu3-supp-test-04",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 94.093511,
+          "chatbot-library-project-00": 103.966366,
+          "long-document-flood-ledger-00": 189.869025,
+          "rollout-ferry-recovery-00": 43.726286
+        },
+        "receipt_id": "eval-e9ad58c8a8ebab711bf82a8da132a1e1c74fa81114e6b5c5",
+        "score_ms": 431.655188
+      },
+      {
+        "block_id": "gpu3-supp-test-05",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 94.307101,
+          "chatbot-library-project-00": 103.784533,
+          "long-document-flood-ledger-00": 188.856707,
+          "rollout-ferry-recovery-00": 43.690042
+        },
+        "receipt_id": "eval-aa692007b231bedf3070a92e44fe73dbc05346a032933c81",
+        "score_ms": 430.638383
+      },
+      {
+        "block_id": "gpu3-supp-test-06",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 93.932038,
+          "chatbot-library-project-00": 103.942068,
+          "long-document-flood-ledger-00": 187.632899,
+          "rollout-ferry-recovery-00": 43.671043
+        },
+        "receipt_id": "eval-6cbac4a601879346d292f9de642bf1d170d18f2fa7779de2",
+        "score_ms": 429.178048
+      }
+    ],
+    "fixed": [
+      {
+        "block_id": "gpu3-supp-test-01",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 103.070817,
+          "chatbot-library-project-00": 114.59708,
+          "long-document-flood-ledger-00": 149.56183,
+          "rollout-ferry-recovery-00": 47.736322
+        },
+        "receipt_id": "eval-eccae3c9c6b53e8ac334e1676d57f5a743d66ef6e664b052",
+        "score_ms": 414.966049
+      },
+      {
+        "block_id": "gpu3-supp-test-02",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 103.546479,
+          "chatbot-library-project-00": 114.213965,
+          "long-document-flood-ledger-00": 149.134288,
+          "rollout-ferry-recovery-00": 48.174979
+        },
+        "receipt_id": "eval-ce310361156d6945739d613ed78de0f995206ae9ba719718",
+        "score_ms": 415.069711
+      },
+      {
+        "block_id": "gpu3-supp-test-03",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 102.439608,
+          "chatbot-library-project-00": 113.342868,
+          "long-document-flood-ledger-00": 148.228778,
+          "rollout-ferry-recovery-00": 47.807848
+        },
+        "receipt_id": "eval-d6f0606015f8a13f5f72235f5c441402fe666dee8c9317a0",
+        "score_ms": 411.819102
+      },
+      {
+        "block_id": "gpu3-supp-test-04",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 103.978283,
+          "chatbot-library-project-00": 115.10669,
+          "long-document-flood-ledger-00": 149.760152,
+          "rollout-ferry-recovery-00": 48.465904
+        },
+        "receipt_id": "eval-b467c1ffd059f937aab649c8a85f1e79d8974dedc38dee40",
+        "score_ms": 417.311029
+      },
+      {
+        "block_id": "gpu3-supp-test-05",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 103.0428,
+          "chatbot-library-project-00": 115.091246,
+          "long-document-flood-ledger-00": 150.681583,
+          "rollout-ferry-recovery-00": 48.231402
+        },
+        "receipt_id": "eval-94e27326dcbc88d0fe1137b05a1c12a2ae77b9fb6e21eee9",
+        "score_ms": 417.047031
+      },
+      {
+        "block_id": "gpu3-supp-test-06",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 102.334417,
+          "chatbot-library-project-00": 114.129634,
+          "long-document-flood-ledger-00": 149.604878,
+          "rollout-ferry-recovery-00": 48.207796
+        },
+        "receipt_id": "eval-c55bbe8b9d4467d038e4a3818004fa716e26a2e6f3f3580a",
+        "score_ms": 414.276725
+      }
+    ],
+    "manager_best": [
+      {
+        "block_id": "gpu3-supp-test-01",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 107.008751,
+          "chatbot-library-project-00": 118.968775,
+          "long-document-flood-ledger-00": 153.660236,
+          "rollout-ferry-recovery-00": 49.160126
+        },
+        "receipt_id": "eval-c9a66e5dd8f0a758b518d186f0094ab2f8627f147443b9b6",
+        "score_ms": 428.797888
+      },
+      {
+        "block_id": "gpu3-supp-test-02",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 107.798084,
+          "chatbot-library-project-00": 119.792219,
+          "long-document-flood-ledger-00": 154.687975,
+          "rollout-ferry-recovery-00": 49.392524
+        },
+        "receipt_id": "eval-3ecfd066a2432ea5e7d5d37cd069ea7b09e42690aab45844",
+        "score_ms": 431.670802
+      },
+      {
+        "block_id": "gpu3-supp-test-03",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 107.80292,
+          "chatbot-library-project-00": 120.381432,
+          "long-document-flood-ledger-00": 154.748495,
+          "rollout-ferry-recovery-00": 49.605824
+        },
+        "receipt_id": "eval-78e7f648b936e766cba3d36a057cf7d2e703422c4be247d8",
+        "score_ms": 432.538671
+      },
+      {
+        "block_id": "gpu3-supp-test-04",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 108.251411,
+          "chatbot-library-project-00": 119.685186,
+          "long-document-flood-ledger-00": 154.75281,
+          "rollout-ferry-recovery-00": 49.092473
+        },
+        "receipt_id": "eval-83320e6bf808100e609e99914e66cb7a2bfd068267d3fe79",
+        "score_ms": 431.78188
+      },
+      {
+        "block_id": "gpu3-supp-test-05",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 107.010319,
+          "chatbot-library-project-00": 119.402561,
+          "long-document-flood-ledger-00": 154.121291,
+          "rollout-ferry-recovery-00": 49.268597
+        },
+        "receipt_id": "eval-52f67dd56661a65b08ceda68ea7a954fbca295c7639ee1de",
+        "score_ms": 429.802768
+      },
+      {
+        "block_id": "gpu3-supp-test-06",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 107.90457,
+          "chatbot-library-project-00": 119.443642,
+          "long-document-flood-ledger-00": 154.808231,
+          "rollout-ferry-recovery-00": 49.419683
+        },
+        "receipt_id": "eval-9640722a18b81f23f2a546560b943bbed21cf8d04c3811ae",
+        "score_ms": 431.576126
+      }
+    ],
+    "manual": [
+      {
+        "block_id": "gpu3-supp-test-01",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 90.232334,
+          "chatbot-library-project-00": 97.033883,
+          "long-document-flood-ledger-00": 235.425733,
+          "rollout-ferry-recovery-00": 45.617784
+        },
+        "receipt_id": "eval-84bab7264226589c93e4717a329141a4d578d791ddc67e6f",
+        "score_ms": 468.309734
+      },
+      {
+        "block_id": "gpu3-supp-test-02",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 90.086515,
+          "chatbot-library-project-00": 96.581935,
+          "long-document-flood-ledger-00": 231.751782,
+          "rollout-ferry-recovery-00": 45.264965
+        },
+        "receipt_id": "eval-3bd36cc6dd1b6645ed45fb4b40727caa839e5ed8c6c06b70",
+        "score_ms": 463.685197
+      },
+      {
+        "block_id": "gpu3-supp-test-03",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 90.833305,
+          "chatbot-library-project-00": 97.661583,
+          "long-document-flood-ledger-00": 233.782637,
+          "rollout-ferry-recovery-00": 45.780738
+        },
+        "receipt_id": "eval-48bd1544fca5ced479dd95c9614bc233fb619bd78856d3ea",
+        "score_ms": 468.058263
+      },
+      {
+        "block_id": "gpu3-supp-test-04",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 90.660104,
+          "chatbot-library-project-00": 97.448864,
+          "long-document-flood-ledger-00": 233.1928,
+          "rollout-ferry-recovery-00": 45.791504
+        },
+        "receipt_id": "eval-f8b2d6bbb96092394abf6024eae06b4c3fc85a74b50ecc09",
+        "score_ms": 467.093272
+      },
+      {
+        "block_id": "gpu3-supp-test-05",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 89.45812,
+          "chatbot-library-project-00": 96.431808,
+          "long-document-flood-ledger-00": 235.123973,
+          "rollout-ferry-recovery-00": 45.837082
+        },
+        "receipt_id": "eval-c1a5cd356ac054cd74afce831f41c89e09c98ff29023456c",
+        "score_ms": 466.850983
+      },
+      {
+        "block_id": "gpu3-supp-test-06",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 90.44503,
+          "chatbot-library-project-00": 96.677225,
+          "long-document-flood-ledger-00": 233.449681,
+          "rollout-ferry-recovery-00": 45.578915
+        },
+        "receipt_id": "eval-62a4612fe78cf61e55edb7f8a948590c3e0b121e51ae10ab",
+        "score_ms": 466.150851
+      }
+    ],
+    "native": [
+      {
+        "block_id": "gpu3-supp-test-01",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 86.031926,
+          "chatbot-library-project-00": 94.421947,
+          "long-document-flood-ledger-00": 173.946846,
+          "rollout-ferry-recovery-00": 39.001093
+        },
+        "receipt_id": "eval-5d0829f2e14feb2ace3b1333ae3dcb1a07c206875f13d3fa",
+        "score_ms": 393.401812
+      },
+      {
+        "block_id": "gpu3-supp-test-02",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 85.869582,
+          "chatbot-library-project-00": 94.190128,
+          "long-document-flood-ledger-00": 174.061234,
+          "rollout-ferry-recovery-00": 38.882534
+        },
+        "receipt_id": "eval-59a187ebf727b5b9582fb5971da8f543182bbb812fbfd03a",
+        "score_ms": 393.003478
+      },
+      {
+        "block_id": "gpu3-supp-test-03",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 84.919206,
+          "chatbot-library-project-00": 94.221124,
+          "long-document-flood-ledger-00": 174.993051,
+          "rollout-ferry-recovery-00": 39.709735
+        },
+        "receipt_id": "eval-7199c120ffffd440fe7b646d5282e8afa5737f2568388bd1",
+        "score_ms": 393.843116
+      },
+      {
+        "block_id": "gpu3-supp-test-04",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 85.604984,
+          "chatbot-library-project-00": 93.766291,
+          "long-document-flood-ledger-00": 174.79924,
+          "rollout-ferry-recovery-00": 38.865107
+        },
+        "receipt_id": "eval-8cae894098673240307a4f8725428478e297c8a4efe678cb",
+        "score_ms": 393.035622
+      },
+      {
+        "block_id": "gpu3-supp-test-05",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 86.621798,
+          "chatbot-library-project-00": 95.015934,
+          "long-document-flood-ledger-00": 176.687159,
+          "rollout-ferry-recovery-00": 38.57319
+        },
+        "receipt_id": "eval-6f6d9f9355de406778d92f03cb1dbfa502d63eab87af0be1",
+        "score_ms": 396.898081
+      },
+      {
+        "block_id": "gpu3-supp-test-06",
+        "case_scores_ms": {
+          "agent-grid-recovery-00": 86.754967,
+          "chatbot-library-project-00": 94.972919,
+          "long-document-flood-ledger-00": 174.257204,
+          "rollout-ferry-recovery-00": 38.78058
+        },
+        "receipt_id": "eval-50d71e26acf1be56ace030594be66d0e854af0dd21a71ba4",
+        "score_ms": 394.76567
+      }
+    ]
+  },
+  "observed_recursive_source_reuses": 0,
+  "pairwise_comparisons": {
+    "admitted_output_vs_fixed": {
+      "all_block_deltas_ms": [
+        -17.35708699999998,
+        -22.636431000000016,
+        -16.05217700000003,
+        -14.34415899999999,
+        -13.591351999999972,
+        -14.90132299999999
+      ],
+      "margin_ms": 2.0,
+      "median_ms": -15.47675000000001,
+      "passes": false,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            7.964503000000008,
+            7.801107999999999,
+            8.555299000000005,
+            9.884771999999998,
+            8.735698999999997,
+            8.402378999999996
+          ],
+          "median_ms": 8.478839,
+          "positive_blocks": 6
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            9.77708100000001,
+            9.035149000000004,
+            9.802769999999995,
+            11.140324000000007,
+            11.306713000000002,
+            10.18756599999999
+          ],
+          "median_ms": 9.995167999999993,
+          "positive_blocks": 6
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            -38.77790900000002,
+            -43.360828999999995,
+            -38.731076,
+            -40.10887299999999,
+            -38.17512400000001,
+            -38.028020999999995
+          ],
+          "median_ms": -38.75449250000001,
+          "positive_blocks": 0
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            3.679237999999998,
+            3.8881409999999974,
+            4.320830000000001,
+            4.739618,
+            4.5413600000000045,
+            4.5367530000000045
+          ],
+          "median_ms": 4.428791500000003,
+          "positive_blocks": 6
+        }
+      },
+      "positive_blocks": 0
+    },
+    "admitted_output_vs_manual": {
+      "all_block_deltas_ms": [
+        35.986598000000015,
+        25.979055000000017,
+        40.186983999999995,
+        35.438084,
+        36.21260000000001,
+        36.972803
+      ],
+      "margin_ms": 2.0,
+      "median_ms": 36.09959900000001,
+      "passes": true,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -4.873980000000003,
+            -5.658856,
+            -3.051004000000006,
+            -3.4334070000000025,
+            -4.848981000000009,
+            -3.487008000000003
+          ],
+          "median_ms": -4.167994500000006,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -7.786115999999993,
+            -8.596880999999996,
+            -5.878515000000007,
+            -6.517501999999993,
+            -7.352724999999992,
+            -7.264842999999999
+          ],
+          "median_ms": -7.308783999999996,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            47.085994,
+            39.256665,
+            46.82278299999999,
+            43.32377500000001,
+            46.267266000000006,
+            45.81678199999999
+          ],
+          "median_ms": 46.042024,
+          "positive_blocks": 6
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            1.560699999999997,
+            0.9781269999999935,
+            2.2937200000000004,
+            2.0652180000000016,
+            2.147040000000004,
+            1.9078720000000047
+          ],
+          "median_ms": 1.9865450000000031,
+          "positive_blocks": 6
+        }
+      },
+      "positive_blocks": 6
+    },
+    "admitted_output_vs_native": {
+      "all_block_deltas_ms": [
+        -38.92132399999997,
+        -44.70266400000003,
+        -34.028163000000006,
+        -38.61956600000002,
+        -33.740301999999986,
+        -34.41237799999999
+      ],
+      "margin_ms": 2.0,
+      "median_ms": -36.515972000000005,
+      "passes": false,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -9.074387999999999,
+            -9.875789000000012,
+            -8.965103,
+            -8.488527000000005,
+            -7.685303000000005,
+            -7.177071000000012
+          ],
+          "median_ms": -8.726815000000002,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -10.398051999999993,
+            -10.988687999999996,
+            -9.318973999999997,
+            -10.200074999999998,
+            -8.768598999999995,
+            -8.969149000000002
+          ],
+          "median_ms": -9.759524499999998,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            -14.392893000000015,
+            -18.43388299999998,
+            -11.966802999999999,
+            -15.069784999999996,
+            -12.169547999999992,
+            -13.375695000000007
+          ],
+          "median_ms": -13.884294000000011,
+          "positive_blocks": 0
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -5.055991000000006,
+            -5.404304000000003,
+            -3.777282999999997,
+            -4.861179,
+            -5.1168520000000015,
+            -4.890462999999997
+          ],
+          "median_ms": -4.973227000000001,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 0
+    },
+    "fixed_vs_manual": {
+      "all_block_deltas_ms": [
+        53.343684999999994,
+        48.61548600000003,
+        56.239161000000024,
+        49.782242999999994,
+        49.80395199999998,
+        51.87412599999999
+      ],
+      "margin_ms": 2.0,
+      "median_ms": 50.839038999999985,
+      "passes": true,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -12.83848300000001,
+            -13.459964,
+            -11.606303000000011,
+            -13.318179,
+            -13.584680000000006,
+            -11.889387
+          ],
+          "median_ms": -13.078331000000006,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -17.563197000000002,
+            -17.63203,
+            -15.681285000000003,
+            -17.657826,
+            -18.659437999999994,
+            -17.45240899999999
+          ],
+          "median_ms": -17.5976135,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            85.86390300000002,
+            82.617494,
+            85.55385899999999,
+            83.432648,
+            84.44239000000002,
+            83.84480299999998
+          ],
+          "median_ms": 84.1435965,
+          "positive_blocks": 6
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -2.118538000000001,
+            -2.910014000000004,
+            -2.0271100000000004,
+            -2.6743999999999986,
+            -2.3943200000000004,
+            -2.628881
+          ],
+          "median_ms": -2.5116005,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 6
+    },
+    "fixed_vs_native": {
+      "all_block_deltas_ms": [
+        -21.56423699999999,
+        -22.06623300000001,
+        -17.975985999999978,
+        -24.27540700000003,
+        -20.148950000000013,
+        -19.511055
+      ],
+      "margin_ms": 2.0,
+      "median_ms": -20.856593500000002,
+      "passes": false,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -17.038891000000007,
+            -17.67689700000001,
+            -17.520402000000004,
+            -18.373299000000003,
+            -16.421002,
+            -15.579450000000008
+          ],
+          "median_ms": -17.279646500000005,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -20.175133000000002,
+            -20.023837,
+            -19.121743999999993,
+            -21.340399000000005,
+            -20.075311999999997,
+            -19.15671499999999
+          ],
+          "median_ms": -20.0495745,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            24.385016000000007,
+            24.926946000000015,
+            26.764273000000003,
+            25.039087999999992,
+            26.00557600000002,
+            24.652325999999988
+          ],
+          "median_ms": 24.983017000000004,
+          "positive_blocks": 6
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -8.735229000000004,
+            -9.292445,
+            -8.098112999999998,
+            -9.600797,
+            -9.658212000000006,
+            -9.427216000000001
+          ],
+          "median_ms": -9.359830500000001,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 0
+    },
+    "manager_best_vs_fixed": {
+      "all_block_deltas_ms": [
+        -13.831839000000002,
+        -16.601090999999997,
+        -20.719569000000035,
+        -14.470850999999982,
+        -12.75573700000001,
+        -17.29940099999999
+      ],
+      "margin_ms": 2.0,
+      "median_ms": -15.53597099999999,
+      "passes": false,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -3.9379339999999985,
+            -4.251604999999998,
+            -5.363311999999993,
+            -4.273128,
+            -3.967518999999996,
+            -5.570153000000005
+          ],
+          "median_ms": -4.262366499999999,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -4.371694999999988,
+            -5.578254000000001,
+            -7.038564000000008,
+            -4.578496000000001,
+            -4.311315000000008,
+            -5.314008000000001
+          ],
+          "median_ms": -4.946252000000001,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            -4.098406000000011,
+            -5.5536869999999965,
+            -6.519716999999986,
+            -4.992658000000006,
+            -3.4397080000000244,
+            -5.203352999999993
+          ],
+          "median_ms": -5.098005499999999,
+          "positive_blocks": 0
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -1.423803999999997,
+            -1.2175450000000012,
+            -1.7979759999999985,
+            -0.6265689999999964,
+            -1.037194999999997,
+            -1.2118869999999973
+          ],
+          "median_ms": -1.2147159999999992,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 0
+    },
+    "manager_best_vs_manual": {
+      "all_block_deltas_ms": [
+        39.51184599999999,
+        32.014395000000036,
+        35.51959199999999,
+        35.31139200000001,
+        37.04821499999997,
+        34.574725
+      ],
+      "margin_ms": 2.0,
+      "median_ms": 35.415492,
+      "passes": true,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -16.77641700000001,
+            -17.711568999999997,
+            -16.969615000000005,
+            -17.591307,
+            -17.552199,
+            -17.459540000000004
+          ],
+          "median_ms": -17.505869500000003,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -21.93489199999999,
+            -23.210284,
+            -22.71984900000001,
+            -22.236322,
+            -22.970753000000002,
+            -22.76641699999999
+          ],
+          "median_ms": -22.743133,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            81.76549700000001,
+            77.063807,
+            79.034142,
+            78.43999,
+            81.002682,
+            78.64144999999999
+          ],
+          "median_ms": 78.837796,
+          "positive_blocks": 6
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -3.542341999999998,
+            -4.127559000000005,
+            -3.825085999999999,
+            -3.300968999999995,
+            -3.4315149999999974,
+            -3.840767999999997
+          ],
+          "median_ms": -3.6837139999999984,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 6
+    },
+    "manager_best_vs_native": {
+      "all_block_deltas_ms": [
+        -35.396075999999994,
+        -38.66732400000001,
+        -38.69555500000001,
+        -38.74625800000001,
+        -32.904687000000024,
+        -36.81045599999999
+      ],
+      "margin_ms": 2.0,
+      "median_ms": -37.73889,
+      "passes": false,
+      "per_case": {
+        "agent-grid-recovery-00": {
+          "all_block_deltas_ms": [
+            -20.976825000000005,
+            -21.92850200000001,
+            -22.883713999999998,
+            -22.646427000000003,
+            -20.388520999999997,
+            -21.149603000000013
+          ],
+          "median_ms": -21.53905250000001,
+          "positive_blocks": 0
+        },
+        "chatbot-library-project-00": {
+          "all_block_deltas_ms": [
+            -24.54682799999999,
+            -25.602091,
+            -26.160308,
+            -25.918895000000006,
+            -24.386627000000004,
+            -24.470722999999992
+          ],
+          "median_ms": -25.074459499999996,
+          "positive_blocks": 0
+        },
+        "long-document-flood-ledger-00": {
+          "all_block_deltas_ms": [
+            20.286609999999996,
+            19.37325900000002,
+            20.244556000000017,
+            20.046429999999987,
+            22.565867999999995,
+            19.448972999999995
+          ],
+          "median_ms": 20.145493000000002,
+          "positive_blocks": 6
+        },
+        "rollout-ferry-recovery-00": {
+          "all_block_deltas_ms": [
+            -10.159033,
+            -10.509990000000002,
+            -9.896088999999996,
+            -10.227365999999996,
+            -10.695407000000003,
+            -10.639102999999999
+          ],
+          "median_ms": -10.368678,
+          "positive_blocks": 0
+        }
+      },
+      "positive_blocks": 0
+    }
+  },
+  "receipt_sha256_by_job": {
+    "eval-22d2df192895cefff3aea0940a794aa5afe594f26f2d5ad4": "94f02479ef9388745a0876a06245854a282fba9e28fccf1997f8bfc180141577",
+    "eval-3bd36cc6dd1b6645ed45fb4b40727caa839e5ed8c6c06b70": "fcfe614baa6b522edb79d34c2583db902209566dd752d586c3e3bd8154a43b27",
+    "eval-3ecfd066a2432ea5e7d5d37cd069ea7b09e42690aab45844": "66cd84bd0641ac5f1a616977c42330f0deeee0cf234c3882b9517e5be50d27d4",
+    "eval-48bd1544fca5ced479dd95c9614bc233fb619bd78856d3ea": "d5b56663ed29eff7796f33a35785b66b0c54f6aea762b7ee4655c9dfd348703a",
+    "eval-50d71e26acf1be56ace030594be66d0e854af0dd21a71ba4": "7686f384146524ec44e90a9f48a7efc8c6d723664e54c0755aa2ca592be43879",
+    "eval-5174699e3626a04a004b54c2ace443fa29919c58f1936303": "43a529a055646d83768afb9a8cdc610cad97f8e79e88cc136d17149a13ba21ba",
+    "eval-52f67dd56661a65b08ceda68ea7a954fbca295c7639ee1de": "bdfbd0a6029382d7c310a549d9162c6122496c9c7852f16384abcf8930168d0d",
+    "eval-59a187ebf727b5b9582fb5971da8f543182bbb812fbfd03a": "dfe31b403677e1e6a243f256eb76f257f21d8421344bacd3ebc22d5a3e0e3208",
+    "eval-5d0829f2e14feb2ace3b1333ae3dcb1a07c206875f13d3fa": "f5515e1ce90a94d3c96e871f795c457899c64e0b8d111d820136bfcb103f385b",
+    "eval-62a4612fe78cf61e55edb7f8a948590c3e0b121e51ae10ab": "c393824f9f23c57ba27fd10ce56dd4e0b447b3c1339f66951af3fdab50abc658",
+    "eval-6cbac4a601879346d292f9de642bf1d170d18f2fa7779de2": "996dce185ab703e29cee3ad0494c082101a34093e96a40768dfe4f491bf44a0f",
+    "eval-6f6d9f9355de406778d92f03cb1dbfa502d63eab87af0be1": "c4b3439e7387c574f24e347356fb8cc9e441adbdb1d0fc28a0c1cbd6cb91d3a6",
+    "eval-7199c120ffffd440fe7b646d5282e8afa5737f2568388bd1": "624357ca12ca826386cd6a79c249e62d7eb5d95a21d1a28b5ff21a66aff4849d",
+    "eval-78e7f648b936e766cba3d36a057cf7d2e703422c4be247d8": "60d87f801d932a6c627076fdee8f5546aa9a818b45f835a03c6a6ef2a6aadafe",
+    "eval-83320e6bf808100e609e99914e66cb7a2bfd068267d3fe79": "e8dafb9fce84d3406c55537fcde9779249f0a4c7ace34d2c17f440cfb2799e81",
+    "eval-84bab7264226589c93e4717a329141a4d578d791ddc67e6f": "a6341aa27ee5e91c1c5d1df67b6665322cfa6fd299782f7e7a75033369c550b2",
+    "eval-8cae894098673240307a4f8725428478e297c8a4efe678cb": "15aab37cea9f62ed3270e7f764e97873742fa2c37327438a3d5d0f3afa3ad907",
+    "eval-94e27326dcbc88d0fe1137b05a1c12a2ae77b9fb6e21eee9": "84cce74edc90917ad3d0e61c9563cbfff8efd6cddd782043623c3c4ef71c84b6",
+    "eval-9640722a18b81f23f2a546560b943bbed21cf8d04c3811ae": "427ac590f7b68215871eeb022127dff5aa7d862fd4f7319171e99238948a5299",
+    "eval-a13177af1c6ce8f03025e6acfe9e6aa1e31e01d44d4c93f1": "9e0e1df8e2b9c98542e1020b7341e3243672614b1e728b84284526f35203c4c9",
+    "eval-aa692007b231bedf3070a92e44fe73dbc05346a032933c81": "672e2649097173eb341a93588fc988b9d98c988595f0b98d94fb03f624db03ee",
+    "eval-b467c1ffd059f937aab649c8a85f1e79d8974dedc38dee40": "52ac3d4fbb17ce0cd3a3cdfcad509020998bc1dae1f9ebe550f159458c927021",
+    "eval-c1a5cd356ac054cd74afce831f41c89e09c98ff29023456c": "35d47b557b02d877bddf9c8ac7c0c877f6b44242dac52e6f2b1b8f2f9f623e8f",
+    "eval-c55bbe8b9d4467d038e4a3818004fa716e26a2e6f3f3580a": "88e8df17c0add001edaaf4ada5caefdb6dbc82a392ea1c2c40a0af87a88dd658",
+    "eval-c9a66e5dd8f0a758b518d186f0094ab2f8627f147443b9b6": "76aa2cda183e961f31fa1a96258bee38209d6d1a599db8eb55aa32508e49457a",
+    "eval-ce310361156d6945739d613ed78de0f995206ae9ba719718": "b1e21cf3cac681337d09ab31e266f0bcdf8f6dc119f38ab30a9ab08d13b76f48",
+    "eval-d6f0606015f8a13f5f72235f5c441402fe666dee8c9317a0": "6fcec51fa44d3a458ecef0d3dd0de5bada784a91b68c668c2d7be187d1659cd1",
+    "eval-e9ad58c8a8ebab711bf82a8da132a1e1c74fa81114e6b5c5": "ac288311102e41ff026440c84a340d63ba41ade6a7e6d4b34342ad155ba3ee04",
+    "eval-eccae3c9c6b53e8ac334e1676d57f5a743d66ef6e664b052": "ec5acd268fa44b288be74c5c7b0dad6439c21ee1bb89e4c521803e341ed77701",
+    "eval-f8b2d6bbb96092394abf6024eae06b4c3fc85a74b50ecc09": "62e4b57109e69245ec49634644b456711c254a69a6d641833cd75a262cd032d5"
+  },
+  "schema": 1,
+  "scope": "Single GPU3 engineering replay on four previously public workloads in each split. Receipt digests attest to selected bytes and attention outputs; no raw KV replay.",
+  "score_unit": "sum of four case median elapsed milliseconds; lower is better",
+  "selected_output_digests": {
+    "6188d971f64217762c3466abbb4bb8f176bca778da30ccd1d0d8c730f23c0d6d": "6b20947ecd10996b866e6180e4d631804c317b39af8f12a4447c8ddfe6c0d5a1",
+    "8b430ccb172159b29b624560f94478e0e0f7b33a467aa8b32eb076688e958c90": "87bf9a538125a7a57eb60a59d342c3f95b6b46e651a178c058128e01e6299ae0",
+    "b685b21c047d4b2562fbf888ff4f4943325cf4abc5b49c0d4f1b3f23bb21e08a": "34401591c548a25a61fdd3072bd55f923bc7ba5781cbe79746ae9a86be70c6bf",
+    "ca69637161827a4e6aedd22f86b19d8a45a93485370ec98db17920a0fba1388f": "31d97a5e1e01a37f478e08d4fe5b805df0c8e4dfa7077b218e9e32eced082755"
+  },
+  "worker_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d"
+}

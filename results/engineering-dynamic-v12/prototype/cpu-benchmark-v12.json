@@ -1,0 +1,360 @@
+{
+  "cases": {
+    "multiple_rules_cold_fallback": {
+      "median_v11_ns_per_choice": 9298.31,
+      "median_v12_ns_per_choice": 9872.18,
+      "paired_median_gain_ns_per_choice": -409.6900000000005,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9847.0,
+          "v12_ns_per_choice": 10187.03
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9943.6,
+          "v12_ns_per_choice": 10327.62
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 10206.95,
+          "v12_ns_per_choice": 10712.02
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9472.06,
+          "v12_ns_per_choice": 9858.75
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 8969.11,
+          "v12_ns_per_choice": 10194.45
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9310.21,
+          "v12_ns_per_choice": 9467.33
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9976.18,
+          "v12_ns_per_choice": 9532.2
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9234.68,
+          "v12_ns_per_choice": 9667.37
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9236.34,
+          "v12_ns_per_choice": 9489.15
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9067.41,
+          "v12_ns_per_choice": 9777.52
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 9205.2,
+          "v12_ns_per_choice": 9885.61
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 9286.41,
+          "v12_ns_per_choice": 9930.15
+        }
+      ]
+    },
+    "multiple_rules_hot_first_rule": {
+      "median_v11_ns_per_choice": 6497.475,
+      "median_v12_ns_per_choice": 5156.379999999999,
+      "paired_median_gain_ns_per_choice": 1411.2899999999995,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6607.89,
+          "v12_ns_per_choice": 5169.93
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6296.76,
+          "v12_ns_per_choice": 4938.77
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6441.4,
+          "v12_ns_per_choice": 4977.07
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6467.81,
+          "v12_ns_per_choice": 5166.07
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6574.04,
+          "v12_ns_per_choice": 5172.93
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6450.44,
+          "v12_ns_per_choice": 5028.97
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6512.02,
+          "v12_ns_per_choice": 5012.42
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6428.52,
+          "v12_ns_per_choice": 5296.17
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 6510.58,
+          "v12_ns_per_choice": 5467.73
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 7156.14,
+          "v12_ns_per_choice": 5250.59
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 7266.26,
+          "v12_ns_per_choice": 5040.88
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 6484.37,
+          "v12_ns_per_choice": 5146.69
+        }
+      ]
+    },
+    "one_dynamic_feature": {
+      "median_v11_ns_per_choice": 4658.795,
+      "median_v12_ns_per_choice": 5124.3099999999995,
+      "paired_median_gain_ns_per_choice": -419.09000000000015,
+      "trials": [
+        {
+          "block": 1,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4526.68,
+          "v12_ns_per_choice": 4951.8
+        },
+        {
+          "block": 2,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4641.37,
+          "v12_ns_per_choice": 5179.97
+        },
+        {
+          "block": 3,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4875.84,
+          "v12_ns_per_choice": 5134.83
+        },
+        {
+          "block": 4,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4676.22,
+          "v12_ns_per_choice": 5113.79
+        },
+        {
+          "block": 5,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4749.19,
+          "v12_ns_per_choice": 5432.62
+        },
+        {
+          "block": 6,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4864.65,
+          "v12_ns_per_choice": 5576.99
+        },
+        {
+          "block": 7,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4751.82,
+          "v12_ns_per_choice": 5142.85
+        },
+        {
+          "block": 8,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4612.53,
+          "v12_ns_per_choice": 5263.32
+        },
+        {
+          "block": 9,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4562.69,
+          "v12_ns_per_choice": 4850.82
+        },
+        {
+          "block": 10,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4862.12,
+          "v12_ns_per_choice": 4859.48
+        },
+        {
+          "block": 11,
+          "order": [
+            "v11",
+            "v12"
+          ],
+          "v11_ns_per_choice": 4526.03,
+          "v12_ns_per_choice": 4939.09
+        },
+        {
+          "block": 12,
+          "order": [
+            "v12",
+            "v11"
+          ],
+          "v11_ns_per_choice": 4422.28,
+          "v12_ns_per_choice": 4784.69
+        }
+      ]
+    }
+  },
+  "iterations_per_arm_block": 10000,
+  "paired_blocks": 12,
+  "python": "3.12.14",
+  "schema": 1,
+  "scope": "CPU route choice only, no Torch tensor ops, CUDA, serving, or RSI",
+  "source_sha256": {
+    "v11_runtime": "3bb7a74a8ac96f31d7497c576e3b654edb4ba2d7f45b2be8db11b9ed579d8ecd",
+    "v12_feature_view": "e5b636b177c2cceae9328a48bb51e1ba46de585312630aa28285dd7509b3a445",
+    "v12_runtime": "2b50f89c6541cd4d47af774a5c9ac7d841c03c7e3ab9c81afbed6d1a0c9c97ab"
+  },
+  "system": "Windows-11-10.0.26200-SP0"
+}

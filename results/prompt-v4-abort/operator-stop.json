@@ -1,0 +1,69 @@
+{
+  "completed_rounds": 0,
+  "controller_pid": 26692,
+  "journal_sha256": "d22e770023cece752b2b8ba8693da6660d55189bd6ea3d4b2edc387ca5c11863",
+  "pipeline_exitcode": 4294967295,
+  "reason": "Inherited META_SYSTEM described shared historical incumbent retention while v4 actually selected fresh parent/child outputs. Frozen pilot kept unchanged; no resumption or retry of pending effects.",
+  "remote_gpu_idle_checked_before_stop": true,
+  "schema": 1,
+  "states": [
+    {
+      "key": "eval/native/train",
+      "status": "completed"
+    },
+    {
+      "key": "eval/native/validation",
+      "status": "completed"
+    },
+    {
+      "key": "eval/bootstrap/initial-incumbent",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/adaptive-meta",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/fixed-meta",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/parent/00",
+      "status": "completed"
+    },
+    {
+      "key": "eval/r0000/parent/00",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/parent/01",
+      "status": "completed"
+    },
+    {
+      "key": "eval/r0000/parent/01",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/child/00",
+      "status": "completed"
+    },
+    {
+      "key": "eval/r0000/child/00",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/child/01",
+      "status": "completed"
+    },
+    {
+      "key": "eval/r0000/child/01",
+      "status": "completed"
+    },
+    {
+      "key": "api/r0000/fixed-a/00",
+      "status": "pending"
+    }
+  ],
+  "status": "operator_stopped_for_prompt_contract_mismatch",
+  "utc": "2026-11-11T05:52:34.847628+00:00"
+}

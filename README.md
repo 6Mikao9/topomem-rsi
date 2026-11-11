@@ -1,12 +1,12 @@
 # TopoMem RSI
 
-[中文说明](README.zh-CN.md) · [Two-task architecture (中文)](docs/ARCHITECTURE_ZH.md) · [Memory program contract](docs/MEMORY_PROGRAM_CONTRACT_ZH.md) · [SGLang reproduction (中文)](docs/REPRODUCE_SGLANG_ZH.md) · [Offline report](examples/topology-report/README.md)
+[中文说明](README.zh-CN.md) · [Two-task architecture (中文)](docs/ARCHITECTURE_ZH.md) · [v4.1 selection protocol (中文)](docs/V4_SELECTION_PROTOCOL_ZH.md) · [Memory program contract](docs/MEMORY_PROGRAM_CONTRACT_ZH.md) · [SGLang reproduction (中文)](docs/REPRODUCE_SGLANG_ZH.md) · [Offline report](examples/topology-report/README.md)
 
 TopoMem RSI searches for KV memory programs for a fixed sparse-attention implementation, hardware topology, and workload. The controller can also revise the code that generates those programs and the code that proposes the next revision.
 
 ## Start here
 
-1. **Open the final offline demo.** Download the HTML and open it in a local browser with JavaScript enabled. The SGLang held-out result is selected on load. Use the run selector to open the CUDA Agent evidence. [Offline demo](demo/topomem-evidence.html)
+1. **Open an offline demo.** Download the HTML and open it locally with JavaScript enabled. [Latest v4.1 evidence](demo/topomem-v41-final.html) shows two model-proposed revisions, validation decisions, source and four-scenario held-out results. [Earlier multi-GPU and SGLang evidence](demo/topomem-evidence.html) retains the separate original experiments.
 2. **Run a local CPU check.** From the repository root, use Python 3.10 or later. The following tests use the standard library and work directly from the checkout.
 
    ```sh
@@ -36,6 +36,29 @@ The target fixes attention and token selection, the physical GPU identities and 
 ## Status
 
 Paired blocks repeat the fixed experimental arms in separate jobs. Generator runs and source admissions are counted separately.
+
+The additive v4.1 controller selects three distinct outputs using repeated training measurements: the discovered manager, an output actually emitted by a seed or admitted source, and the fixed generator's output. It compares fresh parent and child proposals against a separate historical incumbent. This controller change is human engineering, not model-driven RSI. [Protocol](docs/V4_SELECTION_PROTOCOL_ZH.md)
+
+DeepSeek generates memory IR and can revise two generator entry points, `build_prompt` and `build_meta_prompt`. The current training archive stores measured programs, provenance, and feedback. Autonomous evolution of the wider framework, the memory backend, and a cross-run semantic knowledge base remains future work. The framework should propose and evaluate memory improvements within the capabilities it supports. Humans set the boundaries, run and audit tests, and provide reproducible feedback. The v12 and v13 backend changes were human-directed engineering. [Ownership and autonomy boundaries (中文)](docs/AUTONOMY_BOUNDARY_ZH.md)
+
+The v12 lazy-feature prototype was rejected after 24 GPU jobs and excluded from the default runtime. Program actions, KV and output bytes, and link traffic matched v11. It was slower in all eight paired aggregate comparisons by a median of 9.900 ms. [v12 engineering evidence](results/engineering-dynamic-v12/README_ZH.md)
+
+The human-directed v13 backend change removes generic candidate evaluation when static constraints prove that retaining a producer copy is the only legal choice. With the same LRU-equivalent memory IR, it was faster than v11 in 8/8 four-case blocks by a paired median of 11.661 ms; it remained slower than native in 8/8 blocks by 11.449 ms. Actions, lifecycles, selected KV, outputs and link bytes matched. This is an executor improvement, not a model-proposed memory policy or an RSI gain. [v13 engineering evidence](results/engineering-producer-v13/README_ZH.md)
+
+The initial H256 v4.1 study used GPU0/1 with fixed per-case placement and was interrupted by a host reboot. Its 26 new receipts, 10 completed model calls, partial matrix and unknown job are preserved separately. No round was committed and no held-out test ran. [Interrupted study](results/cuda-v41-reboot-interruption/README_ZH.md)
+
+### Latest v4.1 GPU3 supplement
+
+Two rounds completed 20 DeepSeek calls and 134 GPU receipts. The model proposed the memory IR and generator revisions; humans did not edit those candidates. Both generator revisions were rejected, so there were zero admissions and zero subsequent uses of an admitted revision. R0's child was 22.644 ms slower than its fresh parent. R1's child improved over the historical manager by 9.676 ms, but was 2.253 ms slower than its fresh parent and was rejected.
+
+| Held-out output | Wins / median gain over native | Wins / median gain over fixed | Wins / median gain over manual |
+| --- | --- | --- | --- |
+| Manager discovery | 0/6 / −37.739 ms | 0/6 / −15.536 ms | 6/6 / +35.415 ms |
+| Admitted-source output (seed source in this run) | 0/6 / −36.516 ms | 0/6 / −15.477 ms | 6/6 / +36.100 ms |
+
+Positive gain means reference minus candidate; each block sums four case medians. This separate engineering supplement uses physical GPU3, H64 attention, 128 KiB managed GPU KV, 32 MiB pinned host and previously published corpus inputs. It is single-GPU evidence, not a new generalization or LongBench quality result. It did not establish an RSI advantage. All arms use the same human-engineered v13 worker. [Report and verification](results/cuda-rsi-v41-gpu3/README_ZH.md) · [Independent audit](results/operations/cuda-rsi-v41-gpu3-independent-audit/README_ZH.md) · [219-job server evidence](results/operations/followup-server-evidence/README_ZH.md)
+
+Rebuild the viewer with `python -B -m rsi_memory.demo_v4 --report results/cuda-rsi-v41-gpu3/controller/report.json --harness-directory results/cuda-rsi-v41-gpu3/controller/harnesses --output demo/rebuilt-v41.html`. Use archived frozen sources to replay historical runs. Current main also contains human fixes for durable execution records and failed held-out status; it cannot resume those runs with changed source bytes.
 
 ### Formal SGLang v3 experiment
 

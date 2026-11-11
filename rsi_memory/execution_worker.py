@@ -33,10 +33,24 @@ def digest(value):
                                      allow_nan=False).encode()).hexdigest()
 
 
+def _sync_directory(path):
+    # The supervisor runs on Linux. Windows test runs sync file contents only.
+    if os.name == "posix":
+        fd = os.open(path, os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+
+
 def atomic(path, value):
     pending = path.with_suffix(".pending")
-    pending.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    with pending.open("w", encoding="utf-8") as stream:
+        stream.write(json.dumps(value, indent=2, allow_nan=False) + "\n")
+        stream.flush()
+        os.fsync(stream.fileno())
     os.replace(pending, path)
+    _sync_directory(path.parent)
 
 
 def validate_job_id(name):
@@ -121,15 +135,14 @@ def execute(root, python, message):
     request = {k: v for k, v in message.items() if k != "sequence"}
     request_sha = digest(request)
     if directory.exists():
-        request_path = directory / "request.json"
-        if not request_path.is_file():
-            raise ValueError("job reservation has no request record; execution state is unknown")
-        previous = json.loads(request_path.read_bytes())
-        if previous["sha256"] != request_sha:
+        previous = status(root, message["job_id"])
+        if previous.get("request_sha256") is None:
+            raise ValueError("job reservation has no valid request record; execution state is unknown")
+        if previous["request_sha256"] != request_sha:
             raise ValueError("job ID already belongs to a different immutable request")
-        if (directory / "receipt.json").exists():
-            return {**json.loads((directory / "receipt.json").read_bytes()), "replayed_receipt": True}
-        raise ValueError("job was started but has no completion receipt; execution state is unknown")
+        if previous["status"] != "started_unknown":
+            return {**previous, "replayed_receipt": True}
+        raise ValueError("job reservation has no valid completion receipt; execution state is unknown")
     if message["module"] not in MODULES:
         raise ValueError("module is not a trusted evaluator")
     source = verify_source(root, message["source"], message["source_manifest_sha256"], message["module"])
@@ -204,6 +217,9 @@ def _launch(directory, source, python, message, request, request_sha, before, ti
     directory.mkdir(parents=True)
     atomic(directory / "request.json", {"sha256": request_sha, "request": request})
     atomic(directory / "input.json", message["payload"])
+    # Persist both newly created directory entries before the child can run.
+    _sync_directory(directory.parent)
+    _sync_directory(directory.parent.parent)
     env = {key: value for key, value in os.environ.items() if key in INHERITED_ENVIRONMENT}
     env.update(environment)
     indices, uuids = message["gpu_indices"], message["gpu_uuids"]
@@ -275,17 +291,31 @@ def _launch(directory, source, python, message, request, request_sha, before, ti
     return receipt
 
 
+def _read_record(path):
+    try:
+        record = json.loads(path.read_bytes())
+        return record if type(record) is dict else {}
+    except (OSError, ValueError):
+        return {}
+
+
 def status(root, job_id):
     directory = job_directory(root, job_id)
-    receipt = directory / "receipt.json"
-    if receipt.is_file():
-        return json.loads(receipt.read_bytes())
     if not directory.exists():
         return {"job_id": job_id, "status": "not_found"}
-    request = directory / "request.json"
     result = {"job_id": job_id, "status": "started_unknown"}
-    if request.is_file():
-        result["request_sha256"] = json.loads(request.read_bytes())["sha256"]
+    record = _read_record(directory / "request.json")
+    request = record.get("request")
+    try:
+        if type(request) is not dict or request.get("job_id") != job_id or record.get("sha256") != digest(request):
+            return result
+    except ValueError:
+        return result
+    result["request_sha256"] = record["sha256"]
+    receipt = _read_record(directory / "receipt.json")
+    if (receipt.get("job_id") == job_id and receipt.get("request_sha256") == record["sha256"]
+            and receipt.get("status") in ("completed", "failed", "environment_conflict", "timed_out")):
+        return receipt
     return result
 
 

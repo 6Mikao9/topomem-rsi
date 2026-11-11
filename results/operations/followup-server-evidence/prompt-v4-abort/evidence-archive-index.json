@@ -1,0 +1,444 @@
+{
+  "groups": {
+    "final-gpu3": {
+      "archives": [
+        {
+          "bytes": 2479130,
+          "file_count": 74,
+          "name": "final-gpu3-server-00.zip",
+          "sha256": "e78858b6d8b61dc9c8995e884b06aeb3028b7eaaa89d8c04911fbeddf1e9e556",
+          "uncompressed_bytes": 39547337
+        },
+        {
+          "bytes": 2419240,
+          "file_count": 54,
+          "name": "final-gpu3-server-01.zip",
+          "sha256": "cfc5beced8367b3ab1ebd7a3223d8bb4fd5f62d27f35912136e775a072f6ab36",
+          "uncompressed_bytes": 39257882
+        },
+        {
+          "bytes": 2450663,
+          "file_count": 50,
+          "name": "final-gpu3-server-02.zip",
+          "sha256": "99a6bb5fa4d360f9106d6656fa812d0db1e7f1380467a7662066734060558a74",
+          "uncompressed_bytes": 39258702
+        },
+        {
+          "bytes": 2432581,
+          "file_count": 46,
+          "name": "final-gpu3-server-03.zip",
+          "sha256": "700f01ce436a2e43fc1f38cf9d02a1d9e2df740905714b906d0bda4f1ac4ebe6",
+          "uncompressed_bytes": 39992219
+        },
+        {
+          "bytes": 2422648,
+          "file_count": 54,
+          "name": "final-gpu3-server-04.zip",
+          "sha256": "43778de48aa9f219da91d7dc8f08058ee09bab57b60c0f1338c0e0a019a1e6b3",
+          "uncompressed_bytes": 38231447
+        },
+        {
+          "bytes": 2352559,
+          "file_count": 48,
+          "name": "final-gpu3-server-05.zip",
+          "sha256": "c07ec5eba9c68a06c807df0fd297acedb72c84792aa834549c0eb55a787ebcf9",
+          "uncompressed_bytes": 38020248
+        },
+        {
+          "bytes": 2388192,
+          "file_count": 54,
+          "name": "final-gpu3-server-06.zip",
+          "sha256": "0a94f90a5c475eed5f1083b00fd131497c68ea5df49adb8864e8a78d7fe250d1",
+          "uncompressed_bytes": 38448528
+        },
+        {
+          "bytes": 2390126,
+          "file_count": 60,
+          "name": "final-gpu3-server-07.zip",
+          "sha256": "67295059975dbf3412c18e432edf256a34bedecf625b966b33c649cb68682018",
+          "uncompressed_bytes": 38160157
+        },
+        {
+          "bytes": 2363210,
+          "file_count": 48,
+          "name": "final-gpu3-server-08.zip",
+          "sha256": "a3571d1962412e99b1c566e2f2e5a0f1bdc2b027b4c4b866e4eedacbf4288552",
+          "uncompressed_bytes": 38548630
+        },
+        {
+          "bytes": 2324422,
+          "file_count": 44,
+          "name": "final-gpu3-server-09.zip",
+          "sha256": "08966b689ca146077539015331239e51ec337b1320e100fe4cc50b70a88a3225",
+          "uncompressed_bytes": 38246936
+        },
+        {
+          "bytes": 2446385,
+          "file_count": 52,
+          "name": "final-gpu3-server-10.zip",
+          "sha256": "50597de909a50bebb4f2f4a8d01aef8f9c60fcff323e988f6a69a6b26af46338",
+          "uncompressed_bytes": 39549114
+        },
+        {
+          "bytes": 2322365,
+          "file_count": 44,
+          "name": "final-gpu3-server-11.zip",
+          "sha256": "c103efd10a460e4043417068395513780ef261ff879b31b6e0f054f686f78d8f",
+          "uncompressed_bytes": 37751361
+        },
+        {
+          "bytes": 2472746,
+          "file_count": 52,
+          "name": "final-gpu3-server-12.zip",
+          "sha256": "27bdd88f287a8c30919be8b2b85d8a3739cdde513d136f7d844d60a370cd333c",
+          "uncompressed_bytes": 39982059
+        },
+        {
+          "bytes": 2389031,
+          "file_count": 50,
+          "name": "final-gpu3-server-13.zip",
+          "sha256": "6f8bfe7004e926e8d8aea9099162ac0dff07aa29f070633e0443fe2e84f75c9f",
+          "uncompressed_bytes": 38099189
+        },
+        {
+          "bytes": 2369894,
+          "file_count": 46,
+          "name": "final-gpu3-server-14.zip",
+          "sha256": "9a70a395a6eafe760b3ea391306763659f54afab4a6db125014e37030c1164b1",
+          "uncompressed_bytes": 38656042
+        },
+        {
+          "bytes": 1399414,
+          "file_count": 28,
+          "name": "final-gpu3-server-15.zip",
+          "sha256": "1b6903ad41f3abc6b8e8bfdc7812d1e6520015386a912179cfd1e4c13a6dba31",
+          "uncompressed_bytes": 23220199
+        }
+      ],
+      "job_ids": [
+        "eval-0078850e1e01f5e514b0045dd7895c27f39cea81a6f95097",
+        "eval-018e1bb644b0675a29877e9718b7affea948b114ab4da578",
+        "eval-04c539079b929ad613de03283a635859120205e9fd587327",
+        "eval-0b7d94d40351b6646ece32c5bcc7363ad3b9d2cc70cd8405",
+        "eval-0da2f04d5635c4858480b763498966c0e2527fc7b7e80cfd",
+        "eval-0f6d2ebb01859177abe5a16c0015ad90e6b8a7f6983a3e58",
+        "eval-11208f35c27bf69d0ae0b29ca5e7fc3e4189f95f15f45507",
+        "eval-11cde151f285deccdd0bfc87e70dcf50c833be7dd31a659a",
+        "eval-147e49fe89988eb979e0386ded5da340bb63a7754febee8c",
+        "eval-164493c1edb402f5eed82eff0da2d2e1fd7217736172c957",
+        "eval-1cedf784df757a11f07bafa3b28bf049fc1334d682ca61c0",
+        "eval-1cfa6d3d3ef523f7a734b5c34a6c648ee5c10520bc685c1a",
+        "eval-1e171e9230abb15e5af4a36dea44319785fd94de94f75d28",
+        "eval-1e6a0c0b369c2318e62bc04343495d59a3a5dcfee0723636",
+        "eval-22d2df192895cefff3aea0940a794aa5afe594f26f2d5ad4",
+        "eval-2642c5c4e6bf36a46c0e313d3bdeea34d1d82c8ace786086",
+        "eval-30735c386cd81d9d7c59ec4d59fa6ad2c2380b8c860f30fe",
+        "eval-31604ff441c6a5fafbf06f393ae712210e29098a4b6ddfef",
+        "eval-32cf4eba3313cb9ed7cce2624ae77c92138d111d99ab71fc",
+        "eval-35787be649405e5309de1bc62455b13a73a14659bac3edab",
+        "eval-3bd36cc6dd1b6645ed45fb4b40727caa839e5ed8c6c06b70",
+        "eval-3c28503dec16949233517ec759a1f42c5b43f737e450d58b",
+        "eval-3e209fd5c88b4326ad1cea618f221f8b1a7f09dce8f0d647",
+        "eval-3ecfd066a2432ea5e7d5d37cd069ea7b09e42690aab45844",
+        "eval-40bd96593918f3b80d0e91359f86594ceb654604c8719be1",
+        "eval-41ec0cc8c85bbcaa435bc97ca8357ec63abfcafc1a48fe54",
+        "eval-42546538195de9f36822bee0474e4623e825353b3c7c9ace",
+        "eval-4820c9a029bc11e29f0ef8bc1c93ceae6d3a55255d4f3800",
+        "eval-487c2ee08127119bec33a1abc7d031fc82bebbf0b3174e95",
+        "eval-48bd1544fca5ced479dd95c9614bc233fb619bd78856d3ea",
+        "eval-49729bfa691688d5df447e3f88d2dc755af8a93e2ffaddc0",
+        "eval-4a12008ae8245c07cf3540204702e00b3eadecbd6d269a49",
+        "eval-4d1c3a5d4b499acc6b0c5e5de911af42af18e2465c85fd63",
+        "eval-4d8eac01101fbd35a9294473d4cd797848f78c5b5fed9761",
+        "eval-50d71e26acf1be56ace030594be66d0e854af0dd21a71ba4",
+        "eval-5174699e3626a04a004b54c2ace443fa29919c58f1936303",
+        "eval-52f67dd56661a65b08ceda68ea7a954fbca295c7639ee1de",
+        "eval-54155b7e81a6dab51a0877f62dcf69f9a05c558cf977da11",
+        "eval-56347f29e3b51dada46aa2dbc859d2481680ddc9b705ad1a",
+        "eval-59a187ebf727b5b9582fb5971da8f543182bbb812fbfd03a",
+        "eval-5a8d10959e33021e0b97bd667749d7db0e4118c98f572a86",
+        "eval-5d0829f2e14feb2ace3b1333ae3dcb1a07c206875f13d3fa",
+        "eval-602419f2da1ccebddb082cc4c7d013d8da3bfcd89ce41ba6",
+        "eval-624ab2bcdd13ffddf5b349a00e42b2abaa6f4c0bcc8eebe2",
+        "eval-627fdad96dee567cb9ae32126dddbe1c96ce90df59303eed",
+        "eval-62a4612fe78cf61e55edb7f8a948590c3e0b121e51ae10ab",
+        "eval-6392c444b3ce3490a2749287c6ad4ec1ba953e1880eaa447",
+        "eval-6428ef48d885df498d961678c9946214f27985312e7be8ec",
+        "eval-6527a3ea335575e3ba3fc1e991752d308d03b529f2f9eefb",
+        "eval-6cbac4a601879346d292f9de642bf1d170d18f2fa7779de2",
+        "eval-6e311597d6e27acf1d04e503c8dd0166c1a19033133284a8",
+        "eval-6e6f67a97c071888017fa89dc64998ab9801306ff04d2565",
+        "eval-6f6d9f9355de406778d92f03cb1dbfa502d63eab87af0be1",
+        "eval-709d57b4a6db3aa99ca5aee9c5229646814bbc395339d498",
+        "eval-7199c120ffffd440fe7b646d5282e8afa5737f2568388bd1",
+        "eval-71db1abcd005d65ec3cbff617aeb671888a42cf37cc43cf4",
+        "eval-7679def280f9a72ee2b343fc3ac5113c484461f73354ddbe",
+        "eval-77e906b52dcfb4f0fbf04678e6cfc16c7fdbdab3204acdbc",
+        "eval-78e7f648b936e766cba3d36a057cf7d2e703422c4be247d8",
+        "eval-7d3c2f1a42bf6f4cfb699a7239be2e7eac65e9aeb64c2410",
+        "eval-7e95984f60fa0400a8ee689b38c1b3418b2aa2db8d733838",
+        "eval-7f411b041f912fa5956d71692b72cea24d208d5edff5f276",
+        "eval-81cf6faca089e0a5e1abfb56abea4845cc19cb595bfddb88",
+        "eval-83320e6bf808100e609e99914e66cb7a2bfd068267d3fe79",
+        "eval-833aa883f175f903989ca98e3ef8963df05023e76b4a48e9",
+        "eval-847a7e42cc002864a87a393fbf5c6a2ab1e87e7c7ecf9e5f",
+        "eval-84af68cc8887fc117426e503f52c74a9c7782128dac77deb",
+        "eval-84bab7264226589c93e4717a329141a4d578d791ddc67e6f",
+        "eval-8551093d81cb4f9e02dcdd6b6c027dab3ef5602ebd05e081",
+        "eval-86c3d7e7723c43f16b467cf613594843b580035a5301912c",
+        "eval-8851340227d599b2246026b63d8bd1d70185b557007beedc",
+        "eval-8b8f4cc363211000c1357693bf2922ba9338107f3e6852de",
+        "eval-8c98e40e6c81de3284510a57913a1ffa2e9823fe867215f6",
+        "eval-8cae894098673240307a4f8725428478e297c8a4efe678cb",
+        "eval-8e8ac78e9b39f393a8caa0aac90a8e8c9a9e3ff35aa725cd",
+        "eval-8ebafacbb81b68b5af28b94854dc8a59afb6b86cf52e1884",
+        "eval-8ff599b7af805ed0c4bee97314dba9023dc8b1d961de9a4a",
+        "eval-922c7be4da89219db4e34de7383804e8759d341df0d23322",
+        "eval-937d8363e70ae9a88a164ea05b3762f8d95d92732de086d7",
+        "eval-94e27326dcbc88d0fe1137b05a1c12a2ae77b9fb6e21eee9",
+        "eval-951e9eec07e241f45de640df61e40b403b80c65d7a3a2631",
+        "eval-9640722a18b81f23f2a546560b943bbed21cf8d04c3811ae",
+        "eval-9e2fcea91d23ad069f265e75896a78cd4d232f936095fbcd",
+        "eval-9f7ac87d3b37e3e77c9a93594b4f25e9675e2875607b0446",
+        "eval-a13177af1c6ce8f03025e6acfe9e6aa1e31e01d44d4c93f1",
+        "eval-a579f68a0ebf9ccbb0ebb77ca487e76c27b125567b4c1d93",
+        "eval-a595ff84e4a6943a405b0a8b75adc08fa617fea16c49e42f",
+        "eval-a9cfe3873427274d7fd48f908f3b82d5400a86eb808073e7",
+        "eval-aa692007b231bedf3070a92e44fe73dbc05346a032933c81",
+        "eval-ac48fbf97396dcd22681ccd94cb9d160ed198940f1242652",
+        "eval-ad198bc1e22226138ecdec105cbcd2f9a316f2d6b1d7ee40",
+        "eval-af9c23b7653aa3847147b2923d4881d004f09ed2d686a397",
+        "eval-b25534a5d4899b8e070c609f24e1fda4e2626f5445bdab93",
+        "eval-b436daf1c894abb5b6dbb5fb19f9e1bc1743e251d904eb55",
+        "eval-b467c1ffd059f937aab649c8a85f1e79d8974dedc38dee40",
+        "eval-b5add395d2058c7049a1980bc09896e3556062838601a25a",
+        "eval-b902522dd43c34674c7cc86ae3164da0f7e085c8d6a1997d",
+        "eval-b97465d00e5fdfa33288df238a1131442e3f4ecea7a5bdba",
+        "eval-c0e613ea640524b3c97078a9fd7088280c852a24db459d98",
+        "eval-c1a5cd356ac054cd74afce831f41c89e09c98ff29023456c",
+        "eval-c2cc544390b7e79f840a9518636d1b19e19b89590a4bf279",
+        "eval-c383a04f3d1fa0b5a2f1d5b206438822c3cbf0a302622594",
+        "eval-c3fc1b7b86a3ed5fcf1633556479e6ac20bcbff3461149b5",
+        "eval-c55bbe8b9d4467d038e4a3818004fa716e26a2e6f3f3580a",
+        "eval-c9a66e5dd8f0a758b518d186f0094ab2f8627f147443b9b6",
+        "eval-cc1bca84ff8c1de9fec7e1514b22f9f80d19bdb4b5fd0255",
+        "eval-cce21691e15eea89b8eb41672cac81f08478e49b7e2b0d02",
+        "eval-cd7f6fb91029c2c11caca3ecc02af41b2a4b6c02cab76364",
+        "eval-ce310361156d6945739d613ed78de0f995206ae9ba719718",
+        "eval-d1def146b1163f22a14d588d7d3aa61ea42c9dabe655357b",
+        "eval-d28a3bdb78c1648b2ea56044324fdee449ce4b0491182abf",
+        "eval-d47a4dcde9c47716fb6d6e56a03969da9a426f4cf8a58607",
+        "eval-d52fe801d1aaedcb36b889bd3dc41b6c75fb35dd966f7898",
+        "eval-d53da2f91ae7da266795098b9b0f5affac09ff34da743c24",
+        "eval-d6f0606015f8a13f5f72235f5c441402fe666dee8c9317a0",
+        "eval-d798d897d374b68c070373b71038e83a40bf3bb94ae68f44",
+        "eval-d8c045f2cc8cd1701b7c19beadb33824c69c37fb1d300812",
+        "eval-d9e89f3604ef73ebf5ede99b22ca1b97b70f5a1c28a2b4aa",
+        "eval-deeb9982ae4781a92eaea198e1c6dff343cf97c80f1e7736",
+        "eval-df723c7ee56fd0685b1190639877f8e8451fac9e6a617f94",
+        "eval-e038132fd53f8666a25de9f9f3972ca9e5a1af1e5a62aee6",
+        "eval-e23a28b0733e60af814af4b39cbf2bdaa397385ae119f695",
+        "eval-e8009e0f68c3f58074dab3f79e26e5fe6875e2285432ef7e",
+        "eval-e9ad58c8a8ebab711bf82a8da132a1e1c74fa81114e6b5c5",
+        "eval-ec18be1ef55368beb76a14c12ff06b668c612a5aecec11b2",
+        "eval-ecc3e0145be1445a43ed4099902425584af4418987ca39f5",
+        "eval-eccae3c9c6b53e8ac334e1676d57f5a743d66ef6e664b052",
+        "eval-f8b2d6bbb96092394abf6024eae06b4c3fc85a74b50ecc09",
+        "eval-f8f72ca3d9315120a2a119dc8519836065efa8d9472154a6",
+        "eval-f97d465774e5bf5ac7e257cd766e0c9f0a96b69c5c9a4c61",
+        "eval-f9a8ac8589221ae29e09af32aad59b8c60cddfec620e5caf",
+        "eval-fad4992798d3937a8d121b8f872458c7261ba29844b2bbb9",
+        "eval-fd39df4b71d25595ab3451ab44c72b1e0a39a66230b8f001",
+        "eval-ffeadc2726f175b520d2e107e3faf071598ad6fdcbdb34ca"
+      ]
+    },
+    "prompt-v4-abort": {
+      "archives": [
+        {
+          "bytes": 2295363,
+          "file_count": 58,
+          "name": "prompt-v4-abort-server-00.zip",
+          "sha256": "1f301687edeae2b29ab02c60158dc9b5ccf908faa9fea3de2a5cf9adc5c4be90",
+          "uncompressed_bytes": 39011720
+        },
+        {
+          "bytes": 373505,
+          "file_count": 8,
+          "name": "prompt-v4-abort-server-01.zip",
+          "sha256": "baf91c65d0db957deb18aec9329b11b41e94ead756c87cedbd3a236df8a6f645",
+          "uncompressed_bytes": 6084851
+        }
+      ],
+      "job_ids": [
+        "eval-0b7bd1cd6132b5c513b0c7ab7a0ef898773fb06b4271ac91",
+        "eval-1721f13c97e8c2c44bcbc530478e796f0080b2df5efbf613",
+        "eval-1f2f019a380384a43f8e3a34bba47ff678f1e9b060fa0c07",
+        "eval-28dd35ef1ed60fce320d80cfba57c35df20e71531568537b",
+        "eval-3c0b33cb1bb94f9a0af6379015e1e9dcd147229a02583e6c",
+        "eval-46e756dfcd861742a5ff4d4d4a7e7da45d518be96beb0503",
+        "eval-7e4fbd7c093a2755e279fb60b19d1a624682f1c72bf3f6cf",
+        "eval-9691d784883b69a137262cf6bd2ab70cc861197a8f61be31",
+        "eval-f6c5746c170f20b18f5e21904309c61698bc2344467d0d2f",
+        "eval-f7045e5ec449ad74eeddf240c15237d217adb452b26478f1",
+        "eval-ff98e790d0e92e31a931fe8d6a84ae7facbb0b0a2152d59d"
+      ]
+    },
+    "v12": {
+      "archives": [
+        {
+          "bytes": 2559803,
+          "file_count": 62,
+          "name": "v12-server-00.zip",
+          "sha256": "d021b0b42119e98079ee5fd9c41d60274f80f67835a4a0f98081549c70ad1590",
+          "uncompressed_bytes": 39376594
+        },
+        {
+          "bytes": 2553618,
+          "file_count": 60,
+          "name": "v12-server-01.zip",
+          "sha256": "a15cda204724278a772d13fa4718ab00599bc9bfae9b6c8167e304496e57cb8e",
+          "uncompressed_bytes": 39550006
+        },
+        {
+          "bytes": 1017256,
+          "file_count": 22,
+          "name": "v12-server-02.zip",
+          "sha256": "c7a217462217220002bb036e4d5718f1836f8e57023b9580120fb5ef6516670e",
+          "uncompressed_bytes": 15644372
+        }
+      ],
+      "job_ids": [
+        "qualification-v12-59d19cb8a0ca-b0-native",
+        "qualification-v12-59d19cb8a0ca-b0-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b0-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b1-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b1-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b1-native",
+        "qualification-v12-59d19cb8a0ca-b2-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b2-native",
+        "qualification-v12-59d19cb8a0ca-b2-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b3-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b3-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b3-native",
+        "qualification-v12-59d19cb8a0ca-b4-native",
+        "qualification-v12-59d19cb8a0ca-b4-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b4-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b5-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b5-native",
+        "qualification-v12-59d19cb8a0ca-b5-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b6-native",
+        "qualification-v12-59d19cb8a0ca-b6-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b6-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b7-writeback-v12",
+        "qualification-v12-59d19cb8a0ca-b7-writeback-v11",
+        "qualification-v12-59d19cb8a0ca-b7-native"
+      ]
+    },
+    "v13": {
+      "archives": [
+        {
+          "bytes": 2300814,
+          "file_count": 52,
+          "name": "v13-server-00.zip",
+          "sha256": "da88b19f6d5fe7f3ad48ce205f2112c166a4b80326dc76292a306a5b502413cc",
+          "uncompressed_bytes": 38023368
+        },
+        {
+          "bytes": 2294235,
+          "file_count": 52,
+          "name": "v13-server-01.zip",
+          "sha256": "8d4159e4b06c400cb9fb5c5b0d369ae17d4128fcd5e240d8caf039d6a6670740",
+          "uncompressed_bytes": 37795226
+        },
+        {
+          "bytes": 1895789,
+          "file_count": 40,
+          "name": "v13-server-02.zip",
+          "sha256": "530ef6ee1da74e52ea3a224ec2a211917d25f486485ef09f401481b93d944cae",
+          "uncompressed_bytes": 31429002
+        }
+      ],
+      "job_ids": [
+        "qualification-v13-19789ad0cd6c-b0-native",
+        "qualification-v13-19789ad0cd6c-b0-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b0-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b1-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b1-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b1-native",
+        "qualification-v13-19789ad0cd6c-b2-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b2-native",
+        "qualification-v13-19789ad0cd6c-b2-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b3-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b3-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b3-native",
+        "qualification-v13-19789ad0cd6c-b4-native",
+        "qualification-v13-19789ad0cd6c-b4-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b4-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b5-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b5-native",
+        "qualification-v13-19789ad0cd6c-b5-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b6-native",
+        "qualification-v13-19789ad0cd6c-b6-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b6-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b7-lru-equivalent-v13",
+        "qualification-v13-19789ad0cd6c-b7-lru-equivalent-v11",
+        "qualification-v13-19789ad0cd6c-b7-native"
+      ]
+    },
+    "v41-reboot-interruption": {
+      "archives": [
+        {
+          "bytes": 2302774,
+          "file_count": 52,
+          "name": "v41-reboot-interruption-server-00.zip",
+          "sha256": "2421618c5803fafc055df439d3784ba4ce7fac4704208ebd963fe0b21b33f91a",
+          "uncompressed_bytes": 39107491
+        },
+        {
+          "bytes": 2215488,
+          "file_count": 64,
+          "name": "v41-reboot-interruption-server-01.zip",
+          "sha256": "024ebee70229dabed158cad0087b0a1e01a68f625aadc35b5022c4fb250bd184",
+          "uncompressed_bytes": 39200799
+        },
+        {
+          "bytes": 1489042,
+          "file_count": 40,
+          "name": "v41-reboot-interruption-server-02.zip",
+          "sha256": "60676f99d1c569b09116d383f8956014bc42ebbe2f22acdc24f96ca6c2bb7ecd",
+          "uncompressed_bytes": 26366029
+        }
+      ],
+      "job_ids": [
+        "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3",
+        "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5",
+        "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0",
+        "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d",
+        "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59",
+        "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273",
+        "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56",
+        "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08",
+        "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123",
+        "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec",
+        "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840",
+        "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a",
+        "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7",
+        "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6",
+        "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367",
+        "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d",
+        "eval-960140543890d7588593c2bc332367896d8a1183b41a540e",
+        "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769",
+        "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4",
+        "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04",
+        "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90",
+        "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e",
+        "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333",
+        "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61",
+        "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f",
+        "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e"
+      ]
+    }
+  },
+  "schema": 1,
+  "scope": "Explicit owned job IDs, complete text evidence, no outside paths"
+}

@@ -1,0 +1,52 @@
+{
+  "completion_receipt_present": false,
+  "completion_result_present": false,
+  "host_observation": {
+    "container_before_recovery": {
+      "ExitCode": 255,
+      "FinishedAt": "2026-11-11T06:18:21.092263982Z",
+      "OOMKilled": false,
+      "Running": false,
+      "Status": "exited"
+    },
+    "reboot_approx_utc": "2026-11-11T06:17Z",
+    "uptime_seconds_at_inspection": 350.59
+  },
+  "interrupted_job_retried": false,
+  "job_id": "eval-99fd473a153c7b215cfbd43dabcd82562b13e01114982104",
+  "job_worker_outcome": "unverified",
+  "kind": "cuda_v41_host_reboot_recovery_followup",
+  "operator_recovery_observation": {
+    "container_restart_policy": "no",
+    "container_service": "sshd only",
+    "gpu0_and_gpu1_occupied_by_external_jobs": true,
+    "gpu_memory_mib_after_recovery": {
+      "0": 30482,
+      "1": 30482,
+      "3": 4
+    },
+    "sshd_container_started_after_evidence_copy": true
+  },
+  "original_matrix_resumed": false,
+  "previous_public_evidence_manifest_sha256": "8d5ed415682bacd16e911f72fc0f2ca3f9f896e2269e282050242146244a3c1c",
+  "private_recovery_inspection_sha256": "b7888b9f121c55558bb43de2464a494e5c136f28b2906e069663970538b0492d",
+  "recovered_files": {
+    "input.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "process.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "request.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "started.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "schema": 1
+}

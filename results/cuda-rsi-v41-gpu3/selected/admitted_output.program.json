@@ -1,0 +1,104 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "name": "route_transfer_ns",
+        "op": "feature"
+      },
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "name": "valid_rows",
+                "op": "feature"
+              },
+              {
+                "name": "kv_row_bytes",
+                "op": "feature"
+              }
+            ],
+            "op": "mul"
+          },
+          {
+            "name": "target_free_bytes",
+            "op": "feature"
+          },
+          {
+            "name": "target_is_host",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "replicate",
+      "event": "allocate",
+      "score": {
+        "op": "const",
+        "value": 1.0
+      },
+      "when": {
+        "name": "target_is_local",
+        "op": "feature"
+      }
+    },
+    {
+      "action": "replicate",
+      "event": "access",
+      "score": {
+        "name": "route_transfer_ns",
+        "op": "feature"
+      },
+      "when": {
+        "name": "target_is_local",
+        "op": "feature"
+      }
+    },
+    {
+      "action": "evict",
+      "event": "allocate",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "evict",
+      "event": "access",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "release",
+      "score": {
+        "op": "const",
+        "value": 1.0
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    }
+  ],
+  "schema": 1
+}

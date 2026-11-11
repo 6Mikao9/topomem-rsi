@@ -1,0 +1,13 @@
+{
+  "files_sha256": {
+    "README_ZH.md": "66d01ed269e0d03c7e35aa1abdda88a455dacaca0419283d22cf666542466f82",
+    "audit_gpu3_frozen_test.py": "e9d1a07ed10d1d4e27e0a27c4083223648bfb62afc4798aaa33bc8cbc752f170",
+    "audit_training_rounds.py": "9565087a4da6071b6985a46a21482faadb45783907356a507617afbb9da2ff21",
+    "v41-gpu3-frozen-test-independent.json": "d99b9cb6b2e75d049c02b74ad3f52b65bf09828657d8f510b7cb9d00234322de",
+    "v41-gpu3-training-independent-final.json": "31d48e250e3ade26db95a13c4e82eff18025b7e2536fec931861578fd1a692fb"
+  },
+  "primary_artifact_manifest_sha256": "7240095c37049f7012c9bf14bdd7b552640c87b59791110ea49e9433b2ba0b3f",
+  "primary_publication": "cuda-rsi-v41-gpu3",
+  "primary_report_sha256": "96f02b292a42197be2739695339ac4cfa0d132b2c6a28508c22178b0a42b87e2",
+  "schema": 1
+}

@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "scope": "CPU-only _optional on modeled producer-owned copies with timeline append",
+  "python": "3.12.14",
+  "host": "Windows",
+  "iterations": 20000,
+  "blocks": [
+    {
+      "block": 0,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2518.585,
+      "v13_ns_per_optional": 291.375,
+      "old_minus_new_ns_per_optional": 2227.21
+    },
+    {
+      "block": 1,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2659.985,
+      "v13_ns_per_optional": 284.45,
+      "old_minus_new_ns_per_optional": 2375.5350000000003
+    },
+    {
+      "block": 2,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2345.61,
+      "v13_ns_per_optional": 224.115,
+      "old_minus_new_ns_per_optional": 2121.495
+    },
+    {
+      "block": 3,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2311.135,
+      "v13_ns_per_optional": 256.055,
+      "old_minus_new_ns_per_optional": 2055.0800000000004
+    },
+    {
+      "block": 4,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2285.595,
+      "v13_ns_per_optional": 226.155,
+      "old_minus_new_ns_per_optional": 2059.4399999999996
+    },
+    {
+      "block": 5,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2368.42,
+      "v13_ns_per_optional": 228.865,
+      "old_minus_new_ns_per_optional": 2139.5550000000003
+    },
+    {
+      "block": 6,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2971.955,
+      "v13_ns_per_optional": 245.215,
+      "old_minus_new_ns_per_optional": 2726.74
+    },
+    {
+      "block": 7,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2472.64,
+      "v13_ns_per_optional": 234.66,
+      "old_minus_new_ns_per_optional": 2237.98
+    },
+    {
+      "block": 8,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2285.425,
+      "v13_ns_per_optional": 221.515,
+      "old_minus_new_ns_per_optional": 2063.9100000000003
+    },
+    {
+      "block": 9,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2439.33,
+      "v13_ns_per_optional": 237.97,
+      "old_minus_new_ns_per_optional": 2201.36
+    },
+    {
+      "block": 10,
+      "order": [
+        "v11",
+        "v13"
+      ],
+      "v11_ns_per_optional": 2399.41,
+      "v13_ns_per_optional": 226.06,
+      "old_minus_new_ns_per_optional": 2173.35
+    },
+    {
+      "block": 11,
+      "order": [
+        "v13",
+        "v11"
+      ],
+      "v11_ns_per_optional": 2596.795,
+      "v13_ns_per_optional": 240.48,
+      "old_minus_new_ns_per_optional": 2356.315
+    }
+  ],
+  "source_sha256": {
+    "v11": "ada57d5b110fd1090cde60732b254e8e03dab4859ef87d865e315182e278761c",
+    "v13": "8c3798f8feab6e281d650f025a247c416662eec1c49f304a587b3493ae85a7fb"
+  },
+  "median_v11_ns": 2419.37,
+  "median_v13_ns": 236.315,
+  "paired_median_gain_ns": 2187.355
+}

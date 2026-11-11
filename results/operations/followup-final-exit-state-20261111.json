@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "utc": "2026-11-11T07:40:39.978006+00:00",
+  "experiment_root": "/home/liuyuntao/experiments/rsi-topology-20261110",
+  "boot_id": "24109ced-6a97-4c22-9794-a9e30d267d9b",
+  "gpu": {
+    "argv": [
+      "nvidia-smi",
+      "-i",
+      "0,1,3",
+      "--query-gpu=index,uuid,memory.used,utilization.gpu",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "0, GPU-2a66a29f-9c52-6365-d76b-57d2116826c7, 2 MiB, 0 %\n1, GPU-c9891208-c33c-f89b-e575-7fe0d73c8f43, 2 MiB, 0 %\n3, GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550, 2 MiB, 0 %\n",
+    "stderr": ""
+  },
+  "compute_processes": {
+    "argv": [
+      "nvidia-smi",
+      "-i",
+      "0,1,3",
+      "--query-compute-apps=pid,gpu_uuid,process_name,used_memory",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "footprint_before_this_record": {
+    "argv": [
+      "du",
+      "-sb",
+      "/home/liuyuntao/experiments/rsi-topology-20261110"
+    ],
+    "returncode": 0,
+    "stdout": "5570518078\t/home/liuyuntao/experiments/rsi-topology-20261110\n",
+    "stderr": ""
+  },
+  "broken_gpu2_untouched": true,
+  "a100_reconnected_in_followup": false,
+  "cleanup_scope": "This experiment root and the separately recorded host recovery directory. No model or shared environment was removed.",
+  "external_gpu_occupancy": "GPU0/1 were occupied by external processes after the host reboot and were not used by the GPU3 supplement.",
+  "matching_experiment_processes_excluding_this_audit": []
+}

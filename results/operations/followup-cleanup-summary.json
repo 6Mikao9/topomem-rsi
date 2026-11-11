@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "utc": "2026-11-11T07:44:21.941570+00:00",
+  "container_experiment_root": "/home/liuyuntao/experiments/rsi-topology-20261110",
+  "container_root_logical_bytes": 5570519597,
+  "host_recovery_root": "/home/liuyuntao/experiments/topomem-reboot-recovery-20261111",
+  "host_recovery_logical_bytes": 9364,
+  "scope": "Only these owned experiment/recovery directories. No deletion performed.",
+  "host_reboot_observed": true,
+  "existing_sshd_only_container_restarted_utc": "2026-11-11T06:23:56.725500339Z",
+  "owned_persistent_management_ssh_exited": true,
+  "a100_additional_connections": 0,
+  "gpu2_reset": false,
+  "exit_state": "followup-final-exit-state-20261111.json",
+  "final_gpu_0_1_3": "2 MiB / 0%; no compute processes. External GPU0/1 jobs seen earlier had exited independently."
+}

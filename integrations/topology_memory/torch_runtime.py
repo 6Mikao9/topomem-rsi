@@ -45,6 +45,30 @@ _FEATURE_READERS = {
 _DYNAMIC_FEATURES = frozenset(_FEATURE_READERS)
 
 
+def _lower_producer_retain(program, local, rule_routes, rule_features):
+    """Prove the existing producer copy is the only possible allocation replica."""
+    group = "allocate", "replicate"
+    if group not in program.rules or program.features[group] & _DYNAMIC_FEATURES:
+        return None
+    if any(("allocate", action) in program.rules for action in ("migrate", "prefetch")):
+        return None
+    if any(routes for (key, _, dst), routes in rule_routes.items() if key == group and dst != local):
+        return None
+    local_routes = rule_routes[group, local, local]
+    if len(local_routes) != 1 or local_routes[0].nodes != (local,) or local_routes[0].links:
+        return None
+    route = local_routes[0]
+    static, _, _ = rule_features[group, route]
+    try:
+        choice = program.choose(*group, ((route, static),))
+    except ValueError:
+        # Keep errors at the point this candidate is actually evaluated.
+        return None
+    if choice is None:
+        return None
+    return choice[0], "replicate", route
+
+
 class InfeasiblePlan(RuntimeError):
     """A policy has no safe decision under the fixed capacities or routes."""
 
@@ -113,6 +137,7 @@ class _Runtime:
         self.rule_nodes = {}
         self.pressure_keys = {}
         self.static_routes = {}
+        self.producer_retain = None
         if self.program is not None:
             empty = dict.fromkeys(devices, 0)
             supports_handoff = any(action == "demote" for _, action in self.program.rules)
@@ -146,6 +171,8 @@ class _Runtime:
             self.pressure_keys = lower_pressure_keys(program, self.program, self.rule_features, _DYNAMIC_FEATURES, packed)
             self.static_routes = lower_static_routes(self.program, self.rule_routes, self.rule_features,
                                                      _DYNAMIC_FEATURES, self.pools)
+            self.producer_retain = _lower_producer_retain(
+                self.program, self.local, self.rule_routes, self.rule_features)
             if self.work_counts is not None:
                 self.work_counts.instrument(self.program)
         self.blocks, self.sessions = {}, {}
@@ -564,7 +591,13 @@ class _Runtime:
         return min(choices, key=lambda row: row[0], default=None)
 
     def _optional(self, event, state, *, retain_source=False):
-        choice = self._movement(event, state, retain_source=retain_source)
+        # _choices excludes ordinary transfers to an already resident target.
+        if event == "allocate" and retain_source and self.producer_retain is not None and self.local in state.copies:
+            if self.work_counts is not None:
+                self.work_counts.add(("allocate", "replicate"), "static_producer_retain_choices", 1)
+            choice = self.producer_retain
+        else:
+            choice = self._movement(event, state, retain_source=retain_source)
         if choice is not None:
             rule, mode, route = choice
             if not route.links:

@@ -1,0 +1,1647 @@
+{
+  "arm": "manual",
+  "result": {
+    "feasible": true,
+    "feedback": {
+      "cases": [
+        {
+          "action_counts": {
+            "evict": 80,
+            "place": 168,
+            "place_owner": 194,
+            "reclaim": 345,
+            "replicate": 63,
+            "retain_producer_replica": 168
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "gpu0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "gpu0",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu0-host0"
+              ],
+              "rule": 1,
+              "src": "gpu0",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 1,
+              "dst": "host0",
+              "links": [
+                "gpu0-host0"
+              ],
+              "rule": 1,
+              "src": "gpu0",
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "candidate_records": 354,
+              "choice_calls": 32,
+              "predicate_evals": 354,
+              "rows_scanned": 354,
+              "score_evals": 354
+            },
+            "access/reclaim": {
+              "rows_scanned": 0
+            },
+            "access/replicate": {
+              "static_route_choices": 735
+            },
+            "allocate/evict": {
+              "candidate_records": 633,
+              "choice_calls": 48,
+              "predicate_evals": 633,
+              "rows_scanned": 633,
+              "score_evals": 633
+            },
+            "allocate/place": {
+              "candidate_records": 582,
+              "choice_calls": 194,
+              "predicate_evals": 1086,
+              "score_evals": 362
+            },
+            "allocate/reclaim": {
+              "rows_scanned": 0
+            },
+            "allocate/replicate": {
+              "candidate_records": 556,
+              "choice_calls": 194,
+              "predicate_evals": 556,
+              "score_evals": 168
+            },
+            "hint/prefetch": {
+              "candidate_records": 0,
+              "choice_calls": 510
+            },
+            "idle/reclaim": {
+              "rows_scanned": 0
+            },
+            "release/reclaim": {
+              "candidate_records": 496,
+              "choice_calls": 345,
+              "predicate_evals": 496,
+              "rows_scanned": 345,
+              "score_evals": 496
+            }
+          },
+          "fetch_misses": 63,
+          "fixture_kind": "agent_tools",
+          "link_bytes": {
+            "gpu0-host0": 5505024,
+            "host0-gpu0": 2064384
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 983040
+          },
+          "median_elapsed_ms": 63.462118,
+          "median_transfer_ms": 4.200289,
+          "name": "v4-h256-agent-water-inspection-00",
+          "page_activity": [
+            {
+              "attention_reads": 56,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 6
+            },
+            {
+              "attention_reads": 56,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 6
+            },
+            {
+              "attention_reads": 51,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 51,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 11
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 11
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 22,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 4
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 5,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 5,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 9
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 9
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 14
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 14
+            },
+            {
+              "attention_reads": 14,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 15
+            },
+            {
+              "attention_reads": 14,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 15
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 10
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 10
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 12
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 12
+            },
+            {
+              "attention_reads": 5,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 7
+            },
+            {
+              "attention_reads": 5,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 7
+            },
+            {
+              "attention_reads": 4,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 8
+            },
+            {
+              "attention_reads": 4,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 8
+            },
+            {
+              "attention_reads": 3,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 3,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 13
+            }
+          ],
+          "page_activity_total_entries": 32,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 168,
+              "rule": 1
+            },
+            {
+              "action": "place_owner",
+              "count": 26,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 168,
+              "rule": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 168,
+              "rule": 2
+            },
+            {
+              "action": "reclaim",
+              "count": 345,
+              "rule": 7
+            },
+            {
+              "action": "evict",
+              "count": 48,
+              "rule": 9
+            },
+            {
+              "action": "evict",
+              "count": 32,
+              "rule": 10
+            },
+            {
+              "action": "replicate",
+              "count": 63,
+              "rule": 3
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 99,
+            "place": 200,
+            "place_owner": 228,
+            "reclaim": 405,
+            "replicate": 76,
+            "retain_producer_replica": 200
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "gpu1",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "gpu1",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 1,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 2,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 1,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "block": 0,
+              "node": "gpu1",
+              "rule": 2,
+              "step": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "block": 2,
+              "node": "gpu1",
+              "rule": 2,
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "candidate_records": 397,
+              "choice_calls": 36,
+              "predicate_evals": 397,
+              "rows_scanned": 397,
+              "score_evals": 397
+            },
+            "access/reclaim": {
+              "rows_scanned": 0
+            },
+            "access/replicate": {
+              "static_route_choices": 880
+            },
+            "allocate/evict": {
+              "candidate_records": 832,
+              "choice_calls": 63,
+              "predicate_evals": 832,
+              "rows_scanned": 832,
+              "score_evals": 832
+            },
+            "allocate/place": {
+              "candidate_records": 684,
+              "choice_calls": 228,
+              "predicate_evals": 1284,
+              "score_evals": 428
+            },
+            "allocate/reclaim": {
+              "rows_scanned": 0
+            },
+            "allocate/replicate": {
+              "candidate_records": 656,
+              "choice_calls": 228,
+              "predicate_evals": 656,
+              "score_evals": 200
+            },
+            "hint/prefetch": {
+              "candidate_records": 0,
+              "choice_calls": 612
+            },
+            "idle/reclaim": {
+              "rows_scanned": 0
+            },
+            "release/reclaim": {
+              "candidate_records": 582,
+              "choice_calls": 405,
+              "predicate_evals": 582,
+              "rows_scanned": 405,
+              "score_evals": 582
+            }
+          },
+          "fetch_misses": 76,
+          "fixture_kind": "chatbot_growth",
+          "link_bytes": {
+            "gpu1-host0": 6553600,
+            "host0-gpu1": 2490368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1179648
+          },
+          "median_elapsed_ms": 76.917695,
+          "median_transfer_ms": 5.216035,
+          "name": "v4-h256-chatbot-trip-planning-00",
+          "page_activity": [
+            {
+              "attention_reads": 65,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 65,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 9
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 9
+            },
+            {
+              "attention_reads": 42,
+              "fetch_misses": 6,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 42,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 14
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 14
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 21,
+              "fetch_misses": 3,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 21,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 20,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 4
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 11
+            },
+            {
+              "attention_reads": 19,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 11
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 7,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 17
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 18,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 17
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 12
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 12
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 5,
+              "layer": 0,
+              "page": 6
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 10
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 16
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 6
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 10
+            },
+            {
+              "attention_reads": 9,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 16
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 18
+            },
+            {
+              "attention_reads": 7,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 18
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 5,
+              "layer": 0,
+              "page": 7
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 4,
+              "layer": 0,
+              "page": 8
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 4,
+              "layer": 1,
+              "page": 7
+            },
+            {
+              "attention_reads": 6,
+              "fetch_misses": 3,
+              "layer": 1,
+              "page": 8
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 13
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 15
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 15
+            }
+          ],
+          "page_activity_total_entries": 38,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 200,
+              "rule": 1
+            },
+            {
+              "action": "place_owner",
+              "count": 28,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 200,
+              "rule": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 200,
+              "rule": 2
+            },
+            {
+              "action": "reclaim",
+              "count": 405,
+              "rule": 7
+            },
+            {
+              "action": "evict",
+              "count": 63,
+              "rule": 9
+            },
+            {
+              "action": "evict",
+              "count": 36,
+              "rule": 10
+            },
+            {
+              "action": "replicate",
+              "count": 76,
+              "rule": 3
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 1273,
+            "place": 1278,
+            "place_owner": 1278,
+            "reclaim": 1440,
+            "replicate": 157,
+            "retain_producer_replica": 1278
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 6,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 7,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "candidate_records": 1361,
+              "choice_calls": 98,
+              "predicate_evals": 1361,
+              "rows_scanned": 1361,
+              "score_evals": 1361
+            },
+            "access/reclaim": {
+              "rows_scanned": 0
+            },
+            "access/replicate": {
+              "static_route_choices": 767
+            },
+            "allocate/evict": {
+              "candidate_records": 18715,
+              "choice_calls": 1175,
+              "predicate_evals": 18715,
+              "rows_scanned": 18715,
+              "score_evals": 18715
+            },
+            "allocate/place": {
+              "candidate_records": 3834,
+              "choice_calls": 1278,
+              "predicate_evals": 7668,
+              "score_evals": 2556
+            },
+            "allocate/reclaim": {
+              "rows_scanned": 0
+            },
+            "allocate/replicate": {
+              "candidate_records": 3834,
+              "choice_calls": 1278,
+              "predicate_evals": 3834,
+              "score_evals": 1278
+            },
+            "hint/prefetch": {
+              "candidate_records": 0,
+              "choice_calls": 386
+            },
+            "idle/reclaim": {
+              "rows_scanned": 0
+            },
+            "release/reclaim": {
+              "candidate_records": 1602,
+              "choice_calls": 1440,
+              "predicate_evals": 1602,
+              "rows_scanned": 1440,
+              "score_evals": 1602
+            }
+          },
+          "fetch_misses": 157,
+          "fixture_kind": "long_document_qa",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_elapsed_ms": 234.371302,
+          "median_transfer_ms": 21.19051,
+          "name": "v4-h256-long-document-estuary-qa-00",
+          "page_activity": [
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 128
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 64,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 128
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 562
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 563
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 564
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 562
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 563
+            },
+            {
+              "attention_reads": 16,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 564
+            },
+            {
+              "attention_reads": 15,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 561
+            },
+            {
+              "attention_reads": 15,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 561
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 256
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 404
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 457
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 497
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 508
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 256
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 404
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 457
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 497
+            },
+            {
+              "attention_reads": 2,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 508
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 13
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 36
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 39
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 55
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 57
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 62
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 64
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 70
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 83
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 115
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 124
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 151
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 161
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 169
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 184
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 191
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 204
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 213
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 219
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 235
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 241
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 244
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 250
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 270
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 287
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 304
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 313
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 319
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 320
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 334
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 356
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 357
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 364
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 368
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 370
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 375
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 377
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 396
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 405
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 425
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 427
+            },
+            {
+              "attention_reads": 1,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 447
+            }
+          ],
+          "page_activity_total_entries": 155,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 1278,
+              "rule": 1
+            },
+            {
+              "action": "place",
+              "count": 1278,
+              "rule": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 1278,
+              "rule": 2
+            },
+            {
+              "action": "evict",
+              "count": 1175,
+              "rule": 9
+            },
+            {
+              "action": "evict",
+              "count": 98,
+              "rule": 10
+            },
+            {
+              "action": "replicate",
+              "count": 157,
+              "rule": 3
+            },
+            {
+              "action": "reclaim",
+              "count": 1440,
+              "rule": 7
+            }
+          ]
+        },
+        {
+          "action_counts": {
+            "evict": 13,
+            "place": 76,
+            "place_owner": 94,
+            "reclaim": 165,
+            "replicate": 8,
+            "retain_producer_replica": 76
+          },
+          "decision_examples": [
+            {
+              "action": "place_owner",
+              "block": 0,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 1,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 2,
+              "node": "gpu1",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 3,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 4,
+              "node": "host0",
+              "rule": 1,
+              "step": 1
+            },
+            {
+              "action": "place_owner",
+              "block": 5,
+              "node": "gpu1",
+              "rule": 0,
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 0,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 1,
+              "src": "gpu1",
+              "step": 1
+            },
+            {
+              "action": "place",
+              "block": 1,
+              "dst": "host0",
+              "links": [
+                "gpu1-host0"
+              ],
+              "rule": 1,
+              "src": "gpu1",
+              "step": 1
+            }
+          ],
+          "diagnostic_work_counts": {
+            "access/evict": {
+              "candidate_records": 51,
+              "choice_calls": 5,
+              "predicate_evals": 51,
+              "rows_scanned": 51,
+              "score_evals": 51
+            },
+            "access/reclaim": {
+              "rows_scanned": 0
+            },
+            "access/replicate": {
+              "static_route_choices": 317
+            },
+            "allocate/evict": {
+              "candidate_records": 91,
+              "choice_calls": 8,
+              "predicate_evals": 91,
+              "rows_scanned": 91,
+              "score_evals": 91
+            },
+            "allocate/place": {
+              "candidate_records": 282,
+              "choice_calls": 94,
+              "predicate_evals": 510,
+              "score_evals": 170
+            },
+            "allocate/reclaim": {
+              "rows_scanned": 0
+            },
+            "allocate/replicate": {
+              "candidate_records": 264,
+              "choice_calls": 94,
+              "predicate_evals": 264,
+              "score_evals": 76
+            },
+            "hint/prefetch": {
+              "candidate_records": 0,
+              "choice_calls": 236
+            },
+            "idle/reclaim": {
+              "rows_scanned": 0
+            },
+            "release/reclaim": {
+              "candidate_records": 236,
+              "choice_calls": 165,
+              "predicate_evals": 236,
+              "rows_scanned": 165,
+              "score_evals": 236
+            }
+          },
+          "fetch_misses": 8,
+          "fixture_kind": "rollout_cow",
+          "link_bytes": {
+            "gpu1-host0": 2490368,
+            "host0-gpu1": 262144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 524288
+          },
+          "median_elapsed_ms": 29.031382,
+          "median_transfer_ms": 1.534447,
+          "name": "v4-h256-rollout-bridge-options-00",
+          "page_activity": [
+            {
+              "attention_reads": 40,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 2
+            },
+            {
+              "attention_reads": 40,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 2
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 3
+            },
+            {
+              "attention_reads": 32,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 3
+            },
+            {
+              "attention_reads": 27,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 5
+            },
+            {
+              "attention_reads": 27,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 5
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 0,
+              "layer": 0,
+              "page": 0
+            },
+            {
+              "attention_reads": 23,
+              "fetch_misses": 0,
+              "layer": 1,
+              "page": 0
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 0,
+              "page": 1
+            },
+            {
+              "attention_reads": 17,
+              "fetch_misses": 2,
+              "layer": 1,
+              "page": 1
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 1,
+              "layer": 0,
+              "page": 4
+            },
+            {
+              "attention_reads": 13,
+              "fetch_misses": 1,
+              "layer": 1,
+              "page": 4
+            }
+          ],
+          "page_activity_total_entries": 12,
+          "residual_before_teardown_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 0,
+            "host0": 0
+          },
+          "rule_counts": [
+            {
+              "action": "place_owner",
+              "count": 76,
+              "rule": 1
+            },
+            {
+              "action": "place_owner",
+              "count": 18,
+              "rule": 0
+            },
+            {
+              "action": "place",
+              "count": 76,
+              "rule": 1
+            },
+            {
+              "action": "retain_producer_replica",
+              "count": 76,
+              "rule": 2
+            },
+            {
+              "action": "reclaim",
+              "count": 165,
+              "rule": 7
+            },
+            {
+              "action": "evict",
+              "count": 8,
+              "rule": 9
+            },
+            {
+              "action": "replicate",
+              "count": 8,
+              "rule": 3
+            },
+            {
+              "action": "evict",
+              "count": 5,
+              "rule": 10
+            }
+          ]
+        }
+      ],
+      "lower_is_better": true,
+      "objective": "sum_case_median_ms"
+    },
+    "metrics": {
+      "receipts": [
+        "eval-1721f13c97e8c2c44bcbc530478e796f0080b2df5efbf613"
+      ],
+      "scope": "cuda_text_derived_fixed_block_sparse",
+      "score_unit": "sum_case_median_ms"
+    },
+    "score": 403.782497
+  }
+}

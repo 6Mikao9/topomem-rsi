@@ -1,0 +1,17 @@
+test_atomic_flushes_file_before_replace_then_syncs_parent (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_client_does_not_dispatch_after_unknown_response (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_client_rejects_tampered_receipt_result (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_client_validates_receipt_and_checks_local_replay_before_write (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_damaged_job_records_remain_unknown (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_file_sync_failure_preserves_previous_value (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_gpu_busy_refuses_before_process_or_job_reservation (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_reservation_directory_sync_failure_blocks_launch_and_replay (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_reserved_job_without_receipt_is_not_submitted_again (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_worker_pins_full_source_before_effect (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_worker_receipt_keeps_raw_and_canonical_hash_and_replays_once (test_execution_protocol.ExecutionProtocolTest) ... ok
+test_worker_reports_new_compute_pid_without_signaling_it (test_execution_protocol.ExecutionProtocolTest) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.050s
+
+OK

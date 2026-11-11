@@ -1,0 +1,61 @@
+{
+  "candidate_validation_effects": 0,
+  "completed_rounds": 0,
+  "controller_jobs": 7,
+  "controller_source_sha256": "9302577e48c6b23e7bc343b35213120f8eaac70b90b2fb251d185129d37f9123",
+  "effect_count": 14,
+  "exact_offline_replay_through_pending_api": true,
+  "freeze_effects": 0,
+  "hardware": [
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 0,
+      "uuid": "2a66a29f-9c52-6365-d76b-57d2116826c7"
+    },
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 1,
+      "uuid": "c9891208-c33c-f89b-e575-7fe0d73c8f43"
+    }
+  ],
+  "journal_record_count": 23,
+  "native_validation_baseline_measured": true,
+  "operator_stop_sha256": "08ee325ab05e262cfd9123315603a70ae235a5dd91b796a25875e7536fe19563",
+  "pipeline_status_sha256": "eb02236491586789a8f1f037ba11d37a0ea540ce05986bf634ec0eef951221cf",
+  "private_config_sha256": "09a62b2044d70a18adb90dcb94e51f12c921c2f40083844606e09e9eedcdd324",
+  "provider": {
+    "by_arm": {
+      "adaptive": {
+        "calls": 5,
+        "seconds": 318.18799999996554,
+        "total_tokens": 168670
+      },
+      "fixed": {
+        "calls": 1,
+        "seconds": 58.46900000004098,
+        "total_tokens": 31082
+      }
+    },
+    "completed": 6,
+    "pending_unknown": "api/r0000/fixed-a/00",
+    "total_reported_tokens": 199752
+  },
+  "qualification_jobs": 4,
+  "receipt_count": 11,
+  "receipt_counts_by_split": {
+    "train": 10,
+    "validation": 1
+  },
+  "schema": 1,
+  "scope": "operator-stopped v4.0 prompt-contract pilot on public CUDA fixtures",
+  "test_effects": 0,
+  "worker_source_sha256": "877873960cd4da3c332891495fdc86d30fa59725b879d0fcffccb81fdef0c767"
+}

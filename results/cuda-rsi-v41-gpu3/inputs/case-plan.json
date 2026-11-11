@@ -1,0 +1,140 @@
+{
+  "baseline_provenance": {
+    "initial": "v11 lru-equivalent IR",
+    "initial_program_sha256": "940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+    "manual": "v11 hand-written host writeback IR",
+    "manual_program_sha256": "69ab662d1c44a5f2daed321f9d1d2bd2be3d93784e091827e24da849d3b64abc"
+  },
+  "controller_config": {
+    "max_output_tokens": 65536,
+    "min_improvement_ms": 2.0,
+    "model": "deepseek-v4.1-flash",
+    "rounds": 2,
+    "slots": 2,
+    "test_blocks": 6,
+    "training_blocks": 3,
+    "training_margin_ms": 2.0,
+    "validation_blocks": 3,
+    "wall_seconds": 3600
+  },
+  "created_utc": "2026-11-11T06:39:09.982389+00:00",
+  "draft_sha256": "ac0e6196b2393550751f811b739816f45b53d4da63ae2f171b361908c966d7e4",
+  "kind": "v41_gpu3_post_reboot_engineering",
+  "model_evidence": "Fresh model calls and GPU training; no pilot or interrupted-run model response replay.",
+  "origins": {
+    "cases": {
+      "test": [
+        {
+          "case_sha256": "b685b21c047d4b2562fbf888ff4f4943325cf4abc5b49c0d4f1b3f23bb21e08a",
+          "compile_sha256": "ce150083759e9811b5610768ee0bb5784a1f26a4a93eec6f1c615cd6e442e9b3",
+          "v7_case_sha256": "5f980c5cbaa7ef2aae369b105e951013c04726f1d1355c42cad87c61948235c2",
+          "v7_config_kind": "agent_tools",
+          "v7_config_sha256": "11bb435317510ac2cdfb06ab26fb8255a5c074dc884305bbcdc64454dc8b815a",
+          "v7_split_case_index": 0,
+          "workload_sha256": "b2b5958f5dd207c83c5e45ac868f621f5ead372e97465768d9402f94605044f8"
+        },
+        {
+          "case_sha256": "8b430ccb172159b29b624560f94478e0e0f7b33a467aa8b32eb076688e958c90",
+          "compile_sha256": "97e54d3501bdf84f65212541b7f278c822fc7c114eaa1c9375d99ba4e2118d1d",
+          "v7_case_sha256": "e2c11099ee4fda3447bd0f3d9642025387cdb282cb90916b9591f03e5a66dd97",
+          "v7_config_kind": "chatbot_growth",
+          "v7_config_sha256": "a3def11731484efeb94c394255d57c66284749f96e3336b12a79bab99cf3c627",
+          "v7_split_case_index": 0,
+          "workload_sha256": "87ccac3abce5f2eca727ae8e2874649ba49f489ee98eba0013598f537ae4ebbd"
+        },
+        {
+          "case_sha256": "6188d971f64217762c3466abbb4bb8f176bca778da30ccd1d0d8c730f23c0d6d",
+          "compile_sha256": "4ff9c302c32dac20e4ada4486f5f53ee7c319807f8ca32d69ac7e3201339795b",
+          "v7_case_sha256": "1ca5a6a87a4cd50021ee9f54dfe6980082e3f01a6bda2add50074abda01fb26f",
+          "v7_config_kind": "long_document_qa",
+          "v7_config_sha256": "5b81bf521420c20a49397101c813aff25d72c4f3d08219ef8d9fdd797a23eaf5",
+          "v7_split_case_index": 0,
+          "workload_sha256": "9ad29fc717ea9a1d26d8c31dc248bb4b1d301020e8854b666dac013a7765696a"
+        },
+        {
+          "case_sha256": "ca69637161827a4e6aedd22f86b19d8a45a93485370ec98db17920a0fba1388f",
+          "compile_sha256": "09288746c10496922ce1c6c3045e0cafb0c4eaa9f14b5bea2299bbac1634cd45",
+          "v7_case_sha256": "0376c254f707edb1bc4de65c44a564910eec67f98810f3e133da5df2efced18b",
+          "v7_config_kind": "rollout_cow",
+          "v7_config_sha256": "81ea1bc84b529bcefa649570deeec7d4384a45702663562bfafce60462a6ddb4",
+          "v7_split_case_index": 0,
+          "workload_sha256": "655a2acbe4b90e5bb10218db0fc41e5704ac80131f7014a632635b2c9dbaf081"
+        }
+      ],
+      "train": [
+        {
+          "case_sha256": "1a4f97be4d09ca6deb7e7fefddee2e7cee3b700cf484f00596e7faec9b6b0d1a",
+          "compile_sha256": "e8ab1433ac782131bc888ac52fbc57cdc92fa13ffd058e90567bd0a88e236b77",
+          "v11_case_index": 0,
+          "workload_sha256": "2bea3da3ebf501d515d25f17f42e6d26f5fcf5812c819b773b54630312e2c787"
+        },
+        {
+          "case_sha256": "51c3e41a208e0d3a7e3076e3d60fd35b1d087617ff2e54240150c808f2b41f65",
+          "compile_sha256": "e8ab1433ac782131bc888ac52fbc57cdc92fa13ffd058e90567bd0a88e236b77",
+          "v11_case_index": 1,
+          "workload_sha256": "d8ea20cfe815e62678084578c098243a417a73071d448912929e4d418d6b46b3"
+        },
+        {
+          "case_sha256": "1d3ad8c76ec87f40473a097a0e54ce7b57e32921fb4173974627ef438672e250",
+          "compile_sha256": "e8ab1433ac782131bc888ac52fbc57cdc92fa13ffd058e90567bd0a88e236b77",
+          "v11_case_index": 2,
+          "workload_sha256": "58a72ea426c0fc9b358d5e8f3c6431c3b6426b83587ca5626ebfa912fb41a015"
+        },
+        {
+          "case_sha256": "434e2937fc32055d305e70ab12ab7df590cb520bc31406c76d8cd7231fd07c6f",
+          "compile_sha256": "e8ab1433ac782131bc888ac52fbc57cdc92fa13ffd058e90567bd0a88e236b77",
+          "v11_case_index": 3,
+          "workload_sha256": "c30943a39eecd940b73927edc79f889827151a4c639210e8196e3644dd65008e"
+        }
+      ],
+      "validation": [
+        {
+          "case_sha256": "649cd554c81ac8c09c81d248122a6f154182898ceca2593560cafd9b8523b96f",
+          "compile_sha256": "e48e0df6edcf28811c9257386bbc8ccac307df5a4a1d4ab406ff9043ea2df5ef",
+          "v7_case_sha256": "3ffbf0fc78ee733790c25f129d5ad2a224b4c5a00ce37fb6095009d87254da24",
+          "v7_config_kind": "agent_tools",
+          "v7_config_sha256": "11bb435317510ac2cdfb06ab26fb8255a5c074dc884305bbcdc64454dc8b815a",
+          "v7_split_case_index": 0,
+          "workload_sha256": "0d5325b3e5193825dee0787e1f7af28c868b1237d9edb259a0f18ddb82804fb9"
+        },
+        {
+          "case_sha256": "37a2db0441267591a7a36b06319ab6894eed133d2c622a76ebf53c6d05da26d7",
+          "compile_sha256": "a2712fcf7fbde4d2cf1116d8a693ef1ccfd239f25f8bc65bc68159e6f199e59d",
+          "v7_case_sha256": "2a9dc21ee45b1703b79c48400354e4338a1401e74cef3a627991a57766484406",
+          "v7_config_kind": "chatbot_growth",
+          "v7_config_sha256": "a3def11731484efeb94c394255d57c66284749f96e3336b12a79bab99cf3c627",
+          "v7_split_case_index": 0,
+          "workload_sha256": "bbb21e0fe474bdf78a61aaf1c77306fa771da9d7945b49cd928a9e71907b8172"
+        },
+        {
+          "case_sha256": "94d99aa3ae996b5479a082385b7ca1048c195796fa841d94177487f01d298cbf",
+          "compile_sha256": "2a9c8bf3db5cec0c354ec8cb6dce2a2f23d62d97396ce6f3523920f39658abce",
+          "v7_case_sha256": "45ff6886ac35a04f06636f4aab14089b7c56d012edf0fd68c84f0ceb741ff561",
+          "v7_config_kind": "long_document_qa",
+          "v7_config_sha256": "5b81bf521420c20a49397101c813aff25d72c4f3d08219ef8d9fdd797a23eaf5",
+          "v7_split_case_index": 0,
+          "workload_sha256": "fbfc5fd397986b14ae74c8628c81cc2956860050e2665f5d1c05511865041b8c"
+        },
+        {
+          "case_sha256": "a260a61c3bdfac42bb59bcf276ec4ae2ae23e4e086ccb21f6008e441aa9ee678",
+          "compile_sha256": "a674d0cfd69d8a92fc2ae6a1ad8cdce044f7b550b48abc1eef617f6cd91f5893",
+          "v7_case_sha256": "c5bb75f67005b2d02f6fb720372414a74910c5c0f0510fd4f8f17b2f0cc9d0d7",
+          "v7_config_kind": "rollout_cow",
+          "v7_config_sha256": "81ea1bc84b529bcefa649570deeec7d4384a45702663562bfafce60462a6ddb4",
+          "v7_split_case_index": 0,
+          "workload_sha256": "61cba0f159a2df8215145343c8a4786cf18b6f63898114d4bd1b3cc90a634997"
+        }
+      ]
+    },
+    "prior_controller_config_sha256": "fe8b2f8cc554f6072c57f84d619d3a26931c1481b0523352e819babcf6c7f336",
+    "target_profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+    "v11_paired_plan_sha256": "8da4c6d303f22133e5084f47dd39a0cc970d26f3faaa4b8375a1f93c63764390"
+  },
+  "private_config_sha256": "79c1cd08835fc39873c4e512221e55ec17fa1c7d2bbf5b70d4ba9e2f18c413ac",
+  "qualified_engineering_plan_sha256": "19789ad0cd6c55cd3faeed4aab151854f3c0c1f8608c9ccd173ccdfe90dc9e29",
+  "qualified_engineering_result_sha256": "10ba4b701f15630f9bf82a1a93d266c852cdb669f42cfcd07983ce74ea81e182",
+  "schema": 1,
+  "scope": "Two-round single-GPU engineering recheck on already-public corpus. Separate from interrupted two-GPU H256 run; not new unseen-data generalization or a replacement multi-GPU proof.",
+  "worker_change_attribution": "Human v13 static producer-retain lowering, not recursive improvement. All arms use the same frozen worker for this new study.",
+  "worker_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d"
+}

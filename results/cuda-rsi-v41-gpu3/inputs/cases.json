@@ -1,0 +1,2760 @@
+{
+  "test": [
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 625471063845504529,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "agent-grid-recovery-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "operator"
+          },
+          {
+            "at_ns": 63000000,
+            "op": "append",
+            "segment": "system",
+            "session": "operator"
+          },
+          {
+            "at_ns": 126000000,
+            "op": "append",
+            "segment": "question",
+            "session": "operator"
+          },
+          {
+            "at_ns": 186000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              166,
+              0,
+              85
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 249000000,
+            "op": "append",
+            "segment": "call-1",
+            "session": "operator"
+          },
+          {
+            "at_ns": 312000000,
+            "op": "append",
+            "segment": "result-1",
+            "session": "operator"
+          },
+          {
+            "at_ns": 372000000,
+            "max_new_tokens": 20,
+            "op": "infer",
+            "select_rows": [
+              338,
+              13,
+              113
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 435000000,
+            "op": "append",
+            "segment": "call-2",
+            "session": "operator"
+          },
+          {
+            "at_ns": 498000000,
+            "op": "append",
+            "segment": "result-2",
+            "session": "operator"
+          },
+          {
+            "at_ns": 558000000,
+            "max_new_tokens": 20,
+            "op": "infer",
+            "select_rows": [
+              569,
+              13,
+              190
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 621000000,
+            "op": "append",
+            "segment": "call-3",
+            "session": "operator"
+          },
+          {
+            "at_ns": 684000000,
+            "op": "append",
+            "segment": "result-3",
+            "session": "operator"
+          },
+          {
+            "at_ns": 744000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              787,
+              13,
+              263
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 807000000,
+            "op": "append",
+            "segment": "call-4",
+            "session": "operator"
+          },
+          {
+            "at_ns": 870000000,
+            "op": "append",
+            "segment": "result-4",
+            "session": "operator"
+          },
+          {
+            "at_ns": 930000000,
+            "max_new_tokens": 40,
+            "op": "infer",
+            "select_rows": [
+              1015,
+              13,
+              339
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 993000000,
+            "op": "close",
+            "session": "operator"
+          }
+        ],
+        "kind": "agent_tools",
+        "name": "agent-grid-recovery",
+        "page_rows": 32,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "Track authorization boundaries and recovery measurements for a campus grid.\n"
+          },
+          {
+            "id": "question",
+            "role": "user",
+            "text": "Determine whether feeder C can be restored and which observation to record during restoration.\n"
+          },
+          {
+            "call_id": "call-1",
+            "id": "call-1",
+            "role": "tool_call",
+            "text": "{\"tool\": \"fault_log\", \"input\": \"feeder C\"}\n"
+          },
+          {
+            "call_id": "call-1",
+            "id": "result-1",
+            "role": "tool_result",
+            "text": "Feeder C isolated at 07:42 after a transient on the north transformer. The scheduled reset in the old plan was never executed.\n"
+          },
+          {
+            "call_id": "call-2",
+            "id": "call-2",
+            "role": "tool_call",
+            "text": "{\"tool\": \"load_forecast\", \"input\": \"north campus\"}\n"
+          },
+          {
+            "call_id": "call-2",
+            "id": "result-2",
+            "role": "tool_result",
+            "text": "The chilled-water load stays below the advisory limit through 09:20. The new laboratory starts a high-current test at 09:35. Do not combine that test with an unlogged restoration.\n"
+          },
+          {
+            "call_id": "call-3",
+            "id": "call-3",
+            "role": "tool_call",
+            "text": "{\"tool\": \"clearance_ledger\", \"input\": \"feeder C\"}\n"
+          },
+          {
+            "call_id": "call-3",
+            "id": "result-3",
+            "role": "tool_result",
+            "text": "Operations grant conditional clearance only after the return current is below 8 A for three minutes. The south feeder has a different clearance and must stay isolated.\n"
+          },
+          {
+            "call_id": "call-4",
+            "id": "call-4",
+            "role": "tool_call",
+            "text": "{\"tool\": \"recording_protocol\", \"input\": \"north transformer\"}\n"
+          },
+          {
+            "call_id": "call-4",
+            "id": "result-4",
+            "role": "tool_result",
+            "text": "Record the current trace, time, and feeder label for the entire three-minute check. Use ticket GRID-C7. Supervisor confirmation is required before the breaker closes.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "05b2d0a7dee690115198980c49c84b77853e74128b2a5432bbd3928daf5d3a70",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/agent-grid-recovery.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 103792168366588443,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "chatbot-library-project-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 60000000,
+            "op": "append",
+            "segment": "system",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 120000000,
+            "op": "append",
+            "segment": "user-0",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 177000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              153,
+              52,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 237000000,
+            "op": "append",
+            "segment": "reply-1",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 297000000,
+            "op": "append",
+            "segment": "user-1",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 354000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              319,
+              107,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 414000000,
+            "op": "append",
+            "segment": "reply-2",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 474000000,
+            "op": "append",
+            "segment": "user-2",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 531000000,
+            "max_new_tokens": 32,
+            "op": "infer",
+            "select_rows": [
+              495,
+              166,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 591000000,
+            "op": "append",
+            "segment": "reply-3",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 651000000,
+            "op": "append",
+            "segment": "user-3",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 708000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              667,
+              223,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 768000000,
+            "op": "append",
+            "segment": "reply-4",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 828000000,
+            "op": "append",
+            "segment": "user-4",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 885000000,
+            "max_new_tokens": 40,
+            "op": "infer",
+            "select_rows": [
+              822,
+              275,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 945000000,
+            "op": "close",
+            "session": "dialogue"
+          }
+        ],
+        "kind": "chatbot_growth",
+        "name": "chatbot-library-project",
+        "page_rows": 32,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "Keep the current plan and answer only for the fictional community library.\n"
+          },
+          {
+            "id": "user-0",
+            "role": "user",
+            "text": "Organize a two-week catalog migration while the small reading room remains open.\n"
+          },
+          {
+            "id": "reply-1",
+            "role": "assistant",
+            "text": "Migrate the north shelves first and reserve the desk beside the lift for returns.\n"
+          },
+          {
+            "id": "user-1",
+            "role": "user",
+            "text": "Keep that desk and schedule a volunteer training hour before the Friday deliveries.\n"
+          },
+          {
+            "id": "reply-2",
+            "role": "assistant",
+            "text": "The training can run Thursday evening while the reference desk handles returns.\n"
+          },
+          {
+            "id": "user-2",
+            "role": "user",
+            "text": "Retain Thursday. Add separate checklists for staff, volunteers, and the accessibility reviewer.\n"
+          },
+          {
+            "id": "reply-3",
+            "role": "assistant",
+            "text": "Use the same catalog snapshot for all checklists and include shelf labels for accessibility.\n"
+          },
+          {
+            "id": "user-3",
+            "role": "user",
+            "text": "Update the signage plan for large-print readers without extending the closure.\n"
+          },
+          {
+            "id": "reply-4",
+            "role": "assistant",
+            "text": "Put temporary signs at each aisle entrance and keep the lift route clear.\n"
+          },
+          {
+            "id": "user-4",
+            "role": "user",
+            "text": "Now finish the plan with the original north shelves and an extra return station.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "83d3a6fad71649041043294dc6c66d1cbec7537a45f693c98e0f25bb9e35e9b9",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/chatbot-library-project.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 886963053533140755,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "long-document-flood-ledger-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "reader"
+          },
+          {
+            "at_ns": 48000000,
+            "op": "append",
+            "segment": "cover",
+            "session": "reader"
+          },
+          {
+            "at_ns": 96000000,
+            "op": "append",
+            "segment": "entry-01",
+            "session": "reader"
+          },
+          {
+            "at_ns": 141000000,
+            "op": "append",
+            "segment": "entry-02",
+            "session": "reader"
+          },
+          {
+            "at_ns": 189000000,
+            "op": "append",
+            "segment": "entry-03",
+            "session": "reader"
+          },
+          {
+            "at_ns": 237000000,
+            "op": "append",
+            "segment": "entry-04",
+            "session": "reader"
+          },
+          {
+            "at_ns": 282000000,
+            "op": "append",
+            "segment": "entry-05",
+            "session": "reader"
+          },
+          {
+            "at_ns": 330000000,
+            "op": "append",
+            "segment": "entry-06",
+            "session": "reader"
+          },
+          {
+            "at_ns": 378000000,
+            "op": "append",
+            "segment": "entry-07",
+            "session": "reader"
+          },
+          {
+            "at_ns": 423000000,
+            "op": "append",
+            "segment": "entry-08",
+            "session": "reader"
+          },
+          {
+            "at_ns": 471000000,
+            "op": "append",
+            "segment": "entry-09",
+            "session": "reader"
+          },
+          {
+            "at_ns": 519000000,
+            "op": "append",
+            "segment": "entry-10",
+            "session": "reader"
+          },
+          {
+            "at_ns": 564000000,
+            "op": "append",
+            "segment": "entry-11",
+            "session": "reader"
+          },
+          {
+            "at_ns": 612000000,
+            "op": "append",
+            "segment": "entry-12",
+            "session": "reader"
+          },
+          {
+            "at_ns": 660000000,
+            "op": "append",
+            "segment": "entry-13",
+            "session": "reader"
+          },
+          {
+            "at_ns": 705000000,
+            "op": "append",
+            "segment": "entry-14",
+            "session": "reader"
+          },
+          {
+            "at_ns": 753000000,
+            "op": "append",
+            "segment": "entry-15",
+            "session": "reader"
+          },
+          {
+            "at_ns": 801000000,
+            "op": "append",
+            "segment": "entry-16",
+            "session": "reader"
+          },
+          {
+            "at_ns": 846000000,
+            "op": "append",
+            "segment": "question",
+            "session": "reader"
+          },
+          {
+            "at_ns": 894000000,
+            "max_new_tokens": 64,
+            "op": "infer",
+            "select_rows": [
+              16088,
+              21593,
+              10798,
+              0
+            ],
+            "session": "reader"
+          },
+          {
+            "at_ns": 942000000,
+            "op": "close",
+            "session": "reader"
+          }
+        ],
+        "kind": "long_document_qa",
+        "name": "long-document-flood-ledger",
+        "page_rows": 128,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "cover",
+            "role": "document",
+            "text": "Marsh Board spillway annual record. This packet contains field notes, proposed releases, signed closures and an index of the records transferred to the river control desk. The field procedures describe collection of evidence and can precede a final authorization by several shifts. Each team logs its work under the numbered place in the appendix. When a local note conflicts with a signed decision, apply the decision for the site and record in question. Duplicate counts in handwritten tables are retained as audit evidence. The final decisions distinguish the upper floodgates and the lower access roads.\n"
+          },
+          {
+            "id": "entry-01",
+            "role": "document",
+            "text": "Appendix entry 01 for Upper Fork. The lead marked 11 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Upper Fork, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-02",
+            "role": "document",
+            "text": "Appendix entry 02 for Boat Ramp. The lead marked 12 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Boat Ramp, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-03",
+            "role": "document",
+            "text": "Appendix entry 03 for Moss Bend. The lead marked 13 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Moss Bend, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-04",
+            "role": "document",
+            "text": "Appendix entry 04 for Upper Gate. The lead marked 14 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Upper Gate, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-05",
+            "role": "document",
+            "text": "Appendix entry 05 for Birch Walk. The lead marked 15 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Birch Walk, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-06",
+            "role": "document",
+            "text": "Appendix entry 06 for Mill Bank. The lead marked 16 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Mill Bank, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-07",
+            "role": "document",
+            "text": "Appendix entry 07 for Juniper Wall. The lead marked 17 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Juniper Wall, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-08",
+            "role": "document",
+            "text": "Appendix entry 08 for Fen Lock. The lead marked 18 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Fen Lock, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-09",
+            "role": "document",
+            "text": "Appendix entry 09 for Lime Inlet. The lead marked 19 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Lime Inlet, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-10",
+            "role": "document",
+            "text": "Appendix entry 10 for Pump Bend. The lead marked 20 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Pump Bend, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-11",
+            "role": "document",
+            "text": "Appendix entry 11 for South Gate. The lead marked 21 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of South Gate, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-12",
+            "role": "document",
+            "text": "Appendix entry 12 for Canal East. The lead marked 22 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Canal East, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\nCanal East signed order CE-71. The service road may reopen only after two upstream staff-gauge readings below 1.20 m taken 45 minutes apart, and both are countersigned by the river control desk. The earlier 1.35 m trial instruction remains canceled.\n"
+          },
+          {
+            "id": "entry-13",
+            "role": "document",
+            "text": "Appendix entry 13 for Signal Bank. The lead marked 23 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Signal Bank, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-14",
+            "role": "document",
+            "text": "Appendix entry 14 for Old Steps. The lead marked 24 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Old Steps, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-15",
+            "role": "document",
+            "text": "Appendix entry 15 for Heather Sluice. The lead marked 25 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Heather Sluice, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-16",
+            "role": "document",
+            "text": "Appendix entry 16 for Tidal Ramp. The lead marked 26 level marks in the handoff ledger and sent a copy to the river control desk. The morning crew performed a paired staff-gauge reading and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a 15-minute closure. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Tidal Ramp, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "question",
+            "role": "question",
+            "text": "What readings and interval must river control countersign before reopening the Canal East service road under CE-71?\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "aa16bedb6592fd7f155bf2cff7b0d33cf5db680faf2e88094515fd8cce38625f",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/long-document-flood-ledger.json",
+          "revision": "fixture-v1"
+        },
+        "task": {
+          "expected_answers": [
+            "Two upstream readings below 1.20 m, 45 minutes apart, both countersigned by river control."
+          ],
+          "minimum_document_bytes": 20480
+        }
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 945729663768368716,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "rollout-ferry-recovery-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "root"
+          },
+          {
+            "at_ns": 67000000,
+            "op": "append",
+            "segment": "shared",
+            "session": "root"
+          },
+          {
+            "at_ns": 134000000,
+            "max_new_tokens": 9,
+            "op": "infer",
+            "select_rows": [
+              104,
+              0,
+              36
+            ],
+            "session": "root"
+          },
+          {
+            "at_ns": 198000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "amber"
+          },
+          {
+            "at_ns": 265000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "cobalt"
+          },
+          {
+            "at_ns": 332000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "silver"
+          },
+          {
+            "at_ns": 396000000,
+            "op": "append",
+            "segment": "amber",
+            "session": "amber"
+          },
+          {
+            "at_ns": 463000000,
+            "op": "append",
+            "segment": "parent-progress",
+            "session": "root"
+          },
+          {
+            "at_ns": 530000000,
+            "max_new_tokens": 18,
+            "op": "infer",
+            "select_rows": [
+              108,
+              0,
+              36,
+              172
+            ],
+            "session": "amber"
+          },
+          {
+            "at_ns": 594000000,
+            "op": "append",
+            "segment": "cobalt",
+            "session": "cobalt"
+          },
+          {
+            "at_ns": 661000000,
+            "max_new_tokens": 28,
+            "op": "infer",
+            "select_rows": [
+              108,
+              0,
+              36,
+              176
+            ],
+            "session": "cobalt"
+          },
+          {
+            "at_ns": 728000000,
+            "op": "append",
+            "segment": "silver",
+            "session": "silver"
+          },
+          {
+            "at_ns": 792000000,
+            "max_new_tokens": 14,
+            "op": "infer",
+            "select_rows": [
+              108,
+              0,
+              36,
+              177
+            ],
+            "session": "silver"
+          },
+          {
+            "at_ns": 859000000,
+            "op": "close",
+            "session": "silver"
+          },
+          {
+            "at_ns": 926000000,
+            "op": "close",
+            "session": "cobalt"
+          },
+          {
+            "at_ns": 990000000,
+            "op": "close",
+            "session": "amber"
+          },
+          {
+            "at_ns": 1057000000,
+            "op": "close",
+            "session": "root"
+          }
+        ],
+        "kind": "rollout_cow",
+        "name": "rollout-ferry-recovery",
+        "page_rows": 16,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "shared",
+            "role": "user",
+            "text": "Ferry recovery: keep the narrow access lane open and preserve loading access for the morning food delivery.\n"
+          },
+          {
+            "id": "amber",
+            "role": "assistant",
+            "text": "Amber sends unloading through gate eight and leaves the lift open.\n"
+          },
+          {
+            "id": "parent-progress",
+            "role": "assistant",
+            "text": "The control room records the three proposals and keeps its original lane restriction.\n"
+          },
+          {
+            "id": "cobalt",
+            "role": "assistant",
+            "text": "Cobalt uses the old baggage room with one checked pedestrian entrance.\n"
+          },
+          {
+            "id": "silver",
+            "role": "assistant",
+            "text": "Silver diverts forklifts to the central bay during the morning handoff.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "70965c6f0d8c2809f13bb97339f6ffdd6042f9a045cecba6a316b9d68813f43c",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/rollout-ferry-recovery.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    }
+  ],
+  "train": [
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 101,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "agent-water-inspection",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "public-training-geometry-qualification-only",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "agent"
+          },
+          {
+            "at_ns": 50000000,
+            "op": "append",
+            "segment": "system",
+            "session": "agent"
+          },
+          {
+            "at_ns": 100000000,
+            "op": "append",
+            "segment": "user",
+            "session": "agent"
+          },
+          {
+            "at_ns": 150000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              17,
+              0,
+              56
+            ],
+            "session": "agent"
+          },
+          {
+            "at_ns": 200000000,
+            "op": "append",
+            "segment": "lookup",
+            "session": "agent"
+          },
+          {
+            "at_ns": 250000000,
+            "op": "append",
+            "segment": "window",
+            "session": "agent"
+          },
+          {
+            "at_ns": 300000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              148,
+              0,
+              56
+            ],
+            "session": "agent"
+          },
+          {
+            "at_ns": 350000000,
+            "op": "append",
+            "segment": "access",
+            "session": "agent"
+          },
+          {
+            "at_ns": 400000000,
+            "op": "append",
+            "segment": "code",
+            "session": "agent"
+          },
+          {
+            "at_ns": 450000000,
+            "max_new_tokens": 32,
+            "op": "infer",
+            "select_rows": [
+              285,
+              148,
+              56,
+              0
+            ],
+            "session": "agent"
+          },
+          {
+            "at_ns": 500000000,
+            "op": "close",
+            "session": "agent"
+          }
+        ],
+        "kind": "agent_tools",
+        "name": "agent-water-inspection",
+        "page_rows": 32,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "You are the field operations assistant. Use only recorded tool evidence.\n"
+          },
+          {
+            "id": "user",
+            "role": "user",
+            "text": "Find the east reservoir inspection window and the access code.\n"
+          },
+          {
+            "call_id": "calendar-1",
+            "id": "lookup",
+            "role": "tool_call",
+            "text": "{\"name\":\"inspection_calendar\",\"station\":\"east\"}\n"
+          },
+          {
+            "call_id": "calendar-1",
+            "id": "window",
+            "role": "tool_result",
+            "text": "{\"day\":\"Tuesday\",\"window\":\"09:40-10:10\",\"crew\":\"Delta\"}\n"
+          },
+          {
+            "call_id": "access-2",
+            "id": "access",
+            "role": "tool_call",
+            "text": "{\"name\":\"access_register\",\"crew\":\"Delta\"}\n"
+          },
+          {
+            "call_id": "access-2",
+            "id": "code",
+            "role": "tool_result",
+            "text": "{\"gate\":\"North\",\"temporary_code\":\"EAST-17\",\"valid_until\":\"10:20\"}\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "5cb489eec9c6c64cc2cbe5655a1e75fc3023139cef0cb6c0e8820dba6380a161",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/agent-water-inspection.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 101,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "chatbot-trip-planning",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "public-training-geometry-qualification-only",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "chat"
+          },
+          {
+            "at_ns": 50000000,
+            "op": "append",
+            "segment": "system",
+            "session": "chat"
+          },
+          {
+            "at_ns": 100000000,
+            "op": "append",
+            "segment": "turn-one",
+            "session": "chat"
+          },
+          {
+            "at_ns": 150000000,
+            "max_new_tokens": 32,
+            "op": "infer",
+            "select_rows": [
+              70,
+              0,
+              23
+            ],
+            "session": "chat"
+          },
+          {
+            "at_ns": 200000000,
+            "op": "append",
+            "segment": "reply-one",
+            "session": "chat"
+          },
+          {
+            "at_ns": 250000000,
+            "op": "append",
+            "segment": "turn-two",
+            "session": "chat"
+          },
+          {
+            "at_ns": 300000000,
+            "max_new_tokens": 32,
+            "op": "infer",
+            "select_rows": [
+              225,
+              23,
+              0
+            ],
+            "session": "chat"
+          },
+          {
+            "at_ns": 350000000,
+            "op": "append",
+            "segment": "reply-two",
+            "session": "chat"
+          },
+          {
+            "at_ns": 400000000,
+            "op": "append",
+            "segment": "turn-three",
+            "session": "chat"
+          },
+          {
+            "at_ns": 450000000,
+            "max_new_tokens": 32,
+            "op": "infer",
+            "select_rows": [
+              332,
+              225,
+              23
+            ],
+            "session": "chat"
+          },
+          {
+            "at_ns": 500000000,
+            "op": "close",
+            "session": "chat"
+          }
+        ],
+        "kind": "chatbot_growth",
+        "name": "chatbot-trip-planning",
+        "page_rows": 24,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "Give concise options and carry forward confirmed constraints.\n"
+          },
+          {
+            "id": "turn-one",
+            "role": "user",
+            "text": "Plan a walking route from a ferry terminal for a family with a stroller.\n"
+          },
+          {
+            "id": "reply-one",
+            "role": "assistant",
+            "text": "We can take the paved waterfront path. Allow twenty minutes to the market.\n"
+          },
+          {
+            "id": "turn-two",
+            "role": "user",
+            "text": "Keep the waterfront plan. Find a sheltered stop midway if it rains.\n"
+          },
+          {
+            "id": "reply-two",
+            "role": "assistant",
+            "text": "The west arcade is midway and has a ramp from the path.\n"
+          },
+          {
+            "id": "turn-three",
+            "role": "user",
+            "text": "Keep the arcade stop and adjust the plan to finish before noon.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "5d6e4c154ef67e11327c1f6c693525351fee3aea64d46b9269ce1ded94f33462",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/chatbot-trip-planning.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 101,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "long-document-estuary-qa",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "public-training-geometry-qualification-only",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "reader"
+          },
+          {
+            "at_ns": 50000000,
+            "op": "append",
+            "segment": "overview",
+            "session": "reader"
+          },
+          {
+            "at_ns": 100000000,
+            "op": "append",
+            "segment": "station-01",
+            "session": "reader"
+          },
+          {
+            "at_ns": 150000000,
+            "op": "append",
+            "segment": "station-02",
+            "session": "reader"
+          },
+          {
+            "at_ns": 200000000,
+            "op": "append",
+            "segment": "station-03",
+            "session": "reader"
+          },
+          {
+            "at_ns": 250000000,
+            "op": "append",
+            "segment": "station-04",
+            "session": "reader"
+          },
+          {
+            "at_ns": 300000000,
+            "op": "append",
+            "segment": "station-05",
+            "session": "reader"
+          },
+          {
+            "at_ns": 350000000,
+            "op": "append",
+            "segment": "station-06",
+            "session": "reader"
+          },
+          {
+            "at_ns": 400000000,
+            "op": "append",
+            "segment": "station-07",
+            "session": "reader"
+          },
+          {
+            "at_ns": 450000000,
+            "op": "append",
+            "segment": "station-08",
+            "session": "reader"
+          },
+          {
+            "at_ns": 500000000,
+            "op": "append",
+            "segment": "station-09",
+            "session": "reader"
+          },
+          {
+            "at_ns": 550000000,
+            "op": "append",
+            "segment": "station-10",
+            "session": "reader"
+          },
+          {
+            "at_ns": 600000000,
+            "op": "append",
+            "segment": "station-11",
+            "session": "reader"
+          },
+          {
+            "at_ns": 650000000,
+            "op": "append",
+            "segment": "station-12",
+            "session": "reader"
+          },
+          {
+            "at_ns": 700000000,
+            "op": "append",
+            "segment": "question",
+            "session": "reader"
+          },
+          {
+            "at_ns": 750000000,
+            "max_new_tokens": 64,
+            "op": "infer",
+            "select_rows": [
+              0,
+              4096,
+              8192,
+              12000
+            ],
+            "session": "reader"
+          },
+          {
+            "at_ns": 800000000,
+            "op": "close",
+            "session": "reader"
+          }
+        ],
+        "kind": "long_document_qa",
+        "name": "long-document-estuary-qa",
+        "page_rows": 128,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "overview",
+            "role": "document",
+            "text": "2029 Estuary Works handover memorandum. This is a fictional document QA fixture.\nThe Works Board uses spring inspections to transfer responsibility across three crews. Each station has a working log, a field action, and a signed release order. The field log describes conditions observed by the first crew. The release order overrides earlier notes only when it explicitly says 'controlling copy'. Tool codes are listed for audit and may refer to a physical location that remained closed. Do not infer that a location reopened solely because the crew finished sampling. The question concerns the controlling Harbor Nine order, and the rest of this document is included so a reader must distinguish it from earlier drafts and the procedures of adjacent stations.\n\n"
+          },
+          {
+            "id": "station-01",
+            "role": "document",
+            "text": "Station 01, Alder Gate. Inspection date April 8.\nOn arrival the crew requested temporary access through the west pedestrian portal. The gate operations logged 7 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Alder Gate lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the west pedestrian portal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-02",
+            "role": "document",
+            "text": "Station 02, Brindle Wharf. Inspection date April 9.\nOn arrival the crew requested temporary access through the weighbridge ramp. The freight desk logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Brindle Wharf lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the weighbridge ramp was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-03",
+            "role": "document",
+            "text": "Station 03, Copper Steps. Inspection date April 10.\nOn arrival the crew requested temporary access through the gallery drain. The masonry crew logged 6 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Copper Steps lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the gallery drain was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-04",
+            "role": "document",
+            "text": "Station 04, Drift Basin. Inspection date April 11.\nOn arrival the crew requested temporary access through the upper intake. The pump crew logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Drift Basin lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the upper intake was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-05",
+            "role": "document",
+            "text": "Station 05, Elm Lock. Inspection date April 12.\nOn arrival the crew requested temporary access through the canal control cabinet. The night supervisor logged 4 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Elm Lock lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the canal control cabinet was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-06",
+            "role": "document",
+            "text": "Station 06, Fern Depot. Inspection date April 15.\nOn arrival the crew requested temporary access through the covered sorting bay. The stores office logged 8 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Fern Depot lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the covered sorting bay was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-07",
+            "role": "document",
+            "text": "Station 07, Gannet Bend. Inspection date April 16.\nOn arrival the crew requested temporary access through the rail warning signal. The signalling team logged 11 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Gannet Bend lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the rail warning signal was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-08",
+            "role": "document",
+            "text": "Station 08, Harbor Nine. Inspection date April 17.\nOn arrival the crew requested temporary access through the north conduit. The safety office logged 12 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Harbor Nine lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the north conduit was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\nHarbor Nine addendum, order H9-47, controlling copy. Earlier field notes proposed reopening the north conduit when the photographs were uploaded, but that proposal was withdrawn. The authorized release condition is receipt of two signed chloride readings below 18 mg/L, taken thirty minutes apart. The safety office archives both readings and writes the clearance in the shift ledger. The order applies to the north conduit only. The evening crew must leave the service ladder isolated until a separate inspection.\n\n"
+          },
+          {
+            "id": "station-09",
+            "role": "document",
+            "text": "Station 09, Ivory Shed. Inspection date April 18.\nOn arrival the crew requested temporary access through the fuel line gate. The mechanical crew logged 3 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Ivory Shed lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the fuel line gate was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-10",
+            "role": "document",
+            "text": "Station 10, Juniper Run. Inspection date April 19.\nOn arrival the crew requested temporary access through the boat lifting track. The dock master logged 14 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Juniper Run lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the boat lifting track was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-11",
+            "role": "document",
+            "text": "Station 11, Kite Point. Inspection date April 22.\nOn arrival the crew requested temporary access through the signal bridge. The telemetry team logged 5 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Kite Point lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the signal bridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "station-12",
+            "role": "document",
+            "text": "Station 12, Larch Crossing. Inspection date April 23.\nOn arrival the crew requested temporary access through the south footbridge. The pedestrian office logged 9 routine samples and compared two parallel readings with the handheld instrument. Each observer filed one copy of the route sketch. The original went into the station file and the annotated copy went to the duty desk. During the afternoon the crew isolated the lowest test point, checked that the relief path remained open, and reinstalled the barrier after the second reading. A passing sample was a procedural prerequisite. It did not by itself grant a general release. A duty officer had to mark the route release ledger and send a confirmation with the station name, route and shift explicitly recorded.\nThe delivery register for Larch Crossing lists replacement hardware and the corresponding handover witnesses. Spare fittings remained sealed pending the following inventory check. The photographs were archived with the morning and evening surveys in separate envelopes. Any note containing an unapproved shorthand for the south footbridge was retained as a draft, with a cross-reference to the signed entry. The team kept one observer at the service boundary until an authorized worker took over. Nearby stations used their own release rules. An instruction in this subsection did not apply across the whole estuary.\n\n"
+          },
+          {
+            "id": "question",
+            "role": "question",
+            "text": "According to the controlling Harbor Nine order H9-47, which measurement condition must be met before the north conduit can reopen?\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "94cfd892f8d306f6b8b4e5b06e17e13772d79ca75a568d26b3d4b63c639516bf",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/long-document-estuary-qa.json",
+          "revision": "fixture-v1"
+        },
+        "task": {
+          "expected_answers": [
+            "Two signed chloride readings below 18 mg/L, taken thirty minutes apart."
+          ],
+          "minimum_document_bytes": 12288
+        }
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 101,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "rollout-bridge-options",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "public-training-geometry-qualification-only",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "root"
+          },
+          {
+            "at_ns": 50000000,
+            "op": "append",
+            "segment": "shared",
+            "session": "root"
+          },
+          {
+            "at_ns": 100000000,
+            "max_new_tokens": 8,
+            "op": "infer",
+            "select_rows": [
+              0,
+              30,
+              74
+            ],
+            "session": "root"
+          },
+          {
+            "at_ns": 150000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "north"
+          },
+          {
+            "at_ns": 200000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "south"
+          },
+          {
+            "at_ns": 250000000,
+            "op": "append",
+            "segment": "north",
+            "session": "north"
+          },
+          {
+            "at_ns": 300000000,
+            "op": "append",
+            "segment": "south",
+            "session": "south"
+          },
+          {
+            "at_ns": 350000000,
+            "max_new_tokens": 16,
+            "op": "infer",
+            "select_rows": [
+              81,
+              74,
+              0
+            ],
+            "session": "north"
+          },
+          {
+            "at_ns": 400000000,
+            "max_new_tokens": 16,
+            "op": "infer",
+            "select_rows": [
+              81,
+              74,
+              0
+            ],
+            "session": "south"
+          },
+          {
+            "at_ns": 450000000,
+            "op": "close",
+            "session": "north"
+          },
+          {
+            "at_ns": 500000000,
+            "op": "close",
+            "session": "south"
+          },
+          {
+            "at_ns": 550000000,
+            "op": "close",
+            "session": "root"
+          }
+        ],
+        "kind": "rollout_cow",
+        "name": "rollout-bridge-options",
+        "page_rows": 16,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "shared",
+            "role": "user",
+            "text": "Bridge test: keep freight below the old span and leave the inspection lane open.\n"
+          },
+          {
+            "id": "north",
+            "role": "assistant",
+            "text": "North route takes the covered ramp and reserves the lower bay."
+          },
+          {
+            "id": "south",
+            "role": "assistant",
+            "text": "South route crosses the yard and reserves the east bay."
+          }
+        ],
+        "source": {
+          "content_sha256": "2e34b483f1b0c996666be0b97e58c51e45a8789563e61d74d448d8723269c094",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/rollout-bridge-options.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    }
+  ],
+  "validation": [
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 924603382854270064,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "agent-museum-access-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "operator"
+          },
+          {
+            "at_ns": 38000000,
+            "op": "append",
+            "segment": "system",
+            "session": "operator"
+          },
+          {
+            "at_ns": 76000000,
+            "op": "append",
+            "segment": "question",
+            "session": "operator"
+          },
+          {
+            "at_ns": 111000000,
+            "max_new_tokens": 16,
+            "op": "infer",
+            "select_rows": [
+              141,
+              0,
+              73
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 149000000,
+            "op": "append",
+            "segment": "call-1",
+            "session": "operator"
+          },
+          {
+            "at_ns": 187000000,
+            "op": "append",
+            "segment": "result-1",
+            "session": "operator"
+          },
+          {
+            "at_ns": 222000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              322,
+              13,
+              108
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 260000000,
+            "op": "append",
+            "segment": "call-2",
+            "session": "operator"
+          },
+          {
+            "at_ns": 298000000,
+            "op": "append",
+            "segment": "result-2",
+            "session": "operator"
+          },
+          {
+            "at_ns": 333000000,
+            "max_new_tokens": 40,
+            "op": "infer",
+            "select_rows": [
+              523,
+              13,
+              175
+            ],
+            "session": "operator"
+          },
+          {
+            "at_ns": 371000000,
+            "op": "close",
+            "session": "operator"
+          }
+        ],
+        "kind": "agent_tools",
+        "name": "agent-museum-access",
+        "page_rows": 32,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "You coordinate museum access while conserving sealed exhibits.\n"
+          },
+          {
+            "id": "question",
+            "role": "user",
+            "text": "Locate the west loading door that a courier can use before the conservation class.\n"
+          },
+          {
+            "call_id": "call-1",
+            "id": "call-1",
+            "role": "tool_call",
+            "text": "{\"tool\": \"entry_register\", \"input\": \"west loading\"}\n"
+          },
+          {
+            "call_id": "call-1",
+            "id": "result-1",
+            "role": "tool_result",
+            "text": "Door C accepts escorted deliveries. The original note also lists door D for staff, but it does not apply to external couriers.\n"
+          },
+          {
+            "call_id": "call-2",
+            "id": "call-2",
+            "role": "tool_call",
+            "text": "{\"tool\": \"calendar\", \"input\": \"conservation class\"}\n"
+          },
+          {
+            "call_id": "call-2",
+            "id": "result-2",
+            "role": "tool_result",
+            "text": "The class occupies the loading court at 11:15. Delivery is permitted from 10:20 through 10:50. Ask for the glass-crate escort before opening door C.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "62ab31edb7b14aa8507ffc5eb55bb490388ed48d7898749d55ce6e81d93aef64",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/agent-museum-access.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 574095105479690434,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "chatbot-wetland-tour-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 53000000,
+            "op": "append",
+            "segment": "system",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 106000000,
+            "op": "append",
+            "segment": "user-0",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 156000000,
+            "max_new_tokens": 16,
+            "op": "infer",
+            "select_rows": [
+              138,
+              47,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 209000000,
+            "op": "append",
+            "segment": "reply-1",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 262000000,
+            "op": "append",
+            "segment": "user-1",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 312000000,
+            "max_new_tokens": 24,
+            "op": "infer",
+            "select_rows": [
+              298,
+              100,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 365000000,
+            "op": "append",
+            "segment": "reply-2",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 418000000,
+            "op": "append",
+            "segment": "user-2",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 468000000,
+            "max_new_tokens": 26,
+            "op": "infer",
+            "select_rows": [
+              437,
+              146,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 521000000,
+            "op": "append",
+            "segment": "reply-3",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 574000000,
+            "op": "append",
+            "segment": "user-3",
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 624000000,
+            "max_new_tokens": 38,
+            "op": "infer",
+            "select_rows": [
+              578,
+              193,
+              0
+            ],
+            "session": "dialogue"
+          },
+          {
+            "at_ns": 677000000,
+            "op": "close",
+            "session": "dialogue"
+          }
+        ],
+        "kind": "chatbot_growth",
+        "name": "chatbot-wetland-tour",
+        "page_rows": 32,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "system",
+            "role": "system",
+            "text": "Retain each visitor constraint and revise the same itinerary.\n"
+          },
+          {
+            "id": "user-0",
+            "role": "user",
+            "text": "Plan a quiet wetland tour for two adults and a child who uses a walking frame.\n"
+          },
+          {
+            "id": "reply-1",
+            "role": "assistant",
+            "text": "The boardwalk from the east kiosk has a rail and a level observation platform.\n"
+          },
+          {
+            "id": "user-1",
+            "role": "user",
+            "text": "Start at the east kiosk and avoid the bird hide while the school group is there.\n"
+          },
+          {
+            "id": "reply-2",
+            "role": "assistant",
+            "text": "We can cross the reed bridge first and visit the hide after eleven.\n"
+          },
+          {
+            "id": "user-2",
+            "role": "user",
+            "text": "Keep the reed bridge but add a sheltered rest stop if the rain begins.\n"
+          },
+          {
+            "id": "reply-3",
+            "role": "assistant",
+            "text": "The reed bridge leads to a covered seating area by the map cabinet.\n"
+          },
+          {
+            "id": "user-3",
+            "role": "user",
+            "text": "Keep the covered stop and make the whole trip fit before the noon ferry.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "23947445604f25da5aeee94c4f83f06b284b191b1755487f43cd3fd68e646c17",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/chatbot-wetland-tour.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 173405112264472949,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "long-document-rail-qa-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "reader"
+          },
+          {
+            "at_ns": 34000000,
+            "op": "append",
+            "segment": "cover",
+            "session": "reader"
+          },
+          {
+            "at_ns": 68000000,
+            "op": "append",
+            "segment": "entry-01",
+            "session": "reader"
+          },
+          {
+            "at_ns": 99000000,
+            "op": "append",
+            "segment": "entry-02",
+            "session": "reader"
+          },
+          {
+            "at_ns": 133000000,
+            "op": "append",
+            "segment": "entry-03",
+            "session": "reader"
+          },
+          {
+            "at_ns": 167000000,
+            "op": "append",
+            "segment": "entry-04",
+            "session": "reader"
+          },
+          {
+            "at_ns": 198000000,
+            "op": "append",
+            "segment": "entry-05",
+            "session": "reader"
+          },
+          {
+            "at_ns": 232000000,
+            "op": "append",
+            "segment": "entry-06",
+            "session": "reader"
+          },
+          {
+            "at_ns": 266000000,
+            "op": "append",
+            "segment": "entry-07",
+            "session": "reader"
+          },
+          {
+            "at_ns": 297000000,
+            "op": "append",
+            "segment": "entry-08",
+            "session": "reader"
+          },
+          {
+            "at_ns": 331000000,
+            "op": "append",
+            "segment": "entry-09",
+            "session": "reader"
+          },
+          {
+            "at_ns": 365000000,
+            "op": "append",
+            "segment": "entry-10",
+            "session": "reader"
+          },
+          {
+            "at_ns": 396000000,
+            "op": "append",
+            "segment": "question",
+            "session": "reader"
+          },
+          {
+            "at_ns": 430000000,
+            "max_new_tokens": 40,
+            "op": "infer",
+            "select_rows": [
+              7031,
+              13675,
+              6839,
+              0
+            ],
+            "session": "reader"
+          },
+          {
+            "at_ns": 464000000,
+            "op": "close",
+            "session": "reader"
+          }
+        ],
+        "kind": "long_document_qa",
+        "name": "long-document-rail-qa",
+        "page_rows": 128,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "cover",
+            "role": "document",
+            "text": "Foxline depot transfer annual record. This packet contains field notes, proposed releases, signed closures and an index of the records transferred to the mechanical desk. The field procedures describe collection of evidence and can precede a final authorization by several shifts. Each team logs its work under the numbered place in the appendix. When a local note conflicts with a signed decision, apply the decision for the site and record in question. Duplicate counts in handwritten tables are retained as audit evidence. The revised handoff superseded a preliminary proposal from the previous morning.\n"
+          },
+          {
+            "id": "entry-01",
+            "role": "document",
+            "text": "Appendix entry 01 for Yard One. The lead marked 3 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Yard One, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-02",
+            "role": "document",
+            "text": "Appendix entry 02 for Ramp Finch. The lead marked 4 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Ramp Finch, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-03",
+            "role": "document",
+            "text": "Appendix entry 03 for Bay Three. The lead marked 5 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Bay Three, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-04",
+            "role": "document",
+            "text": "Appendix entry 04 for North Shed. The lead marked 6 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of North Shed, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-05",
+            "role": "document",
+            "text": "Appendix entry 05 for Depot Nine. The lead marked 7 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Depot Nine, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\nDepot Nine order DN-51, signed controlling copy. Release requires the brake cylinder to hold at least 82 psi for five uninterrupted minutes. The earlier 75 psi draft remains filed but has no authority.\n"
+          },
+          {
+            "id": "entry-06",
+            "role": "document",
+            "text": "Appendix entry 06 for Loop Track. The lead marked 8 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Loop Track, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-07",
+            "role": "document",
+            "text": "Appendix entry 07 for Crew Bay. The lead marked 9 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Crew Bay, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-08",
+            "role": "document",
+            "text": "Appendix entry 08 for Switch Hill. The lead marked 10 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Switch Hill, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-09",
+            "role": "document",
+            "text": "Appendix entry 09 for Hopper Shop. The lead marked 11 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Hopper Shop, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "entry-10",
+            "role": "document",
+            "text": "Appendix entry 10 for Bridge Dock. The lead marked 12 inspection tags in the handoff ledger and sent a copy to the mechanical desk. The morning crew performed the brake release sequence and left the local barrier in place. A second observer compared the identifying marks with the original register. The storage label indicated where a duplicate packet could be found, rather than when a particular restriction ended. A canceled entry mentioned a noon opening. It was kept in the file to document the sequence of earlier decisions. The receiving crew added arrival and departure readings under separate date lines so neither number overwrote a signed record.\nDuring review of Bridge Dock, the team noted differences between the location diagram and the supplied marker list. The diagram was reissued to show which side of the access boundary could be used by the maintenance crew. The supervisor did not approve unscheduled changes based on the diagram alone. The packet lists the original contact at the start and the person who accepted the record at the end. General advice for nearby locations has been retained for planning, while final instructions only apply to the named location. The archive treats the countersignature and specific condition as part of each final decision.\n\n"
+          },
+          {
+            "id": "question",
+            "role": "question",
+            "text": "What pressure hold does signed order DN-51 require?\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "78110511f17456c0339c1f3f0488d452db8c7e9b67006cdb6cc9c3b2270abd58",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/long-document-rail-qa.json",
+          "revision": "fixture-v1"
+        },
+        "task": {
+          "expected_answers": [
+            "Hold at least 82 psi for five uninterrupted minutes."
+          ],
+          "minimum_document_bytes": 12288
+        }
+      }
+    },
+    {
+      "compile": {
+        "block_rows": 16,
+        "head_dim": 64,
+        "layers": 2,
+        "seed": 826242154118216879,
+        "text_bytes_per_row": 2,
+        "top_k": 4
+      },
+      "compute_node": "gpu0",
+      "device_map": {
+        "gpu0": 0
+      },
+      "name": "rollout-warehouse-routes-00",
+      "target": {
+        "gpu_uuid": "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550",
+        "head_dim": 64,
+        "host_cpu_affinity": [
+          64
+        ],
+        "profile_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+        "scope": "single-gpu-engineering-replay-of-prior-public-splits",
+        "torch_version": "2.13.0+cu130"
+      },
+      "topology": {
+        "bottlenecks": [],
+        "links": [
+          {
+            "bandwidth_bytes_per_s": 29703883288,
+            "bottlenecks": [],
+            "dst": "gpu0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0-gpu0",
+            "latency_ns": 6347,
+            "src": "host0",
+            "transport": "pinned_host"
+          },
+          {
+            "bandwidth_bytes_per_s": 56395041789,
+            "bottlenecks": [],
+            "dst": "host0",
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0-host0",
+            "latency_ns": 6106,
+            "src": "gpu0",
+            "transport": "pinned_host"
+          }
+        ],
+        "nodes": [
+          {
+            "capacity_bytes": 131072,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "gpu0",
+            "kind": "gpu",
+            "physical_bytes": 33670758400
+          },
+          {
+            "capacity_bytes": 33554432,
+            "evidence_sha256": "dc575e2fa50211554a9f91d7ce75260b1cf56223fc4bec3daa8500721fde46e4",
+            "id": "host0",
+            "kind": "host"
+          }
+        ],
+        "schema": 1
+      },
+      "workload": {
+        "events": [
+          {
+            "at_ns": 0,
+            "op": "open",
+            "session": "root"
+          },
+          {
+            "at_ns": 54000000,
+            "op": "append",
+            "segment": "shared",
+            "session": "root"
+          },
+          {
+            "at_ns": 108000000,
+            "max_new_tokens": 8,
+            "op": "infer",
+            "select_rows": [
+              94,
+              0,
+              32
+            ],
+            "session": "root"
+          },
+          {
+            "at_ns": 159000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "east"
+          },
+          {
+            "at_ns": 213000000,
+            "op": "fork",
+            "parent": "root",
+            "session": "west"
+          },
+          {
+            "at_ns": 267000000,
+            "op": "append",
+            "segment": "east",
+            "session": "east"
+          },
+          {
+            "at_ns": 318000000,
+            "max_new_tokens": 16,
+            "op": "infer",
+            "select_rows": [
+              98,
+              0,
+              32,
+              166
+            ],
+            "session": "east"
+          },
+          {
+            "at_ns": 372000000,
+            "op": "append",
+            "segment": "west",
+            "session": "west"
+          },
+          {
+            "at_ns": 426000000,
+            "max_new_tokens": 19,
+            "op": "infer",
+            "select_rows": [
+              98,
+              0,
+              32,
+              166
+            ],
+            "session": "west"
+          },
+          {
+            "at_ns": 477000000,
+            "op": "close",
+            "session": "west"
+          },
+          {
+            "at_ns": 531000000,
+            "op": "close",
+            "session": "east"
+          },
+          {
+            "at_ns": 585000000,
+            "op": "close",
+            "session": "root"
+          }
+        ],
+        "kind": "rollout_cow",
+        "name": "rollout-warehouse-routes",
+        "page_rows": 16,
+        "schema": 1,
+        "segments": [
+          {
+            "id": "shared",
+            "role": "user",
+            "text": "Warehouse plan: preserve the chilled corridor and keep pallet traffic separated from pedestrians.\n"
+          },
+          {
+            "id": "east",
+            "role": "assistant",
+            "text": "East loading can use an empty truck bay with the existing air curtain.\n"
+          },
+          {
+            "id": "west",
+            "role": "assistant",
+            "text": "West loading uses a smaller forklift and protects the north fire door.\n"
+          }
+        ],
+        "source": {
+          "content_sha256": "ee36094414a9960d998664f202b0838e4dd6b2866d828581229af2d175953017",
+          "kind": "authored_fixture",
+          "license": "CC0-1.0",
+          "locator": "examples/workloads/variants/rollout-warehouse-routes.json",
+          "revision": "fixture-v1"
+        },
+        "task": {}
+      }
+    }
+  ]
+}

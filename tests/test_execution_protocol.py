@@ -4,6 +4,7 @@ import io
 import json
 import os
 from pathlib import Path
+import stat
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
@@ -108,6 +109,75 @@ class ExecutionProtocolTest(unittest.TestCase):
         worker.atomic(directory / "request.json", {"sha256": worker.digest(self.message), "request": self.message})
         self.assertEqual(worker.status(self.root, "case-1")["status"], "started_unknown")
         with patch.object(worker.subprocess, "Popen") as start:
+            with self.assertRaisesRegex(ValueError, "execution state is unknown"):
+                worker.execute(self.root, "fake-python", self.message)
+            start.assert_not_called()
+
+    def test_atomic_flushes_file_before_replace_then_syncs_parent(self):
+        path = self.root / "record.json"
+        observed = []
+        real_fsync, real_replace = os.fsync, os.replace
+
+        def sync(fd):
+            info = os.fstat(fd)
+            observed.append("directory" if stat.S_ISDIR(info.st_mode) else "file")
+            if stat.S_ISREG(info.st_mode):
+                self.assertGreater(info.st_size, 0)
+            real_fsync(fd)
+
+        def replace(source, target):
+            observed.append("replace")
+            self.assertEqual(source, path.with_suffix(".pending"))
+            self.assertEqual(target, path)
+            real_replace(source, target)
+
+        with patch.object(worker.os, "fsync", side_effect=sync), patch.object(worker.os, "replace", side_effect=replace):
+            worker.atomic(path, {"ok": True})
+        self.assertEqual(observed, ["file", "replace"] + (["directory"] if os.name == "posix" else []))
+        self.assertEqual(json.loads(path.read_bytes()), {"ok": True})
+
+    def test_file_sync_failure_preserves_previous_value(self):
+        path = self.root / "record.json"
+        worker.atomic(path, {"before": True})
+        with patch.object(worker.os, "fsync", side_effect=OSError("simulated file sync failure")):
+            with self.assertRaisesRegex(OSError, "file sync failure"):
+                worker.atomic(path, {"before": False})
+        self.assertEqual(json.loads(path.read_bytes()), {"before": True})
+
+    def test_reservation_directory_sync_failure_blocks_launch_and_replay(self):
+        directory = worker.job_directory(self.root, "case-1")
+        real_sync = worker._sync_directory
+
+        def sync(path):
+            if path == self.root:
+                raise OSError("simulated ancestor sync failure")
+            real_sync(path)
+
+        with (patch.object(worker, "gpu_leases", return_value=nullcontext()),
+              patch.object(worker, "query", side_effect=self._query),
+              patch.object(worker, "_sync_directory", side_effect=sync),
+              patch.object(worker.subprocess, "Popen") as start):
+            with self.assertRaisesRegex(OSError, "ancestor sync failure"):
+                worker.execute(self.root, "fake-python", self.message)
+            self.assertEqual(json.loads((directory / "input.json").read_bytes()), self.message["payload"])
+            self.assertEqual(worker.status(self.root, "case-1")["status"], "started_unknown")
+            with self.assertRaisesRegex(ValueError, "execution state is unknown"):
+                worker.execute(self.root, "fake-python", self.message)
+            start.assert_not_called()
+
+    def test_damaged_job_records_remain_unknown(self):
+        directory = worker.job_directory(self.root, "case-1")
+        directory.mkdir(parents=True)
+        for name in ("request.json", "input.json", "started.json", "receipt.json"):
+            (directory / name).write_bytes(b"")
+        self.assertEqual(worker.status(self.root, "case-1"), {"job_id": "case-1", "status": "started_unknown"})
+        with patch.object(worker.subprocess, "Popen") as start:
+            with self.assertRaisesRegex(ValueError, "execution state is unknown"):
+                worker.execute(self.root, "fake-python", self.message)
+            request_sha = worker.digest(self.message)
+            worker.atomic(directory / "request.json", {"sha256": request_sha, "request": self.message})
+            self.assertEqual(worker.status(self.root, "case-1"),
+                             {"job_id": "case-1", "status": "started_unknown", "request_sha256": request_sha})
             with self.assertRaisesRegex(ValueError, "execution state is unknown"):
                 worker.execute(self.root, "fake-python", self.message)
             start.assert_not_called()

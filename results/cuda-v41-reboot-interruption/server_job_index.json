@@ -1,0 +1,2795 @@
+{
+  "jobs": {
+    "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "5b7412183a07f03e7f4d46f7af61f91bcce0802559963d93c6c185ec71670605",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 50880174,
+          "physical_sha256": "539798a934017bd3ef4bc19e7cb6173574523fbce210b4213faf9df30e727a9c",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            52007032,
+            50880174,
+            49999138
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "712d2d3ee2df5ed38fe24d41d1fa7c4687f97ae28c431a6ea6c55264b6564362",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 61503831,
+          "physical_sha256": "b78c430ed57c23d2fa969ff75ac8fd9221defca1360f4a05776d43d4eaff1f3a",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            61503831,
+            61351692,
+            61995702
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "5a472754f4e6b907539b89a3ac5cc0147d91425ecce07f72340da7440e932509",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 155434032,
+          "physical_sha256": "60c469b708b6621ba796e8737abd7216a50033bec792063a221559de692be82d",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            155434032,
+            158048209,
+            155095973
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "2dd5833469c8a97ac38a368d791889241d5310bac7d182f400f4bec39f83ab1b",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 23001685,
+          "physical_sha256": "0f7f93fc8f39d0cdd15d878dad9e37fa70fbac56af68f7bddce9c9ef192a101a",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            24143845,
+            22846311,
+            23001685
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "native/train",
+      "feasible": true,
+      "job_id": "eval-0f48b6f431e44e9bea0312c4feb47aa0c1713e39cffccfe3",
+      "label": "native",
+      "receipt_sha256": "ec46678e2241958739efeef95188d603b2303b0d1fab4bb6dadf3ddfb133738e",
+      "request_sha256": "bdb7117dc07001297fd78205706cfb46b734afdc1d315155acb0dcfb776d47ca",
+      "result_sha256": "29ea6e1a3fe6d9905ef465e5a488763f5e22f30064d06cde23170dc3f63cc672",
+      "score_ms": 290.819722,
+      "split": "train",
+      "utc_end": "2026-11-11T05:55:32.634003+00:00",
+      "utc_start": "2026-11-11T05:55:23.091331+00:00"
+    },
+    "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c4eace0c7ad80fb40a19b25bf9fd814c563a969ecce010fd42c7372b58b24f5f",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "gpu1-host0": 917504,
+            "host0-gpu0": 1769472,
+            "host0-gpu1": 2424832
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 58711879,
+          "physical_sha256": "02876b5119356407fbf723983bfc3ee82b6e6c4560d237be777200add475d2ab",
+          "remote_gpu_link_bytes": 3342336,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            58711879,
+            57993118,
+            59593751
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "d519c90fe4308701236f3771280ef5c2dd203ba236d4e4aace43c46f80db1ac6",
+          "link_bytes": {
+            "gpu0-host0": 1015808,
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 3440640,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 622592,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 71111762,
+          "physical_sha256": "791bec4c378f387e835e01f16ff99d5e8728c908a750308f535c9f37a0081897",
+          "remote_gpu_link_bytes": 4456448,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            71548046,
+            71085621,
+            71111762
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "7a6daa536e745934a7660afb2981ff56e63b60d3068a0bedcc163de7b3dd33a6",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "gpu1-host0": 2326528,
+            "host0-gpu0": 5144576,
+            "host0-gpu1": 20807680
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 18546688,
+            "host0": 18546688
+          },
+          "median_ns": 194582989,
+          "physical_sha256": "f4ba696e34138fd938265f86daaf08b763d735317a700155458c80aaab89b44a",
+          "remote_gpu_link_bytes": 23134208,
+          "remote_gpu_peak_bytes": 18546688,
+          "samples_ns": [
+            194495604,
+            194582989,
+            195455571
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "f0f68aea15ff2d140fca39dfaefd2ad40a661f92735d69287e8861579474936e",
+          "link_bytes": {
+            "gpu0-host0": 131072,
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 1277952,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 327680,
+            "gpu1": 524288,
+            "host0": 360448
+          },
+          "median_ns": 27839924,
+          "physical_sha256": "f8cdb51b5a151b7b6397d33c00bfec7cfba6af9b54e18511d8fd354adbe92306",
+          "remote_gpu_link_bytes": 1409024,
+          "remote_gpu_peak_bytes": 327680,
+          "samples_ns": [
+            28511992,
+            27839924,
+            27494580
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/0a6a7835ac73580f5291e83af71cf9398e0e33b9e2b024ee4d20f40b373bf993",
+      "feasible": true,
+      "job_id": "eval-1654c88a961e92de29d8997be1db102291ad4adb85b4d4d5",
+      "label": "candidate",
+      "receipt_sha256": "8e3bc1b93c444eaf8665de539e554b6882d3b1efe18179c0ae0bcddc099f2850",
+      "request_sha256": "2171077dfcc5a0571e12c37e267b674df629697e8ba2989e0474bd1812b97710",
+      "result_sha256": "71e5826171f23e271e4f6a02a0815df163e5e1c04924c0f41a6ba779868d403f",
+      "score_ms": 352.246554,
+      "split": "train",
+      "utc_end": "2026-11-11T06:15:32.123934+00:00",
+      "utc_start": "2026-11-11T06:15:21.775527+00:00"
+    },
+    "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c4eace0c7ad80fb40a19b25bf9fd814c563a969ecce010fd42c7372b58b24f5f",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "gpu1-host0": 917504,
+            "host0-gpu0": 1769472,
+            "host0-gpu1": 2424832
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 57667765,
+          "physical_sha256": "02876b5119356407fbf723983bfc3ee82b6e6c4560d237be777200add475d2ab",
+          "remote_gpu_link_bytes": 3342336,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            57802297,
+            57366743,
+            57667765
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "d519c90fe4308701236f3771280ef5c2dd203ba236d4e4aace43c46f80db1ac6",
+          "link_bytes": {
+            "gpu0-host0": 1015808,
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 3440640,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 622592,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 70733723,
+          "physical_sha256": "791bec4c378f387e835e01f16ff99d5e8728c908a750308f535c9f37a0081897",
+          "remote_gpu_link_bytes": 4456448,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            70802656,
+            70733723,
+            70473411
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "7a6daa536e745934a7660afb2981ff56e63b60d3068a0bedcc163de7b3dd33a6",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "gpu1-host0": 2326528,
+            "host0-gpu0": 5144576,
+            "host0-gpu1": 20807680
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 18546688,
+            "host0": 18546688
+          },
+          "median_ns": 188490829,
+          "physical_sha256": "f4ba696e34138fd938265f86daaf08b763d735317a700155458c80aaab89b44a",
+          "remote_gpu_link_bytes": 23134208,
+          "remote_gpu_peak_bytes": 18546688,
+          "samples_ns": [
+            188490829,
+            189808860,
+            186465664
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "f0f68aea15ff2d140fca39dfaefd2ad40a661f92735d69287e8861579474936e",
+          "link_bytes": {
+            "gpu0-host0": 131072,
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 1277952,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 327680,
+            "gpu1": 524288,
+            "host0": 360448
+          },
+          "median_ns": 27155765,
+          "physical_sha256": "f8cdb51b5a151b7b6397d33c00bfec7cfba6af9b54e18511d8fd354adbe92306",
+          "remote_gpu_link_bytes": 1409024,
+          "remote_gpu_peak_bytes": 327680,
+          "samples_ns": [
+            27513082,
+            27064978,
+            27155765
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/child/00",
+      "feasible": true,
+      "job_id": "eval-1837b9ea295344cecf180bf28f88674e753213731fbcebf0",
+      "label": "candidate",
+      "receipt_sha256": "4e29e26002a2b3fa9555ff5d7ceec0b43273c6b6ffe0c0d144c44d1d8da15f01",
+      "request_sha256": "08400771401d186f93f50f89ec7fab5a019a02884c5a4c75abc6a87362217854",
+      "result_sha256": "80ffb536471f2415bfd57e807575c71b83a44c11c65201aeb316608a7a090b40",
+      "score_ms": 344.048082,
+      "split": "train",
+      "utc_end": "2026-11-11T06:03:08.146881+00:00",
+      "utc_start": "2026-11-11T06:02:58.355643+00:00"
+    },
+    "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-museum-access-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ffd45101c20f4185f55fd71c929d5f08b6a3c5c291a0b9e438585058d2dce859",
+          "link_bytes": {
+            "gpu0-host0": 6684672,
+            "host0-gpu0": 2883584
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1441792
+          },
+          "median_ns": 52847873,
+          "physical_sha256": "1b7222a6e8cafa3c87039050a61cd2e2ada8a11a8e1a9a999120fd0e53eb1ed2",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            52847873,
+            53066652,
+            52049040
+          ],
+          "selection_sha256": "b14acbca247f0040eb00ac0738642360b40d15571606d6b9ebe22a449870ffee"
+        },
+        "v4-h256-chatbot-wetland-tour-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "f1de88b82bb9441f6b73e4dfdaf54e0db91579aae1cb93117e093b9cb35bfc13",
+          "link_bytes": {
+            "gpu1-host0": 8454144,
+            "host0-gpu1": 5439488
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1638400
+          },
+          "median_ns": 71837284,
+          "physical_sha256": "4931d9a0a22fbbb17d01546b8118c5142bf26dfb30ed77b223bff69d70842f2d",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            71969974,
+            71837284,
+            71469040
+          ],
+          "selection_sha256": "d4a310af9522833252acf1fdea578b17af7c1eda595135becab733fa7c1d5e0f"
+        },
+        "v4-h256-long-document-rail-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "744cc97e8f1573a05822188db080c70b1236e26ac64ec6f149919b7587f5a226",
+          "link_bytes": {
+            "gpu0-host0": 31129600,
+            "host0-gpu0": 3538944
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 28246016
+          },
+          "median_ns": 102129111,
+          "physical_sha256": "3788298e669582c634dd96483b92f8154d07f03d9aa11ffbf7898b804dd3f428",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            101306503,
+            102129111,
+            102962066
+          ],
+          "selection_sha256": "3f743d696351c0111e5f54692dec760c0054630d8bbf1be91d5487694c4310ca"
+        },
+        "v4-h256-rollout-warehouse-routes-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "66dff04663a9634677c46a47ffc91d15142611a6e494b79b88cdeccfab99ba5e",
+          "link_bytes": {
+            "gpu1-host0": 3473408,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 786432
+          },
+          "median_ns": 25623160,
+          "physical_sha256": "1087479137ce4026b213d161dd37395b654f33fb5ca7c5e7c8b6b5b927f06fd0",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            25623160,
+            25377941,
+            25904813
+          ],
+          "selection_sha256": "c4b8795ee67848b7a245d4b8f503b85e9bc13c92b860b5e5a2cc979b44835bbc"
+        }
+      },
+      "effect": "native/validation",
+      "feasible": true,
+      "job_id": "eval-285948694513959617d381ccbb1c835d578c4481f7c6454d",
+      "label": "native",
+      "receipt_sha256": "ec45b4d0ed279079888968bd381eeb0c0e39cc3bf6a6ea6fce8a8bec5e0355ab",
+      "request_sha256": "3519954015bdfd04631c11ee14f0f129a2bbefb698127ba028cbe671973e46d0",
+      "result_sha256": "3a33328752fbb937862b4d5e9ea1ef6f0e84c5966b35bff85ee8bb91989f797b",
+      "score_ms": 252.437428,
+      "split": "validation",
+      "utc_end": "2026-11-11T05:55:40.455507+00:00",
+      "utc_start": "2026-11-11T05:55:33.169510+00:00"
+    },
+    "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "a63c8e46aa42ca9c9247f33b0d5ecdf94619c5bc84aa1ef7bb410a8335065d29",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 53389849,
+          "physical_sha256": "2c5086ad13f43ce14dbee423c81bfbfc34db3dd4b5f8f1d9f838d1eb9cc317cf",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            53929730,
+            53283545,
+            53389849
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "0525fcfa3adbab3d666d36fcd260051ee6fbb9cd9af1130dbd925d6038b26f43",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 65840071,
+          "physical_sha256": "d59ee5fcbf5e72a0fe9682bcd97c349a8a1287f4ee629f793e3a78f77da30d0b",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            65873914,
+            65840071,
+            65727598
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c0eb8919c6c9da08ad3165f962a63c33a55a742c3f8de3a2786671be27b2a2f2",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 163528096,
+          "physical_sha256": "6ea38625bb70f0c7c0c1591c4bce6d5bed580b42a7a56e4b8580a5591ceaec98",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            163528096,
+            163350491,
+            166343177
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "3a477affb5a393fc924f885adeabe6bfe37220da8bf9045ae18425141909ad4f",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 25293613,
+          "physical_sha256": "f8a3149b6af8c5c7a2da17f6fb81463942bd927a9b682862d257b0302e01cd84",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            25680783,
+            25291700,
+            25293613
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+      "feasible": true,
+      "job_id": "eval-31df8dc36d2796852673b593049a719e8a702a0132098d59",
+      "label": "candidate",
+      "receipt_sha256": "8547533ae0eaf8d37ee3de593fc3079f44dfb2f278e8bb75d8523b1803ed624a",
+      "request_sha256": "cd9731686e9ade0232ec11701a28fb036d2ebe7684259823cadb6d890473126c",
+      "result_sha256": "2c82da528c89cddf2ad70838443fffb96407175b8d781d64751a10746776134b",
+      "score_ms": 308.051629,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:34.935090+00:00",
+      "utc_start": "2026-11-11T06:14:25.389955+00:00"
+    },
+    "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "e05148c585dc34952940b0b7f3fb2abc35ac453b59deeff67cd047a5d61a980d",
+          "link_bytes": {
+            "gpu0-host0": 6750208,
+            "host0-gpu0": 8716288,
+            "host0-gpu1": 6586368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 589824,
+            "host0": 1048576
+          },
+          "median_ns": 91099346,
+          "physical_sha256": "c8e83af4f1871a766731624230e65779bb9876a06edcc88460f0a872ccedad5a",
+          "remote_gpu_link_bytes": 6586368,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            91099346,
+            91281109,
+            90964994
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "eda75f0275c50f77e22dd8fa594010527193c8f98811c6d04cff0d9f6ae5561e",
+          "link_bytes": {
+            "gpu0-host0": 327680,
+            "gpu1-host0": 7602176,
+            "host0-gpu0": 8159232,
+            "host0-gpu1": 10682368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 114219851,
+          "physical_sha256": "ca631a051047b80fcaeb005c38f65d97db969d4f997120f767c5178cf0a6019a",
+          "remote_gpu_link_bytes": 8486912,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            113862804,
+            114219851,
+            114456127
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ce0d598d5fd3b200b230f63160f18a9021cadd0000b96a42e731f4dd7f73d630",
+          "link_bytes": {
+            "gpu0-host0": 41451520,
+            "host0-gpu0": 17334272,
+            "host0-gpu1": 8617984
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 196608,
+            "host0": 36732928
+          },
+          "median_ns": 188970045,
+          "physical_sha256": "f228676f33b7d56b6eee50a3d5e6e78a61a7f583496a5fe868b43b248dc30fa3",
+          "remote_gpu_link_bytes": 8617984,
+          "remote_gpu_peak_bytes": 196608,
+          "samples_ns": [
+            189217288,
+            187918775,
+            188970045
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "4e59e4313491b49aa1feb091a90264bf06d34df9f472ad8e4d34570119097ac1",
+          "link_bytes": {
+            "gpu0-host0": 196608,
+            "gpu1-host0": 3014656,
+            "host0-gpu0": 2719744,
+            "host0-gpu1": 1376256
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 425984,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 33848582,
+          "physical_sha256": "56d41f25062009148f4d340f3433eb602dad80ba3a81ebed577523a7a32838ee",
+          "remote_gpu_link_bytes": 2916352,
+          "remote_gpu_peak_bytes": 425984,
+          "samples_ns": [
+            34593562,
+            33848582,
+            33802022
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/parent/01",
+      "feasible": true,
+      "job_id": "eval-33f81e0343a44d6de6274c7a3ad0994033dee0154b900273",
+      "label": "candidate",
+      "receipt_sha256": "563623b77b3e792296debe769960b30f41d8f1e67f4dc623d4167238f88acdbf",
+      "request_sha256": "68d56491bdcddc212528695a53e947e5518861a3ede01e04b45c4b6665daa251",
+      "result_sha256": "13b3e6f44811954cc22334c0e90938e1513d249c328e002485ce766d1bc418fa",
+      "score_ms": 428.137824,
+      "split": "train",
+      "utc_end": "2026-11-11T06:02:06.409715+00:00",
+      "utc_start": "2026-11-11T06:01:55.865308+00:00"
+    },
+    "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "a63c8e46aa42ca9c9247f33b0d5ecdf94619c5bc84aa1ef7bb410a8335065d29",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 54878236,
+          "physical_sha256": "2c5086ad13f43ce14dbee423c81bfbfc34db3dd4b5f8f1d9f838d1eb9cc317cf",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            54532135,
+            54878236,
+            55002704
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "0525fcfa3adbab3d666d36fcd260051ee6fbb9cd9af1130dbd925d6038b26f43",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 66810401,
+          "physical_sha256": "d59ee5fcbf5e72a0fe9682bcd97c349a8a1287f4ee629f793e3a78f77da30d0b",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            66810401,
+            67411576,
+            66503659
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c0eb8919c6c9da08ad3165f962a63c33a55a742c3f8de3a2786671be27b2a2f2",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 166835973,
+          "physical_sha256": "6ea38625bb70f0c7c0c1591c4bce6d5bed580b42a7a56e4b8580a5591ceaec98",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            166835973,
+            164206425,
+            167952625
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "3a477affb5a393fc924f885adeabe6bfe37220da8bf9045ae18425141909ad4f",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 26700179,
+          "physical_sha256": "f8a3149b6af8c5c7a2da17f6fb81463942bd927a9b682862d257b0302e01cd84",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            26847070,
+            26700179,
+            25807034
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "bootstrap/initial-incumbent",
+      "feasible": true,
+      "job_id": "eval-395f22af6e312c66fff77d3ae9639f839f2d40165eecee56",
+      "label": "candidate",
+      "receipt_sha256": "9bd232ad3e60396694da4e6abf4a1bae95e87a4d80d4fbe33eb35cecddf1cc65",
+      "request_sha256": "e1799754b65c36f8d6479b8296caf0c5f9fb6548dad4806a4a915a5ff58ab135",
+      "result_sha256": "90ab1ec67e28f613a414ee8996d70d539930e1dc11308f55b28a437fbb35670c",
+      "score_ms": 315.224789,
+      "split": "train",
+      "utc_end": "2026-11-11T05:55:50.752111+00:00",
+      "utc_start": "2026-11-11T05:55:41.007465+00:00"
+    },
+    "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "99827a6607fc2fbb879ba9319c4fe0de1976741a4994aa766e4923ca50c1d3da",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 7438336,
+            "host0-gpu1": 6717440
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 67528429,
+          "physical_sha256": "9f756383ef8d52ab90a5a41aa7507d1e9adfb8635320913f12a8604ab10f84a8",
+          "remote_gpu_link_bytes": 6717440,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            67528429,
+            67572659,
+            67241362
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "122c2fab5e531b2c29240ef2ef614a13f86895eae0a79bb621b43f6f30c9b26f",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8781824,
+            "host0-gpu1": 9437184
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 557056,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 83519612,
+          "physical_sha256": "a573fe2e386a7ae703ea7b6eeffa800af0dc6fde0b66847a31455a131d97d259",
+          "remote_gpu_link_bytes": 8781824,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            83418522,
+            83749526,
+            83519612
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "811a6e78b2efb08a70676a0f405fdc62a03e738f0ee06b111fec2dab6a7f17f3",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9371648,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 144304294,
+          "physical_sha256": "2aac965245cd52440bcd9e3ea5a605af30553134e9c2cc9d90a6d880f1b0976d",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            143999562,
+            147026245,
+            144304294
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "d5f3299693a9ee45e57710d68c2bfa3f4d94fc58f922de2bbc052f1018e0dcb8",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 2949120
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 31693393,
+          "physical_sha256": "ee49bbce13f03fb552055773d66ebfa80e8f04cb8cc2e7dbe33bc97f5403a84b",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            32231693,
+            31693393,
+            31574437
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/fixed-b/00",
+      "feasible": true,
+      "job_id": "eval-3aa8535eede6227d76c764441fbb02eb6de1484e6d064a08",
+      "label": "candidate",
+      "receipt_sha256": "239fab59bdb474c7b2f063f883c8abfba1febc8acff04884d37bf8d1bbb9c879",
+      "request_sha256": "20dec0adb71cd168041b172801008ed15738b8f9dbe9c9617f16723379f4130f",
+      "result_sha256": "b0e2cff094d25051b218beb18e7c5953031aba38495143c243b862c32c1c3765",
+      "score_ms": 327.045728,
+      "split": "train",
+      "utc_end": "2026-11-11T06:12:28.250273+00:00",
+      "utc_start": "2026-11-11T06:12:18.512855+00:00"
+    },
+    "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "1501a3b70ffecb3ec3fd15170a83e8e7748e3b2f1c900387fee48c40e145e3d9",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 53974648,
+          "physical_sha256": "2c5086ad13f43ce14dbee423c81bfbfc34db3dd4b5f8f1d9f838d1eb9cc317cf",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            54251086,
+            53677377,
+            53974648
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "2e85e7f013f67f8e498731e981da8331375be673e64fffa21db934e5fe8a11ec",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 66455633,
+          "physical_sha256": "d59ee5fcbf5e72a0fe9682bcd97c349a8a1287f4ee629f793e3a78f77da30d0b",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            66647219,
+            66364812,
+            66455633
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "13d4c094947ac09419d0ffa9bade18e333c1c200cbf4696c46a016ee49090206",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 166198810,
+          "physical_sha256": "6ea38625bb70f0c7c0c1591c4bce6d5bed580b42a7a56e4b8580a5591ceaec98",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            166198810,
+            165392781,
+            166580853
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "0ab8f9ba4d7437421b898be779436f4033942781ec71c4a42acb53c2408b7b38",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 25662502,
+          "physical_sha256": "f8a3149b6af8c5c7a2da17f6fb81463942bd927a9b682862d257b0302e01cd84",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            26172993,
+            25662502,
+            25573865
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/c420bb73be9693ed93d5b110091bdf1e340b26d01f16d83d6a1281ceb85b8fd4",
+      "feasible": true,
+      "job_id": "eval-41df2edfb212f07d6e11f2c25ed91deca0fb7ec4acbcf123",
+      "label": "candidate",
+      "receipt_sha256": "1fd5bdda33f1bb1b0d27bacf46f15781e2b347c163d991485537ad2552949f3d",
+      "request_sha256": "24921c603ccabab200c30b80de6bd8cca8c01cfebe4e09eb7b258743787403aa",
+      "result_sha256": "c37ac5450ac7641057a4d7895deb401a021f5cb0d64bde9ac5658757933cc1ff",
+      "score_ms": 312.291593,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:24.855235+00:00",
+      "utc_start": "2026-11-11T06:14:15.260411+00:00"
+    },
+    "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "305549b2adc3dad00dc0f18ae1530b28f4c6e639d2fce7e5cd5044507d24a6de",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 11173888,
+            "host0-gpu1": 7176192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 720896,
+            "host0": 1048576
+          },
+          "median_ns": 91823674,
+          "physical_sha256": "ad35c8e34e8e6b2e26dc570ab3ecbd513ab92c020c4760e649cf3fc66d8f22c8",
+          "remote_gpu_link_bytes": 7176192,
+          "remote_gpu_peak_bytes": 720896,
+          "samples_ns": [
+            91077655,
+            92656338,
+            91823674
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "4c67309bd4b538f338e77261a74dcf2a53742ff2f101de4cd0a5da9cb89edc11",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 9601024,
+            "host0-gpu1": 13860864
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 118246661,
+          "physical_sha256": "d3fc9efe1f63274e22d87984d3a7d88b6a8c6d668eaa6fdee6731ad8bca0e2e5",
+          "remote_gpu_link_bytes": 9601024,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            118007319,
+            118246661,
+            118453332
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f05ea9bf1f6bbbd1dfc92001c887f3c90bccab044be8ca6a5c5eba0762715469",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9502720,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 622592,
+            "host0": 37093376
+          },
+          "median_ns": 172721672,
+          "physical_sha256": "d4ba98e8c656eb2178460818303463c3e854f82dcfd22978c5a9d40862abd503",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            171597095,
+            172721672,
+            173801921
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "18a2ac8b956d78968c62d98ec1df42dfe5922a179046df6d40f0c72bd4311c5c",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 3080192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 34955951,
+          "physical_sha256": "f2e7c9ffe98340c0398b7c6417ed775845c2d353e221952b8c8578c5238909a9",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            35250570,
+            34955951,
+            34918724
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/2ec11abe94b781a073c8aac4bc3618b1d7b714e1fd4d30fc94bb83b918a5d7ef",
+      "feasible": true,
+      "job_id": "eval-4f4372aca9cd8704fe05473ff055d865dfbb1b0dfa9170ec",
+      "label": "candidate",
+      "receipt_sha256": "4e7e86ad84a1f31e4a6a6d494022ba887cd04aa0924eb9a7fcab6661bc106db2",
+      "request_sha256": "439e888ddfb3945877be977d261fa549306589e0686b5eeae7bcf290def9780c",
+      "result_sha256": "da5eb04f87e2226bf8c85fb735e0d800116460aa19205e227223f0779f480a29",
+      "score_ms": 417.747958,
+      "split": "train",
+      "utc_end": "2026-11-11T06:13:28.849725+00:00",
+      "utc_start": "2026-11-11T06:13:18.553654+00:00"
+    },
+    "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f56d952c71de6e38109cdcd2db2136620957a8671ad9acb95ac59d438013fe4d",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 9404416,
+            "host0-gpu1": 7241728
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 91011494,
+          "physical_sha256": "14c06ed130ff6f7cb368d492aed56d842b509d362a90a60b4cdc1d70e694d577",
+          "remote_gpu_link_bytes": 7241728,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            91231464,
+            90968558,
+            91011494
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "daddcf13e925030d52d6944942d867efcd0f508c6d8f60f9f6934d54ac328a09",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8880128,
+            "host0-gpu1": 11206656
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 115884646,
+          "physical_sha256": "61508817578af910a4f803054c0986f3780824dd99f5e1f79f4c3d41366a2c72",
+          "remote_gpu_link_bytes": 8880128,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            115454209,
+            115884646,
+            116221968
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ec365953bdd67a908671fe8ad56f194ed3107e8050a7eaafe10dd5ffa3045c1c",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 7536640,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 172007658,
+          "physical_sha256": "ce487c2f53c1bdbabd30e4fdfefc788b04602641339f8676ea2b03757150edc9",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            172296325,
+            172007658,
+            171751751
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "9fbb824e2b7ac69e8d67988c6cf1bac79b9afcadec648f763bb1816f88ecf56a",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 1441792
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 31088540,
+          "physical_sha256": "2bedac47f6f8c9ccc2612d25e6b0dd1678e1ee006090f5e87693130f5ebb248a",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            31407674,
+            31088540,
+            31022267
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/305ecd7abed1ea5845a4524a751050c9e0dfcf80b71f51887be2898a47896bc5",
+      "feasible": true,
+      "job_id": "eval-66a06ad6bdd93efcf9b996db3d1eace15c79f9e081d91840",
+      "label": "candidate",
+      "receipt_sha256": "9d63f9454a5681c862de1ae66ebcf3111f7b4436c902e4fddf3804aa7c3fe2b0",
+      "request_sha256": "db18750c80c810d6a40c30c888e6544fbe35e14234e52dc4fb6cb68f103482f2",
+      "result_sha256": "e76c37c32ee6da2011747ffa712a16ec121952f06232c0cd2648a4e4a9de04e1",
+      "score_ms": 409.992338,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:48.885626+00:00",
+      "utc_start": "2026-11-11T06:14:38.739400+00:00"
+    },
+    "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "e05148c585dc34952940b0b7f3fb2abc35ac453b59deeff67cd047a5d61a980d",
+          "link_bytes": {
+            "gpu0-host0": 6750208,
+            "host0-gpu0": 8716288,
+            "host0-gpu1": 6586368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 589824,
+            "host0": 1048576
+          },
+          "median_ns": 90126543,
+          "physical_sha256": "c8e83af4f1871a766731624230e65779bb9876a06edcc88460f0a872ccedad5a",
+          "remote_gpu_link_bytes": 6586368,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            90014460,
+            90126543,
+            90627598
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "eda75f0275c50f77e22dd8fa594010527193c8f98811c6d04cff0d9f6ae5561e",
+          "link_bytes": {
+            "gpu0-host0": 327680,
+            "gpu1-host0": 7602176,
+            "host0-gpu0": 8159232,
+            "host0-gpu1": 10682368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 113117271,
+          "physical_sha256": "ca631a051047b80fcaeb005c38f65d97db969d4f997120f767c5178cf0a6019a",
+          "remote_gpu_link_bytes": 8486912,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            112682900,
+            113117271,
+            113359286
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ce0d598d5fd3b200b230f63160f18a9021cadd0000b96a42e731f4dd7f73d630",
+          "link_bytes": {
+            "gpu0-host0": 41451520,
+            "host0-gpu0": 17334272,
+            "host0-gpu1": 8617984
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 196608,
+            "host0": 36732928
+          },
+          "median_ns": 188866097,
+          "physical_sha256": "f228676f33b7d56b6eee50a3d5e6e78a61a7f583496a5fe868b43b248dc30fa3",
+          "remote_gpu_link_bytes": 8617984,
+          "remote_gpu_peak_bytes": 196608,
+          "samples_ns": [
+            189954106,
+            188317045,
+            188866097
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "4e59e4313491b49aa1feb091a90264bf06d34df9f472ad8e4d34570119097ac1",
+          "link_bytes": {
+            "gpu0-host0": 196608,
+            "gpu1-host0": 3014656,
+            "host0-gpu0": 2719744,
+            "host0-gpu1": 1376256
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 425984,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 33560207,
+          "physical_sha256": "56d41f25062009148f4d340f3433eb602dad80ba3a81ebed577523a7a32838ee",
+          "remote_gpu_link_bytes": 2916352,
+          "remote_gpu_peak_bytes": 425984,
+          "samples_ns": [
+            33872470,
+            33373368,
+            33560207
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/92b717102d4ec8d4cfb351dea3ce8dbe694a1004460547a4cfa3c8368bc4f684",
+      "feasible": true,
+      "job_id": "eval-6b98c645dd10648e0554b487f4ca0f6ecbfd779b3065ed2a",
+      "label": "candidate",
+      "receipt_sha256": "1fd57fb870cda7d296280b3c4eca947b101ae3583e4916991ac96eddc55b8f81",
+      "request_sha256": "07d33920164e8e3c4890189d7342b626ac2b375d373e19b844f267498b99fb6a",
+      "result_sha256": "047d589f20c9976ac0fff502f02b9391b7e9642f5976868e6e1790f37d51923c",
+      "score_ms": 425.670118,
+      "split": "train",
+      "utc_end": "2026-11-11T06:15:21.198475+00:00",
+      "utc_start": "2026-11-11T06:15:10.801313+00:00"
+    },
+    "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "305549b2adc3dad00dc0f18ae1530b28f4c6e639d2fce7e5cd5044507d24a6de",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 11173888,
+            "host0-gpu1": 7176192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 720896,
+            "host0": 1048576
+          },
+          "median_ns": 91153175,
+          "physical_sha256": "ad35c8e34e8e6b2e26dc570ab3ecbd513ab92c020c4760e649cf3fc66d8f22c8",
+          "remote_gpu_link_bytes": 7176192,
+          "remote_gpu_peak_bytes": 720896,
+          "samples_ns": [
+            90814021,
+            91485179,
+            91153175
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "4c67309bd4b538f338e77261a74dcf2a53742ff2f101de4cd0a5da9cb89edc11",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 9601024,
+            "host0-gpu1": 13860864
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 118519720,
+          "physical_sha256": "d3fc9efe1f63274e22d87984d3a7d88b6a8c6d668eaa6fdee6731ad8bca0e2e5",
+          "remote_gpu_link_bytes": 9601024,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            118519720,
+            118182378,
+            118777670
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f05ea9bf1f6bbbd1dfc92001c887f3c90bccab044be8ca6a5c5eba0762715469",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9502720,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 622592,
+            "host0": 37093376
+          },
+          "median_ns": 173009940,
+          "physical_sha256": "d4ba98e8c656eb2178460818303463c3e854f82dcfd22978c5a9d40862abd503",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            173009940,
+            172991081,
+            173960592
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "18a2ac8b956d78968c62d98ec1df42dfe5922a179046df6d40f0c72bd4311c5c",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 3080192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 34961698,
+          "physical_sha256": "f2e7c9ffe98340c0398b7c6417ed775845c2d353e221952b8c8578c5238909a9",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            35350720,
+            34961698,
+            34943420
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/2ec11abe94b781a073c8aac4bc3618b1d7b714e1fd4d30fc94bb83b918a5d7ef",
+      "feasible": true,
+      "job_id": "eval-826ffab28fd4717923f113d73ab068b98f3c40d2ce6552d7",
+      "label": "candidate",
+      "receipt_sha256": "75ab986d16c6b3de59aff8fb1343f831c2ca33351a4102fdb931429814313bca",
+      "request_sha256": "7ce0fe33671037a6d3fa514b6a0e72ac0f39e1280b75724424e6c64a08239de0",
+      "result_sha256": "33b74287c2c7b6d8a2f77f5e241777910f55b120d4ae06cb92be22a2e77b22eb",
+      "score_ms": 417.644533,
+      "split": "train",
+      "utc_end": "2026-11-11T06:15:10.239331+00:00",
+      "utc_start": "2026-11-11T06:14:59.992024+00:00"
+    },
+    "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "1501a3b70ffecb3ec3fd15170a83e8e7748e3b2f1c900387fee48c40e145e3d9",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 54786217,
+          "physical_sha256": "2c5086ad13f43ce14dbee423c81bfbfc34db3dd4b5f8f1d9f838d1eb9cc317cf",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            54786217,
+            54444304,
+            54865526
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "2e85e7f013f67f8e498731e981da8331375be673e64fffa21db934e5fe8a11ec",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 67574862,
+          "physical_sha256": "d59ee5fcbf5e72a0fe9682bcd97c349a8a1287f4ee629f793e3a78f77da30d0b",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            68813403,
+            67247971,
+            67574862
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "13d4c094947ac09419d0ffa9bade18e333c1c200cbf4696c46a016ee49090206",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 165282027,
+          "physical_sha256": "6ea38625bb70f0c7c0c1591c4bce6d5bed580b42a7a56e4b8580a5591ceaec98",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            165282027,
+            165252962,
+            166681599
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "0ab8f9ba4d7437421b898be779436f4033942781ec71c4a42acb53c2408b7b38",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 25849478,
+          "physical_sha256": "f8a3149b6af8c5c7a2da17f6fb81463942bd927a9b682862d257b0302e01cd84",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            26130761,
+            25716149,
+            25849478
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/child/01",
+      "feasible": true,
+      "job_id": "eval-8368656fa6a2260a3b56492b17339851602008b9bf9dedb6",
+      "label": "candidate",
+      "receipt_sha256": "1e978941d0b4b2b4359884296165f219841b8a7d60ae3041328e5f328734f881",
+      "request_sha256": "ca9b13521ff21f5b255cd043d08485a39c22c485638d56dd2671616d3d15185d",
+      "result_sha256": "3dee9c2e6fc46da753ff7e3e2614d1798da1256d18a7711040c34b1794e3bc18",
+      "score_ms": 313.492584,
+      "split": "train",
+      "utc_end": "2026-11-11T06:05:36.488519+00:00",
+      "utc_start": "2026-11-11T06:05:26.794164+00:00"
+    },
+    "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367": {
+      "block_id": "train",
+      "cases": {},
+      "effect": "r0000/fixed-a/01",
+      "feasible": false,
+      "job_id": "eval-8e54a2c8eb607c62a8090f3bde61fddb6ca99e2ad9ba9367",
+      "label": "candidate",
+      "receipt_sha256": "5374d21691115e32fb267c212b1ffb0bc467638a620121097fa723c7330872cb",
+      "request_sha256": "31bc06eafde712771ef9ad069a6310111cd7066b41fcd8b8fc46b1ac93cd9aec",
+      "result_sha256": "3fc7367fd6505e4698f7d3667545b2958499f00088865599ca771a5af7372b35",
+      "score_ms": null,
+      "split": "train",
+      "utc_end": "2026-11-11T06:09:51.994529+00:00",
+      "utc_start": "2026-11-11T06:09:49.072615+00:00"
+    },
+    "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d": {
+      "block_id": "train",
+      "cases": {},
+      "effect": "r0000/training-matrix/r0000-train-01/ece91ed10d024c10995dde21dd861d190297f7f0ad0abd3e9c2a573abb57f446",
+      "feasible": false,
+      "job_id": "eval-92e16e17e4be0fbaaa1a72dfa77da25fe805092d22c44e1d",
+      "label": "candidate",
+      "receipt_sha256": "4faff654700521e102bc84cb6d949dbabeb96f6810922f024210c2ab6d114c96",
+      "request_sha256": "d6686ca726ba8c6e0791522db183a6c935a91dbe735ecaff7b15cacc135c48a2",
+      "result_sha256": "77906318b925a9f6ae04d1833af923248a160f96348c1ee002f712dc0fe35fef",
+      "score_ms": null,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:04.029842+00:00",
+      "utc_start": "2026-11-11T06:14:01.155841+00:00"
+    },
+    "eval-960140543890d7588593c2bc332367896d8a1183b41a540e": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "a63c8e46aa42ca9c9247f33b0d5ecdf94619c5bc84aa1ef7bb410a8335065d29",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 1769472
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 1048576
+          },
+          "median_ns": 54798602,
+          "physical_sha256": "2c5086ad13f43ce14dbee423c81bfbfc34db3dd4b5f8f1d9f838d1eb9cc317cf",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            54798602,
+            54316537,
+            55150596
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "0525fcfa3adbab3d666d36fcd260051ee6fbb9cd9af1130dbd925d6038b26f43",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 66598224,
+          "physical_sha256": "d59ee5fcbf5e72a0fe9682bcd97c349a8a1287f4ee629f793e3a78f77da30d0b",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            67175185,
+            66598224,
+            66554292
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c0eb8919c6c9da08ad3165f962a63c33a55a742c3f8de3a2786671be27b2a2f2",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 5144576
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 0,
+            "host0": 37093376
+          },
+          "median_ns": 163514834,
+          "physical_sha256": "6ea38625bb70f0c7c0c1591c4bce6d5bed580b42a7a56e4b8580a5591ceaec98",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            163492039,
+            166531786,
+            163514834
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "3a477affb5a393fc924f885adeabe6bfe37220da8bf9045ae18425141909ad4f",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 0,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 25659588,
+          "physical_sha256": "f8a3149b6af8c5c7a2da17f6fb81463942bd927a9b682862d257b0302e01cd84",
+          "remote_gpu_link_bytes": 0,
+          "remote_gpu_peak_bytes": 0,
+          "samples_ns": [
+            26103935,
+            25659588,
+            25645366
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/940d0d82b3668323a14b843d073d4c36225047cc89888367005bdc9d5330ce90",
+      "feasible": true,
+      "job_id": "eval-960140543890d7588593c2bc332367896d8a1183b41a540e",
+      "label": "candidate",
+      "receipt_sha256": "071e2bfb42c462ca27d7b38c0caf361210d2e0cc33e4bac474ab5dab560c299f",
+      "request_sha256": "634ce1fa757f664412a53692d5b84ab413cedfb6b2be4d933227cb98634936cf",
+      "result_sha256": "afc9a7fee458d66d812fe0ae53eefda5383fb9a831f4e2006e62abfc9af31bf7",
+      "score_ms": 310.571248,
+      "split": "train",
+      "utc_end": "2026-11-11T06:15:42.310477+00:00",
+      "utc_start": "2026-11-11T06:15:32.666012+00:00"
+    },
+    "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "99827a6607fc2fbb879ba9319c4fe0de1976741a4994aa766e4923ca50c1d3da",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 7438336,
+            "host0-gpu1": 6717440
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 67811198,
+          "physical_sha256": "9f756383ef8d52ab90a5a41aa7507d1e9adfb8635320913f12a8604ab10f84a8",
+          "remote_gpu_link_bytes": 6717440,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            67954460,
+            67811198,
+            67142620
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "122c2fab5e531b2c29240ef2ef614a13f86895eae0a79bb621b43f6f30c9b26f",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8781824,
+            "host0-gpu1": 9437184
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 557056,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 83861573,
+          "physical_sha256": "a573fe2e386a7ae703ea7b6eeffa800af0dc6fde0b66847a31455a131d97d259",
+          "remote_gpu_link_bytes": 8781824,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            83738642,
+            83861573,
+            84119874
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "811a6e78b2efb08a70676a0f405fdc62a03e738f0ee06b111fec2dab6a7f17f3",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9371648,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 145124298,
+          "physical_sha256": "2aac965245cd52440bcd9e3ea5a605af30553134e9c2cc9d90a6d880f1b0976d",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            145124298,
+            147134588,
+            144245856
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "d5f3299693a9ee45e57710d68c2bfa3f4d94fc58f922de2bbc052f1018e0dcb8",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 2949120
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 31657881,
+          "physical_sha256": "ee49bbce13f03fb552055773d66ebfa80e8f04cb8cc2e7dbe33bc97f5403a84b",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            31973802,
+            31508980,
+            31657881
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/89fabdab671ad663e6b8cbeca50dcc3223792714d788ab33f1e15ae682fa4bd0",
+      "feasible": true,
+      "job_id": "eval-9e0eff05293f511f60f6a22864c920ad6b52e0aa07330769",
+      "label": "candidate",
+      "receipt_sha256": "43c9bfdce7cff2cb6a83428b6572dfeb3797ab37d55dcfeb08f737ad0d984304",
+      "request_sha256": "575816038090647d4c152530048f822cc29306092fae80dfe62d844fc9259c28",
+      "result_sha256": "e3728ba04b3485b448ad0ec28fdaf149f227ace51c23e17474a3ce1b6d5a0843",
+      "score_ms": 328.45495,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:00.588673+00:00",
+      "utc_start": "2026-11-11T06:13:50.894493+00:00"
+    },
+    "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "99827a6607fc2fbb879ba9319c4fe0de1976741a4994aa766e4923ca50c1d3da",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 7438336,
+            "host0-gpu1": 6717440
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 68104128,
+          "physical_sha256": "9f756383ef8d52ab90a5a41aa7507d1e9adfb8635320913f12a8604ab10f84a8",
+          "remote_gpu_link_bytes": 6717440,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            68104128,
+            68169550,
+            67647161
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "122c2fab5e531b2c29240ef2ef614a13f86895eae0a79bb621b43f6f30c9b26f",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8781824,
+            "host0-gpu1": 9437184
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 557056,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 83813132,
+          "physical_sha256": "a573fe2e386a7ae703ea7b6eeffa800af0dc6fde0b66847a31455a131d97d259",
+          "remote_gpu_link_bytes": 8781824,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            83659045,
+            83813132,
+            83994910
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "811a6e78b2efb08a70676a0f405fdc62a03e738f0ee06b111fec2dab6a7f17f3",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9371648,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 144122430,
+          "physical_sha256": "2aac965245cd52440bcd9e3ea5a605af30553134e9c2cc9d90a6d880f1b0976d",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            147385036,
+            143627553,
+            144122430
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "d5f3299693a9ee45e57710d68c2bfa3f4d94fc58f922de2bbc052f1018e0dcb8",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 2949120
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 32063758,
+          "physical_sha256": "ee49bbce13f03fb552055773d66ebfa80e8f04cb8cc2e7dbe33bc97f5403a84b",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            32063758,
+            31634104,
+            32137022
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-02/89fabdab671ad663e6b8cbeca50dcc3223792714d788ab33f1e15ae682fa4bd0",
+      "feasible": true,
+      "job_id": "eval-9f57ea47b047b008cc8655e731ab2878caaecc3eacb9acf4",
+      "label": "candidate",
+      "receipt_sha256": "2c6f1434d234ccc4df923b0221bc3bb0ce76d3ecb406b4cde3a59121c6db819e",
+      "request_sha256": "a428d5f6efa8e552b460614cf8898cb9e1633b5dd062eafa6ab28a681e093da5",
+      "result_sha256": "9b8e79cd1386c6a3854d59779a01657e6ed0cbc018024b62bcd31796447d0f4d",
+      "score_ms": 328.103448,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:59.419239+00:00",
+      "utc_start": "2026-11-11T06:14:49.472866+00:00"
+    },
+    "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f56d952c71de6e38109cdcd2db2136620957a8671ad9acb95ac59d438013fe4d",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 9404416,
+            "host0-gpu1": 7241728
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 92025693,
+          "physical_sha256": "14c06ed130ff6f7cb368d492aed56d842b509d362a90a60b4cdc1d70e694d577",
+          "remote_gpu_link_bytes": 7241728,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            92025693,
+            91963701,
+            92352995
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "daddcf13e925030d52d6944942d867efcd0f508c6d8f60f9f6934d54ac328a09",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8880128,
+            "host0-gpu1": 11206656
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 117609585,
+          "physical_sha256": "61508817578af910a4f803054c0986f3780824dd99f5e1f79f4c3d41366a2c72",
+          "remote_gpu_link_bytes": 8880128,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            117609585,
+            117582495,
+            118092051
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ec365953bdd67a908671fe8ad56f194ed3107e8050a7eaafe10dd5ffa3045c1c",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 7536640,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 172386915,
+          "physical_sha256": "ce487c2f53c1bdbabd30e4fdfefc788b04602641339f8676ea2b03757150edc9",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            172386915,
+            172207735,
+            172720396
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "9fbb824e2b7ac69e8d67988c6cf1bac79b9afcadec648f763bb1816f88ecf56a",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 1441792
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 31324026,
+          "physical_sha256": "2bedac47f6f8c9ccc2612d25e6b0dd1678e1ee006090f5e87693130f5ebb248a",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            31671479,
+            31145236,
+            31324026
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/parent/00",
+      "feasible": true,
+      "job_id": "eval-9fb78eef54e311a64aa8acf7d1ebd20eaa69c170b30dcf04",
+      "label": "candidate",
+      "receipt_sha256": "09335b06ebe738dee3640f29eb61317d824768c3c74ba19b7b5753805eb56a77",
+      "request_sha256": "67669625b0780257aaa4f6251e899c68d76411291b94dd9b3057ffe074bb165b",
+      "result_sha256": "1e9a61422834bee9a88710d50e52e9db2bc7301f8c97469ce423cb10b6738fb4",
+      "score_ms": 413.346219,
+      "split": "train",
+      "utc_end": "2026-11-11T05:59:06.147909+00:00",
+      "utc_start": "2026-11-11T05:58:55.752074+00:00"
+    },
+    "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90": {
+      "block_id": "train",
+      "cases": {},
+      "effect": "r0000/training-matrix/r0000-train-01/bd633513f63c14847327d6c73f19dab0435ff4e98a45e75aeea37968dca87cda",
+      "feasible": false,
+      "job_id": "eval-ad9ab8ba7c7a1eb9c67267f88a5f2277738a583a0656dd90",
+      "label": "candidate",
+      "receipt_sha256": "ee2a81609330e106f9f86b16913dc4113fd7d0b19a4a85721f64ebae1ec85b83",
+      "request_sha256": "e49777b81f2c8f76729e03383f09d412df65ffa1e84b9f075ea37b5eece89d4c",
+      "result_sha256": "b4f8fd357a289afab3b0d9da1c0292d8264ace89c13653e98df36f07900a5e91",
+      "score_ms": null,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:38.440625+00:00",
+      "utc_start": "2026-11-11T06:14:35.516902+00:00"
+    },
+    "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "305549b2adc3dad00dc0f18ae1530b28f4c6e639d2fce7e5cd5044507d24a6de",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 11173888,
+            "host0-gpu1": 7176192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 720896,
+            "host0": 1048576
+          },
+          "median_ns": 91109233,
+          "physical_sha256": "ad35c8e34e8e6b2e26dc570ab3ecbd513ab92c020c4760e649cf3fc66d8f22c8",
+          "remote_gpu_link_bytes": 7176192,
+          "remote_gpu_peak_bytes": 720896,
+          "samples_ns": [
+            91102153,
+            91109233,
+            92281604
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "4c67309bd4b538f338e77261a74dcf2a53742ff2f101de4cd0a5da9cb89edc11",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 9601024,
+            "host0-gpu1": 13860864
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 117938466,
+          "physical_sha256": "d3fc9efe1f63274e22d87984d3a7d88b6a8c6d668eaa6fdee6731ad8bca0e2e5",
+          "remote_gpu_link_bytes": 9601024,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            117938466,
+            117765335,
+            118713730
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f05ea9bf1f6bbbd1dfc92001c887f3c90bccab044be8ca6a5c5eba0762715469",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 9502720,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 622592,
+            "host0": 37093376
+          },
+          "median_ns": 173616843,
+          "physical_sha256": "d4ba98e8c656eb2178460818303463c3e854f82dcfd22978c5a9d40862abd503",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            173614880,
+            173616843,
+            173821029
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "18a2ac8b956d78968c62d98ec1df42dfe5922a179046df6d40f0c72bd4311c5c",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 3080192
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 34901979,
+          "physical_sha256": "f2e7c9ffe98340c0398b7c6417ed775845c2d353e221952b8c8578c5238909a9",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            35650273,
+            34901979,
+            34773196
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/fixed-a/00",
+      "feasible": true,
+      "job_id": "eval-b0b23312c7ae0a6ec806d11877f9821b8069aac865e5640e",
+      "label": "candidate",
+      "receipt_sha256": "a741b044e28dcc13ec13606e52f4d9f197e1879c1a2d5c7c3a9525ebbbb4326e",
+      "request_sha256": "9f8c14ef7493e08cbc0b17b3cee9929f64e2e04e52e37555194e2d5102cf865e",
+      "result_sha256": "7a9204d23492d7d44716ae40a3ba07ae5c6eb4328971870f70267fd16d3f0fbd",
+      "score_ms": 417.566521,
+      "split": "train",
+      "utc_end": "2026-11-11T06:07:49.672875+00:00",
+      "utc_start": "2026-11-11T06:07:39.226639+00:00"
+    },
+    "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333": {
+      "block_id": "train",
+      "cases": {},
+      "effect": "r0000/fixed-b/01",
+      "feasible": false,
+      "job_id": "eval-b6a50235e3208939c3a8ea42519f0d96a8b07b1a85ab5333",
+      "label": "candidate",
+      "receipt_sha256": "2cb412200d4bfd918a92a06af298d4ee455124b00a82df7fbb681ef3ff6f89b9",
+      "request_sha256": "03143a5aed92a685cbf09f8841bb3fe9067434c2ad842d1d3c2abab4f3afbb42",
+      "result_sha256": "291e2a5add1ac9ab1967582237a31a42ba036e69bf102b50175f0e6f5c383fdc",
+      "score_ms": null,
+      "split": "train",
+      "utc_end": "2026-11-11T06:13:18.232220+00:00",
+      "utc_start": "2026-11-11T06:13:15.307669+00:00"
+    },
+    "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "f56d952c71de6e38109cdcd2db2136620957a8671ad9acb95ac59d438013fe4d",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "host0-gpu0": 9404416,
+            "host0-gpu1": 7241728
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 655360,
+            "host0": 1048576
+          },
+          "median_ns": 91002519,
+          "physical_sha256": "14c06ed130ff6f7cb368d492aed56d842b509d362a90a60b4cdc1d70e694d577",
+          "remote_gpu_link_bytes": 7241728,
+          "remote_gpu_peak_bytes": 655360,
+          "samples_ns": [
+            90977089,
+            91296545,
+            91002519
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "daddcf13e925030d52d6944942d867efcd0f508c6d8f60f9f6934d54ac328a09",
+          "link_bytes": {
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 8880128,
+            "host0-gpu1": 11206656
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 116055484,
+          "physical_sha256": "61508817578af910a4f803054c0986f3780824dd99f5e1f79f4c3d41366a2c72",
+          "remote_gpu_link_bytes": 8880128,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            116055484,
+            116027551,
+            116335268
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ec365953bdd67a908671fe8ad56f194ed3107e8050a7eaafe10dd5ffa3045c1c",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "host0-gpu0": 7536640,
+            "host0-gpu1": 8454144
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 557056,
+            "host0": 37093376
+          },
+          "median_ns": 171948843,
+          "physical_sha256": "ce487c2f53c1bdbabd30e4fdfefc788b04602641339f8676ea2b03757150edc9",
+          "remote_gpu_link_bytes": 8454144,
+          "remote_gpu_peak_bytes": 557056,
+          "samples_ns": [
+            171948843,
+            172475581,
+            171770576
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "9fbb824e2b7ac69e8d67988c6cf1bac79b9afcadec648f763bb1816f88ecf56a",
+          "link_bytes": {
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 2883584,
+            "host0-gpu1": 1441792
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 491520,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 31278490,
+          "physical_sha256": "2bedac47f6f8c9ccc2612d25e6b0dd1678e1ee006090f5e87693130f5ebb248a",
+          "remote_gpu_link_bytes": 2883584,
+          "remote_gpu_peak_bytes": 491520,
+          "samples_ns": [
+            31446380,
+            31255774,
+            31278490
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/305ecd7abed1ea5845a4524a751050c9e0dfcf80b71f51887be2898a47896bc5",
+      "feasible": true,
+      "job_id": "eval-b9e0a5acdfaf700a7d91bc111d85a4dfa33ae1ef912aaf61",
+      "label": "candidate",
+      "receipt_sha256": "160473817bd492bb825366f49ff1515232ea12ecb336eb6a57e470019201240e",
+      "request_sha256": "ffdc7f6909d58e2820180da0fa2e0cb859f4290946cb3aad1848fb6177c91cef",
+      "result_sha256": "e66ff0ebdaf9a5abe1f31b0eda88af0ee0e0c22b17ece8a924dcb9b84c5d5e6c",
+      "score_ms": 410.285336,
+      "split": "train",
+      "utc_end": "2026-11-11T06:13:39.884602+00:00",
+      "utc_start": "2026-11-11T06:13:29.587020+00:00"
+    },
+    "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "e05148c585dc34952940b0b7f3fb2abc35ac453b59deeff67cd047a5d61a980d",
+          "link_bytes": {
+            "gpu0-host0": 6750208,
+            "host0-gpu0": 8716288,
+            "host0-gpu1": 6586368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 589824,
+            "host0": 1048576
+          },
+          "median_ns": 89770318,
+          "physical_sha256": "c8e83af4f1871a766731624230e65779bb9876a06edcc88460f0a872ccedad5a",
+          "remote_gpu_link_bytes": 6586368,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            89900129,
+            89770318,
+            89531427
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "eda75f0275c50f77e22dd8fa594010527193c8f98811c6d04cff0d9f6ae5561e",
+          "link_bytes": {
+            "gpu0-host0": 327680,
+            "gpu1-host0": 7602176,
+            "host0-gpu0": 8159232,
+            "host0-gpu1": 10682368
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 589824,
+            "gpu1": 524288,
+            "host0": 1245184
+          },
+          "median_ns": 112764204,
+          "physical_sha256": "ca631a051047b80fcaeb005c38f65d97db969d4f997120f767c5178cf0a6019a",
+          "remote_gpu_link_bytes": 8486912,
+          "remote_gpu_peak_bytes": 589824,
+          "samples_ns": [
+            112749529,
+            112764204,
+            113526245
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "ce0d598d5fd3b200b230f63160f18a9021cadd0000b96a42e731f4dd7f73d630",
+          "link_bytes": {
+            "gpu0-host0": 41451520,
+            "host0-gpu0": 17334272,
+            "host0-gpu1": 8617984
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 196608,
+            "host0": 36732928
+          },
+          "median_ns": 187105596,
+          "physical_sha256": "f228676f33b7d56b6eee50a3d5e6e78a61a7f583496a5fe868b43b248dc30fa3",
+          "remote_gpu_link_bytes": 8617984,
+          "remote_gpu_peak_bytes": 196608,
+          "samples_ns": [
+            187627947,
+            186030470,
+            187105596
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "4e59e4313491b49aa1feb091a90264bf06d34df9f472ad8e4d34570119097ac1",
+          "link_bytes": {
+            "gpu0-host0": 196608,
+            "gpu1-host0": 3014656,
+            "host0-gpu0": 2719744,
+            "host0-gpu1": 1376256
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 425984,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 33994922,
+          "physical_sha256": "56d41f25062009148f4d340f3433eb602dad80ba3a81ebed577523a7a32838ee",
+          "remote_gpu_link_bytes": 2916352,
+          "remote_gpu_peak_bytes": 425984,
+          "samples_ns": [
+            34256928,
+            33853684,
+            33994922
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/92b717102d4ec8d4cfb351dea3ce8dbe694a1004460547a4cfa3c8368bc4f684",
+      "feasible": true,
+      "job_id": "eval-e35117d015232523015e077d889b39277d6b765a17a07b8f",
+      "label": "candidate",
+      "receipt_sha256": "6efce0c3fb09de570784106330c89ccf90c267b0bad5378deef809b32350e4d7",
+      "request_sha256": "a183d37fe3079df8f0ef641acbd2ed2b0f7f459ce3ba9c4aee4efe50a738c2cd",
+      "result_sha256": "3e68f41b5c3d679940540de7d448d5fc78f7716eb46f98d5941f0cefbcf23637",
+      "score_ms": 423.63504,
+      "split": "train",
+      "utc_end": "2026-11-11T06:14:14.675560+00:00",
+      "utc_start": "2026-11-11T06:14:04.327526+00:00"
+    },
+    "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e": {
+      "block_id": "train",
+      "cases": {
+        "v4-h256-agent-water-inspection-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 34214400,
+            "gpu1": 134217728
+          },
+          "execution_signature": "c4eace0c7ad80fb40a19b25bf9fd814c563a969ecce010fd42c7372b58b24f5f",
+          "link_bytes": {
+            "gpu0-host0": 6356992,
+            "gpu1-host0": 917504,
+            "host0-gpu0": 1769472,
+            "host0-gpu1": 2424832
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 524288,
+            "host0": 557056
+          },
+          "median_ns": 57953131,
+          "physical_sha256": "02876b5119356407fbf723983bfc3ee82b6e6c4560d237be777200add475d2ab",
+          "remote_gpu_link_bytes": 3342336,
+          "remote_gpu_peak_bytes": 524288,
+          "samples_ns": [
+            58112809,
+            57538928,
+            57953131
+          ],
+          "selection_sha256": "ce5b840751369c9f673a0f07d84831c321bc18905d5351b990960088819f24f9"
+        },
+        "v4-h256-chatbot-trip-planning-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 34214400
+          },
+          "execution_signature": "d519c90fe4308701236f3771280ef5c2dd203ba236d4e4aace43c46f80db1ac6",
+          "link_bytes": {
+            "gpu0-host0": 1015808,
+            "gpu1-host0": 7471104,
+            "host0-gpu0": 3440640,
+            "host0-gpu1": 2326528
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 622592,
+            "gpu1": 524288,
+            "host0": 655360
+          },
+          "median_ns": 70959448,
+          "physical_sha256": "791bec4c378f387e835e01f16ff99d5e8728c908a750308f535c9f37a0081897",
+          "remote_gpu_link_bytes": 4456448,
+          "remote_gpu_peak_bytes": 622592,
+          "samples_ns": [
+            70959448,
+            71063369,
+            70644699
+          ],
+          "selection_sha256": "1f32d03368d26471fcf0a33ce52848fb5c0757c446ccb86ea895a6746749ccf6"
+        },
+        "v4-h256-long-document-estuary-qa-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 659968,
+            "gpu1": 134217728
+          },
+          "execution_signature": "7a6daa536e745934a7660afb2981ff56e63b60d3068a0bedcc163de7b3dd33a6",
+          "link_bytes": {
+            "gpu0-host0": 41877504,
+            "gpu1-host0": 2326528,
+            "host0-gpu0": 5144576,
+            "host0-gpu1": 20807680
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 524288,
+            "gpu1": 18546688,
+            "host0": 18546688
+          },
+          "median_ns": 186801736,
+          "physical_sha256": "f4ba696e34138fd938265f86daaf08b763d735317a700155458c80aaab89b44a",
+          "remote_gpu_link_bytes": 23134208,
+          "remote_gpu_peak_bytes": 18546688,
+          "samples_ns": [
+            185993285,
+            190070003,
+            186801736
+          ],
+          "selection_sha256": "b58306f05af43b6f0512e79f20b940987b1920e15319ae55a2deb860bf8d25df"
+        },
+        "v4-h256-rollout-bridge-options-00": {
+          "cuda_peak_allocated_delta_bytes_by_node": {
+            "gpu0": 134217728,
+            "gpu1": 659968
+          },
+          "execution_signature": "f0f68aea15ff2d140fca39dfaefd2ad40a661f92735d69287e8861579474936e",
+          "link_bytes": {
+            "gpu0-host0": 131072,
+            "gpu1-host0": 3080192,
+            "host0-gpu0": 1277952,
+            "host0-gpu1": 131072
+          },
+          "managed_peak_bytes_by_node": {
+            "gpu0": 327680,
+            "gpu1": 524288,
+            "host0": 360448
+          },
+          "median_ns": 27205653,
+          "physical_sha256": "f8cdb51b5a151b7b6397d33c00bfec7cfba6af9b54e18511d8fd354adbe92306",
+          "remote_gpu_link_bytes": 1409024,
+          "remote_gpu_peak_bytes": 327680,
+          "samples_ns": [
+            27658826,
+            27121333,
+            27205653
+          ],
+          "selection_sha256": "4f85ff5a9f78873c9bf83f536422165bfde0a66d01f1250ea09d090f818e670e"
+        }
+      },
+      "effect": "r0000/training-matrix/r0000-train-01/0a6a7835ac73580f5291e83af71cf9398e0e33b9e2b024ee4d20f40b373bf993",
+      "feasible": true,
+      "job_id": "eval-fc8c447abb44d1e2459c3af586bcf294d2b5e6e85350e43e",
+      "label": "candidate",
+      "receipt_sha256": "5f74861190b852db96a007bdb533c676ba82807bc375311162f1e1464f7e819e",
+      "request_sha256": "96f4018906fed1d395e9c5f7d3d5d3a766eaa17db6852fc02f95eac7d7fad7fe",
+      "result_sha256": "d238ad5147554fd76a932ced0088cae4d30a8a756dbbbc00729f466dd2a8b751",
+      "score_ms": 342.919968,
+      "split": "train",
+      "utc_end": "2026-11-11T06:13:50.355850+00:00",
+      "utc_start": "2026-11-11T06:13:40.561070+00:00"
+    }
+  },
+  "schema": 1,
+  "unknown": {
+    "effect": "r0000/training-matrix/r0000-train-02/c420bb73be9693ed93d5b110091bdf1e340b26d01f16d83d6a1281ceb85b8fd4",
+    "job_id": "eval-99fd473a153c7b215cfbd43dabcd82562b13e01114982104",
+    "local_receipt": false,
+    "recovered_empty_files": [
+      "input.json",
+      "process.log",
+      "request.json",
+      "started.json"
+    ],
+    "status": "transport_unknown"
+  }
+}

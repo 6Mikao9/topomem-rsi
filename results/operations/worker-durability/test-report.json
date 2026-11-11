@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "utc": "2026-11-11T07:33:12.187065+00:00",
+  "scope": "Human infrastructure fix. CPU unit/fault-injection tests on POSIX; no real GPU jobs, restart or power-loss simulation.",
+  "archive_sha256": "a20ee820831934ec1d59bb02f8c782bd0219b24a2771fbcd4fcd31a3a2b09253",
+  "source_sha256": {
+    "rsi_memory/__init__.py": "1b15287f0ee303eaed98eb3d97dd001f226d2590ce96b3973233487edc4b0157",
+    "rsi_memory/execution_worker.py": "5333d9d390f7e2b3219f6732c532488a7a399c5c54574dbc651de2afa72981ed",
+    "rsi_memory/execution_client.py": "be8d0bca7af200195a602890af8c264646c984d905c6f97e7e67b6e42af31dfc",
+    "tests/test_execution_protocol.py": "dc0c97a75c849e28587e1898f737b00c0fad060f94625666b97bcfabef451970"
+  },
+  "command": [
+    "/home/liuyuntao/.venvs/sglang-stable/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_execution_protocol.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "log_sha256": "83e1f8c849725ad1506e4077ac000c0c3023e2d04abf777ac4c31529bba90158",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "linux"
+}

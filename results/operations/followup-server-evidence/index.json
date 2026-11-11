@@ -1,0 +1,65 @@
+{
+  "groups": {
+    "final-gpu3": {
+      "archives": 16,
+      "fully_verified_jobs": 134,
+      "index_sha256": "6b3eae44f54ad84eb90ac3468c761dcaa7d7ce9694a301a4d7dea35335edebe2",
+      "jobs": 134,
+      "members": 804,
+      "original_artifact_manifest_sha256": "7240095c37049f7012c9bf14bdd7b552640c87b59791110ea49e9433b2ba0b3f",
+      "partial_jobs": [],
+      "zip_bytes": 37422606
+    },
+    "prompt-v4-abort": {
+      "archives": 2,
+      "fully_verified_jobs": 11,
+      "index_sha256": "5487f9b60f4f08c6067c0355bc609f66e6efc64a004d2005887b663f529c2afd",
+      "jobs": 11,
+      "members": 66,
+      "original_artifact_manifest_sha256": "b5e2d70cdefc441a4c6fa30eaa7aaadefe1933bed47081779cf491a403bc74d5",
+      "partial_jobs": [],
+      "zip_bytes": 2668868
+    },
+    "v12": {
+      "archives": 3,
+      "fully_verified_jobs": 24,
+      "index_sha256": "2a80f4f097becd92589adfeef58406378a5f45d2e331b86bf2980e629177501f",
+      "jobs": 24,
+      "members": 144,
+      "original_artifact_manifest_sha256": "bb0b65e899a2ce2ae7c48209dfc4a3d81ad92fd8907b14e5041cc693762920ef",
+      "partial_jobs": [],
+      "zip_bytes": 6130677
+    },
+    "v13": {
+      "archives": 3,
+      "fully_verified_jobs": 24,
+      "index_sha256": "f8729e68989a4b97c0c9e24e3501fa80485079b070de37253225c895a43ee9af",
+      "jobs": 24,
+      "members": 144,
+      "original_artifact_manifest_sha256": "4d9e36cd23c2206135f950839a007405981ca24e6daa186968bb9c2671f4ef38",
+      "partial_jobs": [],
+      "zip_bytes": 6490838
+    },
+    "v41-reboot-interruption": {
+      "archives": 3,
+      "fully_verified_jobs": 25,
+      "index_sha256": "2068dc1ae01a1d6f1195d56a7572f6c32cad0ca626f0204eab3385c959b78626",
+      "jobs": 26,
+      "members": 156,
+      "original_artifact_manifest_sha256": "d2030731dadc5322f28cf033d24c922a8c20ac17420ee3cc8a0f453f743174df",
+      "partial_jobs": [
+        "eval-960140543890d7588593c2bc332367896d8a1183b41a540e"
+      ],
+      "zip_bytes": 6007304
+    }
+  },
+  "original_combined_index_sha256": "41e3feaedb02ff4fb0313b4c7b05d1edf765e7024cf968b16c11044496832263",
+  "schema": 1,
+  "totals": {
+    "archives": 27,
+    "fully_verified_jobs": 218,
+    "jobs": 219,
+    "members": 1314,
+    "zip_bytes": 58720293
+  }
+}

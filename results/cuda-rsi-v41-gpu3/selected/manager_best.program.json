@@ -1,0 +1,338 @@
+{
+  "kind": "kv_memory_program",
+  "rules": [
+    {
+      "action": "place",
+      "event": "allocate",
+      "score": {
+        "name": "target_is_gpu",
+        "op": "feature"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "replicate",
+      "event": "access",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "const",
+                "value": 1.0
+              },
+              {
+                "name": "target_is_local",
+                "op": "feature"
+              }
+            ],
+            "op": "sub"
+          },
+          {
+            "name": "target_has_copy",
+            "op": "feature"
+          }
+        ],
+        "op": "sub"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "release",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "args": [
+          {
+            "name": "logical_refs",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "idle",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "args": [
+          {
+            "name": "logical_refs",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "evict",
+      "event": "allocate",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "name": "logical_refs",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": 1000000.0
+              }
+            ],
+            "op": "mul"
+          },
+          {
+            "args": [
+              {
+                "name": "recency_steps",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": -1.0
+              }
+            ],
+            "op": "mul"
+          }
+        ],
+        "op": "add"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "evict",
+      "event": "access",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "name": "logical_refs",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": 1000000.0
+              }
+            ],
+            "op": "mul"
+          },
+          {
+            "args": [
+              {
+                "name": "recency_steps",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": -1.0
+              }
+            ],
+            "op": "mul"
+          }
+        ],
+        "op": "add"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "demote",
+      "event": "allocate",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "name": "logical_refs",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": 1000000.0
+              }
+            ],
+            "op": "mul"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "recency_steps",
+                    "op": "feature"
+                  },
+                  {
+                    "op": "const",
+                    "value": -1.0
+                  }
+                ],
+                "op": "mul"
+              },
+              {
+                "name": "target_utilization",
+                "op": "feature"
+              }
+            ],
+            "op": "add"
+          }
+        ],
+        "op": "add"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "demote",
+      "event": "access",
+      "score": {
+        "args": [
+          {
+            "args": [
+              {
+                "name": "logical_refs",
+                "op": "feature"
+              },
+              {
+                "op": "const",
+                "value": 1000000.0
+              }
+            ],
+            "op": "mul"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "recency_steps",
+                    "op": "feature"
+                  },
+                  {
+                    "op": "const",
+                    "value": -1.0
+                  }
+                ],
+                "op": "mul"
+              },
+              {
+                "name": "target_utilization",
+                "op": "feature"
+              }
+            ],
+            "op": "add"
+          }
+        ],
+        "op": "add"
+      },
+      "when": {
+        "op": "const",
+        "value": 1.0
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "allocate",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "args": [
+          {
+            "name": "logical_refs",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    },
+    {
+      "action": "reclaim",
+      "event": "access",
+      "score": {
+        "name": "last_use_step",
+        "op": "feature"
+      },
+      "when": {
+        "args": [
+          {
+            "name": "logical_refs",
+            "op": "feature"
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 1.0
+          },
+          {
+            "op": "const",
+            "value": 0.0
+          }
+        ],
+        "op": "if_lt"
+      }
+    }
+  ],
+  "schema": 1
+}

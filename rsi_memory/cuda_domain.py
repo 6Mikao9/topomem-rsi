@@ -49,7 +49,7 @@ deterministically derived fixtures, not model inference or a LongBench quality s
 
 _WORK_GROUPS = tuple(f"{event}/{action}" for event, actions in ACTION_DOMAIN.items() for action in actions)
 _WORK_FIELDS = ("rows_scanned", "choice_calls", "candidate_records", "predicate_evals", "score_evals",
-                "indexed_choices", "static_route_choices")
+                "indexed_choices", "static_route_choices", "static_producer_retain_choices")
 
 
 def _diagnostic_work_counts(diagnostic):

@@ -1,0 +1,132 @@
+{
+  "archived_effects_replayed": 37,
+  "controller_source_files": 76,
+  "controller_source_sha256": "6fc56c59daa4ed0deea1dfd2ff11ea0efe4b9670fd83b6270eb27a195463f650",
+  "exact_offline_controller_replay": true,
+  "finalists": null,
+  "hardware": [
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 0,
+      "uuid": "2a66a29f-9c52-6365-d76b-57d2116826c7"
+    },
+    {
+      "capability": [
+        12,
+        0
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "ordinal": 1,
+      "uuid": "c9891208-c33c-f89b-e575-7fe0d73c8f43"
+    }
+  ],
+  "local_receipts": 26,
+  "local_receipts_by_role": {
+    "pre_matrix": 11,
+    "training_matrix": 15
+  },
+  "local_receipts_by_split": {
+    "train": 25,
+    "validation": 1
+  },
+  "local_receipts_feasible": 22,
+  "matrix_identity_count": 9,
+  "matrix_observations": {
+    "r0000-train-01": 9,
+    "r0000-train-02": 7,
+    "r0000-train-03": 0
+  },
+  "native_validation_baseline_observed": true,
+  "pipeline_status_sha256": "60d936e860183d5dcaa6b443c5701b8448ea906479fba9e8fc3f91357f0da33a",
+  "provider_calls": 10,
+  "provider_usage": {
+    "adaptive": {
+      "calls": 5,
+      "calls_with_usage": 5,
+      "interrupted_unknown": 0,
+      "reported_tokens": {
+        "completion_tokens": 57310,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 55630,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 88493,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 145803
+      }
+    },
+    "fixed": {
+      "calls": 5,
+      "calls_with_usage": 5,
+      "interrupted_unknown": 0,
+      "reported_tokens": {
+        "completion_tokens": 48670,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 46258,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 108390,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_creation_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 49152
+        },
+        "total_tokens": 157060
+      }
+    }
+  },
+  "recovery_container_state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 255,
+    "FinishedAt": "2026-11-11T06:18:21.092263982Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-10-26T10:52:09.723054311Z",
+    "Status": "exited"
+  },
+  "report_sha256": "fd7ef104c9da2c61de8b438eeb762aab6f57be49dd088b1a7d9ac078908b906d",
+  "reused_qualification_job_ids": [
+    "eval-3c0b33cb1bb94f9a0af6379015e1e9dcd147229a02583e6c",
+    "eval-0b7bd1cd6132b5c513b0c7ab7a0ef898773fb06b4271ac91",
+    "eval-1721f13c97e8c2c44bcbc530478e796f0080b2df5efbf613",
+    "eval-1f2f019a380384a43f8e3a34bba47ff678f1e9b060fa0c07"
+  ],
+  "reused_qualification_receipts": 4,
+  "rounds_completed": 0,
+  "schema": 1,
+  "status": "training_matrix_incomplete",
+  "test_submitted": false,
+  "unknown": {
+    "effect": "r0000/training-matrix/r0000-train-02/c420bb73be9693ed93d5b110091bdf1e340b26d01f16d83d6a1281ceb85b8fd4",
+    "job_id": "eval-99fd473a153c7b215cfbd43dabcd82562b13e01114982104",
+    "local_receipt": false,
+    "recovered_empty_files": [
+      "input.json",
+      "process.log",
+      "request.json",
+      "started.json"
+    ],
+    "status": "transport_unknown"
+  },
+  "validation_submitted": false,
+  "worker_source_files": 63,
+  "worker_source_sha256": "877873960cd4da3c332891495fdc86d30fa59725b879d0fcffccb81fdef0c767"
+}

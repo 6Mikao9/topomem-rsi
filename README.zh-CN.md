@@ -1,10 +1,10 @@
 # TopoMem RSI 中文说明
 
-[English](README.md) · [两项任务与递归链](docs/ARCHITECTURE_ZH.md) · [显存程序契约](docs/MEMORY_PROGRAM_CONTRACT_ZH.md) · [SGLang 复现指南](docs/REPRODUCE_SGLANG_ZH.md) · [研究框架复核](docs/RSI_FRAMEWORK_REEVALUATION_20261110_ZH.md)
+[English](README.md) · [两项任务与递归链](docs/ARCHITECTURE_ZH.md) · [自主迭代与人机分工](docs/AUTONOMY_BOUNDARY_ZH.md) · [v4.1 选择协议](docs/V4_SELECTION_PROTOCOL_ZH.md) · [显存程序契约](docs/MEMORY_PROGRAM_CONTRACT_ZH.md) · [SGLang 复现指南](docs/REPRODUCE_SGLANG_ZH.md) · [研究框架复核](docs/RSI_FRAMEWORK_REEVALUATION_20261110_ZH.md)
 
 ## 从这里开始
 
-1. **打开最终离线演示。** 下载 HTML 后在启用 JavaScript 的本地浏览器打开，首屏显示 SGLang 正式留出结果。通过运行选择器可查看 CUDA Agent 证据。 [离线演示](demo/topomem-evidence.html)
+1. **打开离线演示。** 下载 HTML 后在启用 JavaScript 的本地浏览器打开。[最新 v4.1 两轮证据](demo/topomem-v41-final.html)展示模型提出的改进、验证裁决、源码和四场景留出；[此前多卡与 SGLang 证据](demo/topomem-evidence.html)保留原始实验。两者硬件配置与实验批次分别说明。
 2. **做本地 CPU 检查。** 在仓库根目录用 Python 3.10 或更新版本运行。以下测试只用标准库，可以直接从源码运行。
 
    ```powershell
@@ -25,11 +25,26 @@
 1. **生成显存管理程序。** 给定稀疏注意力、实际 GPU 拓扑和固定场景，模型生成 `MemoryProgram`。规则可选择 KV 放置、副本、迁移、压力降级、预取、驱逐和回收。受信执行器校验事件、动作、特征、路线、容量和引用，再在原生、手写和生成臂上测量。
 2. **改进程序生成器。** 生成器有 `build_prompt` 和 `build_meta_prompt` 两个入口。前者选择构造、变异或交叉，并指定父代、证据及规则。后者选择修订策略和训练证据。同一次元模型响应返回 `source` 和 `plan`。评估子代前，控制器绑定源码摘要并封存方案中的观察、机制改动、预期和证伪条件。控制器用同起点候选与配对验证决定晋级，记录源码差异和下一轮实际任务及元调用。方案中的预期是待测假设。
 
-目标合同固定注意力实现和选集、物理 GPU 与有向连接、计算 rank、显存容量、请求生命周期、外部调度、批次和安全点。模型只接触训练范围的目标描述、候选档案和反馈。裁判保管验证及留出信息，决定可行性和分值。主结果从种子和晋级生成器的产出中选，实验档案的验证最佳另列。
+目标合同固定注意力实现和选集、物理 GPU 与有向连接、计算 rank、显存容量、请求生命周期、外部调度、批次和安全点。模型只接触训练范围的目标描述、候选档案和反馈。裁判保管验证及留出信息，决定可行性和分值。v4.1 用重复训练测量分别选择发现的管理器、初始或晋级源码的实际产物、固定生成器产物；旧版本的封存规则保留在各自原始清单中。
 
 ## 当前证据
 
 配对区块在独立作业中重复执行各冻结比较臂。生成器运行次数和源码晋级次数单列。
+
+DeepSeek 当前可生成显存 IR，并修改 `build_prompt` 与 `build_meta_prompt` 两个生成入口。现有训练档案保存已测程序、来源和反馈。完整框架代码、显存后端和跨运行语义知识库的自主迭代仍待实现。框架在现有能力范围内负责提出和评估显存改进。人主要设定边界、复核测试并反馈可重现的问题。v12 和 v13 后端改动均属人工工程。[能力边界与下一阶段验收](docs/AUTONOMY_BOUNDARY_ZH.md)
+
+### 最新 v4.1 GPU3 补充实验
+
+两轮共 20 次 DeepSeek 调用、134 份 GPU 回执。模型提出显存 IR 和两个生成入口的改动，人工没有改写这些候选。两轮源码均未晋级，晋级源码的后续实际复用为 0。R0 子代相对本轮父代慢 22.644 ms；R1 子代虽比历史管理器快 9.676 ms，却比本轮父代新产物慢 2.253 ms，因此仍拒绝。发现的管理器与晋级源码产物分开保留。
+
+| 留出产物 | 对原生胜出／中位收益 | 对固定生成器胜出／中位收益 | 对手写策略胜出／中位收益 |
+| --- | --- | --- | --- |
+| 管理器发现结果 | 0/6，−37.739 ms | 0/6，−15.536 ms | 6/6，+35.415 ms |
+| 初始或已晋级源码产物（本次来自初始源码） | 0/6，−36.516 ms | 0/6，−15.477 ms | 6/6，+36.100 ms |
+
+每块分值为四场景耗时中位数之和，收益为对照减候选。四案实际都在 GPU3 执行 H64 注意力；使用既有公开语料、128 KiB 受管 GPU KV 和 32 MiB pinned host。它是单卡工程复评，不替代原多卡结果，不测 LongBench 答题质量。这次没有证明 RSI 优势。所有比较臂使用同一人工 v13 执行器，其工程收益另行归因。
+
+[原始报告与复核命令](results/cuda-rsi-v41-gpu3/README_ZH.md) · [独立训练及留出审计](results/operations/cuda-rsi-v41-gpu3-independent-audit/README_ZH.md) · [219 作业服务器归档](results/operations/followup-server-evidence/README_ZH.md)。重建最新演示可运行 `python -B -m rsi_memory.demo_v4 --report results/cuda-rsi-v41-gpu3/controller/report.json --harness-directory results/cuda-rsi-v41-gpu3/controller/harnesses --output demo/rebuilt-v41.html`。历史运行必须使用其归档冻结源码；当前 main 另含人工持久化和终局状态修复，不可混用源码恢复旧运行。
 
 ### SGLang v3 正式实验
 
@@ -49,6 +64,10 @@
 
 | 实验 | 已观察到的状态 |
 | --- | --- |
+| producer 保留 v13 人工工程对照 | 在静态约束证明原位保留是唯一合法候选时，省去通用候选求值。同一 LRU 等价 IR 的动作、生命周期、KV、输出和链路字节一致，四案合计较 v11 为 8/8 更快、配对中位改善 +11.661 ms；相对原生仍为 0/8 胜、中位慢 11.449 ms。这是人工执行器优化，不是模型提出的显存策略或 RSI 收益。[工程证据](results/engineering-producer-v13/README_ZH.md) |
+| v4.1 H256 双卡中断实验 | 四案按固定映射使用 GPU0/1，宿主机重启中断了首轮训练矩阵。保留 26 份新回执、10 次完成模型调用及未知作业；没有结算轮次、源码晋级或留出结果，未拼接补测。[中断与恢复证据](results/cuda-v41-reboot-interruption/README_ZH.md) |
+| 动态特征 v12 工程对照 | 同一 writeback IR、同一 GPU3 上执行 8 个配对区块共 24 个作业。动作、KV、输出及链路字节一致，新按需特征计算在合计耗时上 0/8 胜，配对中位慢 9.900 ms；长文单案慢 9.397 ms。未合入默认 GPU 运行时，不计为 RSI。[失败工程证据](results/engineering-dynamic-v12/README_ZH.md) |
+| v4 原提示试跑 | 审查发现继承的元提示与 fresh-output 裁判不一致，已停止。6 次完成模型调用、1 次未知调用和 11 份 GPU 回执保留；0 个结算轮次，无封存或测试。v4.1 修正实际出站消息，旧试跑不重试、不混入新版结果。[停止记录](results/prompt-v4-abort/README_ZH.md) |
 | CUDA v6 Agent | 结算 R0 后停止。子代两个 AST 均变化，同起点算子、父代、证据和元模式相同，未晋级。验证 12 个区块中子代均慢于项目的直写/LRU 参考。区块分值中位数为子代 146.529 ms、参考臂 120.898 ms。五个实测臂的第二张 GPU 管理 KV 峰值均为 0 B。审计复核了 66 份回执，保留 R1 部分调用和未知状态。 |
 | CUDA v7 Agent | 六轮 DeepSeek 生成和 12 个留出区块均已结算。唯一晋级的是 R2 生成器源码，其内存程序恢复已观察到的历史最佳行为，相对当轮父代 12/12 胜、配对中位改善 +126.658 ms，相对项目直写/LRU 参考 0/12 胜。R3–R5 的九次实际任务与元调用复用了晋级源码。封存的递归臂内存程序来自 R0 初始生成器，留出对直写/LRU 参考 0/12 胜、配对中位改善 −29.172 ms，对固定生成器 6/12 胜、配对中位改善 −0.142 ms。 |
 | CUDA v11 四场景迁移 | 对比冻结的初始生成器与 v7 R2 晋级生成器。192 份留出作业通过所记录的选中 KV、注意力输出和所有权检查。晋级源产出对项目直写/LRU 参考 48/48 区块较慢。对初始源，Chatbot 虽然 12/12 较快，但只有 11 个区块超过预登记的 1.5 ms 门槛。四场景均未通过严格迁移门槛。全部四臂在第二张 GPU 的受管 KV 峰值为 0 B。[迁移审计](results/cuda-transfer-v11/audit/AUDIT_ZH.md) |

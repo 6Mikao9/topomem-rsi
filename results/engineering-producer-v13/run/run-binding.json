@@ -1,0 +1,32 @@
+{
+  "plan_sha256": "19789ad0cd6c55cd3faeed4aab151854f3c0c1f8608c9ccd173ccdfe90dc9e29",
+  "request_fields_by_source": {
+    "v11": {
+      "environment": {
+        "OMP_NUM_THREADS": "2"
+      },
+      "gpu_indices": [
+        3
+      ],
+      "gpu_uuids": [
+        "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550"
+      ],
+      "source": "src-v11-single-qualification",
+      "source_manifest_sha256": "944183b276b231c2dd306dbfc9ddbbf9823d94875e21a94b76008ef2b91ba0a8"
+    },
+    "v13": {
+      "environment": {
+        "OMP_NUM_THREADS": "2"
+      },
+      "gpu_indices": [
+        3
+      ],
+      "gpu_uuids": [
+        "GPU-68d15ed9-2302-ae94-1b4c-6aebd509c550"
+      ],
+      "source": "src-v13-producer-retain-engineering",
+      "source_manifest_sha256": "e66bf6796bfec6e14a5980bd8effcab96dd5ba4da7a2ba339103ae9f40e93f5d"
+    }
+  },
+  "schema": 1
+}
